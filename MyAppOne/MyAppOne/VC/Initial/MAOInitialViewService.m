@@ -24,7 +24,6 @@
                             completionHandler:^(NSData *data, NSURLResponse *response,
                                                 NSError *error)
       {
-          NSLog(@"Got response %@ with error %@.\n", response, error);
           NSArray *dataArray = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
           completionBlock (dataArray, error);
       }
