@@ -7,9 +7,8 @@
 //
 
 #import "MAOInitialViewController.h"
-
-
 #import "MAOListViewController.h"
+#import "MAOItunes.h"
 
 @interface MAOInitialViewController ()
 
@@ -37,6 +36,27 @@
     // Manejo de errores en el request.
     // Mostrar mensaje mientras carga.
     // Mensajes de alerta.
+
+    
+//    NSString *itunesApi = @"https://itunes.apple.com/search?term=metallica";
+//    NSError *error;
+//    NSData *data = [NSData dataWithContentsOfURL: [NSURL URLWithString:itunesApi]];
+//    NSMutableArray *json = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+//    NSLog(@"json: %@", json);
+
+    [[MAOItunes sharedInstance] fetchItunesDataWithCompletionBlock:^(NSArray *infoArray, NSError *error) {
+        if (!error) {
+            NSLog(@"Response => %@",infoArray);
+//            [self.responseDataTextView setString:[employeeArray description]];
+//            [self hideProgressIndicator];
+        }
+//        else
+//        {
+//            [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+//                [NSApp presentError:error];
+//            }];
+//        }
+    }];
 }
 
 @end
