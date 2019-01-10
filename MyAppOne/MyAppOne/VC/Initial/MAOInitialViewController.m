@@ -13,15 +13,19 @@
 
 @interface MAOInitialViewController ()
 
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *MAOProgressIndicator;
+
 @end
 
 @implementation MAOInitialViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self hideProgressIndicator];
 }
 
 - (IBAction)onClickSelection:(id)sender {
+        [self showProgressIndicator];
         [[MAOInitialViewService sharedInstance] fetchItunesDataWithCompletionBlock:^(NSArray *array, NSError *error) {
             if (!error) {
                 MAOListViewController *listViewControllerPtr = [[MAOListViewController alloc] init];
@@ -43,10 +47,18 @@
                 [alert addAction:defaultAction];
                 [self presentViewController:alert animated:YES completion:nil];
             }
+            [self hideProgressIndicator];
         }];
     }
-    
-    
 
+-(void)showProgressIndicator{
+    [self.MAOProgressIndicator setHidden:NO];
+    [self.MAOProgressIndicator startAnimating];
+}
+
+-(void)hideProgressIndicator{
+    [self.MAOProgressIndicator setHidden:YES];
+    [self.MAOProgressIndicator stopAnimating];
+}
 
 @end
