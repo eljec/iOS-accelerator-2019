@@ -7,8 +7,8 @@
 //
 
 #import "MAOInitialViewController.h"
-
-
+#import "MAOListViewController.h"
+#import "MAOInitialViewService.h"
 #import "MAOListViewController.h"
 
 @interface MAOInitialViewController ()
@@ -22,7 +22,7 @@
     // Do any additional setup after loading the view from its nib.
 }
 
-- (IBAction)onClickSelection:(id)sender {
+- (IBAction)onClickSelection:(id)sender
     
     // TODO
     // ACA BUSCAMOS LA DATA DEL SERVER Y AVANZAMOS AL PROXIMO VC CUANDO YA LA TENGAMOS PROCESADA
@@ -37,6 +37,28 @@
     // Manejo de errores en el request.
     // Mostrar mensaje mientras carga.
     // Mensajes de alerta.
-}
+    {
+        [[MAOInitialViewService sharedInstance] fetchItunesDataWithCompletionBlock:^(NSArray *array, NSError *error) {
+            if (error) {
+                NSLog(@"Array of songs %@",array);;
+                MAOListViewController *listViewControllerPtr = [[MAOListViewController alloc] init];
+                listViewControllerPtr = [listViewControllerPtr initWithModel:array];
+            }
+            else {
+                UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Error Message"
+                                                                               message:@"Oh! Something went wrong, please press again"
+                                                                        preferredStyle:UIAlertControllerStyleAlert];
+                
+                UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                                      handler:^(UIAlertAction * action) {}];
+                
+                [alert addAction:defaultAction];
+                [self presentViewController:alert animated:YES completion:nil];
+            }
+        }];
+    }
+    
+    
+
 
 @end
