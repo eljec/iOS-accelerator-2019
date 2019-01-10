@@ -15,7 +15,6 @@
 
 @implementation MAOListViewController
 
-
 - (instancetype) initWithModel:( NSArray<MAOListViewControllerModel *> *) arrayModels
 {
     self = [super init];

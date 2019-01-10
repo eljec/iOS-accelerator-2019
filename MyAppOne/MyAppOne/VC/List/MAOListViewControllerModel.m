@@ -10,4 +10,20 @@
 
 @implementation MAOListViewControllerModel
 
++ (instancetype) initWithDictionary:(NSDictionary *) diccionario{
+    
+    MAOListViewControllerModel *model = [[MAOListViewControllerModel alloc] init];
+    
+    model.artistName = diccionario[@"artistName"];
+    model.collectionName = diccionario[@"collectionName"];
+    model.trackName = diccionario[@"trackName"];
+    model.artistViewUrl = diccionario[@"artistiViewUrl"];
+    model.collectionViewUrl = diccionario[@"collectionViewUrl"];
+    model.trackViewUrl = diccionario[@"trackViewUrl"];
+    model.collectionPrice = diccionario[@"collectionPrice"];
+    model.trackPrice = diccionario[@"trackPrice"];
+    
+    return model;
+}
+
 @end

@@ -9,6 +9,7 @@
 #import "MAOInitialViewController.h"
 #import "MAOListViewController.h"
 #import "MAOItunes.h"
+#import "MAOListViewControllerModel.h"
 
 @interface MAOInitialViewController ()
 
@@ -37,25 +38,20 @@
     // Mostrar mensaje mientras carga.
     // Mensajes de alerta.
 
-    
-//    NSString *itunesApi = @"https://itunes.apple.com/search?term=metallica";
-//    NSError *error;
-//    NSData *data = [NSData dataWithContentsOfURL: [NSURL URLWithString:itunesApi]];
-//    NSMutableArray *json = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
-//    NSLog(@"json: %@", json);
 
     [[MAOItunes sharedInstance] fetchItunesDataWithCompletionBlock:^(NSArray *infoArray, NSError *error) {
         if (!error) {
-            NSLog(@"Response => %@",infoArray);
-//            [self.responseDataTextView setString:[employeeArray description]];
-//            [self hideProgressIndicator];
+            NSMutableArray *parseInfo = [[NSMutableArray alloc] init];
+            // get the specific key = 'results'
+            for (NSDictionary *element in [infoArray valueForKey:@"results"]) {
+                [parseInfo addObject:[MAOListViewControllerModel initWithDictionary:element]];
+            }
+            
+            MAOListViewController *listView = [[MAOListViewController alloc] initWithModel:parseInfo];
+            [self.navigationController pushViewController:listView animated:YES];
+        
+
         }
-//        else
-//        {
-//            [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-//                [NSApp presentError:error];
-//            }];
-//        }
     }];
 }
 

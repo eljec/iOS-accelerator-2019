@@ -23,6 +23,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSNumber *collectionPrice;
 @property (nonatomic, strong) NSNumber *trackPrice;
 
+// initWithDictionary custom method to initialize model
++ (instancetype) initWithDictionary:(NSDictionary *) diccionario;
+
 @end
 
 NS_ASSUME_NONNULL_END
