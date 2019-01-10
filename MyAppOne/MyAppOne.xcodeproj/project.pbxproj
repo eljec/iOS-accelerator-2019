@@ -18,6 +18,7 @@
 		14B0ECC721E6D417004B2173 /* MAOListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B0ECC521E6D417004B2173 /* MAOListViewController.m */; };
 		14B0ECC821E6D417004B2173 /* MAOListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B0ECC621E6D417004B2173 /* MAOListViewController.xib */; };
 		14B0ECCB21E790DD004B2173 /* MAOListViewControllerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B0ECCA21E790DD004B2173 /* MAOListViewControllerModel.m */; };
+		C47B90E021E7A8000095E52F /* MAOInitialViewService.m in Sources */ = {isa = PBXBuildFile; fileRef = C47B90DF21E7A8000095E52F /* MAOInitialViewService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,9 @@
 		14B0ECC621E6D417004B2173 /* MAOListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MAOListViewController.xib; sourceTree = "<group>"; };
 		14B0ECC921E790DD004B2173 /* MAOListViewControllerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAOListViewControllerModel.h; sourceTree = "<group>"; };
 		14B0ECCA21E790DD004B2173 /* MAOListViewControllerModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAOListViewControllerModel.m; sourceTree = "<group>"; };
+		C47B90DD21E7A66C0095E52F /* MAOInitialViewConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAOInitialViewConstants.h; sourceTree = "<group>"; };
+		C47B90DE21E7A8000095E52F /* MAOInitialViewService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAOInitialViewService.h; sourceTree = "<group>"; };
+		C47B90DF21E7A8000095E52F /* MAOInitialViewService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAOInitialViewService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +169,9 @@
 				14B0ECBF21E6D402004B2173 /* MAOInitialViewController.xib */,
 				14B0ECC021E6D402004B2173 /* MAOInitialViewController.h */,
 				14B0ECC121E6D402004B2173 /* MAOInitialViewController.m */,
+				C47B90DD21E7A66C0095E52F /* MAOInitialViewConstants.h */,
+				C47B90DE21E7A8000095E52F /* MAOInitialViewService.h */,
+				C47B90DF21E7A8000095E52F /* MAOInitialViewService.m */,
 			);
 			path = Initial;
 			sourceTree = "<group>";
@@ -305,6 +312,7 @@
 				14B0ECC321E6D402004B2173 /* MAOInitialViewController.m in Sources */,
 				14B0ECC721E6D417004B2173 /* MAOListViewController.m in Sources */,
 				14B0EC8421E6D18C004B2173 /* AppDelegate.m in Sources */,
+				C47B90E021E7A8000095E52F /* MAOInitialViewService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
