@@ -20,6 +20,7 @@
 {
     self = [super init];
     if(self){
+        //Es recomendable usar variables de instancia
         _arrayModels = arrayModels;
     }
     
@@ -43,7 +44,8 @@
     {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-    cell.textLabel.text= @"Hello";
+    
+    cell.textLabel.text = [[self.arrayModels objectAtIndex:indexPath.row] trackName];;
     return cell;
 }
 
