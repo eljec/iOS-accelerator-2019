@@ -36,6 +36,7 @@
 
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath
 {
+    NSLog(@"indexPath %@", indexPath);
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier   forIndexPath:indexPath] ;
     
@@ -43,7 +44,9 @@
     {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-    cell.textLabel.text= @"Hello";
+    
+    cell.textLabel.text= [_arrayModels objectAtIndex:indexPath.row].trackName;//@"Hello";
+    //cell.textLabel.text= @"Hello";
     return cell;
 }
 

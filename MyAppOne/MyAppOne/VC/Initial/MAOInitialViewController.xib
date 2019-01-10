@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MAOInitialViewController">
             <connections>
+                <outlet property="indicatorView" destination="4TZ-3M-qwh" id="fun-wI-xjf"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -33,15 +34,23 @@
                         <action selector="onClickSelection:" destination="-1" eventType="touchUpInside" id="aF8-lI-fE7"/>
                     </connections>
                 </button>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="4TZ-3M-qwh">
+                    <rect key="frame" x="177" y="228" width="20" height="20"/>
+                </activityIndicatorView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="4TZ-3M-qwh" firstAttribute="top" secondItem="8wJ-t9-lQ6" secondAttribute="bottom" constant="91.5" id="4tQ-gV-l9R"/>
                 <constraint firstItem="3dI-Pf-D0G" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="9YH-fV-H7t"/>
                 <constraint firstItem="8wJ-t9-lQ6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="GvI-3y-TAM"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="4TZ-3M-qwh" secondAttribute="trailing" constant="178" id="LUo-Ad-UJ1"/>
                 <constraint firstItem="3dI-Pf-D0G" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="NlG-QJ-RZW"/>
                 <constraint firstItem="8wJ-t9-lQ6" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="85" id="TJF-EA-yYX"/>
+                <constraint firstItem="4TZ-3M-qwh" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="177" id="V3g-aT-i8r"/>
+                <constraint firstItem="3dI-Pf-D0G" firstAttribute="top" secondItem="4TZ-3M-qwh" secondAttribute="bottom" constant="70.5" id="sST-Vi-YLn"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="53.600000000000001" y="93.103448275862078"/>
         </view>
     </objects>
 </document>
