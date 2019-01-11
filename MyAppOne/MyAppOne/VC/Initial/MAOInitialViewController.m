@@ -44,21 +44,21 @@ NSString *const APIURL_SEARCH = @"https://itunes.apple.com/search?term=jack+john
 - (IBAction)onClickSelection:(id)sender {
     
     //Ordenado alfabeticamente
-    [self search: ^ NSArray * (NSMutableArray *array){
-       return [array sortedArrayUsingSelector:@selector(compare:)];
+    [self search: ^ NSArray * (NSArray *array){
+        return [array sortedArrayUsingSelector:@selector(compare:)];
     }];
 }
 - (IBAction)onClickCargarDatos:(id)sender {
     
     //Ordenado alfabeticamente
-    [self search: ^ NSArray * (NSMutableArray *array){
+    [self search: ^ NSArray * (NSArray *array){
         return array;
     }];
 }
 
 - (IBAction)onClickReleaseDate:(UIButton *)sender {
     //SortingArrayUsingComparetor
-    [self search: ^ NSArray * (NSMutableArray *array){
+    [self search: ^ NSArray * (NSArray *array){
         return [array sortedArrayUsingComparator: ^NSComparisonResult(id a, id b) {
             NSDate *first = [(MAOListViewControllerModel*)a releaseDate];
             NSDate *second = [(MAOListViewControllerModel*)b releaseDate];
@@ -67,8 +67,37 @@ NSString *const APIURL_SEARCH = @"https://itunes.apple.com/search?term=jack+john
     }];
 }
 
+- (IBAction)onClickAlfabeticamente:(id)sender {
+    
+    //SortingArrayUsingComparetor
+    [self search: ^ NSArray * (NSArray *array){
+        return [array sortedArrayUsingComparator: ^NSComparisonResult(id a, id b) {
+            NSString *first = [(MAOListViewControllerModel*)a trackName];
+            NSString *second = [(MAOListViewControllerModel*)b trackName];
+            return [first compare:second];
+        }];
+    }];
+}
 
-- (void) search: (NSArray *(^)(NSMutableArray *results)) orderArray{
+- (IBAction)onClickIdTrack:(id)sender {
+    
+    //SortingArrayUsingComparetor
+    [self search: ^ NSArray * (NSArray *array){
+        return [array sortedArrayUsingComparator: ^NSComparisonResult(id a, id b) {
+            NSNumber *first = [(MAOListViewControllerModel*)a trackId];
+            NSNumber *second = [(MAOListViewControllerModel*)b trackId];
+            return [first compare:second];
+        }];
+    }];
+}
+
+- (IBAction)onClickResverse:(id)sender {
+    [self search: ^ NSArray * (NSArray *array){
+        return [[array reverseObjectEnumerator] allObjects];
+    }];
+}
+
+- (void) search: (NSArray *(^)(NSArray *results)) orderArray{
     
     [self showProgressIndicator: true];
     
@@ -93,38 +122,6 @@ NSString *const APIURL_SEARCH = @"https://itunes.apple.com/search?term=jack+john
     
     [self showProgressIndicator: false];
 }
-
-- (IBAction)onClickAlfabeticamente:(id)sender {
-    
-    //SortingArrayUsingComparetor
-    [self search: ^ NSArray * (NSMutableArray *array){
-        return [array sortedArrayUsingComparator: ^NSComparisonResult(id a, id b) {
-            NSString *first = [(MAOListViewControllerModel*)a trackName];
-            NSString *second = [(MAOListViewControllerModel*)b trackName];
-            return [first compare:second];
-        }];
-    }];
-}
-
-- (IBAction)onClickIdTrack:(id)sender {
-    
-    //SortingArrayUsingComparetor
-    [self search: ^ NSArray * (NSMutableArray *array){
-        return [array sortedArrayUsingComparator: ^NSComparisonResult(id a, id b) {
-            NSNumber *first = [(MAOListViewControllerModel*)a trackId];
-            NSNumber *second = [(MAOListViewControllerModel*)b trackId];
-            return [first compare:second];
-        }];
-    }];
-}
-
-- (IBAction)onClickResverse:(id)sender {
-    [self search: ^ NSArray * (NSMutableArray *array){
-        return [[array reverseObjectEnumerator] allObjects];
-    }];
-}
-
-
 
 - (void) showProgressIndicator:(Boolean) active{
     [self.spinner setHidden:!active];
