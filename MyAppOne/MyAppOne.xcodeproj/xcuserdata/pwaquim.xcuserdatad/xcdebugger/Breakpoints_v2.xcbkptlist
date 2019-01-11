@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyAppOne/VC/Initial/MAOInitialViewController.m"
-            timestampString = "568845286.379811"
+            timestampString = "568904442.097133"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "-onClickSelection:"
             landmarkType = "7">
             <Locations>

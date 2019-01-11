@@ -10,6 +10,12 @@
 
 @implementation MAOHandlerError
 
+
+/**
+ Patrón singleton
+
+ @return una instancia de esta clase. Siempre devuelve la misma
+ */
 +(MAOHandlerError *) sharedInstance
 {
     static MAOHandlerError *_sharedInstance = nil;
@@ -23,11 +29,18 @@
     return _sharedInstance;
 }
 
+
+/**
+ Realiza el manejo de errores.
+
+ @param error el error devuelto por el servicio
+ @param response la respuesta otogada por el servicio
+ @param controller una referencia al controller desde el cuál llama a esta función
+ */
 -(void) handlerError:(NSError *)error response:(NSURLResponse *) response controller:(UIViewController *) controller
 {
-    
         UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Error"
-                                                                       message:[[NSString alloc]initWithFormat:@"%@", [error domain]]
+                                                                       message:[[NSString alloc]initWithFormat:@"%@", [error localizedDescription]]
                                                                 preferredStyle:UIAlertControllerStyleAlert];
 
         UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault

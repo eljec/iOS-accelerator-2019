@@ -11,7 +11,6 @@
 #import "MAOService.h"
 #import "MAOHandlerError.h"
 
-
 @interface MAOInitialViewController ()
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *indicatorView;
 @end
@@ -21,12 +20,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [_indicatorView setHidesWhenStopped:YES];
-    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)stopIndicatorAnim{
     [_indicatorView stopAnimating];
 }
+
 
 - (void)startIndicatorAnim{
     [_indicatorView startAnimating];
@@ -35,19 +34,26 @@
 - (IBAction)onClickSelection:(id)sender {
     [self startIndicatorAnim];
     
+    // Creo un callback para manejar la respuesta al pedido a la api.
     void (^callback) (NSData *data, NSURLResponse *response, NSError *error) = ^void (NSData *data, NSURLResponse *response, NSError *error) {
 
+        // Paro la animación del indicator
         [self stopIndicatorAnim];
 
+        // Chequeo si hubo error
         if (!error) {
+            // Parseo los datos del json
             NSArray<MAOListViewControllerModel *> *datos = [[MAOService sharedInstance] parserJson:data];
             
+            // Hago el cambio de controller en el UIThread
             [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+                // Creo el controller nuevo y le paso el array con los datos
                 MAOListViewController * controller = [[MAOListViewController alloc] initWithModel:datos];
-                
+                // Pusheo el nuevo controller
                 [self.navigationController pushViewController:controller animated:YES];
             }];
         } else {
+            // Manejo el error en el UIThread
             [[NSOperationQueue mainQueue] addOperationWithBlock:^{
                 [[MAOHandlerError sharedInstance] handlerError:error response:response controller:self];
             }];
@@ -55,10 +61,12 @@
 
     };
 
-    
+    // Creo una cola global
     dispatch_queue_t global = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     dispatch_async(global, ^{
+        // Creo la URL
         NSString * URL = @"https://itunes.apple.com/search?term=jack+johnson";
+        // Hago el pedido pasandole el callback para que se ejecute cuando termine
         [[MAOService sharedInstance] fetchJsonWithCompletionBlock:callback url:URL];
     });
     

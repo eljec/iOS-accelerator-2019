@@ -12,6 +12,7 @@
 - (instancetype)initWithDictionary:(NSDictionary *)dict{
     self = [super init];
     if (self) {
+        // Inicializo las properties
         _artistName = [dict valueForKey:@"artistName"];
         _collectionName = [dict valueForKey:@"collectionName"];
         _trackName = [dict valueForKey:@"trackName"];
