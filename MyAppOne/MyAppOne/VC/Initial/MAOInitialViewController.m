@@ -21,10 +21,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self showProgressIndicator: false];
-    
-    // Do any additional setup after loading the view from its nib.
 }
 
+
+
+//MARK: Actions
 - (IBAction)onClickSelection:(id)sender {
     [self showProgressIndicator: true];
 
@@ -64,7 +65,8 @@
     // Mensajes de alerta.
 }
 
--(void)showProgressIndicator:(Boolean) active{
+//MARK: Auxiliares
+- (void) showProgressIndicator:(Boolean) active{
     [self.spinner setHidden:!active];
     
     if(active){
@@ -73,8 +75,6 @@
         [self.spinner stopAnimating];
     }
 }
-
-
 
 - (void) mostraAlerta {
     UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"My Alert"
