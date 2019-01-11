@@ -12,7 +12,7 @@
 /**
 URL definition to get songs urls.
  */
-#define SONGS_URL @"https://itussnes.apple.com/search?term="
+#define SONGS_URL @"https://itunes.apple.com/search?term="
 
 /**
  Itunes interface singleton service.
