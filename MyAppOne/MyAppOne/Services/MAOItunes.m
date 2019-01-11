@@ -22,25 +22,57 @@
 
 -(void) fetchItunesDataWithCompletionBlock:(void(^)(NSArray *infoArray, NSError *error))completionBlock;
 {
+    /*
+     Configuration object for NSURLSession
+     With defaultSessionConfiguration, we can configure the session quickly
+     */
     NSURLSessionConfiguration *defaultConfigObject = [NSURLSessionConfiguration defaultSessionConfiguration];
+    
+    /*
+     NSTemporaryDirectory, return the temporary directory dfor the current user
+     stringByAppendingPathComponent, append string to exist string
+     */
     NSString *cachePath = [NSTemporaryDirectory() stringByAppendingPathComponent:@"/nsurlsessiondemo.cache"];
+    /*
+     NSURLCache, maps the URL request in NSCachedURLResponse, all values of init are in bytes
+     */
+    
     NSURLCache *myCache = [[NSURLCache alloc] initWithMemoryCapacity: 16384
                                                         diskCapacity: 268435456
                                                             diskPath: cachePath];
     defaultConfigObject.URLCache = myCache;
     defaultConfigObject.requestCachePolicy = NSURLRequestUseProtocolCachePolicy;
+    
+    /*
+     NSURLSession, manage data to diferents endpoints. In this case with specific session configuration.
+     */
     NSURLSession *delegateFreeSession = [NSURLSession sessionWithConfiguration: defaultConfigObject
                                                                       delegate: nil
                                                                  delegateQueue: [NSOperationQueue mainQueue]];
-    NSURL *dataURL = [NSURL URLWithString:@"https://itunes.apple.com/search?term=metallica"];
+    NSURL *dataURL = [NSURL URLWithString:@"https://itunes.apple.com/search?term=the+beatles"];
+    /*
+     NSURLRequest, create a URL request for specific URL, in this case with above URL
+     */
     NSURLRequest *request = [NSURLRequest requestWithURL:dataURL];
     
     [[delegateFreeSession dataTaskWithRequest:request
                             completionHandler:^(NSData *data, NSURLResponse *response, NSError *error){
-            //NSLog(@"Got response %@ with error %@.\n", response, error);
+            /*
+             NSJSONSerialization, convert JSON to Foundation objects and inverse.
+                JSONObjectWithData, return a object from JSON
+             */
             NSArray *dataArray = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
             completionBlock (dataArray, error);
     }]resume];
 }
-
+/*
+- (NSArray *) getDataFrom:(NSString *) url{
+    NSString *itunesApi = @"https://itunes.apple.com/search?term=metallica";
+    NSError *error;
+    //        NSString *url_string = [NSString stringWithFormat: baseUrl];
+    NSData *data = [NSData dataWithContentsOfURL: [NSURL URLWithString:itunesApi]];
+    NSMutableArray *response = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+    return response;
+}
+*/
 @end

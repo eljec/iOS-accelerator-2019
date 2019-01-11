@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(void) fetchItunesDataWithCompletionBlock:(void(^)(NSArray *InfoArray, NSError *error)) completionBlock;
 
+- (NSArray *) getDataFrom:(NSString *) url;
+
 @end
 
 NS_ASSUME_NONNULL_END

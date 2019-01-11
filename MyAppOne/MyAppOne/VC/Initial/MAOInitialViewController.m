@@ -46,13 +46,16 @@
             for (NSDictionary *element in [infoArray valueForKey:@"results"]) {
                 [parseInfo addObject:[MAOListViewControllerModel initWithDictionary:element]];
             }
-            
+
             MAOListViewController *listView = [[MAOListViewController alloc] initWithModel:parseInfo];
             [self.navigationController pushViewController:listView animated:YES];
-        
 
         }
     }];
+
+    // Reveer esto
+//    NSArray *response = [[NSArray alloc] init];
+//    response = [[MAOItunes sharedInstance] getDataFrom:@"#"];
 }
 
 @end
