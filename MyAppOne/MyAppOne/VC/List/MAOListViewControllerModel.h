@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSNumber *collectionPrice;
 @property (nonatomic, strong) NSNumber *trackPrice;
 
-@property (nonatomic, strong) NSDate *releaseDate;
+@property (nonatomic, strong) NSString *releaseDate;
 
 -(instancetype) initWithDictionary:(NSDictionary *)dict;
 
