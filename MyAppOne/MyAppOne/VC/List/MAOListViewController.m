@@ -43,7 +43,9 @@
     {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-    cell.textLabel.text= @"Hello";
+    
+    // Muestro los nombres de canciones que estan inicializados en el _arrayModels
+    cell.textLabel.text= [_arrayModels objectAtIndex:indexPath.row].trackName;
     return cell;
 }
 
