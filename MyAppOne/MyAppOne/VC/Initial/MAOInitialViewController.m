@@ -40,6 +40,9 @@
 
 
     [[MAOItunes sharedInstance] fetchItunesDataWithCompletionBlock:^(NSArray *infoArray, NSError *error) {
+        
+        
+        
         if (!error) {
             //NSLog(@"items = %lu",[infoArray count]);
             if ([[infoArray valueForKey:@"resultCount"] longValue] != 0) {
@@ -63,7 +66,7 @@
             NSString *errorMsg = [[NSString alloc] initWithFormat:@"Error code: %ld. %@.", error.code, error.localizedFailureReason];
             
             // declare UIAlertController with options
-            UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Error response"
+            UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Error request"
                                                                            message:errorMsg
                                                                 preferredStyle:UIAlertControllerStyleAlert];
             
@@ -72,10 +75,6 @@
             
             [alert addAction:defaultAction];
             [self presentViewController:alert animated:YES completion:nil];
-            NSLog(@"description = %@", [error localizedDescription]);
-            NSLog(@"suggestion = %@", [error domain]);
-            NSLog(@"code = %ld", [error code]);
-            NSLog(@"failure = %@", [error localizedFailureReason]);
         }
     }];
 
