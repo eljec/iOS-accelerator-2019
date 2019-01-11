@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MAOInitialViewController : UIViewController
 
+-(void)sortArrays:(NSMutableArray *)array by:(NSString *)order;
+
 @end
 
 NS_ASSUME_NONNULL_END

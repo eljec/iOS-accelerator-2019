@@ -16,6 +16,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *collectionName;
 @property (nonatomic, copy) NSString *trackName;
 
+@property (nonatomic, copy) NSString *trackId;
+@property (nonatomic, copy) NSString *releaseDate;
+
 @property (nonatomic, copy) NSString *artistViewUrl;
 @property (nonatomic, copy) NSString *collectionViewUrl;
 @property (nonatomic, copy) NSString *trackViewUrl;
