@@ -59,8 +59,9 @@
             
             }
         } else {
-            // declare msg error
-            NSString *errorMsg = [[NSString alloc] initWithFormat:@"Error code: %ld. %@. %@.", error.code, error.description, error.localizedFailureReason];
+            // declare msg error, consultar cual forma es la correcta de acceder [error code] o error.code
+            NSString *errorMsg = [[NSString alloc] initWithFormat:@"Error code: %ld. %@.", error.code, error.localizedFailureReason];
+            
             // declare UIAlertController with options
             UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Error response"
                                                                            message:errorMsg

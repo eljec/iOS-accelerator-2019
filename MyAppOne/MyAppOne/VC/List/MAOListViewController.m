@@ -43,6 +43,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     // revisar esto
+    // accedo a la posicion deseada en el array y luego a la propiedad del objeto
     cell.textLabel.text= [self.arrayModels objectAtIndex:indexPath.row].trackName;
     return cell;
 }

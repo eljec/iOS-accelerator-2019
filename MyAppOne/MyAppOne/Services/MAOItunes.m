@@ -49,7 +49,7 @@
     NSURLSession *delegateFreeSession = [NSURLSession sessionWithConfiguration: defaultConfigObject
                                                                       delegate: nil
                                                                  delegateQueue: [NSOperationQueue mainQueue]];
-    NSURL *dataURL = [NSURL URLWithString:@"https://itunes.apple.com/searchx?term=the+beatles"];
+    NSURL *dataURL = [NSURL URLWithString:@"https://itunes.apple.com/search?term=the+beatles"];
     /*
      NSURLRequest, create a URL request for specific URL, in this case with above URL
      */
