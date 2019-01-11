@@ -41,7 +41,6 @@
     return maoListModel;
 }
 
-
 /**
  Method to start the list view with model.
 
@@ -54,7 +53,6 @@
     [maoListViewController setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
     [self.navigationController pushViewController:maoListViewController animated:YES];
 }
-
 
 /**
  Method to show a general error
@@ -78,6 +76,26 @@
     });
 }
 
+- (NSArray *)orderArray:(NSArray *)songsArray {
+
+    NSSortDescriptor *sortDescriptor = nil;
+    BOOL ascending = self.ascButton.isOn;
+    switch (self.orderBySegment.selectedSegmentIndex) {
+        case 0:
+            sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"trackName" ascending:ascending];
+            break;
+        case 1:
+            sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"releaseDate" ascending:ascending];
+            break;
+        case 2:
+            sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"trackId" ascending:ascending];
+            break;
+        default:
+            break;
+    }
+    return [songsArray sortedArrayUsingDescriptors:@[sortDescriptor]];
+}
+
 /**
  Click on "buscar" button action.
 
@@ -88,7 +106,7 @@
     [self.spinner startAnimating];
     [[ItunesService instance] getSongsByQuery:self.songSarchText.text andCompletitionBlock:^(NSArray *songsArray, NSError *error) {
         if (!error) {
-            [self initializeViewListWitSongs:songsArray];
+            [self initializeViewListWitSongs:[self orderArray:songsArray]];
             [self.spinner stopAnimating];
         }
         else

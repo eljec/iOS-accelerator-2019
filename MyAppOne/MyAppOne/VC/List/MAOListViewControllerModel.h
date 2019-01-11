@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface MAOListViewControllerModel : NSObject
 
 // MARK: properties
+@property (nonatomic, copy) NSNumber *trackId;
 @property (nonatomic, copy) NSString *artistName;
 @property (nonatomic, copy) NSString *collectionName;
 @property (nonatomic, copy) NSString *trackName;
@@ -24,6 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NSNumber *collectionPrice;
 @property (nonatomic, strong) NSNumber *trackPrice;
+@property (nonatomic, strong) NSDate *releaseDate;
 
 // MARK: methods
 
