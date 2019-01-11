@@ -22,6 +22,10 @@
 
 -(void) fetchItunesDataWithCompletionBlock:(void(^)(NSArray *infoArray, NSError *error))completionBlock;
 {
+    // set the correct URL for tests
+    NSString *wrongURL = @"https://itunes.apple.com/searchx?term=the+beatles";
+    NSString *successURL = @"https://itunes.apple.com/search?term=the+beatles";
+    
     /*
      Configuration object for NSURLSession
      With defaultSessionConfiguration, we can configure the session quickly
@@ -49,7 +53,7 @@
     NSURLSession *delegateFreeSession = [NSURLSession sessionWithConfiguration: defaultConfigObject
                                                                       delegate: nil
                                                                  delegateQueue: [NSOperationQueue mainQueue]];
-    NSURL *dataURL = [NSURL URLWithString:@"https://itunes.apple.com/search?term=the+beatles"];
+    NSURL *dataURL = [NSURL URLWithString:wrongURL];
     /*
      NSURLRequest, create a URL request for specific URL, in this case with above URL
      */
@@ -65,14 +69,5 @@
             completionBlock (dataArray, error);
     }]resume];
 }
-/*
-- (NSArray *) getDataFrom:(NSString *) url{
-    NSString *itunesApi = @"https://itunes.apple.com/search?term=metallica";
-    NSError *error;
-    //        NSString *url_string = [NSString stringWithFormat: baseUrl];
-    NSData *data = [NSData dataWithContentsOfURL: [NSURL URLWithString:itunesApi]];
-    NSMutableArray *response = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
-    return response;
-}
-*/
+
 @end
