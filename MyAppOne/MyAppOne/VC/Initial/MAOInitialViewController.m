@@ -6,9 +6,25 @@
 //  Copyright © 2019 iOS-accelerator. All rights reserved.
 //
 
+// TODO
+// ACA BUSCAMOS LA DATA DEL SERVER Y AVANZAMOS AL PROXIMO VC CUANDO YA LA TENGAMOS PROCESADA
+
+// 1-  Request al server (URL: https://itunes.apple.com/search?term=jack+johnson)
+// 2 - Parser del response
+// 3 - Crecion del modelo del VC 2
+// 4 - Iniciar el vc 2 con el modelo
+//-------------------------------------------
+
+//NTH:
+// Manejo de errores en el request.
+// Mostrar mensaje mientras carga.
+// Mensajes de alerta.
+
 #import "MAOInitialViewController.h"
 #import "MAOListViewController.h"
 #import "MLServiceHelper.h"
+
+
 
 @interface MAOInitialViewController ()
 
@@ -18,53 +34,99 @@
 
 @implementation MAOInitialViewController
 
+NSString *const APIURL_SEARCH = @"https://itunes.apple.com/search?term=jack+johnson";
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self showProgressIndicator: false];
-    
-    // Do any additional setup after loading the view from its nib.
 }
 
 - (IBAction)onClickSelection:(id)sender {
-    [self showProgressIndicator: true];
-
     
-    [[MLServiceHelper instance] callRequest:^(NSArray *array, NSError *error)
-                                {
-                                    NSMutableArray *resultArray = [[NSMutableArray alloc] init];
-
-
-                                    //TODO Gonza: Este parseo se puede generalizar
-                                    for(NSDictionary *item in [array valueForKey: @"results"]){
-                                        [resultArray addObject: [MAOListViewControllerModel initWithDictionary: item]];
-                                        NSLog(@"Response: %@", item);
-                                    }
-
-                                    MAOListViewController *vc = [[MAOListViewController alloc] initWithModel:resultArray];
-                                    [self.navigationController pushViewController:vc animated:YES];
-                                    
-                                    [self showProgressIndicator: false];
-
-
-                                }
-                                toUrl: @"https://itunes.apple.com/search?term=jack+johnson"];
-
-    // TODO
-    // ACA BUSCAMOS LA DATA DEL SERVER Y AVANZAMOS AL PROXIMO VC CUANDO YA LA TENGAMOS PROCESADA
+    //Ordenado alfabeticamente
+    [self search: ^ NSArray * (NSMutableArray *array){
+       return [array sortedArrayUsingSelector:@selector(compare:)];
+    }];
+}
+- (IBAction)onClickCargarDatos:(id)sender {
     
-    // 1-  Request al server (URL: https://itunes.apple.com/search?term=jack+johnson)
-    // 2 - Parser del response
-    // 3 - Crecion del modelo del VC 2
-    // 4 - Iniciar el vc 2 con el modelo
-    //-------------------------------------------
-    
-    //NTH:
-    // Manejo de errores en el request.
-    // Mostrar mensaje mientras carga.
-    // Mensajes de alerta.
+    //Ordenado alfabeticamente
+    [self search: ^ NSArray * (NSMutableArray *array){
+        return array;
+    }];
 }
 
--(void)showProgressIndicator:(Boolean) active{
+- (IBAction)onClickReleaseDate:(UIButton *)sender {
+    //SortingArrayUsingComparetor
+    [self search: ^ NSArray * (NSMutableArray *array){
+        return [array sortedArrayUsingComparator: ^NSComparisonResult(id a, id b) {
+            NSDate *first = [(MAOListViewControllerModel*)a releaseDate];
+            NSDate *second = [(MAOListViewControllerModel*)b releaseDate];
+            return [first compare:second];
+        }];
+    }];
+}
+
+
+- (void) search: (NSArray *(^)(NSMutableArray *results)) orderArray{
+    
+    [self showProgressIndicator: true];
+    
+    [[MLServiceHelper instance] callRequest:^(NSArray *array, NSError *error)
+     {
+         NSMutableArray *resultArray = [[NSMutableArray alloc] init];
+         
+         for(NSDictionary *item in [array valueForKey: @"results"]){
+             [resultArray addObject: [MAOListViewControllerModel initWithDictionary: item]];
+             NSLog(@"Response: %@", item);
+         }
+         
+         [self openMAOListView:orderArray(resultArray)];
+     }
+     toUrl: APIURL_SEARCH];
+}
+
+- (void) openMAOListView: (NSArray *) results{
+    
+    MAOListViewController *vc = [[MAOListViewController alloc] initWithModel:results];
+    [self.navigationController pushViewController:vc animated:YES];
+    
+    [self showProgressIndicator: false];
+}
+
+- (IBAction)onClickAlfabeticamente:(id)sender {
+    
+    //SortingArrayUsingComparetor
+    [self search: ^ NSArray * (NSMutableArray *array){
+        return [array sortedArrayUsingComparator: ^NSComparisonResult(id a, id b) {
+            NSString *first = [(MAOListViewControllerModel*)a trackName];
+            NSString *second = [(MAOListViewControllerModel*)b trackName];
+            return [first compare:second];
+        }];
+    }];
+}
+
+- (IBAction)onClickIdTrack:(id)sender {
+    
+    //SortingArrayUsingComparetor
+    [self search: ^ NSArray * (NSMutableArray *array){
+        return [array sortedArrayUsingComparator: ^NSComparisonResult(id a, id b) {
+            NSNumber *first = [(MAOListViewControllerModel*)a trackId];
+            NSNumber *second = [(MAOListViewControllerModel*)b trackId];
+            return [first compare:second];
+        }];
+    }];
+}
+
+- (IBAction)onClickResverse:(id)sender {
+    [self search: ^ NSArray * (NSMutableArray *array){
+        return [[array reverseObjectEnumerator] allObjects];
+    }];
+}
+
+
+
+- (void) showProgressIndicator:(Boolean) active{
     [self.spinner setHidden:!active];
     
     if(active){
@@ -73,8 +135,6 @@
         [self.spinner stopAnimating];
     }
 }
-
-
 
 - (void) mostraAlerta {
     UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"My Alert"

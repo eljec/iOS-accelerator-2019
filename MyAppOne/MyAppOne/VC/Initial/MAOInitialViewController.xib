@@ -22,29 +22,76 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My App One" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8wJ-t9-lQ6">
-                    <rect key="frame" x="118" y="105" width="139.5" height="31.5"/>
+                    <rect key="frame" x="117.5" y="105" width="140" height="32"/>
                     <fontDescription key="fontDescription" type="system" pointSize="26"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3dI-Pf-D0G">
-                    <rect key="frame" x="143" y="318.5" width="89" height="30"/>
-                    <state key="normal" title="Cargar datos"/>
+                    <rect key="frame" x="17" y="261" width="285" height="30"/>
+                    <state key="normal" title="sortedArrayUsingSelector: Asc Alfabético"/>
                     <connections>
                         <action selector="onClickSelection:" destination="-1" eventType="touchUpInside" id="aF8-lI-fE7"/>
                     </connections>
                 </button>
-                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Hio-Ns-52F">
-                    <rect key="frame" x="177" y="354" width="20" height="20"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6e-nf-KpL">
+                    <rect key="frame" x="16" y="299" width="310" height="30"/>
+                    <state key="normal" title="sortedArrayUsingComparator: Asc Alfabético"/>
+                    <connections>
+                        <action selector="onClickAlfabeticamente:" destination="-1" eventType="touchUpInside" id="985-Oc-b94"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D8H-dL-ErC">
+                    <rect key="frame" x="17" y="337" width="265" height="30"/>
+                    <state key="normal" title="sortedArrayUsingComparator: Id Track"/>
+                    <connections>
+                        <action selector="onClickIdTrack:" destination="-1" eventType="touchUpInside" id="1nD-Lv-7oT"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CI4-oP-eUd">
+                    <rect key="frame" x="17" y="375" width="260" height="30"/>
+                    <state key="normal" title="sortedArrayUsingComparator: Inverso"/>
+                    <connections>
+                        <action selector="onClickResverse:" destination="-1" eventType="touchUpInside" id="1SW-2j-PHr"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cdf-5H-4CC">
+                    <rect key="frame" x="16" y="164" width="89" height="30"/>
+                    <state key="normal" title="Cargar datos"/>
+                    <connections>
+                        <action selector="onClickCargarDatos:" destination="-1" eventType="touchUpInside" id="CA4-QM-o8O"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qrq-ya-m6u">
+                    <rect key="frame" x="16" y="413" width="297" height="30"/>
+                    <state key="normal" title="sortedArrayUsingComparator: ReleaseDate"/>
+                    <connections>
+                        <action selector="onClickReleaseDate:" destination="-1" eventType="touchUpInside" id="FxO-Zf-Sfu"/>
+                    </connections>
+                </button>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Hio-Ns-52F">
+                    <rect key="frame" x="177" y="205" width="20" height="20"/>
                 </activityIndicatorView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="3dI-Pf-D0G" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="9YH-fV-H7t"/>
+                <constraint firstItem="3dI-Pf-D0G" firstAttribute="leading" secondItem="D8H-dL-ErC" secondAttribute="leading" id="1Sh-mf-7c5"/>
+                <constraint firstItem="D8H-dL-ErC" firstAttribute="leading" secondItem="CI4-oP-eUd" secondAttribute="leading" id="37u-RA-r5U"/>
+                <constraint firstItem="D8H-dL-ErC" firstAttribute="top" secondItem="w6e-nf-KpL" secondAttribute="bottom" constant="8" symbolic="YES" id="3m1-Ru-3OH"/>
+                <constraint firstItem="w6e-nf-KpL" firstAttribute="top" secondItem="3dI-Pf-D0G" secondAttribute="bottom" constant="8" symbolic="YES" id="6Ak-Ic-u7d"/>
+                <constraint firstItem="Hio-Ns-52F" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8v0-jJ-sGh"/>
+                <constraint firstItem="Cdf-5H-4CC" firstAttribute="leading" secondItem="w6e-nf-KpL" secondAttribute="leading" id="9Ng-M4-sUA"/>
+                <constraint firstItem="CI4-oP-eUd" firstAttribute="top" secondItem="D8H-dL-ErC" secondAttribute="bottom" constant="8" id="Bye-Sh-qRF"/>
+                <constraint firstItem="3dI-Pf-D0G" firstAttribute="top" secondItem="Cdf-5H-4CC" secondAttribute="bottom" constant="67" id="E8y-tl-DRt"/>
                 <constraint firstItem="8wJ-t9-lQ6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="GvI-3y-TAM"/>
-                <constraint firstItem="3dI-Pf-D0G" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="NlG-QJ-RZW"/>
+                <constraint firstItem="Hio-Ns-52F" firstAttribute="top" secondItem="CI4-oP-eUd" secondAttribute="bottom" constant="-51" id="HdF-OT-GTP"/>
                 <constraint firstItem="8wJ-t9-lQ6" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="85" id="TJF-EA-yYX"/>
+                <constraint firstItem="w6e-nf-KpL" firstAttribute="leading" secondItem="Qrq-ya-m6u" secondAttribute="leading" id="cHr-ZP-G2U"/>
+                <constraint firstItem="Cdf-5H-4CC" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="144" id="ej4-b4-2nE"/>
+                <constraint firstItem="Qrq-ya-m6u" firstAttribute="top" secondItem="CI4-oP-eUd" secondAttribute="bottom" constant="8" symbolic="YES" id="g6a-HX-YCv"/>
+                <constraint firstItem="w6e-nf-KpL" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="16" id="l0m-BL-Mva"/>
+                <constraint firstItem="w6e-nf-KpL" firstAttribute="leading" secondItem="D8H-dL-ErC" secondAttribute="leading" constant="-1" id="oMq-6u-OVz"/>
+                <constraint firstItem="Hio-Ns-52F" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="177" id="qGf-IS-HGf"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
         </view>

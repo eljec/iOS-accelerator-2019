@@ -10,13 +10,28 @@
 
 @implementation MAOListViewControllerModel
 
-//TODO No hace falta sintetizar
-//@synthesize artistName, collectionName, trackName, artistViewUrl, collectionViewUrl, trackViewUrl;
-//@synthesize collectionPrice, trackPrice;
+- (NSComparisonResult) compare:(MAOListViewControllerModel *) compareModel{
+    return [self.trackName compare: compareModel.trackName];    
+}
 
+- (NSString *) toString{
+    return [NSString stringWithFormat:
+            @"Id: %@ - TrackName: %@ - ReleaseDate: %@",
+            _trackId, _trackName, [self toDateString: _dateString]];
+}
 
-//Diferencia entre variable de instance y property
-//Considerar que al sobrescribir un método set o get se deben usar las propiedades privadas _nombrePropiedad
+- (NSString *) toDateString: (NSString *) dateString {
+    
+    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+    [dateFormat setDateFormat:@"yyyy-MM-dd'T'HH:mm:00Z"];
+    
+    NSDate *date = [dateFormat dateFromString: dateString];
+    
+    NSDateFormatter *newDateFormatter = [[NSDateFormatter alloc]init];
+    [newDateFormatter setDateFormat:@"MM/dd/yyyy"];
+    
+    return [newDateFormatter stringFromDate:date];
+}
 
 + (instancetype) initWithDictionary: (NSDictionary *) dictionary
 {
@@ -29,6 +44,9 @@
     model.trackViewUrl = dictionary[@"trackViewUrl"];
     model.collectionPrice = dictionary[@"collectionPrice"];
     model.trackPrice = dictionary[@"trackPrice"];
+    model.trackId = dictionary[@"trackId"];
+    model.releaseDate = dictionary[@"releaseDate"];
+    model.dateString = dictionary[@"releaseDate"];
     
     return model;
 }

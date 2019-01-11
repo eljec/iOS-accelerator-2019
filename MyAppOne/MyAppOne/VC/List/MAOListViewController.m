@@ -45,9 +45,11 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
-    cell.textLabel.text = [[self.arrayModels objectAtIndex:indexPath.row] trackName];;
+    cell.textLabel.text = [[self.arrayModels objectAtIndex:indexPath.row] toString];
     return cell;
 }
+
+
 
 - (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.arrayModels.count;
