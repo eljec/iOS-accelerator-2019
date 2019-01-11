@@ -71,10 +71,4 @@
  */
 - (instancetype)initWithDictionary:(NSDictionary *)JSONDictionary;
 
-- (NSComparisonResult)compareByTrackName:(ItunesSong *)otherSong;
-
-- (NSComparisonResult)compareByTrackId:(ItunesSong *)otherSong;
-
-- (NSComparisonResult)compareByReleaseDate:(ItunesSong *)otherSong;
-
 @end

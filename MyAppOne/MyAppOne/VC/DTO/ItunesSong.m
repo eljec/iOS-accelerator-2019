@@ -86,25 +86,4 @@
      _releaseDate = date;
 }
 
-- (NSComparisonResult)compareByTrackName:(ItunesSong *)otherSong {
-    if(otherSong && otherSong.trackName){
-        return [self.trackName compare:otherSong.trackName];
-    }
-    return NSOrderedDescending;
-}
-
-- (NSComparisonResult)compareByTrackId:(ItunesSong *)otherSong {
-    if(otherSong && otherSong.trackId){
-        return [self.trackId compare:otherSong.trackId];
-    }
-    return NSOrderedDescending;
-}
-
-- (NSComparisonResult)compareByReleaseDate:(ItunesSong *)otherSong {
-    if(otherSong && otherSong.releaseDate){
-        return [self.releaseDate compare:otherSong.releaseDate];
-    }
-    return NSOrderedDescending;
-}
-
 @end
