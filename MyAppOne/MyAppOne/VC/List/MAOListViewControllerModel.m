@@ -23,6 +23,8 @@
 
         _collectionPrice = [dict valueForKey:@"collectionPrice"];
         _trackPrice = [dict valueForKey:@"trackPrice"];
+        
+        _releaseDate = [dict valueForKey:@"releaseDate"];
     }
     return self;
 }

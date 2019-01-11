@@ -12,5 +12,10 @@
 @interface MAOInitialViewController : UIViewController
 -(void) stopIndicatorAnim;
 -(void) startIndicatorAnim;
+-(NSArray<MAOListViewControllerModel *> *) ordenarPorTrack:(NSArray<MAOListViewControllerModel *> *)array;
+
+-(NSArray<MAOListViewControllerModel *> *) ordenarPorFecha:(NSArray<MAOListViewControllerModel *> *)array;
+
+-(NSArray<MAOListViewControllerModel *> *) ordenarInvertido:(NSArray<MAOListViewControllerModel *> *)array;
 @end
 

@@ -13,6 +13,9 @@
 
 @interface MAOInitialViewController ()
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *indicatorView;
+@property (weak, nonatomic) IBOutlet UISwitch *orderTrackSwitch;
+@property (weak, nonatomic) IBOutlet UISwitch *orderReleaseSwitch;
+@property (weak, nonatomic) IBOutlet UISwitch *orderRevertSwitch;
 @end
 
 @implementation MAOInitialViewController
@@ -20,18 +23,49 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [_indicatorView setHidesWhenStopped:YES];
+    [_orderTrackSwitch setOn:NO];
+    [_orderReleaseSwitch setOn:NO];
+    [_orderRevertSwitch setOn:NO];
 }
 
 - (void)stopIndicatorAnim{
     [_indicatorView stopAnimating];
 }
 
-
 - (void)startIndicatorAnim{
     [_indicatorView startAnimating];
 }
 
+- (NSArray<MAOListViewControllerModel *> *)ordenarPorTrack:(NSArray<MAOListViewControllerModel *> *)array{
+    NSArray *sortedArray;
+    sortedArray = [array sortedArrayUsingComparator:^NSComparisonResult(MAOListViewControllerModel *a, MAOListViewControllerModel *b) {
+        NSString *first = [a trackName];
+        NSString *second = [b trackName];
+        return [first compare:second];
+    }];
+    
+    return sortedArray;
+}
+
+- (NSArray<MAOListViewControllerModel *> *)ordenarPorFecha:(NSArray<MAOListViewControllerModel *> *)array{
+    NSArray *sortedArray;
+    sortedArray = [array sortedArrayUsingComparator:^NSComparisonResult(MAOListViewControllerModel *a, MAOListViewControllerModel *b) {
+        NSDate *first = [a releaseDate];
+        NSDate *second = [b releaseDate];
+        return [first compare:second];
+    }];
+    
+    return sortedArray;
+}
+
+- (NSArray<MAOListViewControllerModel *> *)ordenarInvertido:(NSArray<MAOListViewControllerModel *> *)array{
+    NSArray *sortedArray;
+    sortedArray = [[array reverseObjectEnumerator] allObjects];
+    return sortedArray;
+}
+
 - (IBAction)onClickSelection:(id)sender {
+    
     [self startIndicatorAnim];
     
     // Creo un callback para manejar la respuesta al pedido a la api.
@@ -44,6 +78,19 @@
         if (!error) {
             // Parseo los datos del json
             NSArray<MAOListViewControllerModel *> *datos = [[MAOService sharedInstance] parserJson:data];
+            
+            // Pregunto si tengo que ordenar el array
+            BOOL ordenarPorTrack = [self.orderTrackSwitch isOn];
+            BOOL ordenarPorFecha = [self.orderReleaseSwitch isOn];
+            BOOL ordenarInvertido = [self.orderRevertSwitch isOn];
+
+            if (ordenarPorTrack){
+               datos = [self ordenarPorTrack:datos];
+            } else if (ordenarPorFecha){
+                datos = [self ordenarPorFecha:datos];
+            } else if (ordenarInvertido){
+                datos = [self ordenarInvertido:datos];
+            }
             
             // Hago el cambio de controller en el UIThread
             [[NSOperationQueue mainQueue] addOperationWithBlock:^{
