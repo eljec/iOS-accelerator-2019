@@ -42,7 +42,8 @@
     {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-    cell.textLabel.text= @"Hello";
+    // revisar esto
+    cell.textLabel.text= [self.arrayModels objectAtIndex:indexPath.row].trackName;
     return cell;
 }
 

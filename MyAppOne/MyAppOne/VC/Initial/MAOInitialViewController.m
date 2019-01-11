@@ -41,15 +41,40 @@
 
     [[MAOItunes sharedInstance] fetchItunesDataWithCompletionBlock:^(NSArray *infoArray, NSError *error) {
         if (!error) {
-            NSMutableArray *parseInfo = [[NSMutableArray alloc] init];
-            // get the specific key = 'results'
-            for (NSDictionary *element in [infoArray valueForKey:@"results"]) {
-                [parseInfo addObject:[MAOListViewControllerModel initWithDictionary:element]];
+            //NSLog(@"items = %lu",[infoArray count]);
+            if ([[infoArray valueForKey:@"resultCount"] longValue] != 0) {
+            //if ([infoArray indexOfObject:0] > 0) {
+                
+                // init temp MutableArray
+                NSMutableArray *parseInfo = [[NSMutableArray alloc] init];
+                
+                // get the specific key = 'results'
+                for (NSDictionary *element in [infoArray valueForKey:@"results"]) {
+                    [parseInfo addObject:[MAOListViewControllerModel initWithDictionary:element]];
+                }
+                
+                // call the second view pushing the data
+                MAOListViewController *listView = [[MAOListViewController alloc] initWithModel:parseInfo];
+                [self.navigationController pushViewController:listView animated:YES];
+            
             }
-
-            MAOListViewController *listView = [[MAOListViewController alloc] initWithModel:parseInfo];
-            [self.navigationController pushViewController:listView animated:YES];
-
+        } else {
+            // declare msg error
+            NSString *errorMsg = [[NSString alloc] initWithFormat:@"Error code: %ld. %@. %@.", error.code, error.description, error.localizedFailureReason];
+            // declare UIAlertController with options
+            UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Error response"
+                                                                           message:errorMsg
+                                                                preferredStyle:UIAlertControllerStyleAlert];
+            
+            UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                                  handler:^(UIAlertAction * action) {}];
+            
+            [alert addAction:defaultAction];
+            [self presentViewController:alert animated:YES completion:nil];
+            NSLog(@"description = %@", [error localizedDescription]);
+            NSLog(@"suggestion = %@", [error domain]);
+            NSLog(@"code = %ld", [error code]);
+            NSLog(@"failure = %@", [error localizedFailureReason]);
         }
     }];
 

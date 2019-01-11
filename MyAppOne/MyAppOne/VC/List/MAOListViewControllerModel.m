@@ -10,6 +10,7 @@
 
 @implementation MAOListViewControllerModel
 
+// siempre que se haga un init se devuelve instancetype para respetar herencia
 + (instancetype) initWithDictionary:(NSDictionary *) diccionario{
     
     MAOListViewControllerModel *model = [[MAOListViewControllerModel alloc] init];
