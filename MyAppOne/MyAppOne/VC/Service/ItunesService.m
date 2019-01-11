@@ -30,34 +30,50 @@
 }
 
 /**
- Get all songs matched with the query parameter.
+ Obtain the songs by query string.
  
- @param query NSString
- @return NSArray
- @exception NSException
+ @param query the query string
+ @param completionBlock what I execute on completition
  */
--(NSArray *) getSongsByQuery:(NSString *) query{
+-(void) getSongsByQuery:(NSString *) query andCompletitionBlock:(void(^)(NSArray *songsArray, NSError *error)) completionBlock{
     
-    NSString *url = SONGS_URL;
-    NSMutableArray *songs = [[NSMutableArray alloc] init];
+    NSURLSessionConfiguration *defaultConfigObject = [NSURLSessionConfiguration defaultSessionConfiguration];
     
-    NSData *data=[NSData dataWithContentsOfURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",url, [query urlencode]]]];
-    NSError *error=nil;
-    id response=[NSJSONSerialization JSONObjectWithData:data options:
-                 NSJSONReadingMutableContainers | NSJSONReadingMutableLeaves error:&error];
+    NSString *cachePath = [NSTemporaryDirectory() stringByAppendingPathComponent:@"/nsurlsessionsongs.cache"];
     
-    if (error) {
-        NSLog(@"%@",[error localizedDescription]);
-        [NSException raise:@"Error on URL Call" format:@"%@", [error localizedDescription]];
-    } else {
-        
-        NSArray *songsJson = [response objectForKey:@"results"];
-        
-        for(NSDictionary *item in songsJson) {
-         [songs addObject:[[ItunesSong alloc] initWithDictionary:item] ];
-        }
-    }
-    return songs;
+    NSURLCache *myCache = [[NSURLCache alloc] initWithMemoryCapacity: 16384
+                                                        diskCapacity: 268435456
+                                                            diskPath: cachePath];
+    defaultConfigObject.URLCache = myCache;
+    
+    defaultConfigObject.requestCachePolicy = NSURLRequestUseProtocolCachePolicy;
+    
+    NSURLSession *delegateFreeSession = [NSURLSession sessionWithConfiguration: defaultConfigObject
+                                                                      delegate: nil
+                                                                 delegateQueue: [NSOperationQueue mainQueue]];
+    
+    NSString *url = [NSString stringWithFormat:@"%@%@",SONGS_URL, [query urlencode]];
+    
+    NSURL *dataURL = [NSURL URLWithString:url];
+    NSURLRequest *request = [NSURLRequest requestWithURL:dataURL];
+    [[delegateFreeSession dataTaskWithRequest:request
+                            completionHandler:^(NSData *data, NSURLResponse *response,
+                                                NSError *error)
+      {
+          
+          NSMutableArray *songsArray = [[NSMutableArray alloc] init];
+          if (!error) {
+              id responseSerialized=[NSJSONSerialization JSONObjectWithData:data options:
+                                     NSJSONReadingMutableContainers | NSJSONReadingMutableLeaves error:&error];
+              NSArray *songsJson = [responseSerialized objectForKey:@"results"];
+              
+              for(NSDictionary *item in songsJson) {
+                  [songsArray addObject:[[ItunesSong alloc] initWithDictionary:item] ];
+              }
+          }
+          completionBlock (songsArray, error);
+      }
+      ]resume];
 }
 
 @end

@@ -13,6 +13,8 @@
  Initial View Controller interface.
  */
 @interface MAOInitialViewController : UIViewController
+<NSURLSessionDelegate, NSURLSessionTaskDelegate, NSURLSessionDataDelegate>
+
 @property (weak, nonatomic) IBOutlet UITextField *songSarchText;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
 @end

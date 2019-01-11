@@ -59,8 +59,23 @@
 /**
  Method to show a general error
  */
-- (void)generalError {
-    NSLog(@"Error General, consulte al alumno");
+- (void)generalErrorToast:(NSString *) message {
+    UIAlertController * alert=[UIAlertController alertControllerWithTitle:nil
+                                                                  message:@""
+                                                           preferredStyle:UIAlertControllerStyleAlert];
+    UIView *firstSubview = alert.view.subviews.firstObject;
+    UIView *alertContentView = firstSubview.subviews.firstObject;
+    for (UIView *subSubView in alertContentView.subviews) {
+        subSubView.backgroundColor = [UIColor colorWithRed:255/255.0f green:0/255.0f blue:0/255.0f alpha:1.0f];
+    }
+    NSMutableAttributedString *AS = [[NSMutableAttributedString alloc] initWithString:message];
+    [AS addAttribute: NSForegroundColorAttributeName value: [UIColor whiteColor] range: NSMakeRange(0,AS.length)];
+    [alert setValue:AS forKey:@"attributedTitle"];
+    [self presentViewController:alert animated:YES completion:nil];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [alert dismissViewControllerAnimated:YES completion:^{
+        }];
+    });
 }
 
 /**
@@ -69,21 +84,21 @@
  @param sender the button
  */
 - (IBAction)onClickSelection:(id)sender {
+    
     [self.spinner startAnimating];
-    dispatch_queue_t getSongsQueue = dispatch_queue_create("getSongsQueue", NULL);
-    dispatch_async(getSongsQueue, ^{
-        @try {
-            ItunesService *itunesService = [ItunesService instance];
-            NSArray *songs = [itunesService getSongsByQuery:self.songSarchText.text];
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [self initializeViewListWitSongs:songs];
-            });
-        } @catch (NSException *exception) {
-            [self generalError];
-        } @finally {
+    [[ItunesService instance] getSongsByQuery:self.songSarchText.text andCompletitionBlock:^(NSArray *songsArray, NSError *error) {
+        if (!error) {
+            [self initializeViewListWitSongs:songsArray];
             [self.spinner stopAnimating];
         }
-    });
+        else
+        {
+            [self.spinner stopAnimating];
+            [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+                [self generalErrorToast: @"Error cargando canciones, consulte al alumno."];
+            }];
+        }
+    }];
     
     // MARK: exercice description.
     

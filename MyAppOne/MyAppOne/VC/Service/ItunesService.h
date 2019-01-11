@@ -12,7 +12,7 @@
 /**
 URL definition to get songs urls.
  */
-#define SONGS_URL @"https://itunes.apple.com/search?term="
+#define SONGS_URL @"https://itussnes.apple.com/search?term="
 
 /**
  Itunes interface singleton service.
@@ -27,14 +27,13 @@ URL definition to get songs urls.
  */
 +(id)instance;
 
-
 /**
- Get all songs matched with the query parameter.
+ Obtain the songs by query string.
 
- @param query NSString
- @return NSArray
+ @param query the query string
+ @param completionBlock what I execute on completition
  */
--(NSArray *) getSongsByQuery:(NSString *) query;
+-(void) getSongsByQuery:(NSString *) query andCompletitionBlock:(void(^)(NSArray *songsArray, NSError *error)) completionBlock;
 
 @end
 
