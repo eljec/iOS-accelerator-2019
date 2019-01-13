@@ -121,13 +121,15 @@
 // Order songs by ID
 - (IBAction)orderByID:(UIButton *)sender {
     
+    // define NSSortDescriptor to sort array later
+    NSSortDescriptor *trackIdSortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"trackId"
+                                                                        ascending:YES];
+    
     [self startSpinner:YES];
     
     [self getInfoWihCompletionHandler:^NSArray *(NSArray *info){
-
-        return [info sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
-            return [[obj1 valueForKey:@"trackId"] compare:[obj2 valueForKey:@"trackId"]];
-        }];
+        // here in the block we use the method sortedArrayUsingDescriptors of NSArray and pass the NSSortDescriptor = trackIdSortDescriptor
+        return [info sortedArrayUsingDescriptors:@[trackIdSortDescriptor]];
     }];
     // dispatch UI animations to main queue
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -141,6 +143,7 @@
     
     [self getInfoWihCompletionHandler:^NSArray *(NSArray *info){
         
+        // use of sortedArrayUsingComparator
         return [info sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
             return [[obj1 valueForKey:@"releaseDate"] compare:[obj2 valueForKey:@"releaseDate"]];
         }];
@@ -157,9 +160,9 @@
     
     [self getInfoWihCompletionHandler:^NSArray *(NSArray *info){
         
-        //NSArray* reversed = [[originalArray reverseObjectEnumerator] allObjects];
-        
+        // sort array using reverseObjectEnumerator method
         return [[info reverseObjectEnumerator] allObjects];
+        
     }];
     // dispatch UI animations to main queue
     dispatch_async(dispatch_get_main_queue(), ^{

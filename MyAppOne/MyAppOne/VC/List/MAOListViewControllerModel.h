@@ -31,8 +31,6 @@ NS_ASSUME_NONNULL_BEGIN
 // initWithDictionary custom method to initialize model
 + (instancetype) initWithDictionary:(NSDictionary *) diccionario;
 
-- (NSString *) dateToString: (NSString *) dateString;
-
 @end
 
 NS_ASSUME_NONNULL_END
