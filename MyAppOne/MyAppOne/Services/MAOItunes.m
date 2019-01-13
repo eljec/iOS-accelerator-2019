@@ -20,7 +20,7 @@
     return _sharedInstance;
 }
 
--(void) fetchItunesDataWithCompletionBlock:(void(^)(NSArray *infoArray, NSError *error))completionBlock;
+-(void) fetchItunesDataWithCompletionBlock:( void (^) (NSArray *infoArray, NSError *error) ) completionBlock;
 {
     // set the correct URL for tests
     NSString *wrongURL = @"https://itunes.apple.com/searchx?term=the+beatles";
@@ -53,7 +53,7 @@
     NSURLSession *delegateFreeSession = [NSURLSession sessionWithConfiguration: defaultConfigObject
                                                                       delegate: nil
                                                                  delegateQueue: [NSOperationQueue mainQueue]];
-    NSURL *dataURL = [NSURL URLWithString:wrongURL];
+    NSURL *dataURL = [NSURL URLWithString:successURL];
     /*
      NSURLRequest, create a URL request for specific URL, in this case with above URL
      */
