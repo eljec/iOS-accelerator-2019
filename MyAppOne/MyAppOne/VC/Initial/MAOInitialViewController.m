@@ -36,68 +36,54 @@
 
 NSString *const APIURL_SEARCH = @"https://itunes.apple.com/search?term=jack+johnson";
 
+typedef NSArray * (^orderArrayBlockType)(NSArray *array, NSString *propertyName);
+
+orderArrayBlockType orderByProperty = ^ NSArray * (NSArray *array, NSString *propertyName){
+    if ([propertyName length] == 0) {
+        return array;
+    }
+    
+    return [array sortedArrayUsingComparator: ^NSComparisonResult(id a, id b) {
+        NSNumber *first = [(MAOListViewControllerModel*)a valueForKey:propertyName];
+        NSNumber *second = [(MAOListViewControllerModel*)b valueForKey:propertyName];
+        return [first compare:second];
+    }];
+};
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self showProgressIndicator: false];
+    [self showProgressIndicator: false];    
 }
 
 - (IBAction)onClickSelection:(id)sender {
-    
-    //Ordenado alfabeticamente
-    [self search: ^ NSArray * (NSArray *array){
+    [self search: ^ NSArray * (NSArray *array, NSString *propertyName){
         return [array sortedArrayUsingSelector:@selector(compare:)];
     }];
 }
+
 - (IBAction)onClickCargarDatos:(id)sender {
-    
-    //Ordenado alfabeticamente
-    [self search: ^ NSArray * (NSArray *array){
-        return array;
-    }];
+    [self search: orderByProperty];
 }
 
 - (IBAction)onClickReleaseDate:(UIButton *)sender {
-    //SortingArrayUsingComparetor
-    [self search: ^ NSArray * (NSArray *array){
-        return [array sortedArrayUsingComparator: ^NSComparisonResult(id a, id b) {
-            NSDate *first = [(MAOListViewControllerModel*)a releaseDate];
-            NSDate *second = [(MAOListViewControllerModel*)b releaseDate];
-            return [first compare:second];
-        }];
-    }];
+    [self search: orderByProperty toProperty:@"releaseDate"];
 }
 
 - (IBAction)onClickAlfabeticamente:(id)sender {
-    
-    //SortingArrayUsingComparetor
-    [self search: ^ NSArray * (NSArray *array){
-        return [array sortedArrayUsingComparator: ^NSComparisonResult(id a, id b) {
-            NSString *first = [(MAOListViewControllerModel*)a trackName];
-            NSString *second = [(MAOListViewControllerModel*)b trackName];
-            return [first compare:second];
-        }];
-    }];
+    [self search: orderByProperty toProperty:@"trackName"];
 }
 
 - (IBAction)onClickIdTrack:(id)sender {
-    
-    //SortingArrayUsingComparetor
-    [self search: ^ NSArray * (NSArray *array){
-        return [array sortedArrayUsingComparator: ^NSComparisonResult(id a, id b) {
-            NSNumber *first = [(MAOListViewControllerModel*)a trackId];
-            NSNumber *second = [(MAOListViewControllerModel*)b trackId];
-            return [first compare:second];
-        }];
-    }];
+    [self search: orderByProperty toProperty:@"trackId"];
 }
 
 - (IBAction)onClickResverse:(id)sender {
-    [self search: ^ NSArray * (NSArray *array){
+    [self search: ^ NSArray * (NSArray *array, NSString *toProperty){
         return [[array reverseObjectEnumerator] allObjects];
     }];
 }
 
-- (void) search: (NSArray *(^)(NSArray *results)) orderArray{
+- (void) search: (orderArrayBlockType) orderArray toProperty: (NSString *) property{
     
     [self showProgressIndicator: true];
     
@@ -110,9 +96,13 @@ NSString *const APIURL_SEARCH = @"https://itunes.apple.com/search?term=jack+john
              NSLog(@"Response: %@", item);
          }
          
-         [self openMAOListView:orderArray(resultArray)];
+         [self openMAOListView:orderArray(resultArray, property)];
      }
      toUrl: APIURL_SEARCH];
+}
+
+- (void) search: (orderArrayBlockType) orderArray {
+    return [self search: orderArray toProperty: nil];
 }
 
 - (void) openMAOListView: (NSArray *) results{
