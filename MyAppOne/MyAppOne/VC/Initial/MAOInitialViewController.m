@@ -75,12 +75,10 @@
     [self showProgressIndicator];
     [[MAOInitialViewService sharedInstance] fetchItunesDataWithCompletionBlock:^(NSArray *array, NSError *error) {
         if (!error) {
-            array = [array valueForKey:@"results"];
             NSMutableArray *results = [[NSMutableArray alloc] init];
-            for (NSDictionary *itemModel in array) {
-                [results addObject: [MAOListViewControllerModel obtainItemsFromDicionary: itemModel]] ;
+            for (NSDictionary *itemModel in [array valueForKey:@"results"]) {
+                [results addObject: [MAOListViewControllerModel obtainItemsFromDiccionary: itemModel]] ;
             }
-
             if ([self.pickerData[row] isEqual: @"Cargar datos ordenados por fecha"]) {
                 [self sortArrays:results by:@"releaseDate"];
             } else if ([self.pickerData[row]  isEqual: @"Cargar datos ordenados desc"]) {

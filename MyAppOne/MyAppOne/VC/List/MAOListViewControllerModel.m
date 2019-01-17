@@ -10,7 +10,7 @@
 
 @implementation MAOListViewControllerModel
 
-+ (instancetype)obtainItemsFromDicionary:(NSDictionary *) dictionary {
++ (instancetype)obtainItemsFromDiccionary:(NSDictionary *) dictionary {
     
     //Set items on model
     MAOListViewControllerModel *newListViewControllerModel = [[MAOListViewControllerModel alloc] init];
@@ -23,7 +23,12 @@
     newListViewControllerModel.trackViewUrl = dictionary[@"trackViewUrl"];
     newListViewControllerModel.collectionPrice = dictionary[@"collectionPrice"];
     newListViewControllerModel.trackPrice = dictionary[@"trackPrice"];
-    newListViewControllerModel.releaseDate = dictionary[@"releaseDate"];
+    
+    //Format the date to string
+    NSDateFormatter *dateFormatter=[[NSDateFormatter alloc]init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ssZ"];
+    NSDate *currentDate = [dateFormatter dateFromString:dictionary[@"releaseDate"]];
+    newListViewControllerModel.releaseDate = [NSString stringWithFormat:@"%@", currentDate];
     
     return newListViewControllerModel;
 }
