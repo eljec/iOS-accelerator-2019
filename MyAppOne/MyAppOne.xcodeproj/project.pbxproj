@@ -21,6 +21,11 @@
 		A776EB2821E7AD0B0010C497 /* ItunesService.m in Sources */ = {isa = PBXBuildFile; fileRef = A776EB2721E7AD0B0010C497 /* ItunesService.m */; };
 		A776EB2C21E7B2EA0010C497 /* ItunesSong.m in Sources */ = {isa = PBXBuildFile; fileRef = A776EB2B21E7B2EA0010C497 /* ItunesSong.m */; };
 		A776EB3021E7C5AB0010C497 /* NSString+NSString_UrlEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = A776EB2F21E7C5AB0010C497 /* NSString+NSString_UrlEncoding.m */; };
+		A79A521F21F0E3D90074356C /* MAOSongCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A79A521E21F0E3D90074356C /* MAOSongCellView.xib */; };
+		A79A522221F0E42D0074356C /* MAOSongCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = A79A522121F0E42D0074356C /* MAOSongCellView.m */; };
+		A79A522521F0E6790074356C /* MAOSongListController.m in Sources */ = {isa = PBXBuildFile; fileRef = A79A522421F0E6790074356C /* MAOSongListController.m */; };
+		A79A522F21F0F70D0074356C /* CustomSongDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A79A522D21F0F70D0074356C /* CustomSongDetailViewController.m */; };
+		A79A523021F0F70D0074356C /* CustomSongDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A79A522E21F0F70D0074356C /* CustomSongDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +73,14 @@
 		A776EB2B21E7B2EA0010C497 /* ItunesSong.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItunesSong.m; sourceTree = "<group>"; };
 		A776EB2E21E7C5AB0010C497 /* NSString+NSString_UrlEncoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+NSString_UrlEncoding.h"; sourceTree = "<group>"; };
 		A776EB2F21E7C5AB0010C497 /* NSString+NSString_UrlEncoding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+NSString_UrlEncoding.m"; sourceTree = "<group>"; };
+		A79A521E21F0E3D90074356C /* MAOSongCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MAOSongCellView.xib; sourceTree = "<group>"; };
+		A79A522021F0E42D0074356C /* MAOSongCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAOSongCellView.h; sourceTree = "<group>"; };
+		A79A522121F0E42D0074356C /* MAOSongCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAOSongCellView.m; sourceTree = "<group>"; };
+		A79A522321F0E6790074356C /* MAOSongListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAOSongListController.h; sourceTree = "<group>"; };
+		A79A522421F0E6790074356C /* MAOSongListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAOSongListController.m; sourceTree = "<group>"; };
+		A79A522C21F0F70D0074356C /* CustomSongDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomSongDetailViewController.h; sourceTree = "<group>"; };
+		A79A522D21F0F70D0074356C /* CustomSongDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomSongDetailViewController.m; sourceTree = "<group>"; };
+		A79A522E21F0F70D0074356C /* CustomSongDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomSongDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +163,8 @@
 		14B0ECB421E6D215004B2173 /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				A79A522621F0F23A0074356C /* CustomSongDetailView */,
+				A79A521D21F0E3730074356C /* CustomSongCellView */,
 				A776EB2D21E7C5750010C497 /* Categories */,
 				A776EB2921E7B2D00010C497 /* DTO */,
 				A776EB2521E7ABE40010C497 /* Service */,
@@ -167,6 +182,8 @@
 				14B0ECC621E6D417004B2173 /* MAOListViewController.xib */,
 				14B0ECC921E790DD004B2173 /* MAOListViewControllerModel.h */,
 				14B0ECCA21E790DD004B2173 /* MAOListViewControllerModel.m */,
+				A79A522321F0E6790074356C /* MAOSongListController.h */,
+				A79A522421F0E6790074356C /* MAOSongListController.m */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -206,6 +223,26 @@
 				A776EB2F21E7C5AB0010C497 /* NSString+NSString_UrlEncoding.m */,
 			);
 			path = Categories;
+			sourceTree = "<group>";
+		};
+		A79A521D21F0E3730074356C /* CustomSongCellView */ = {
+			isa = PBXGroup;
+			children = (
+				A79A521E21F0E3D90074356C /* MAOSongCellView.xib */,
+				A79A522021F0E42D0074356C /* MAOSongCellView.h */,
+				A79A522121F0E42D0074356C /* MAOSongCellView.m */,
+			);
+			path = CustomSongCellView;
+			sourceTree = "<group>";
+		};
+		A79A522621F0F23A0074356C /* CustomSongDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				A79A522C21F0F70D0074356C /* CustomSongDetailViewController.h */,
+				A79A522D21F0F70D0074356C /* CustomSongDetailViewController.m */,
+				A79A522E21F0F70D0074356C /* CustomSongDetailViewController.xib */,
+			);
+			path = CustomSongDetailView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,6 +352,8 @@
 				14B0EC8C21E6D190004B2173 /* Assets.xcassets in Resources */,
 				14B0ECC821E6D417004B2173 /* MAOListViewController.xib in Resources */,
 				14B0ECC221E6D402004B2173 /* MAOInitialViewController.xib in Resources */,
+				A79A521F21F0E3D90074356C /* MAOSongCellView.xib in Resources */,
+				A79A523021F0F70D0074356C /* CustomSongDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,11 +379,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				14B0EC9221E6D190004B2173 /* main.m in Sources */,
+				A79A522221F0E42D0074356C /* MAOSongCellView.m in Sources */,
 				14B0ECCB21E790DD004B2173 /* MAOListViewControllerModel.m in Sources */,
 				14B0ECC321E6D402004B2173 /* MAOInitialViewController.m in Sources */,
+				A79A522521F0E6790074356C /* MAOSongListController.m in Sources */,
 				14B0ECC721E6D417004B2173 /* MAOListViewController.m in Sources */,
 				14B0EC8421E6D18C004B2173 /* AppDelegate.m in Sources */,
 				A776EB2C21E7B2EA0010C497 /* ItunesSong.m in Sources */,
+				A79A522F21F0F70D0074356C /* CustomSongDetailViewController.m in Sources */,
 				A776EB3021E7C5AB0010C497 /* NSString+NSString_UrlEncoding.m in Sources */,
 				A776EB2821E7AD0B0010C497 /* ItunesService.m in Sources */,
 			);

@@ -7,11 +7,10 @@
 //
 
 #import "MAOInitialViewController.h"
-#import "MAOListViewController.h"
 #import "ItunesService.h"
 #import "ItunesSong.h"
-#import "MAOListViewController.h"
 #import "ItunesSong.h"
+#import "MAOSongListController.h"
 
 
 /**
@@ -49,9 +48,11 @@
 - (void)initializeViewListWitSongs:(NSArray *)songs {
     NSMutableArray<MAOListViewControllerModel *> * maoListModel = [self getModeListFromItuneSongs:songs];
     
-    MAOListViewController *maoListViewController = [[MAOListViewController alloc] initWithModel:maoListModel];
-    [maoListViewController setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
-    [self.navigationController pushViewController:maoListViewController animated:YES];
+    MAOSongListController *maoSongListController = [[MAOSongListController alloc] initWithModel:maoListModel];
+    [maoSongListController setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
+    
+    //TODO: poner presenter MODAL
+    [self.navigationController pushViewController:maoSongListController animated:YES];
 }
 
 /**
