@@ -8,13 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-NS_ASSUME_NONNULL_BEGIN
 
+/**
+ Custom cell interface for song
+ */
 @interface MAOSongCellView : UITableViewCell
 @property (strong, nonatomic) IBOutlet UILabel *trackNameLabel;
 @property (strong, nonatomic) IBOutlet UIImageView *trackImageView;
 @property (strong, nonatomic) IBOutlet UILabel *albumNameLabel;
 
 @end
-
-NS_ASSUME_NONNULL_END

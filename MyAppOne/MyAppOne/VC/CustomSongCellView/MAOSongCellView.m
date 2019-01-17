@@ -8,6 +8,9 @@
 
 #import "MAOSongCellView.h"
 
+/**
+ Custom cell implementation for song
+ */
 @implementation MAOSongCellView
 
 - (void)awakeFromNib {

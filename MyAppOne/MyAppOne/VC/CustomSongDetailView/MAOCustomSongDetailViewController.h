@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "MAOListViewControllerModel.h"
 
-@interface CustomSongDetailViewController : UIViewController
+/**
+ Song detail controller Interface
+ */
+@interface MAOCustomSongDetailViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UILabel *trackNameLabel;
 @property (strong, nonatomic) IBOutlet UILabel *albumNameLabel;
@@ -21,6 +24,12 @@
 
 @property (strong, nonatomic) MAOListViewControllerModel *model;
 
+/**
+ Init with model
+
+ @param model the song model
+ @return id
+ */
 -(id) initWithModel:(MAOListViewControllerModel *)model;
 
 @end

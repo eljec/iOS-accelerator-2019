@@ -9,7 +9,7 @@
 #import "MAOSongListController.h"
 #import "ItunesService.h"
 #import "MAOSongCellView.h"
-#import "CustomSongDetailViewController.h"
+#import "MAOCustomSongDetailViewController.h"
 
 @implementation MAOSongListController
 
@@ -23,12 +23,19 @@
 {
     self = [super init];
     if(self){
-        _arrayModels = arrayModels;
+        self.arrayModels = arrayModels;
     }
     
     return self;
 }
 
+/**
+ Method to initialize the main table.
+
+ @param height table height
+ @param width table width
+ @param vistaSimple the home table view
+ */
 - (void)initializeMainTable:(CGFloat)height andWidth:(CGFloat)width simpleView:(UIView *)vistaSimple {
     self.mainTable = [[UITableView alloc] initWithFrame:CGRectMake(0.0f, 50.0f, width, height)];
     
@@ -39,11 +46,15 @@
     [self.mainTable reloadData];
 }
 
-- (void)initializeNavigationBar:(CGFloat)heigth vistaSimple:(UIView *)simpleView {
-    self.navigationBar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0.0f, 0.0f, heigth, 50.0f)];
-    
-    UINavigationItem *navItem = [[UINavigationItem alloc] initWithTitle:@"Songs"];
-    [self.navigationBar pushNavigationItem:navItem animated:NO];
+
+/**
+ Method to initialize the navigation bar.
+
+ @param height table height
+ @param simpleView the home table view
+ */
+- (void)initializeNavigationBar:(CGFloat)height simpleView:(UIView *)simpleView {
+    self.navigationBar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0.0f, 0.0f, height, 50.0f)];
 
     [simpleView addSubview:self.navigationBar];
 }
@@ -57,7 +68,7 @@
         UIView *simpleView = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, height, width)];
         
         [self initializeMainTable:width andWidth:height simpleView:simpleView];
-        [self initializeNavigationBar:height vistaSimple:simpleView];
+        [self initializeNavigationBar:height simpleView:simpleView];
         
         self.title = @"Song List";
         self.view = simpleView;
@@ -106,46 +117,34 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    NSUInteger row = indexPath.row;
-    
-    NSUInteger oldRow = self.lastIndexPath.row;
-    
-    if(oldRow != row) {
-        
-        UITableViewCell *newCell = [tableView cellForRowAtIndexPath:indexPath];
-        
-        newCell.accessoryType = UITableViewCellAccessoryCheckmark;
-        
-        UITableViewCell *oldCell = [tableView cellForRowAtIndexPath:self.lastIndexPath];
-        
-        oldCell.accessoryType = UITableViewCellAccessoryNone;
-        
-    }
-    
     self.lastIndexPath = indexPath;
     
-    CustomSongDetailViewController *customSongDetailViewController = [[CustomSongDetailViewController alloc] initWithModel:[self.arrayModels objectAtIndex:self.lastIndexPath.row]];
+    MAOCustomSongDetailViewController *customSongDetailViewController = [[MAOCustomSongDetailViewController alloc] initWithModel:[self.arrayModels objectAtIndex:self.lastIndexPath.row]];
     
     [self presentViewController:customSongDetailViewController animated:YES completion:nil];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-//    int topPadding = cell.yourLabel.frame.origin.x;
-//    int bottomPadding = cell.frame.size.heigth-(topPadding+cell.yourLabel.frame.size.height);
-//    NSString *text = [DescArr objectAtIndex:[indexPath row]];
-//    CGSize maximumSize = CGSizeMake(cell.yourLabel.frame.size.width, 9999);
-//    CGSize expectedSize = [text sizeWithFont:yourCell.yourLabel.font constrainedToSize:maximumSize lineBreakMode:yourCell.yourLabel.lineBreakMode];
+    MAOSongCellView *cell = [tableView cellForRowAtIndexPath:indexPath];
+////
+////    int topPadding = cell..frame.origin.x;
+//////    int bottomPadding = cell.frame.size.heigth-(topPadding+cell.yourLabel.frame.size.height);
+//////    NSString *text = [DescArr objectAtIndex:[indexPath row]];
+//////    CGSize maximumSize = CGSizeMake(cell.yourLabel.frame.size.width, 9999);
+//////    CGSize expectedSize = [text sizeWithFont:yourCell.yourLabel.font constrainedToSize:maximumSize lineBreakMode:yourCell.yourLabel.lineBreakMode];
+//////
+//////    return topPadding+expectedSize.height+bottomPadding;
 //
-//    return topPadding+expectedSize.height+bottomPadding;
-    return 200;
+//    //[self configureCell:cell];
+//
+//    // edit: Need to call [cell layoutIfNeeded]; otherwise the layout changes wont be applied to the   cell
+//
+//    [cell layoutIfNeeded];
+//
+//
+//    return [cell.contentView systemLayoutSizeFittingSize: UILayoutFittingCompressedSize].height;
+    return 186.5;
 }
-
-//- (NSInteger)tableView:(UITableView *)tableView indentationLevelForRowAtIndexPath:(NSIndexPath *)indexPath {
-//
-//    return 0;
-//
-//}
 
 @end

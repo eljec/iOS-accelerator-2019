@@ -15,9 +15,6 @@
  */
 @interface MAOSongListController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
-
-@property (strong, nonatomic) NSMutableArray *countries;
-
 @property (strong, nonatomic) IBOutlet UITableView *mainTable;
 @property (strong, nonatomic) NSIndexPath *lastIndexPath;
 @property (strong, nonatomic) UINavigationBar *navigationBar;

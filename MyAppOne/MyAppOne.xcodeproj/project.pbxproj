@@ -15,8 +15,6 @@
 		14B0ECA721E6D191004B2173 /* MyAppOneUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B0ECA621E6D191004B2173 /* MyAppOneUITests.m */; };
 		14B0ECC221E6D402004B2173 /* MAOInitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B0ECBF21E6D402004B2173 /* MAOInitialViewController.xib */; };
 		14B0ECC321E6D402004B2173 /* MAOInitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B0ECC121E6D402004B2173 /* MAOInitialViewController.m */; };
-		14B0ECC721E6D417004B2173 /* MAOListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B0ECC521E6D417004B2173 /* MAOListViewController.m */; };
-		14B0ECC821E6D417004B2173 /* MAOListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B0ECC621E6D417004B2173 /* MAOListViewController.xib */; };
 		14B0ECCB21E790DD004B2173 /* MAOListViewControllerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B0ECCA21E790DD004B2173 /* MAOListViewControllerModel.m */; };
 		A776EB2821E7AD0B0010C497 /* ItunesService.m in Sources */ = {isa = PBXBuildFile; fileRef = A776EB2721E7AD0B0010C497 /* ItunesService.m */; };
 		A776EB2C21E7B2EA0010C497 /* ItunesSong.m in Sources */ = {isa = PBXBuildFile; fileRef = A776EB2B21E7B2EA0010C497 /* ItunesSong.m */; };
@@ -24,8 +22,8 @@
 		A79A521F21F0E3D90074356C /* MAOSongCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A79A521E21F0E3D90074356C /* MAOSongCellView.xib */; };
 		A79A522221F0E42D0074356C /* MAOSongCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = A79A522121F0E42D0074356C /* MAOSongCellView.m */; };
 		A79A522521F0E6790074356C /* MAOSongListController.m in Sources */ = {isa = PBXBuildFile; fileRef = A79A522421F0E6790074356C /* MAOSongListController.m */; };
-		A79A522F21F0F70D0074356C /* CustomSongDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A79A522D21F0F70D0074356C /* CustomSongDetailViewController.m */; };
-		A79A523021F0F70D0074356C /* CustomSongDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A79A522E21F0F70D0074356C /* CustomSongDetailViewController.xib */; };
+		A79A522F21F0F70D0074356C /* MAOCustomSongDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A79A522D21F0F70D0074356C /* MAOCustomSongDetailViewController.m */; };
+		A79A523021F0F70D0074356C /* MAOCustomSongDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A79A522E21F0F70D0074356C /* MAOCustomSongDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,9 +60,6 @@
 		14B0ECBF21E6D402004B2173 /* MAOInitialViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MAOInitialViewController.xib; sourceTree = "<group>"; };
 		14B0ECC021E6D402004B2173 /* MAOInitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAOInitialViewController.h; sourceTree = "<group>"; };
 		14B0ECC121E6D402004B2173 /* MAOInitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAOInitialViewController.m; sourceTree = "<group>"; };
-		14B0ECC421E6D417004B2173 /* MAOListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAOListViewController.h; sourceTree = "<group>"; };
-		14B0ECC521E6D417004B2173 /* MAOListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAOListViewController.m; sourceTree = "<group>"; };
-		14B0ECC621E6D417004B2173 /* MAOListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MAOListViewController.xib; sourceTree = "<group>"; };
 		14B0ECC921E790DD004B2173 /* MAOListViewControllerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAOListViewControllerModel.h; sourceTree = "<group>"; };
 		14B0ECCA21E790DD004B2173 /* MAOListViewControllerModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAOListViewControllerModel.m; sourceTree = "<group>"; };
 		A776EB2621E7AD0B0010C497 /* ItunesService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItunesService.h; sourceTree = "<group>"; };
@@ -78,9 +73,9 @@
 		A79A522121F0E42D0074356C /* MAOSongCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAOSongCellView.m; sourceTree = "<group>"; };
 		A79A522321F0E6790074356C /* MAOSongListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAOSongListController.h; sourceTree = "<group>"; };
 		A79A522421F0E6790074356C /* MAOSongListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAOSongListController.m; sourceTree = "<group>"; };
-		A79A522C21F0F70D0074356C /* CustomSongDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomSongDetailViewController.h; sourceTree = "<group>"; };
-		A79A522D21F0F70D0074356C /* CustomSongDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomSongDetailViewController.m; sourceTree = "<group>"; };
-		A79A522E21F0F70D0074356C /* CustomSongDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomSongDetailViewController.xib; sourceTree = "<group>"; };
+		A79A522C21F0F70D0074356C /* MAOCustomSongDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAOCustomSongDetailViewController.h; sourceTree = "<group>"; };
+		A79A522D21F0F70D0074356C /* MAOCustomSongDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAOCustomSongDetailViewController.m; sourceTree = "<group>"; };
+		A79A522E21F0F70D0074356C /* MAOCustomSongDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MAOCustomSongDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,9 +172,6 @@
 		14B0ECBD21E6D402004B2173 /* List */ = {
 			isa = PBXGroup;
 			children = (
-				14B0ECC421E6D417004B2173 /* MAOListViewController.h */,
-				14B0ECC521E6D417004B2173 /* MAOListViewController.m */,
-				14B0ECC621E6D417004B2173 /* MAOListViewController.xib */,
 				14B0ECC921E790DD004B2173 /* MAOListViewControllerModel.h */,
 				14B0ECCA21E790DD004B2173 /* MAOListViewControllerModel.m */,
 				A79A522321F0E6790074356C /* MAOSongListController.h */,
@@ -238,9 +230,9 @@
 		A79A522621F0F23A0074356C /* CustomSongDetailView */ = {
 			isa = PBXGroup;
 			children = (
-				A79A522C21F0F70D0074356C /* CustomSongDetailViewController.h */,
-				A79A522D21F0F70D0074356C /* CustomSongDetailViewController.m */,
-				A79A522E21F0F70D0074356C /* CustomSongDetailViewController.xib */,
+				A79A522C21F0F70D0074356C /* MAOCustomSongDetailViewController.h */,
+				A79A522D21F0F70D0074356C /* MAOCustomSongDetailViewController.m */,
+				A79A522E21F0F70D0074356C /* MAOCustomSongDetailViewController.xib */,
 			);
 			path = CustomSongDetailView;
 			sourceTree = "<group>";
@@ -350,10 +342,9 @@
 			files = (
 				14B0EC8F21E6D190004B2173 /* LaunchScreen.storyboard in Resources */,
 				14B0EC8C21E6D190004B2173 /* Assets.xcassets in Resources */,
-				14B0ECC821E6D417004B2173 /* MAOListViewController.xib in Resources */,
 				14B0ECC221E6D402004B2173 /* MAOInitialViewController.xib in Resources */,
 				A79A521F21F0E3D90074356C /* MAOSongCellView.xib in Resources */,
-				A79A523021F0F70D0074356C /* CustomSongDetailViewController.xib in Resources */,
+				A79A523021F0F70D0074356C /* MAOCustomSongDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,10 +374,9 @@
 				14B0ECCB21E790DD004B2173 /* MAOListViewControllerModel.m in Sources */,
 				14B0ECC321E6D402004B2173 /* MAOInitialViewController.m in Sources */,
 				A79A522521F0E6790074356C /* MAOSongListController.m in Sources */,
-				14B0ECC721E6D417004B2173 /* MAOListViewController.m in Sources */,
 				14B0EC8421E6D18C004B2173 /* AppDelegate.m in Sources */,
 				A776EB2C21E7B2EA0010C497 /* ItunesSong.m in Sources */,
-				A79A522F21F0F70D0074356C /* CustomSongDetailViewController.m in Sources */,
+				A79A522F21F0F70D0074356C /* MAOCustomSongDetailViewController.m in Sources */,
 				A776EB3021E7C5AB0010C497 /* NSString+NSString_UrlEncoding.m in Sources */,
 				A776EB2821E7AD0B0010C497 /* ItunesService.m in Sources */,
 			);

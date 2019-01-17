@@ -9,6 +9,10 @@
 #import "MAOListViewControllerModel.h"
 #import "ItunesSong.h"
 
+
+/**
+ Song model implementation.
+ */
 @implementation MAOListViewControllerModel
 
 

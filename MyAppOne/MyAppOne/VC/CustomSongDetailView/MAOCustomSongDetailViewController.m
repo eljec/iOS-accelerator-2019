@@ -6,14 +6,23 @@
 //  Copyright © 2019 iOS-accelerator. All rights reserved.
 //
 
-#import "CustomSongDetailViewController.h"
+#import "MAOCustomSongDetailViewController.h"
 
-@interface CustomSongDetailViewController ()
+@interface MAOCustomSongDetailViewController ()
 
 @end
+/**
+ Song detail controller implementation
+ */
+@implementation MAOCustomSongDetailViewController
 
-@implementation CustomSongDetailViewController
 
+/**
+ initialization with model
+
+ @param model model of song
+ @return return id
+ */
 -(id) initWithModel:(MAOListViewControllerModel *)model{
     self = [super init];
     if(self){
