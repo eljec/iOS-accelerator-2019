@@ -23,6 +23,7 @@
     newListViewControllerModel.trackViewUrl = dictionary[@"trackViewUrl"];
     newListViewControllerModel.collectionPrice = dictionary[@"collectionPrice"];
     newListViewControllerModel.trackPrice = dictionary[@"trackPrice"];
+    newListViewControllerModel.artworkUrl100 = dictionary[@"artworkUrl100"];
     
     //Format the date to string
     NSDateFormatter *dateFormatter=[[NSDateFormatter alloc]init];

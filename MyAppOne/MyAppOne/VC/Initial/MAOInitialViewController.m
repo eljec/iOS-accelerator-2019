@@ -7,15 +7,15 @@
 //
 
 #import "MAOInitialViewController.h"
-#import "MAOListViewController.h"
+#import "../ListWithModal/MAOListWithModalViewController.h"
 #import "MAOInitialViewService.h"
-#import "MAOListViewController.h"
 
 @interface MAOInitialViewController ()<UIPickerViewDelegate, UIPickerViewDataSource >
 
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *MAOProgressIndicator;
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
 @property IBOutlet NSArray *pickerData;
+@property (strong, nonatomic) NSString *selectedRowOfPickerView;
 @property IBOutlet NSString *selectedItem;
 
 @end
@@ -45,8 +45,8 @@
                     return [obj1.trackName compare:obj2.trackName];
                  }
     }];
-    MAOListViewController *listViewControllerPtr = [[MAOListViewController alloc] init];
-    [self.navigationController pushViewController:[listViewControllerPtr initWithModel:arrayTemp] animated:YES];
+    MAOListWithModalViewController *listViewControllerPtr = [[MAOListWithModalViewController alloc] init];
+    [self.navigationController pushViewController:[listViewControllerPtr initWithModel:arrayTemp andData:self.selectedRowOfPickerView] animated:YES];
 }
 
 -(void)showProgressIndicator{
@@ -79,6 +79,7 @@
             for (NSDictionary *itemModel in [array valueForKey:@"results"]) {
                 [results addObject: [MAOListViewControllerModel obtainItemsFromDiccionary: itemModel]] ;
             }
+            self.selectedRowOfPickerView = self.pickerData[row];
             if ([self.pickerData[row] isEqual: @"Cargar datos ordenados por fecha"]) {
                 [self sortArrays:results by:@"releaseDate"];
             } else if ([self.pickerData[row]  isEqual: @"Cargar datos ordenados desc"]) {
