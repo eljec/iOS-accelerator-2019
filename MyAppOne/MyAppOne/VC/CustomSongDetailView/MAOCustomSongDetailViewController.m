@@ -37,12 +37,15 @@
     self.albumNameLabel.text = [NSString stringWithFormat:@"Album: %@", self.model.collectionName];
     self.authorNameLabel.text = [NSString stringWithFormat:@"Author: %@", self.model.artistName];
     self.trackPriceLabel.text = [NSString stringWithFormat:@"Price: $ %@", [self.model.trackPrice stringValue]];
+    
+    __weak typeof(self) weakSelf = self;
+    
     dispatch_queue_t dispatchImage = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0);
     dispatch_async(dispatchImage, ^{
-        NSURL *dataURL = [NSURL URLWithString:self.model.artworkUrl100];
+        NSURL *dataURL = [NSURL URLWithString:weakSelf.model.artworkUrl100];
         NSData *albumImage = [NSData dataWithContentsOfURL:dataURL];
         dispatch_async(dispatch_get_main_queue(), ^{
-            self.trackImage.image = [UIImage imageWithData:albumImage];
+            weakSelf.trackImage.image = [UIImage imageWithData:albumImage];
         });
     });
     ;

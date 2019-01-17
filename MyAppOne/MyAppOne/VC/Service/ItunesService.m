@@ -35,7 +35,7 @@
  @param query the query string
  @param completionBlock what I execute on completition
  */
--(void) getSongsByQuery:(NSString *) query andCompletitionBlock:(void(^)(NSArray *songsArray, NSError *error)) completionBlock{
+-(void) songsByQuery:(NSString *) query andCompletitionBlock:(void(^)(NSArray *songsArray, NSError *error)) completionBlock{
     
     NSURLSessionConfiguration *defaultConfigObject = [NSURLSessionConfiguration defaultSessionConfiguration];
     

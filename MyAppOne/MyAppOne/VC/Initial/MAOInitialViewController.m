@@ -105,16 +105,19 @@
 - (IBAction)onClickSelection:(id)sender {
     
     [self.spinner startAnimating];
-    [[ItunesService instance] getSongsByQuery:self.songSarchText.text andCompletitionBlock:^(NSArray *songsArray, NSError *error) {
+    
+    __weak typeof(self) weakSelf = self;
+    
+    [[ItunesService instance] songsByQuery:weakSelf.songSarchText.text andCompletitionBlock:^(NSArray *songsArray, NSError *error) {
         if (!error) {
-            [self initializeViewListWitSongs:[self orderArray:songsArray]];
-            [self.spinner stopAnimating];
+            [weakSelf initializeViewListWitSongs:[weakSelf orderArray:songsArray]];
+            [weakSelf.spinner stopAnimating];
         }
         else
         {
-            [self.spinner stopAnimating];
+            [weakSelf.spinner stopAnimating];
             [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-                [self generalErrorToast: @"Error cargando canciones, consulte al alumno."];
+                [weakSelf generalErrorToast: @"Error cargando canciones, consulte al alumno."];
             }];
         }
     }];
