@@ -19,6 +19,8 @@
 		14B0ECC821E6D417004B2173 /* MAOListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B0ECC621E6D417004B2173 /* MAOListViewController.xib */; };
 		14B0ECCB21E790DD004B2173 /* MAOListViewControllerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B0ECCA21E790DD004B2173 /* MAOListViewControllerModel.m */; };
 		5C854D2B21E7ADEC00BC97CD /* MAOItunes.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C854D2A21E7ADEC00BC97CD /* MAOItunes.m */; };
+		5CE7E26221F0E80F0053C2F6 /* ItunesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE7E26021F0E80F0053C2F6 /* ItunesTableViewCell.m */; };
+		5CE7E26321F0E80F0053C2F6 /* ItunesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CE7E26121F0E80F0053C2F6 /* ItunesTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,9 @@
 		14B0ECCA21E790DD004B2173 /* MAOListViewControllerModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAOListViewControllerModel.m; sourceTree = "<group>"; };
 		5C854D2921E7ADEC00BC97CD /* MAOItunes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAOItunes.h; sourceTree = "<group>"; };
 		5C854D2A21E7ADEC00BC97CD /* MAOItunes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAOItunes.m; sourceTree = "<group>"; };
+		5CE7E25F21F0E80F0053C2F6 /* ItunesTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItunesTableViewCell.h; sourceTree = "<group>"; };
+		5CE7E26021F0E80F0053C2F6 /* ItunesTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItunesTableViewCell.m; sourceTree = "<group>"; };
+		5CE7E26121F0E80F0053C2F6 /* ItunesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItunesTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +163,9 @@
 				14B0ECC521E6D417004B2173 /* MAOListViewController.m */,
 				14B0ECC621E6D417004B2173 /* MAOListViewController.xib */,
 				14B0ECC921E790DD004B2173 /* MAOListViewControllerModel.h */,
+				5CE7E25F21F0E80F0053C2F6 /* ItunesTableViewCell.h */,
+				5CE7E26021F0E80F0053C2F6 /* ItunesTableViewCell.m */,
+				5CE7E26121F0E80F0053C2F6 /* ItunesTableViewCell.xib */,
 				14B0ECCA21E790DD004B2173 /* MAOListViewControllerModel.m */,
 			);
 			path = List;
@@ -289,6 +297,7 @@
 				14B0EC8C21E6D190004B2173 /* Assets.xcassets in Resources */,
 				14B0ECC821E6D417004B2173 /* MAOListViewController.xib in Resources */,
 				14B0ECC221E6D402004B2173 /* MAOInitialViewController.xib in Resources */,
+				5CE7E26321F0E80F0053C2F6 /* ItunesTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +326,7 @@
 				14B0ECCB21E790DD004B2173 /* MAOListViewControllerModel.m in Sources */,
 				14B0ECC321E6D402004B2173 /* MAOInitialViewController.m in Sources */,
 				14B0ECC721E6D417004B2173 /* MAOListViewController.m in Sources */,
+				5CE7E26221F0E80F0053C2F6 /* ItunesTableViewCell.m in Sources */,
 				14B0EC8421E6D18C004B2173 /* AppDelegate.m in Sources */,
 				5C854D2B21E7ADEC00BC97CD /* MAOItunes.m in Sources */,
 			);
