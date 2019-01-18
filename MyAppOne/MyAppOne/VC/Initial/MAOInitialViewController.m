@@ -9,8 +9,8 @@
 #import "MAOInitialViewController.h"
 #import "MAOListViewController.h"
 #import "../../Services/MARequestService.h"
-#import "../List/MAOListViewController.h"
-#import "../List/MAOListViewControllerModel.h"
+#import "../ListCustom/MAOListCustomViewController.h"
+#import "../../Model/MAOListViewControllerModel.h"
 
 @interface MAOInitialViewController ()
 
@@ -32,36 +32,37 @@ typedef enum {
     [self.activityIndicator setHidden:TRUE];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+}
+
 - (IBAction)onClickSelection:(id)sender {
     [self.activityIndicator startAnimating];
     [self.activityIndicator setHidden:FALSE];
     
-    NSURL *url = [NSURL URLWithString:@"https://itunes.apple.com/search?term=jack+johnson"];
-    [[MARequestService sharedInstance] fetchData:^(NSArray *dataArray, NSError *error) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self.activityIndicator stopAnimating];
-            [self.activityIndicator setHidden:TRUE];
-       });
-        
-        if (!error) {
-            NSLog(@"Data: %@",dataArray);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [self.resultIcon setImage:[UIImage imageNamed:@"okIcon"]];
-            });
-            dataArray = [dataArray valueForKey:@"results"];
-            self.arrayModels = [[NSMutableArray<MAOListViewControllerModel *> alloc] init];
-            for (id itemArray in dataArray) {
-                MAOListViewControllerModel *item = [[MAOListViewControllerModel alloc] initFromDictionary:itemArray];
-                [self.arrayModels addObject:item];
-            }
-        }
-        else
-        {
-            NSLog(@"Error request %@", error);
-            [self showDialogWithTitle:@"Atención" withMessage:[error localizedDescription]];
-            
-        }
-    } fromURL:url];
+    [MARequestService fetchDataFromUrl:[NSURL URLWithString:@"https://itunes.apple.com/search?term=jack+johnson"]
+           success:^(NSArray *dataArray) {
+               NSLog(@"Data: %@",dataArray);
+               dispatch_async(dispatch_get_main_queue(), ^{
+                   [self.resultIcon setImage:[UIImage imageNamed:@"okIcon"]];
+                   [self.activityIndicator stopAnimating];
+                   [self.activityIndicator setHidden:TRUE];
+               });
+               dataArray = [dataArray valueForKey:@"results"];
+               self.arrayModels = [[NSMutableArray<MAOListViewControllerModel *> alloc] init];
+               for (id itemArray in dataArray) {
+                   MAOListViewControllerModel *item = [[MAOListViewControllerModel alloc] initFromDictionary:itemArray];
+                   [self.arrayModels addObject:item];
+               }
+           } error:^(NSError *error) {
+               dispatch_async(dispatch_get_main_queue(), ^{
+                   [self.resultIcon setImage:[UIImage imageNamed:@"errorIcon"]];
+                   [self.activityIndicator stopAnimating];
+                   [self.activityIndicator setHidden:TRUE];
+               });
+               [self showDialogWithTitle:@"Atención" withMessage:[error localizedDescription]];
+           }];
 }
 
 - (IBAction)btnShowByReleaseTrackAsc:(UIButton *)sender {
@@ -106,7 +107,7 @@ typedef enum {
             return NSOrderedSame;
         }];
         
-        MAOListViewController *listView = [[MAOListViewController alloc] initWithModel:sortedArray];
+        MAOListCustomViewController *listView = [[MAOListCustomViewController alloc] initWithModel:sortedArray];
         [self.navigationController pushViewController:listView animated:YES];
     } else {
         [self.resultIcon setImage:[UIImage imageNamed:@"errorIcon"]];
