@@ -15,7 +15,6 @@
 
 @implementation MAOListViewController
 
-
 - (instancetype) initWithModel:( NSArray<MAOListViewControllerModel *> *) arrayModels
 {
     self = [super init];
@@ -43,7 +42,9 @@
     {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-    cell.textLabel.text= @"Hello";
+    // revisar esto
+    // accedo a la posicion deseada en el array y luego a la propiedad del objeto
+    cell.textLabel.text= [self.arrayModels objectAtIndex:indexPath.row].trackName;
     return cell;
 }
 
