@@ -11,7 +11,7 @@
 #import "MAOInitialViewService.h"
 
 @interface MAOInitialViewController ()<UIPickerViewDelegate, UIPickerViewDataSource >
-
+@property (weak, nonatomic) IBOutlet UITextField *searchBar;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *MAOProgressIndicator;
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
 @property (strong, nonatomic) NSArray *pickerData;
@@ -33,14 +33,15 @@
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
     [self showProgressIndicator];
-    [[MAOInitialViewService sharedInstance] fetchItunesDataWithCompletionBlock:^(NSArray *array, NSError *error) {
+    
+    [[MAOInitialViewService sharedInstance] fetchItunesDataWithCompletionBlock:^(NSArray * _Nonnull array, NSError * _Nonnull error) {
         if (!error) {
             [self makeArray:array withModelItems:error fromListRow:row];
         } else {
             [self createAlertErrorModal];
         }
         [self hideProgressIndicator];
-    }];
+    } partOfUrl:[[self.searchBar.text componentsSeparatedByCharactersInSet :[NSCharacterSet whitespaceAndNewlineCharacterSet]] componentsJoinedByString:@""]];
 }
 
 - (NSInteger)numberOfComponentsInPickerView:(nonnull UIPickerView *)pickerView {

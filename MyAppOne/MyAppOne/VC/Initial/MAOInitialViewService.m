@@ -11,13 +11,14 @@
 
 @implementation MAOInitialViewService
 
--(void) fetchItunesDataWithCompletionBlock:(void(^)(NSArray *array, NSError *error)) completionBlock {
+-(void) fetchItunesDataWithCompletionBlock:(void(^)(NSArray *array, NSError *error)) completionBlock partOfUrl:(NSString *)url {
 
     NSURLSessionConfiguration *defaultConfigObject = [NSURLSessionConfiguration defaultSessionConfiguration];
     NSURLSession *delegateFreeSession = [NSURLSession sessionWithConfiguration: defaultConfigObject
                                                                       delegate: nil
                                                                  delegateQueue: [NSOperationQueue mainQueue]];
-    NSURL *dataURL = [NSURL URLWithString:ITUNES_DATA_URL];
+    NSURL *dataURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@", ITUNES_DATA_URL, url]];
+    NSLog(@"DATA URL: %@", dataURL);
     NSURLRequest *request = [NSURLRequest requestWithURL:dataURL];
     
     [[delegateFreeSession dataTaskWithRequest:request
