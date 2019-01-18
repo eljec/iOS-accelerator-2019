@@ -7,17 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "../ListWithModal/MAOListWithModalViewController.h"
+
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MAOModalViewController : UIViewController
 
-@property (strong, nonatomic) IBOutlet UILabel *trackNameLabel;
-@property (strong, nonatomic) IBOutlet UILabel *collectionNameLabel;
-@property (strong, nonatomic) IBOutlet UILabel *artistNameLabel;
-@property (strong, nonatomic) IBOutlet UILabel *priceTrackLabel;
-@property (strong, nonatomic) IBOutlet UIImageView *trackImage;
-@property (strong, nonatomic) IBOutlet UIButton *purchaseButton;
+- (instancetype)initWithModel:(MAOListViewControllerModel *)model;
 
 @end
 

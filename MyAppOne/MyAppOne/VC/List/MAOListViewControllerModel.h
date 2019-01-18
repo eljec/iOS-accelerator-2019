@@ -22,13 +22,14 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *artistViewUrl;
 @property (nonatomic, copy) NSString *collectionViewUrl;
 @property (nonatomic, copy) NSString *trackViewUrl;
+@property (nonatomic, copy) NSString *previewUrl;
 
 @property (nonatomic, copy) NSNumber *collectionPrice;
 @property (nonatomic, copy) NSNumber *trackPrice;
 
 @property (nonatomic, copy) NSString *artworkUrl100;
 
-+ (instancetype)obtainItemsFromDiccionary:(NSDictionary *) dictionary;
+- (instancetype)initItemsFromDiccionary:(NSDictionary *) dictionary;
 
 @end
 

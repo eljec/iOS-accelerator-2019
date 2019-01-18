@@ -16,8 +16,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MAOListWithModalViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
-- (instancetype) initWithModel:( NSArray<MAOListViewControllerModel *> *) arrayModels andData:(NSString *) pickerData;
+@property (strong, nonatomic) NSIndexPath *itemSelectedForModal;
 
+- (instancetype) initWithModel:( NSArray<MAOListViewControllerModel *> *) arrayModels andData:(NSString *) pickerData;
 
 @end
 

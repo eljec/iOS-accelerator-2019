@@ -16,8 +16,6 @@
 @property (nonatomic, strong) NSArray<MAOListViewControllerModel *> *arrayModels;
 @property (nonatomic, strong) NSString *pickerData;
 
-
-
 @end
 
 @implementation MAOListWithModalViewController
@@ -38,14 +36,6 @@
         return self;
 }
 
-//- (instancetype) initWithModel:( NSArray<MAOListViewControllerModel *> *) arrayModels {
-//    self = [super init];
-//    if(self){
-//        _arrayModels = arrayModels;
-//    }
-//    return self;
-//}
-
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
     return YES;
 }
@@ -53,13 +43,6 @@
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
     return YES;
 }
-
-//- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-//    NSUInteger row = indexPath.row;
-//    [self.names removeObjectAtIndex:row];
-//    [self.surfaces removeObjectAtIndex:row];
-//    [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationTop];
-//}
 
 - (nonnull MAOCustomTableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
     static NSString *cellID = @"CellID";
@@ -91,13 +74,16 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    MAOModalViewController *nextView = [[MAOModalViewController alloc] init];
-    [self.navigationController presentViewController:nextView animated:YES completion:nil];
+
+    
+    MAOModalViewController *nextView = [[MAOModalViewController alloc] initWithModel:[self.arrayModels objectAtIndex:[indexPath row]]];
+    nextView.modalPresentationStyle = UIModalPresentationOverFullScreen;
+    nextView.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    [self presentViewController:nextView animated:YES completion:nil];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 169.5;
+    return UITableViewAutomaticDimension;
 }
-
 
 @end
