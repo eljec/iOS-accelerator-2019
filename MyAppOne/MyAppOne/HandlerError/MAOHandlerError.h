@@ -10,6 +10,5 @@
 #import <UIKit/UIKit.h>
 
 @interface MAOHandlerError : NSObject
-+(MAOHandlerError *)sharedInstance;
--(void) handlerError:(NSError *)error response:(NSURLResponse *) response controller:(UIViewController *) controller;
+-(void) handlerError:(NSError *)error controller:(UIViewController *) controller;
 @end

@@ -20,11 +20,14 @@
         _artistViewUrl = [dict valueForKey:@"artistViewUrl"];
         _collectionViewUrl = [dict valueForKey:@"collectionViewUrl"];
         _trackViewUrl = [dict valueForKey:@"trackViewUrl"];
+        _previewUrl = [dict valueForKey:@"previewUrl"];
 
         _collectionPrice = [dict valueForKey:@"collectionPrice"];
         _trackPrice = [dict valueForKey:@"trackPrice"];
         
         _releaseDate = [dict valueForKey:@"releaseDate"];
+        
+        _artworkUrl100 = [dict valueForKey:@"artworkUrl100"];
     }
     return self;
 }
