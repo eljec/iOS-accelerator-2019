@@ -11,7 +11,7 @@
 #import "MAOService.h"
 #import "MAOHandlerError.h"
 #import "NSString+FormattedDate.h"
-
+#import "MAOTableViewController.h"
 
 @interface MAOInitialViewController ()
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *indicatorView;
@@ -25,19 +25,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _service = [[MAOService alloc] init];
-    [_indicatorView setHidesWhenStopped:YES];
-    [_orderTrackSwitch setOn:NO];
-    [_orderReleaseSwitch setOn:NO];
-    [_orderRevertSwitch setOn:NO];
+    self.service = [[MAOService alloc] init];
+    [self.indicatorView setHidesWhenStopped:YES];
+    [self.orderTrackSwitch setOn:NO];
+    [self.orderReleaseSwitch setOn:NO];
+    [self.orderRevertSwitch setOn:NO];
 }
 
 - (void)stopIndicatorAnim{
-    [_indicatorView stopAnimating];
+    [self.indicatorView stopAnimating];
 }
 
 - (void)startIndicatorAnim{
-    [_indicatorView startAnimating];
+    [self.indicatorView startAnimating];
 }
 
 - (NSArray<MAOListViewControllerModel *> *)ordenarPorTrack:(NSArray<MAOListViewControllerModel *> *)array{
@@ -57,7 +57,7 @@
         
         NSDate *primero = [NSString formattedString:[a releaseDate]];
         NSDate *segundo = [NSString formattedString:[b releaseDate]];
-
+        
         return [primero compare:segundo];
     }];
     
@@ -74,51 +74,55 @@
     
     [self startIndicatorAnim];
     
+    // weak Self in block.
+    __weak typeof(self) weakSelf = self;
     // Creo un callback para manejar la respuesta al pedido a la api.
     void (^callback) (NSData *data, NSURLResponse *response, NSError *error) = ^void (NSData *data, NSURLResponse *response, NSError *error) {
-
-        // Paro la animación del indicator
-        [self stopIndicatorAnim];
-
-        // Chequeo si hubo error
-        if (!error) {
-            // Parseo los datos del json
-            NSArray<MAOListViewControllerModel *> *datos = [[MAOService sharedInstance] parserJson:data];
+        
+        typeof(self) strongSelf = weakSelf;
+        if (strongSelf){
+            // Paro la animación del indicator
+            [strongSelf stopIndicatorAnim];
             
-            // Pregunto si tengo que ordenar el array
-            BOOL ordenarPorTrack = [self.orderTrackSwitch isOn];
-            BOOL ordenarPorFecha = [self.orderReleaseSwitch isOn];
-            BOOL ordenarInvertido = [self.orderRevertSwitch isOn];
-
-            if (ordenarPorTrack){
-               datos = [self ordenarPorTrack:datos];
-            } else if (ordenarPorFecha){
-                datos = [self ordenarPorFecha:datos];
-            } else if (ordenarInvertido){
-                datos = [self ordenarInvertido:datos];
+            // Chequeo si hubo error
+            if (!error) {
+                // Parseo los datos del json
+                NSArray<MAOListViewControllerModel *> *datos = [[[MAOService alloc] init] parserJson:data];
+                
+                // Pregunto si tengo que ordenar el array
+                BOOL ordenarPorTrack = [strongSelf.orderTrackSwitch isOn];
+                BOOL ordenarPorFecha = [strongSelf.orderReleaseSwitch isOn];
+                BOOL ordenarInvertido = [strongSelf.orderRevertSwitch isOn];
+                
+                if (ordenarPorTrack){
+                    datos = [strongSelf ordenarPorTrack:datos];
+                } else if (ordenarPorFecha){
+                    datos = [strongSelf ordenarPorFecha:datos];
+                } else if (ordenarInvertido){
+                    datos = [strongSelf ordenarInvertido:datos];
+                }
+                
+                // Hago el cambio de controller en el UIThread
+                [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+                    // Creo el controller nuevo y le paso el array con los datos
+                    MAOTableViewController * controller = [[MAOTableViewController alloc] initWithModel:datos];
+                    // Pusheo el nuevo controller
+                    [strongSelf.navigationController pushViewController:controller animated:YES];
+                }];
+            } else {
+                // Manejo el error en el UIThread
+                [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+                    [[[MAOHandlerError alloc]init] handlerError:error response:response controller:strongSelf];
+                }];
             }
-            
-            // Hago el cambio de controller en el UIThread
-            [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-                // Creo el controller nuevo y le paso el array con los datos
-                MAOListViewController * controller = [[MAOListViewController alloc] initWithModel:datos];
-                // Pusheo el nuevo controller
-                [self.navigationController pushViewController:controller animated:YES];
-            }];
-        } else {
-            // Manejo el error en el UIThread
-            [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-                [[MAOHandlerError sharedInstance] handlerError:error response:response controller:self];
-            }];
         }
-
     };
-
+    
     // Creo una cola global
     dispatch_queue_t global = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     dispatch_async(global, ^{
         // Creo la URL
-        NSString * URL = @"https://itunes.apple.com/search?term=jack+johnson";
+        NSString * URL = @"https://itunes.apple.com/search?term=sword+art+online";
         // Hago el pedido pasandole el callback para que se ejecute cuando termine
         [self.service fetchJsonWithCompletionBlock:callback url:URL];
     });

@@ -7,16 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MAOListViewController.h"
+#import "MAOListViewControllerModel.h"
 
 
 @interface MAOService : NSObject
 
-+(MAOService *)sharedInstance;
-
 -(void) fetchJsonWithCompletionBlock:(void(^)(NSData *data, NSURLResponse *response, NSError *error)) completionBlock url:(NSString *) url;
 
 -(NSArray<MAOListViewControllerModel *> *) parserJson:(NSData *) json;
-
 @end
 

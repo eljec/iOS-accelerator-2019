@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyAppOne/VC/Initial/MAOInitialViewController.m"
-            timestampString = "568927305.119323"
+            timestampString = "569524164.467491"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "101"
-            endingLineNumber = "101"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
             landmarkName = "-onClickSelection:"
             landmarkType = "7">
             <Locations>
@@ -73,7 +73,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyAppOne/VC/Initial/MAOInitialViewController.m"
-            timestampString = "568927305.119386"
+            timestampString = "569524164.467829"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "58"
@@ -89,13 +89,23 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyAppOne/VC/Initial/MAOInitialViewController.m"
-            timestampString = "568927305.119432"
+            timestampString = "569524164.467883"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "59"
             endingLineNumber = "59"
             landmarkName = "-ordenarPorFecha:"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            scope = "0"
+            stopOnStyle = "0">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

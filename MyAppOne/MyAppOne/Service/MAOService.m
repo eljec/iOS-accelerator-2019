@@ -9,18 +9,6 @@
 #import "MAOService.h"
 
 @implementation MAOService
-+(MAOService *) sharedInstance
-{
-    static MAOService *_sharedInstance = nil;
-    
-    static dispatch_once_t onceToken;
-    
-    dispatch_once(&onceToken, ^{
-        _sharedInstance = [[MAOService alloc] init];
-    });
-    
-    return _sharedInstance;
-}
 
 - (void)fetchJsonWithCompletionBlock:(void (^)(NSData *, NSURLResponse *, NSError *))completionBlock url:(NSString *)url{
     
