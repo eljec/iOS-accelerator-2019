@@ -10,18 +10,22 @@
 #import "MAOListViewController.h"
 #import "MAOService.h"
 #import "MAOHandlerError.h"
+#import "NSString+FormattedDate.h"
+
 
 @interface MAOInitialViewController ()
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *indicatorView;
 @property (weak, nonatomic) IBOutlet UISwitch *orderTrackSwitch;
 @property (weak, nonatomic) IBOutlet UISwitch *orderReleaseSwitch;
 @property (weak, nonatomic) IBOutlet UISwitch *orderRevertSwitch;
+@property MAOService *service;
 @end
 
 @implementation MAOInitialViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _service = [[MAOService alloc] init];
     [_indicatorView setHidesWhenStopped:YES];
     [_orderTrackSwitch setOn:NO];
     [_orderReleaseSwitch setOn:NO];
@@ -50,9 +54,11 @@
 - (NSArray<MAOListViewControllerModel *> *)ordenarPorFecha:(NSArray<MAOListViewControllerModel *> *)array{
     NSArray *sortedArray;
     sortedArray = [array sortedArrayUsingComparator:^NSComparisonResult(MAOListViewControllerModel *a, MAOListViewControllerModel *b) {
-        NSDate *first = [a releaseDate];
-        NSDate *second = [b releaseDate];
-        return [first compare:second];
+        
+        NSDate *primero = [NSString formattedString:[a releaseDate]];
+        NSDate *segundo = [NSString formattedString:[b releaseDate]];
+
+        return [primero compare:segundo];
     }];
     
     return sortedArray;
@@ -114,7 +120,7 @@
         // Creo la URL
         NSString * URL = @"https://itunes.apple.com/search?term=jack+johnson";
         // Hago el pedido pasandole el callback para que se ejecute cuando termine
-        [[MAOService sharedInstance] fetchJsonWithCompletionBlock:callback url:URL];
+        [self.service fetchJsonWithCompletionBlock:callback url:URL];
     });
     
     
