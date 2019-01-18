@@ -64,4 +64,10 @@
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString: self.itemsForModal.trackViewUrl] options:@{} completionHandler:nil];
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    if (touches.anyObject.view != self.modalView) {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
+}
+
 @end
