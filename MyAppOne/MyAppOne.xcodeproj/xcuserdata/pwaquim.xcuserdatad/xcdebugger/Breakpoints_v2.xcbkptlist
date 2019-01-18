@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyAppOne/VC/Initial/MAOInitialViewController.m"
+            timestampString = "568910347.82735"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "-onClickSelection:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__45-[MAOInitialViewController onClickSelection:]_block_invoke"
+                  moduleName = "MyAppOne"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pwaquim/Documents/iOS-accelerator-2019/MyAppOne/MyAppOne/VC/Initial/MAOInitialViewController.m"
+                  timestampString = "568840831.22211"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "462">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__45-[MAOInitialViewController onClickSelection:]_block_invoke.19"
+                  moduleName = "MyAppOne"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pwaquim/Documents/iOS-accelerator-2019/MyAppOne/MyAppOne/VC/Initial/MAOInitialViewController.m"
+                  timestampString = "568840831.227005"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "34">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__destroy_helper_block_.39"
+                  moduleName = "MyAppOne"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pwaquim/Documents/iOS-accelerator-2019/MyAppOne/MyAppOne/VC/Initial/MAOInitialViewController.m"
+                  timestampString = "568840831.230746"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

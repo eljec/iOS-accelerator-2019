@@ -18,6 +18,8 @@
 		14B0ECC721E6D417004B2173 /* MAOListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B0ECC521E6D417004B2173 /* MAOListViewController.m */; };
 		14B0ECC821E6D417004B2173 /* MAOListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B0ECC621E6D417004B2173 /* MAOListViewController.xib */; };
 		14B0ECCB21E790DD004B2173 /* MAOListViewControllerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B0ECCA21E790DD004B2173 /* MAOListViewControllerModel.m */; };
+		97EA80C721E7AE9400C83E48 /* MAOService.m in Sources */ = {isa = PBXBuildFile; fileRef = 97EA80C621E7AE9400C83E48 /* MAOService.m */; };
+		97EA80CB21E7D5A700C83E48 /* MAOHandlerError.m in Sources */ = {isa = PBXBuildFile; fileRef = 97EA80CA21E7D5A700C83E48 /* MAOHandlerError.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,10 @@
 		14B0ECC621E6D417004B2173 /* MAOListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MAOListViewController.xib; sourceTree = "<group>"; };
 		14B0ECC921E790DD004B2173 /* MAOListViewControllerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAOListViewControllerModel.h; sourceTree = "<group>"; };
 		14B0ECCA21E790DD004B2173 /* MAOListViewControllerModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAOListViewControllerModel.m; sourceTree = "<group>"; };
+		97EA80C521E7AE9400C83E48 /* MAOService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAOService.h; sourceTree = "<group>"; };
+		97EA80C621E7AE9400C83E48 /* MAOService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAOService.m; sourceTree = "<group>"; };
+		97EA80C921E7D5A700C83E48 /* MAOHandlerError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAOHandlerError.h; sourceTree = "<group>"; };
+		97EA80CA21E7D5A700C83E48 /* MAOHandlerError.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAOHandlerError.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,8 @@
 		14B0EC8121E6D18C004B2173 /* MyAppOne */ = {
 			isa = PBXGroup;
 			children = (
+				97EA80C821E7D58A00C83E48 /* HandlerError */,
+				97EA80C421E7AE4C00C83E48 /* Service */,
 				14B0ECB421E6D215004B2173 /* VC */,
 				14B0EC8221E6D18C004B2173 /* AppDelegate.h */,
 				14B0EC8321E6D18C004B2173 /* AppDelegate.m */,
@@ -167,6 +175,24 @@
 				14B0ECC121E6D402004B2173 /* MAOInitialViewController.m */,
 			);
 			path = Initial;
+			sourceTree = "<group>";
+		};
+		97EA80C421E7AE4C00C83E48 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				97EA80C521E7AE9400C83E48 /* MAOService.h */,
+				97EA80C621E7AE9400C83E48 /* MAOService.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		97EA80C821E7D58A00C83E48 /* HandlerError */ = {
+			isa = PBXGroup;
+			children = (
+				97EA80C921E7D5A700C83E48 /* MAOHandlerError.h */,
+				97EA80CA21E7D5A700C83E48 /* MAOHandlerError.m */,
+			);
+			path = HandlerError;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,10 +327,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				14B0EC9221E6D190004B2173 /* main.m in Sources */,
+				97EA80C721E7AE9400C83E48 /* MAOService.m in Sources */,
 				14B0ECCB21E790DD004B2173 /* MAOListViewControllerModel.m in Sources */,
 				14B0ECC321E6D402004B2173 /* MAOInitialViewController.m in Sources */,
 				14B0ECC721E6D417004B2173 /* MAOListViewController.m in Sources */,
 				14B0EC8421E6D18C004B2173 /* AppDelegate.m in Sources */,
+				97EA80CB21E7D5A700C83E48 /* MAOHandlerError.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
