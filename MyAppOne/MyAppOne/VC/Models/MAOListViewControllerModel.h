@@ -26,10 +26,14 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSDate *releaseDate;
 @property (nonatomic, strong) NSString *dateString;
 
+@property (nonatomic, strong) NSString *previewUrl;
+
+@property (nonnull, strong) NSString *artworkUrl100;
+
 - (NSComparisonResult) compare: (MAOListViewControllerModel *) model;
 - (NSString *) toString;
 
-+ (instancetype) initWithDictionary: (NSDictionary *) dictionary;
+- (instancetype) initWithDictionary: (NSDictionary *) dictionary;
 
 @end
 
