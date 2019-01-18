@@ -10,74 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyAppOne/VC/Initial/MAOInitialViewController.m"
-            timestampString = "569524164.467491"
+            timestampString = "569536345.901938"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
-            landmarkName = "-onClickSelection:"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__45-[MAOInitialViewController onClickSelection:]_block_invoke"
-                  moduleName = "MyAppOne"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pwaquim/Documents/iOS-accelerator-2019/MyAppOne/MyAppOne/VC/Initial/MAOInitialViewController.m"
-                  timestampString = "568840831.22211"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40"
-                  offsetFromSymbolStart = "462">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__45-[MAOInitialViewController onClickSelection:]_block_invoke.19"
-                  moduleName = "MyAppOne"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pwaquim/Documents/iOS-accelerator-2019/MyAppOne/MyAppOne/VC/Initial/MAOInitialViewController.m"
-                  timestampString = "568840831.227005"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40"
-                  offsetFromSymbolStart = "34">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__destroy_helper_block_.39"
-                  moduleName = "MyAppOne"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pwaquim/Documents/iOS-accelerator-2019/MyAppOne/MyAppOne/VC/Initial/MAOInitialViewController.m"
-                  timestampString = "568840831.230746"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40"
-                  offsetFromSymbolStart = "16">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyAppOne/VC/Initial/MAOInitialViewController.m"
-            timestampString = "569524164.467829"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
             landmarkName = "-ordenarPorFecha:"
             landmarkType = "7">
          </BreakpointContent>
@@ -89,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyAppOne/VC/Initial/MAOInitialViewController.m"
-            timestampString = "569524164.467883"
+            timestampString = "569536345.902307"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "-ordenarPorFecha:"
             landmarkType = "7">
          </BreakpointContent>

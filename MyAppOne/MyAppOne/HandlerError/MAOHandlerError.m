@@ -14,10 +14,9 @@
  Realiza el manejo de errores.
  
  @param error el error devuelto por el servicio
- @param response la respuesta otogada por el servicio
  @param controller una referencia al controller desde el cuál llama a esta función
  */
--(void) handlerError:(NSError *)error response:(NSURLResponse *) response controller:(UIViewController *) controller
+-(void) handlerError:(NSError *)error controller:(UIViewController *) controller
 {
     UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Error"
                                                                    message:[[NSString alloc]initWithFormat:@"%@", [error localizedDescription]]

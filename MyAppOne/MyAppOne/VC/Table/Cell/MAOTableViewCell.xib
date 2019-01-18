@@ -31,14 +31,14 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre Album" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Sh-j9-QgF">
-                        <rect key="frame" x="207" y="183.5" width="152" height="20.5"/>
+                        <rect key="frame" x="16" y="183.5" width="343" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="9Sh-j9-QgF" firstAttribute="leading" secondItem="F5j-Bf-xsy" secondAttribute="leadingMargin" constant="191" id="1Li-PH-50B"/>
+                    <constraint firstItem="9Sh-j9-QgF" firstAttribute="leading" secondItem="F5j-Bf-xsy" secondAttribute="leadingMargin" id="1Li-PH-50B"/>
                     <constraint firstItem="9Sh-j9-QgF" firstAttribute="trailing" secondItem="F5j-Bf-xsy" secondAttribute="trailingMargin" id="3qc-Nv-210"/>
                     <constraint firstItem="8KB-mB-jBf" firstAttribute="leading" secondItem="F5j-Bf-xsy" secondAttribute="leadingMargin" id="8FM-nM-6jT"/>
                     <constraint firstAttribute="trailingMargin" secondItem="g6h-YU-fuN" secondAttribute="trailing" constant="67" id="Wyb-hy-Jvm"/>
