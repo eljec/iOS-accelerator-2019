@@ -8,6 +8,10 @@
 
 #import "MAOListViewController.h"
 
+
+/**
+ Model List controller Implementation.
+ */
 @interface MAOListViewController () <UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *resultTable;
 @property (nonatomic, strong) NSArray<MAOListViewControllerModel *> *arrayModels;
@@ -16,6 +20,12 @@
 @implementation MAOListViewController
 
 
+/**
+ Initialization of view with model.
+
+ @param arrayModels array of MAOListViewControllerModel
+ @return instancetype
+ */
 - (instancetype) initWithModel:( NSArray<MAOListViewControllerModel *> *) arrayModels
 {
     self = [super init];
@@ -43,7 +53,8 @@
     {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-    cell.textLabel.text= @"Hello";
+    MAOListViewControllerModel *rowObject = [self.arrayModels objectAtIndex:indexPath.row];
+    cell.textLabel.text= rowObject.trackName;
     return cell;
 }
 

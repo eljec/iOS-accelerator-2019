@@ -7,7 +7,34 @@
 //
 
 #import "MAOListViewControllerModel.h"
+#import "ItunesSong.h"
 
 @implementation MAOListViewControllerModel
 
+
+// MARK: methods
+
+/**
+ Initialize Song model with parameter.
+ 
+ @param ItunesSong itunesSong
+ @return instancetype
+ */
+- (instancetype)initWithItunesSong:(ItunesSong *)itunesSong{
+    self = [super init];
+    if (self) {
+        
+        if (itunesSong) {
+            self.artistName = itunesSong.artistName;
+            self.collectionName = itunesSong.collectionName;
+            self.trackName = itunesSong.trackName;
+            self.artistViewUrl = itunesSong.artistViewUrl;
+            self.collectionViewUrl = itunesSong.collectionViewUrl;
+            self.trackViewUrl = itunesSong.trackViewUrl;
+            self.collectionPrice = itunesSong.collectionPrice;
+            self.trackPrice = itunesSong.trackPrice;
+        }
+    }
+    return self;
+}
 @end

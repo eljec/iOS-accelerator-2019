@@ -11,6 +11,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ Model List Controller interface.
+ */
 @interface MAOListViewController : UIViewController
 
 - (instancetype) initWithModel:( NSArray<MAOListViewControllerModel *> *) arrayModels;
