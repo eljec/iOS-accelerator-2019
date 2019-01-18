@@ -10,4 +10,20 @@
 
 @implementation MAOListViewControllerModel
 
++ (instancetype)obtainItemsFromDicionary:(NSDictionary *) dictionary {
+    
+    //Set items on model
+    MAOListViewControllerModel *newListViewControllerModel = [[MAOListViewControllerModel alloc] init];
+    newListViewControllerModel.artistName = dictionary[@"artistName"];
+    newListViewControllerModel.collectionName = dictionary[@"collectionName"];
+    newListViewControllerModel.trackName = dictionary[@"trackName"];
+    newListViewControllerModel.artistViewUrl = dictionary[@"artistViewUrl"];
+    newListViewControllerModel.collectionViewUrl = dictionary[@"collectionViewUrl"];
+    newListViewControllerModel.trackViewUrl = dictionary[@"trackViewUrl"];
+    newListViewControllerModel.collectionPrice = dictionary[@"collectionPrice"];
+    newListViewControllerModel.trackPrice = dictionary[@"trackPrice"];
+    
+    return newListViewControllerModel;
+}
+
 @end

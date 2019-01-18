@@ -7,11 +7,13 @@
 //
 
 #import "MAOInitialViewController.h"
-
-
+#import "MAOListViewController.h"
+#import "MAOInitialViewService.h"
 #import "MAOListViewController.h"
 
 @interface MAOInitialViewController ()
+
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *MAOProgressIndicator;
 
 @end
 
@@ -19,24 +21,44 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    [self hideProgressIndicator];
 }
 
 - (IBAction)onClickSelection:(id)sender {
-    
-    // TODO
-    // ACA BUSCAMOS LA DATA DEL SERVER Y AVANZAMOS AL PROXIMO VC CUANDO YA LA TENGAMOS PROCESADA
-    
-    // 1-  Request al server (URL: https://itunes.apple.com/search?term=jack+johnson)
-    // 2 - Parser del response
-    // 3 - Crecion del modelo del VC 2
-    // 4 - Iniciar el vc 2 con el modelo
-    //-------------------------------------------
-    
-    //NTH:
-    // Manejo de errores en el request.
-    // Mostrar mensaje mientras carga.
-    // Mensajes de alerta.
+        [self showProgressIndicator];
+        [[MAOInitialViewService sharedInstance] fetchItunesDataWithCompletionBlock:^(NSArray *array, NSError *error) {
+            if (!error) {
+                MAOListViewController *listViewControllerPtr = [[MAOListViewController alloc] init];
+                array = [array valueForKey:@"results"];
+                NSMutableArray *results = [[NSMutableArray alloc] init];
+                for (NSDictionary *itemModel in array) {
+                    [results addObject: [MAOListViewControllerModel obtainItemsFromDicionary: itemModel]] ;
+                }
+                [self.navigationController pushViewController:[listViewControllerPtr initWithModel:results] animated:YES];
+            }
+            else {
+                UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Error Message"
+                                                                               message:@"Oh! Something went wrong, please press again"
+                                                                        preferredStyle:UIAlertControllerStyleAlert];
+                
+                UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                                      handler:^(UIAlertAction * action) {}];
+                
+                [alert addAction:defaultAction];
+                [self presentViewController:alert animated:YES completion:nil];
+            }
+            [self hideProgressIndicator];
+        }];
+    }
+
+-(void)showProgressIndicator{
+    [self.MAOProgressIndicator setHidden:NO];
+    [self.MAOProgressIndicator startAnimating];
+}
+
+-(void)hideProgressIndicator{
+    [self.MAOProgressIndicator setHidden:YES];
+    [self.MAOProgressIndicator stopAnimating];
 }
 
 @end
