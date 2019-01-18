@@ -17,11 +17,13 @@
     newListViewControllerModel.artistName = dictionary[@"artistName"];
     newListViewControllerModel.collectionName = dictionary[@"collectionName"];
     newListViewControllerModel.trackName = dictionary[@"trackName"];
+    newListViewControllerModel.trackId = dictionary[@"trackId"];
     newListViewControllerModel.artistViewUrl = dictionary[@"artistViewUrl"];
     newListViewControllerModel.collectionViewUrl = dictionary[@"collectionViewUrl"];
     newListViewControllerModel.trackViewUrl = dictionary[@"trackViewUrl"];
     newListViewControllerModel.collectionPrice = dictionary[@"collectionPrice"];
     newListViewControllerModel.trackPrice = dictionary[@"trackPrice"];
+    newListViewControllerModel.releaseDate = dictionary[@"releaseDate"];
     
     return newListViewControllerModel;
 }
