@@ -15,14 +15,12 @@
 
 @implementation MAOListViewController
 
-
 - (instancetype) initWithModel:( NSArray<MAOListViewControllerModel *> *) arrayModels
 {
     self = [super init];
     if(self){
         _arrayModels = arrayModels;
     }
-    
     return self;
 }
 
@@ -37,13 +35,14 @@
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier   forIndexPath:indexPath] ;
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier  forIndexPath:indexPath] ;
     
     if (cell == nil)
     {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-    cell.textLabel.text= @"Hello";
+    
+    cell.textLabel.text= [NSString stringWithFormat:@"Id: %@ - Date: %@",[[_arrayModels objectAtIndex:[indexPath row]] valueForKey:@"trackId"], [[_arrayModels objectAtIndex:[indexPath row]] valueForKey:@"releaseDate"]];
     return cell;
 }
 

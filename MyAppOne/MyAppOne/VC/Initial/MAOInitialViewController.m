@@ -7,11 +7,21 @@
 //
 
 #import "MAOInitialViewController.h"
-
-
 #import "MAOListViewController.h"
+#import "../../Services/MARequestService.h"
+#import "../List/MAOListViewController.h"
+#import "../List/MAOListViewControllerModel.h"
 
 @interface MAOInitialViewController ()
+
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
+@property (nonatomic, strong) NSMutableArray<MAOListViewControllerModel *> *arrayModels;
+@property (weak, nonatomic) IBOutlet UIImageView *resultIcon;
+
+typedef enum {
+    TRACK_ID,
+    RELEASE_DATE
+} OrderType;
 
 @end
 
@@ -19,24 +29,101 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    [self.activityIndicator setHidden:TRUE];
 }
 
 - (IBAction)onClickSelection:(id)sender {
+    [self.activityIndicator startAnimating];
+    [self.activityIndicator setHidden:FALSE];
     
-    // TODO
-    // ACA BUSCAMOS LA DATA DEL SERVER Y AVANZAMOS AL PROXIMO VC CUANDO YA LA TENGAMOS PROCESADA
+    NSURL *url = [NSURL URLWithString:@"https://itunes.apple.com/search?term=jack+johnson"];
+    [[MARequestService sharedInstance] fetchData:^(NSArray *dataArray, NSError *error) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.activityIndicator stopAnimating];
+            [self.activityIndicator setHidden:TRUE];
+       });
+        
+        if (!error) {
+            NSLog(@"Data: %@",dataArray);
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.resultIcon setImage:[UIImage imageNamed:@"okIcon"]];
+            });
+            dataArray = [dataArray valueForKey:@"results"];
+            self.arrayModels = [[NSMutableArray<MAOListViewControllerModel *> alloc] init];
+            for (id itemArray in dataArray) {
+                MAOListViewControllerModel *item = [[MAOListViewControllerModel alloc] initFromDictionary:itemArray];
+                [self.arrayModels addObject:item];
+            }
+        }
+        else
+        {
+            NSLog(@"Error request %@", error);
+            [self showDialogWithTitle:@"Atención" withMessage:[error localizedDescription]];
+            
+        }
+    } fromURL:url];
+}
+
+- (IBAction)btnShowByReleaseTrackAsc:(UIButton *)sender {
+    [self goToListShowDesc:FALSE orderByType:RELEASE_DATE];
+}
+
+- (IBAction)btnShowByReleaseTrackDesc:(UIButton *)sender {
+    [self goToListShowDesc:TRUE orderByType:RELEASE_DATE];
+}
+
+- (IBAction)btnShowByTrackIdAsc:(UIButton *)sender {
+    [self goToListShowDesc:FALSE orderByType:TRACK_ID];
+}
+
+- (IBAction)btnOrderByTrackIdDesc:(UIButton *)sender {
+    [self goToListShowDesc:TRUE orderByType:TRACK_ID];
+}
+
+-(void) goToListShowDesc:(BOOL) showDesc orderByType:(int) type {
+    if(_arrayModels != nil || [_arrayModels count] != 0) {
+        NSArray *sortedArray = [_arrayModels sortedArrayUsingComparator: ^(MAOListViewControllerModel* obj1, MAOListViewControllerModel* obj2) {
+            
+            if(type == TRACK_ID) {
+                NSNumber *obj1TrackId = [obj1 trackId];
+                NSNumber *obj2TrackId = [obj2 trackId];
+                
+                if(showDesc) {
+                    return [obj2TrackId compare:obj1TrackId];
+                } else {
+                    return [obj1TrackId compare:obj2TrackId];
+                }
+            } else if(type == RELEASE_DATE) {
+                NSDate *obj1ReleaseDate = [obj1 releaseDate];
+                NSDate *obj2ReleaseDate = [obj2 releaseDate];
+                
+                if(showDesc) {
+                    return [obj2ReleaseDate compare:obj1ReleaseDate];
+                } else {
+                    return [obj1ReleaseDate compare:obj2ReleaseDate];
+                }
+            }
+            return NSOrderedSame;
+        }];
+        
+        MAOListViewController *listView = [[MAOListViewController alloc] initWithModel:sortedArray];
+        [self.navigationController pushViewController:listView animated:YES];
+    } else {
+        [self.resultIcon setImage:[UIImage imageNamed:@"errorIcon"]];
+        [self showDialogWithTitle:@"Atención" withMessage:@"Primero debes cargar los datos"];
+    }
+}
+
+-(void) showDialogWithTitle:(NSString *)title withMessage:(NSString *)message {
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:title
+                                                                   message:message
+                                                            preferredStyle:UIAlertControllerStyleAlert];
     
-    // 1-  Request al server (URL: https://itunes.apple.com/search?term=jack+johnson)
-    // 2 - Parser del response
-    // 3 - Crecion del modelo del VC 2
-    // 4 - Iniciar el vc 2 con el modelo
-    //-------------------------------------------
+    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction * action) {}];
     
-    //NTH:
-    // Manejo de errores en el request.
-    // Mostrar mensaje mientras carga.
-    // Mensajes de alerta.
+    [alert addAction:defaultAction];
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 @end
