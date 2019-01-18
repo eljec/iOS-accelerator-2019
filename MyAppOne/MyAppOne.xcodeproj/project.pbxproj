@@ -18,6 +18,10 @@
 		14B0ECC721E6D417004B2173 /* MAOListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B0ECC521E6D417004B2173 /* MAOListViewController.m */; };
 		14B0ECC821E6D417004B2173 /* MAOListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B0ECC621E6D417004B2173 /* MAOListViewController.xib */; };
 		14B0ECCB21E790DD004B2173 /* MAOListViewControllerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B0ECCA21E790DD004B2173 /* MAOListViewControllerModel.m */; };
+		1603808621EA6DC2006A31A7 /* songDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1603808521EA6DC2006A31A7 /* songDetailView.xib */; };
+		1603808921EA6EC5006A31A7 /* songDetailXIBView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1603808821EA6EC5006A31A7 /* songDetailXIBView.m */; };
+		161B5D0321EA74A100E006C2 /* MAOSongDetailCustomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 161B5D0221EA74A100E006C2 /* MAOSongDetailCustomViewController.xib */; };
+		16CD4C8221E7A778003D3254 /* MLServiceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 16CD4C8121E7A778003D3254 /* MLServiceHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,12 @@
 		14B0ECC621E6D417004B2173 /* MAOListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MAOListViewController.xib; sourceTree = "<group>"; };
 		14B0ECC921E790DD004B2173 /* MAOListViewControllerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAOListViewControllerModel.h; sourceTree = "<group>"; };
 		14B0ECCA21E790DD004B2173 /* MAOListViewControllerModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAOListViewControllerModel.m; sourceTree = "<group>"; };
+		1603808521EA6DC2006A31A7 /* songDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = songDetailView.xib; sourceTree = "<group>"; };
+		1603808721EA6EC5006A31A7 /* songDetailXIBView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = songDetailXIBView.h; sourceTree = "<group>"; };
+		1603808821EA6EC5006A31A7 /* songDetailXIBView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = songDetailXIBView.m; sourceTree = "<group>"; };
+		161B5D0221EA74A100E006C2 /* MAOSongDetailCustomViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MAOSongDetailCustomViewController.xib; sourceTree = "<group>"; };
+		16CD4C8021E7A778003D3254 /* MLServiceHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLServiceHelper.h; sourceTree = "<group>"; };
+		16CD4C8121E7A778003D3254 /* MLServiceHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLServiceHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +119,7 @@
 		14B0EC8121E6D18C004B2173 /* MyAppOne */ = {
 			isa = PBXGroup;
 			children = (
+				16CD4C7F21E7A71A003D3254 /* Services */,
 				14B0ECB421E6D215004B2173 /* VC */,
 				14B0EC8221E6D18C004B2173 /* AppDelegate.h */,
 				14B0EC8321E6D18C004B2173 /* AppDelegate.m */,
@@ -141,6 +152,7 @@
 		14B0ECB421E6D215004B2173 /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				1603808421EA6D36006A31A7 /* Details */,
 				14B0ECBE21E6D402004B2173 /* Initial */,
 				14B0ECBD21E6D402004B2173 /* List */,
 			);
@@ -167,6 +179,26 @@
 				14B0ECC121E6D402004B2173 /* MAOInitialViewController.m */,
 			);
 			path = Initial;
+			sourceTree = "<group>";
+		};
+		1603808421EA6D36006A31A7 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				1603808521EA6DC2006A31A7 /* songDetailView.xib */,
+				1603808721EA6EC5006A31A7 /* songDetailXIBView.h */,
+				1603808821EA6EC5006A31A7 /* songDetailXIBView.m */,
+				161B5D0221EA74A100E006C2 /* MAOSongDetailCustomViewController.xib */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		16CD4C7F21E7A71A003D3254 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				16CD4C8021E7A778003D3254 /* MLServiceHelper.h */,
+				16CD4C8121E7A778003D3254 /* MLServiceHelper.m */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,9 +305,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				14B0EC8F21E6D190004B2173 /* LaunchScreen.storyboard in Resources */,
+				161B5D0321EA74A100E006C2 /* MAOSongDetailCustomViewController.xib in Resources */,
 				14B0EC8C21E6D190004B2173 /* Assets.xcassets in Resources */,
 				14B0ECC821E6D417004B2173 /* MAOListViewController.xib in Resources */,
 				14B0ECC221E6D402004B2173 /* MAOInitialViewController.xib in Resources */,
+				1603808621EA6DC2006A31A7 /* songDetailView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,7 +338,9 @@
 				14B0ECCB21E790DD004B2173 /* MAOListViewControllerModel.m in Sources */,
 				14B0ECC321E6D402004B2173 /* MAOInitialViewController.m in Sources */,
 				14B0ECC721E6D417004B2173 /* MAOListViewController.m in Sources */,
+				16CD4C8221E7A778003D3254 /* MLServiceHelper.m in Sources */,
 				14B0EC8421E6D18C004B2173 /* AppDelegate.m in Sources */,
+				1603808921EA6EC5006A31A7 /* songDetailXIBView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

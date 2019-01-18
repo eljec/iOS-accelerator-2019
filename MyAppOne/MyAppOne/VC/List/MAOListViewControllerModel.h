@@ -22,6 +22,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NSNumber *collectionPrice;
 @property (nonatomic, strong) NSNumber *trackPrice;
+@property (nonatomic, strong) NSNumber *trackId;
+@property (nonatomic, strong) NSDate *releaseDate;
+@property (nonatomic, strong) NSString *dateString;
+
+- (NSComparisonResult) compare: (MAOListViewControllerModel *) model;
+- (NSString *) toString;
+
++ (instancetype) initWithDictionary: (NSDictionary *) dictionary;
 
 @end
 
