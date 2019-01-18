@@ -23,6 +23,9 @@
     model.trackViewUrl = diccionario[@"trackViewUrl"];
     model.collectionPrice = diccionario[@"collectionPrice"];
     model.trackPrice = diccionario[@"trackPrice"];
+    model.trackId = diccionario[@"trackId"];
+    model.releaseDateString = diccionario[@"releaseDate"];
+    model.releaseDate = diccionario[@"releaseDate"];
     
     return model;
 }
