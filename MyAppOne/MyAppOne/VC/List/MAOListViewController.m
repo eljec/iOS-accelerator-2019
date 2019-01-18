@@ -53,8 +53,13 @@
     {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
+    
     MAOListViewControllerModel *rowObject = [self.arrayModels objectAtIndex:indexPath.row];
-    cell.textLabel.text= rowObject.trackName;
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    dateFormatter.dateFormat = @"dd/MM/yyyy";
+    
+    cell.textLabel.text= [NSString stringWithFormat:@"%@ | %@" , rowObject.trackName?:@"", [dateFormatter stringFromDate: rowObject.releaseDate]] ;
     return cell;
 }
 

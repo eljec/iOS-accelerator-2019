@@ -34,7 +34,6 @@
 @synthesize artworkUrl100;
 @synthesize collectionPrice;
 @synthesize trackPrice;
-@synthesize releaseDate;
 @synthesize collectionExplicitness;
 @synthesize trackExplicitness;
 @synthesize discCount;
@@ -79,4 +78,12 @@
     }
     return self;
 }
+
+- (void) setReleaseDate:(NSDate *)releaseDate{
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    dateFormatter.dateFormat = @"yyyy-MM-dd'T'HH:mm:00Z";
+    NSDate* date = [dateFormatter dateFromString: releaseDate];
+     _releaseDate = date;
+}
+
 @end

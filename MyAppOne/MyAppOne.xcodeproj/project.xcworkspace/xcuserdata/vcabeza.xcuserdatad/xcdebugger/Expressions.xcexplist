@@ -3,6 +3,17 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "-[ItunesSong compareByTrackId:]:ItunesSong.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[MAOListViewController tableView:cellForRowAtIndexPath:]:MAOListViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "rowObject.releaseDate">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "-[ItunesService getSongsByQuery:]:ItunesService.m">
          <PersistentStrings>
             <PersistentString

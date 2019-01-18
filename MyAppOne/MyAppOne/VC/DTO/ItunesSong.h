@@ -34,7 +34,7 @@
 @property NSString *artworkUrl100;
 @property NSNumber *collectionPrice;
 @property NSNumber *trackPrice;
-@property NSString *releaseDate;
+@property (nonatomic, readonly, copy)NSDate *releaseDate;
 @property NSString *collectionExplicitness;
 @property NSString *trackExplicitness;
 @property NSNumber *discCount;

@@ -17,4 +17,6 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *songSarchText;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *orderBySegment;
+@property (weak, nonatomic) IBOutlet UISwitch *ascButton;
 @end

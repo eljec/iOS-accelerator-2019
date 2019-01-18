@@ -33,6 +33,8 @@
             self.trackViewUrl = itunesSong.trackViewUrl;
             self.collectionPrice = itunesSong.collectionPrice;
             self.trackPrice = itunesSong.trackPrice;
+            self.trackId = itunesSong.trackId;
+            self.releaseDate = itunesSong.releaseDate;
         }
     }
     return self;
