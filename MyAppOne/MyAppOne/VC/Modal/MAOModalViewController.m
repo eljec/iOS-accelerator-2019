@@ -45,7 +45,7 @@
     self.collectionNameLabel.text = self.itemsForModal.collectionName;
     self.artistNameLabel.text = self.itemsForModal.artistName;
     self.priceTrackLabel.text = [NSString stringWithFormat:@"%@", [self.itemsForModal trackPrice]];
-    [self.purchaseButton setTitle:[NSString stringWithFormat:@"Buy '%@' here", self.itemsForModal.trackName] forState:normal];
+    [self.purchaseButton setTitle:[NSString stringWithFormat:@"Buy '%@'7", self.itemsForModal.trackName] forState:normal];
     dispatch_queue_t dispatchImage = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0);
     dispatch_async(dispatchImage, ^{
         NSURL *dataURL = [NSURL URLWithString:self.itemsForModal.artworkUrl100];
