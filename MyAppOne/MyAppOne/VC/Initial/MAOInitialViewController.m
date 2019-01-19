@@ -9,7 +9,9 @@
 #import "MAOInitialViewController.h"
 #import "MAOListViewController.h"
 #import "MAOItunes.h"
-#import "MAOListViewControllerModel.h"
+//#import "MAOListViewControllerModel.h"
+#import "MAOCustomListViewController.h"
+
 
 @interface MAOInitialViewController ()
 
@@ -22,8 +24,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-    
     // hide spinner in init
     [self startSpinner:NO];
 }
@@ -48,7 +48,8 @@
 // method to call a second listViewController with specific info
 - (void) callSecondView:(NSArray *) withParam{
     // call the second view pushing the data
-    MAOListViewController *listView = [[MAOListViewController alloc] initWithModel:withParam];
+//    MAOListViewController *listView = [[MAOListViewController alloc] initWithModel:withParam];
+    MAOCustomListViewController *listView = [[MAOCustomListViewController alloc] initWithModel:withParam];
     // set sleep for view animation
     sleep(1);
     // push to second view
@@ -72,10 +73,13 @@
     
     [[MAOItunes sharedInstance] fetchItunesDataWithCompletionBlock:^(NSArray *infoArray, NSError *error){
          NSMutableArray *parseInfo = [[NSMutableArray alloc] init];
+        
         if (!error) {
             if ([[infoArray valueForKey:@"resultCount"] longValue] != 0) {
                  for(NSDictionary *item in [infoArray valueForKey: @"results"]){
-                     [parseInfo addObject: [MAOListViewControllerModel initWithDictionary: item]];
+//                     [parseInfo addObject: [MAOListViewControllerModel initWithDictionary: item]];
+                     MAOListViewControllerModel *objModel = MAOListViewControllerModel.new;
+                     [parseInfo addObject: [objModel initWithDictionary: item] ];
                  }
                 // call second view
                 [self callSecondView:completionHandler(parseInfo)];
@@ -122,8 +126,7 @@
 - (IBAction)orderByID:(UIButton *)sender {
     
     // define NSSortDescriptor to sort array later
-    NSSortDescriptor *trackIdSortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"trackId"
-                                                                        ascending:YES];
+    NSSortDescriptor *trackIdSortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"trackId" ascending:YES];
     
     [self startSpinner:YES];
     
