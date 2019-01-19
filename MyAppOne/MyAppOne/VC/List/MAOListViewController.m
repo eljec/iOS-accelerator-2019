@@ -11,6 +11,7 @@
 @interface MAOListViewController () <UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *resultTable;
 @property (nonatomic, strong) NSArray<MAOListViewControllerModel *> *arrayModels;
+@property (nonatomic, strong) NSIndexPath *lastIndexPath;
 @end
 
 @implementation MAOListViewController
@@ -21,7 +22,6 @@
     if(self){
         _arrayModels = arrayModels;
     }
-    
     return self;
 }
 
@@ -52,10 +52,11 @@
     return self.arrayModels.count;
 }
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
 }
+
+
 
 
 @end
