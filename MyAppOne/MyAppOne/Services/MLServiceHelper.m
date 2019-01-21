@@ -48,13 +48,13 @@
       dataTaskWithRequest:request
       completionHandler:^(NSData *data, NSURLResponse *response, NSError *error)
       {
-          NSLog(@"RESPONSE %@ - ERROR: %@.\n", response, error);
+//          NSLog(@"RESPONSE %@ - ERROR: %@.\n", response, error);
           NSArray *dataArray = [NSJSONSerialization
                                      JSONObjectWithData:data
                                      options: NSJSONReadingMutableContainers
                                      error:&error];
           
-          NSLog(@"DATA RESPONSE: %@", dataArray);          
+//          NSLog(@"DATA RESPONSE: %@", dataArray);
           callback (dataArray, error);
       }
       ]resume];

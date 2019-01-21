@@ -33,22 +33,27 @@
     return [newDateFormatter stringFromDate:date];
 }
 
-+ (instancetype) initWithDictionary: (NSDictionary *) dictionary
+- (instancetype) initWithDictionary: (NSDictionary *) dictionary
 {
-    MAOListViewControllerModel *model = [[MAOListViewControllerModel alloc] init];
-    model.artistName = dictionary[@"artistName"];
-    model.collectionName = dictionary[@"collectionName"];
-    model.trackName = dictionary[@"trackName"];
-    model.artistViewUrl = dictionary[@"artistViewUrl"];
-    model.collectionViewUrl = dictionary[@"collectionViewUrl"];
-    model.trackViewUrl = dictionary[@"trackViewUrl"];
-    model.collectionPrice = dictionary[@"collectionPrice"];
-    model.trackPrice = dictionary[@"trackPrice"];
-    model.trackId = dictionary[@"trackId"];
-    model.releaseDate = dictionary[@"releaseDate"];
-    model.dateString = dictionary[@"releaseDate"];
+    self = [super init];
     
-    return model;
+    if(self){
+        _artistName = dictionary[@"artistName"];
+        _collectionName = dictionary[@"collectionName"];
+        _trackName = dictionary[@"trackName"];
+        _artistViewUrl = dictionary[@"artistViewUrl"];
+        _collectionViewUrl = dictionary[@"collectionViewUrl"];
+        _trackViewUrl = dictionary[@"trackViewUrl"];
+        _collectionPrice = dictionary[@"collectionPrice"];
+        _trackPrice = dictionary[@"trackPrice"];
+        _trackId = dictionary[@"trackId"];
+        _releaseDate = dictionary[@"releaseDate"];
+        _dateString = dictionary[@"releaseDate"];
+        _artworkUrl100 = dictionary[@"artworkUrl100"];
+        _previewUrl = dictionary[@"previewUrl"];
+    }
+    
+    return self;
 }
 
 
