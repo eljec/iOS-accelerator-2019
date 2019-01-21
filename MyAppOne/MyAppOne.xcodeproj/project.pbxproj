@@ -24,6 +24,7 @@
 		A79A522521F0E6790074356C /* MAOSongListController.m in Sources */ = {isa = PBXBuildFile; fileRef = A79A522421F0E6790074356C /* MAOSongListController.m */; };
 		A79A522F21F0F70D0074356C /* MAOCustomSongDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A79A522D21F0F70D0074356C /* MAOCustomSongDetailViewController.m */; };
 		A79A523021F0F70D0074356C /* MAOCustomSongDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A79A522E21F0F70D0074356C /* MAOCustomSongDetailViewController.xib */; };
+		A79A523B21F1255C0074356C /* MAOSongTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A79A523A21F1255C0074356C /* MAOSongTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,8 @@
 		A79A522C21F0F70D0074356C /* MAOCustomSongDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAOCustomSongDetailViewController.h; sourceTree = "<group>"; };
 		A79A522D21F0F70D0074356C /* MAOCustomSongDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAOCustomSongDetailViewController.m; sourceTree = "<group>"; };
 		A79A522E21F0F70D0074356C /* MAOCustomSongDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MAOCustomSongDetailViewController.xib; sourceTree = "<group>"; };
+		A79A523921F1255C0074356C /* MAOSongTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAOSongTableViewController.h; sourceTree = "<group>"; };
+		A79A523A21F1255C0074356C /* MAOSongTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAOSongTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +179,8 @@
 				14B0ECCA21E790DD004B2173 /* MAOListViewControllerModel.m */,
 				A79A522321F0E6790074356C /* MAOSongListController.h */,
 				A79A522421F0E6790074356C /* MAOSongListController.m */,
+				A79A523921F1255C0074356C /* MAOSongTableViewController.h */,
+				A79A523A21F1255C0074356C /* MAOSongTableViewController.m */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -371,6 +376,7 @@
 			files = (
 				14B0EC9221E6D190004B2173 /* main.m in Sources */,
 				A79A522221F0E42D0074356C /* MAOSongCellView.m in Sources */,
+				A79A523B21F1255C0074356C /* MAOSongTableViewController.m in Sources */,
 				14B0ECCB21E790DD004B2173 /* MAOListViewControllerModel.m in Sources */,
 				14B0ECC321E6D402004B2173 /* MAOInitialViewController.m in Sources */,
 				A79A522521F0E6790074356C /* MAOSongListController.m in Sources */,
