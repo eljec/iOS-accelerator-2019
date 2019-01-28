@@ -9,10 +9,10 @@
 import Foundation
 
 
-enum OrderBy: Int {
-    case trackName = 0
-    case releaseDate = 1
-    case trackId = 2
+enum OrderBy {
+    case trackName
+    case releaseDate
+    case trackId
 }
 
 /**

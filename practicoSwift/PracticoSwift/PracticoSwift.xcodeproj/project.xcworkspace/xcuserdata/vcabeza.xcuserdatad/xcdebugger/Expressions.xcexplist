@@ -120,5 +120,19 @@
             </PersistentString>
          </PersistentStrings>
       </ContextState>
+      <ContextState
+         contextName = "closure #1 in PSItunesSongService.getOrderBy(orderBy:asc:):PSItunesSongService.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "(s1 as! NSObject).value(forKey:&quot;trackName&quot;)">
+            </PersistentString>
+            <PersistentString
+               value = "(s1 as! NSObject)">
+            </PersistentString>
+            <PersistentString
+               value = "(s1 as! NSObject).propertyNames()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
    </ContextStates>
 </VariablesViewState>

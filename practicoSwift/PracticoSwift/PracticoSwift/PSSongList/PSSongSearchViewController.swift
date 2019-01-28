@@ -41,7 +41,7 @@ class PSSongSearchViewController: UIViewController {
             }
         }
         
-        let orderBy:OrderBy = OrderBy(rawValue: (self.orderBySegment?.selectedSegmentIndex)!)!
+        let orderBy:OrderBy = getOrderBy()
         
         songService.getSongsByQuery(query: self.songQueryText.text!, orderBy: orderBy, asc: self.ascSwitch.isOn,  completion: completition, errorCompletition:errorCompletition )
     }
@@ -78,15 +78,19 @@ class PSSongSearchViewController: UIViewController {
     
     }
     
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func getOrderBy() -> OrderBy{
+        switch self.orderBySegment?.selectedSegmentIndex {
+        case 0:
+            return .trackName
+        case 1:
+            return .releaseDate
+        case 2:
+            return .trackId
+        case .none:
+            return .trackName
+        case .some(_):
+            return .trackName
+        }
     }
-    */
 
 }
