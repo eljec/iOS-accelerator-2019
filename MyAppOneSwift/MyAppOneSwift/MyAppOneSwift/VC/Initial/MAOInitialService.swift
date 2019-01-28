@@ -9,7 +9,6 @@
 
 import Foundation
 
-
 func requestForUserDataWith(from partOfUrl: String, completionHandlerSucess: @escaping (_ result: jsonModel) -> Void, completionHandlerError: @escaping (_ error: Error) -> Void){
     let url = URL(string: String("https://itunes.apple.com/search?term=" + partOfUrl))!
     let urlRequest = URLRequest(url: url)
@@ -28,29 +27,3 @@ func requestForUserDataWith(from partOfUrl: String, completionHandlerSucess: @es
     }
     dataTask.resume()
 }
-
-
-
-
-//    NSURLSessionConfiguration *defaultConfigObject = [NSURLSessionConfiguration defaultSessionConfiguration];
-//    NSURLSession *delegateFreeSession = [NSURLSession sessionWithConfiguration: defaultConfigObject
-//        delegate: nil
-//        delegateQueue: [NSOperationQueue mainQueue]];
-//    NSURL *dataURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@", ITUNES_DATA_URL, url]];
-//    NSURLRequest *request = [NSURLRequest requestWithURL:dataURL];
-//
-//    [[delegateFreeSession dataTaskWithRequest:request
-//        completionHandler:^(NSData *data, NSURLResponse *response,
-//        NSError *error)
-//        {
-//        NSArray *dataArray = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
-//        completionBlock (dataArray, error);
-//        }
-//        ]resume];
-//
-//
-//    completionHandlerSucess(result)
-//
-//
-//    completionHandlerError(error)
-
