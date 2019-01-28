@@ -51,7 +51,7 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="bp2-ox-X58">
+                <segmentedControl opaque="NO" contentMode="scaleToFill" restorationIdentifier="orderBySegment" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="bp2-ox-X58">
                     <rect key="frame" x="16" y="221" width="343" height="28"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="27" id="Ydl-Ym-N2A"/>
@@ -71,7 +71,7 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yff-tY-UFJ">
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" restorationIdentifier="ascSwitch" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yff-tY-UFJ">
                     <rect key="frame" x="16" y="285" width="51" height="31"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="31" id="28b-69-im3"/>

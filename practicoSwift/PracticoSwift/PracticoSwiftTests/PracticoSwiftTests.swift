@@ -29,8 +29,13 @@ class PracticoSwiftTests: XCTestCase {
             expectation.fulfill()
         }
         
+        let errorCompletition  = { (_ errorCause:NSError) -> Void in
+            XCTAssertFalse(true, "Unexpected error")
+            expectation.fulfill()
+        }
+        
         // while:
-        itunesSongService.getSongsByQuery(query: query, completion: completition)
+        itunesSongService.getSongsByQuery(query: query, orderBy: OrderBy.trackName, asc: true, completion: completition, errorCompletition: errorCompletition)
         
         // then
 

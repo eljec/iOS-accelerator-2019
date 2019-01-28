@@ -10,25 +10,96 @@ import XCTest
 
 class PracticoSwiftUITests: XCTestCase {
 
+    var app:XCUIApplication?
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
-
-        // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
         XCUIApplication().launch()
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+        self.app = XCUIApplication()
     }
 
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        self.app = nil
     }
 
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func testSearchSomething() {
+        guard let app = self.app else {
+            XCTAssertTrue(false, "No se pudo inicializar la app")
+            return
+        }
+        let textField = app.otherElements.containing(.navigationBar, identifier:"PracticoSwift.PSSongSearchView").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .textField).element
+        
+        textField.tap()
+        textField.typeText("soda stereo")
+        
+        app.buttons["Buscar"].tap()
+    
+        
+        let tablesQuery = app.tables
+        let count = tablesQuery.cells.count
+        XCTAssert(count > 0)
     }
+    
+    
+    func testSearchSomethingAscFalse(){
+        guard let app = self.app else {
+            XCTAssertTrue(false, "No se pudo inicializar la app")
+            return
+        }
+        let textField = app.otherElements.containing(.navigationBar, identifier:"PracticoSwift.PSSongSearchView").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .textField).element
+        
+        textField.tap()
+        textField.typeText("soda stereo")
+        
+        let ascSwitch = app.switches.element(boundBy: 0)
+        
+        ascSwitch.tap()
+        
+        app.buttons["Buscar"].tap()
+        
+        
+        let tablesQuery = app.tables
+        let count = tablesQuery.cells.count
+        XCTAssert(count > 0)
+    }
+    
+    func testSearchSomethingOrderByReleaseDate(){
+        guard let app = self.app else {
+            XCTAssertTrue(false, "No se pudo inicializar la app")
+            return
+        }
+        let textField = app.otherElements.containing(.navigationBar, identifier:"PracticoSwift.PSSongSearchView").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .textField).element
+        
+        textField.tap()
+        textField.typeText("soda stereo")
+        
+        app/*@START_MENU_TOKEN@*/.buttons["Fecha Lanzam"]/*[[".segmentedControls.buttons[\"Fecha Lanzam\"]",".buttons[\"Fecha Lanzam\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        
+        app.buttons["Buscar"].tap()
+        
+        
+        let tablesQuery = app.tables
+        let count = tablesQuery.cells.count
+        XCTAssert(count > 0)
+        
+    }
+    func testSearchSomethingOrderByTrackId(){
+        guard let app = self.app else {
+            XCTAssertTrue(false, "No se pudo inicializar la app")
+            return
+        }
+        let textField = app.otherElements.containing(.navigationBar, identifier:"PracticoSwift.PSSongSearchView").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .textField).element
+        
+        textField.tap()
+        textField.typeText("soda stereo")
 
+        app/*@START_MENU_TOKEN@*/.buttons["Track Id"]/*[[".segmentedControls.buttons[\"Track Id\"]",".buttons[\"Track Id\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        
+        app.buttons["Buscar"].tap()
+        
+        
+        let tablesQuery = app.tables
+        let count = tablesQuery.cells.count
+        XCTAssert(count > 0)
+    }
 }
