@@ -11,7 +11,7 @@ import Foundation
 /**
  Service protocol for songs queries
  */
-protocol SongService {
+protocol PSSongService {
     
     /**
      Obtain the songs by query string.
@@ -19,6 +19,6 @@ protocol SongService {
      @param request for a song call api
      @param completion for response call api
      */
-    func getSongsByQuery(query: String, completion: @escaping (_ songs:[Song]) -> Void)
+    func getSongsByQuery(query: String, orderBy: @escaping (PSSong, PSSong) -> Bool, completion: @escaping (_ songs:[PSSong]) -> Void)
 
 }

@@ -11,7 +11,7 @@ import Foundation
 /**
  Itunes Service for songs queries
  */
-class ItunesSongService: SongService{
+class PSItunesSongService: PSSongService{
     let ITUNES_URL = "https://itunes.apple.com/search?term="
     
     /**
@@ -19,7 +19,7 @@ class ItunesSongService: SongService{
      
      @param query the query string
      */
-    func getSongsByQuery(query: String, completion: @escaping ([Song]) -> Void) {
+    func getSongsByQuery(query: String, orderBy: @escaping (PSSong, PSSong) -> Bool, completion: @escaping ([PSSong]) -> Void) {
 
         let escapedQuery = query.addingPercentEncoding(withAllowedCharacters:NSCharacterSet.urlQueryAllowed)
 
@@ -29,16 +29,16 @@ class ItunesSongService: SongService{
             do {
                 let json = try JSONSerialization.jsonObject(with: data!) as! Dictionary<String, AnyObject>
                 
-                var songArray: [Song] = []
+                var songArray: [PSSong] = []
                 
                 let songsJson:[AnyObject] = json["results"] as! [AnyObject]
                 
                 for songJson in songsJson {
-                    if let song:Song = ItunesSong(dictionary:songJson as! [String : AnyObject]){
+                    if let song:PSSong = PSItunesSong(dictionary:songJson as! [String : AnyObject]){
                         songArray.append(song)
                     }
                 }
-                completion(songArray)
+                completion(self.orderArray(songs: songArray, orderBy: orderBy))
             } catch {
                 print("JSON Serialization error")
             }
@@ -46,4 +46,9 @@ class ItunesSongService: SongService{
         }
         task.resume()
     }
+    
+    private func orderArray(songs:[PSSong], orderBy: (PSSong, PSSong) -> Bool) -> [PSSong]{
+        return songs.sorted(by: orderBy)
+    }
+    
 }

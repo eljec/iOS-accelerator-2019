@@ -11,7 +11,7 @@ import Foundation
 /**
  DTO protocol for songs
  */
-protocol Song {
+protocol PSSong {
     var artistName: String? { get set }
     var collectionName: String? { get set }
     var trackName: String? { get set }
@@ -20,4 +20,9 @@ protocol Song {
     var trackViewUrl: String? { get set }
     var collectionPrice: Double? { get set }
     var trackPrice: Double? { get set }
+    var trackId: Int? {get set}
+    var releaseDate: Date? {get set}
+    var artworkUrl30: String? {get set}
+    var artworkUrl60: String? {get set}
+    var artworkUrl100: String? {get set}
 }

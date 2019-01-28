@@ -11,7 +11,7 @@ import XCTest
 
 class PracticoSwiftTests: XCTestCase {
 
-    let itunesSongService: SongService = ItunesSongService()
+    let itunesSongService: PSSongService = PSItunesSongService()
     
     override func setUp() {
     }
@@ -24,7 +24,7 @@ class PracticoSwiftTests: XCTestCase {
         let query = "soda stereo"
         let expectation = XCTestExpectation(description: "Should Return something")
         
-        let completition = { (songs: [Song]) -> Void in
+        let completition = { (songs: [PSSong]) -> Void in
             XCTAssertFalse(songs.isEmpty)
             expectation.fulfill()
         }

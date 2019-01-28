@@ -8,16 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		A7F20A0D21FB596200DD1362 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F20A0C21FB596200DD1362 /* AppDelegate.swift */; };
-		A7F20A0F21FB596200DD1362 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F20A0E21FB596200DD1362 /* ViewController.swift */; };
-		A7F20A1221FB596200DD1362 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7F20A1021FB596200DD1362 /* Main.storyboard */; };
 		A7F20A1421FB596300DD1362 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7F20A1321FB596300DD1362 /* Assets.xcassets */; };
 		A7F20A1721FB596300DD1362 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7F20A1521FB596300DD1362 /* LaunchScreen.storyboard */; };
 		A7F20A2221FB596300DD1362 /* PracticoSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F20A2121FB596300DD1362 /* PracticoSwiftTests.swift */; };
 		A7F20A2D21FB596300DD1362 /* PracticoSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F20A2C21FB596300DD1362 /* PracticoSwiftUITests.swift */; };
-		A7F20A3C21FB5A3C00DD1362 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F20A3B21FB5A3C00DD1362 /* Song.swift */; };
-		A7F20A3E21FB5AFB00DD1362 /* ItunesSong.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F20A3D21FB5AFB00DD1362 /* ItunesSong.swift */; };
-		A7F20A4121FB5DE000DD1362 /* SongService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F20A4021FB5DE000DD1362 /* SongService.swift */; };
-		A7F20A4321FB5EB000DD1362 /* ItunesSongService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F20A4221FB5EB000DD1362 /* ItunesSongService.swift */; };
+		A7F20A3C21FB5A3C00DD1362 /* PSSong.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F20A3B21FB5A3C00DD1362 /* PSSong.swift */; };
+		A7F20A3E21FB5AFB00DD1362 /* PSItunesSong.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F20A3D21FB5AFB00DD1362 /* PSItunesSong.swift */; };
+		A7F20A4121FB5DE000DD1362 /* PSSongService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F20A4021FB5DE000DD1362 /* PSSongService.swift */; };
+		A7F20A4321FB5EB000DD1362 /* PSItunesSongService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F20A4221FB5EB000DD1362 /* PSItunesSongService.swift */; };
+		A7F20A5621FBA3C500DD1362 /* PSSongSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F20A5421FBA3C500DD1362 /* PSSongSearchViewController.swift */; };
+		A7F20A5721FBA3C500DD1362 /* PSSongSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7F20A5521FBA3C500DD1362 /* PSSongSearchViewController.xib */; };
+		A7F20A5F21FF474600DD1362 /* PSSongListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F20A5D21FF474600DD1362 /* PSSongListTableViewController.swift */; };
+		A7F20A6021FF474600DD1362 /* PSSongListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7F20A5E21FF474600DD1362 /* PSSongListTableViewController.xib */; };
+		A7F20A6321FF4A9700DD1362 /* PSSongTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F20A6121FF4A9700DD1362 /* PSSongTableViewCell.swift */; };
+		A7F20A6421FF4A9700DD1362 /* PSSongTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7F20A6221FF4A9700DD1362 /* PSSongTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +44,6 @@
 /* Begin PBXFileReference section */
 		A7F20A0921FB596200DD1362 /* PracticoSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracticoSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7F20A0C21FB596200DD1362 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A7F20A0E21FB596200DD1362 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A7F20A1121FB596200DD1362 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A7F20A1321FB596300DD1362 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7F20A1621FB596300DD1362 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7F20A1821FB596300DD1362 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,10 +53,16 @@
 		A7F20A2821FB596300DD1362 /* PracticoSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PracticoSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7F20A2C21FB596300DD1362 /* PracticoSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticoSwiftUITests.swift; sourceTree = "<group>"; };
 		A7F20A2E21FB596300DD1362 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A7F20A3B21FB5A3C00DD1362 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
-		A7F20A3D21FB5AFB00DD1362 /* ItunesSong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesSong.swift; sourceTree = "<group>"; };
-		A7F20A4021FB5DE000DD1362 /* SongService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongService.swift; sourceTree = "<group>"; };
-		A7F20A4221FB5EB000DD1362 /* ItunesSongService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesSongService.swift; sourceTree = "<group>"; };
+		A7F20A3B21FB5A3C00DD1362 /* PSSong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSSong.swift; sourceTree = "<group>"; };
+		A7F20A3D21FB5AFB00DD1362 /* PSItunesSong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSItunesSong.swift; sourceTree = "<group>"; };
+		A7F20A4021FB5DE000DD1362 /* PSSongService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSSongService.swift; sourceTree = "<group>"; };
+		A7F20A4221FB5EB000DD1362 /* PSItunesSongService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSItunesSongService.swift; sourceTree = "<group>"; };
+		A7F20A5421FBA3C500DD1362 /* PSSongSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSSongSearchViewController.swift; sourceTree = "<group>"; };
+		A7F20A5521FBA3C500DD1362 /* PSSongSearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PSSongSearchViewController.xib; sourceTree = "<group>"; };
+		A7F20A5D21FF474600DD1362 /* PSSongListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSSongListTableViewController.swift; sourceTree = "<group>"; };
+		A7F20A5E21FF474600DD1362 /* PSSongListTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PSSongListTableViewController.xib; sourceTree = "<group>"; };
+		A7F20A6121FF4A9700DD1362 /* PSSongTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSSongTableViewCell.swift; sourceTree = "<group>"; };
+		A7F20A6221FF4A9700DD1362 /* PSSongTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PSSongTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,11 +113,10 @@
 		A7F20A0B21FB596200DD1362 /* PracticoSwift */ = {
 			isa = PBXGroup;
 			children = (
+				A7F20A4D21FB966A00DD1362 /* PSSongList */,
 				A7F20A3F21FB5DC900DD1362 /* Service */,
 				A7F20A3A21FB59DB00DD1362 /* DTO */,
 				A7F20A0C21FB596200DD1362 /* AppDelegate.swift */,
-				A7F20A0E21FB596200DD1362 /* ViewController.swift */,
-				A7F20A1021FB596200DD1362 /* Main.storyboard */,
 				A7F20A1321FB596300DD1362 /* Assets.xcassets */,
 				A7F20A1521FB596300DD1362 /* LaunchScreen.storyboard */,
 				A7F20A1821FB596300DD1362 /* Info.plist */,
@@ -138,8 +145,8 @@
 		A7F20A3A21FB59DB00DD1362 /* DTO */ = {
 			isa = PBXGroup;
 			children = (
-				A7F20A3B21FB5A3C00DD1362 /* Song.swift */,
-				A7F20A3D21FB5AFB00DD1362 /* ItunesSong.swift */,
+				A7F20A3B21FB5A3C00DD1362 /* PSSong.swift */,
+				A7F20A3D21FB5AFB00DD1362 /* PSItunesSong.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -147,10 +154,23 @@
 		A7F20A3F21FB5DC900DD1362 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				A7F20A4021FB5DE000DD1362 /* SongService.swift */,
-				A7F20A4221FB5EB000DD1362 /* ItunesSongService.swift */,
+				A7F20A4021FB5DE000DD1362 /* PSSongService.swift */,
+				A7F20A4221FB5EB000DD1362 /* PSItunesSongService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		A7F20A4D21FB966A00DD1362 /* PSSongList */ = {
+			isa = PBXGroup;
+			children = (
+				A7F20A5421FBA3C500DD1362 /* PSSongSearchViewController.swift */,
+				A7F20A5521FBA3C500DD1362 /* PSSongSearchViewController.xib */,
+				A7F20A5D21FF474600DD1362 /* PSSongListTableViewController.swift */,
+				A7F20A5E21FF474600DD1362 /* PSSongListTableViewController.xib */,
+				A7F20A6121FF4A9700DD1362 /* PSSongTableViewCell.swift */,
+				A7F20A6221FF4A9700DD1362 /* PSSongTableViewCell.xib */,
+			);
+			path = PSSongList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +278,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7F20A1721FB596300DD1362 /* LaunchScreen.storyboard in Resources */,
+				A7F20A6021FF474600DD1362 /* PSSongListTableViewController.xib in Resources */,
+				A7F20A5721FBA3C500DD1362 /* PSSongSearchViewController.xib in Resources */,
+				A7F20A6421FF4A9700DD1362 /* PSSongTableViewCell.xib in Resources */,
 				A7F20A1421FB596300DD1362 /* Assets.xcassets in Resources */,
-				A7F20A1221FB596200DD1362 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,11 +306,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7F20A4121FB5DE000DD1362 /* SongService.swift in Sources */,
-				A7F20A3C21FB5A3C00DD1362 /* Song.swift in Sources */,
-				A7F20A0F21FB596200DD1362 /* ViewController.swift in Sources */,
-				A7F20A3E21FB5AFB00DD1362 /* ItunesSong.swift in Sources */,
-				A7F20A4321FB5EB000DD1362 /* ItunesSongService.swift in Sources */,
+				A7F20A4121FB5DE000DD1362 /* PSSongService.swift in Sources */,
+				A7F20A6321FF4A9700DD1362 /* PSSongTableViewCell.swift in Sources */,
+				A7F20A3C21FB5A3C00DD1362 /* PSSong.swift in Sources */,
+				A7F20A5F21FF474600DD1362 /* PSSongListTableViewController.swift in Sources */,
+				A7F20A3E21FB5AFB00DD1362 /* PSItunesSong.swift in Sources */,
+				A7F20A4321FB5EB000DD1362 /* PSItunesSongService.swift in Sources */,
+				A7F20A5621FBA3C500DD1362 /* PSSongSearchViewController.swift in Sources */,
 				A7F20A0D21FB596200DD1362 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,14 +349,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A7F20A1021FB596200DD1362 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A7F20A1121FB596200DD1362 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A7F20A1521FB596300DD1362 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

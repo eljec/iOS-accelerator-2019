@@ -11,7 +11,7 @@ import Foundation
 /**
  DTO implementation for Itunes songs list
  */
-class ItunesSong : Song {
+class PSItunesSong : NSObject, PSSong {
     
     // MARK: Properties
     
@@ -34,7 +34,7 @@ class ItunesSong : Song {
     var artworkUrl100:String?
     var collectionPrice:Double?
     var trackPrice:Double?
-    var releaseDate:String?
+    var releaseDate:Date?
     var collectionExplicitness:String?
     var trackExplicitness:String?
     var discCount:Int?
@@ -80,7 +80,7 @@ class ItunesSong : Song {
         artworkUrl100 = dictionary["artworkUrl100"] as? String
         collectionPrice = dictionary["collectionPrice"] as? Double
         trackPrice = dictionary["trackPrice"] as? Double
-        releaseDate = dictionary["releaseDate"] as? String
+        releaseDate = dictionary["releaseDate"] as? Date
         collectionExplicitness = dictionary["collectionExplicitness"] as? String
         trackExplicitness = dictionary["trackExplicitness"] as? String
         discCount = dictionary["discCount"] as? Int

@@ -3,6 +3,25 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "PSSongListTableViewController.tableView(_:cellForRowAt:):PSSongListTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.songs">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PSSongListViewController.songs.didset:PSSongListViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "songs">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PSSongTableViewCell.layoutSubviews():PSSongTableViewCell.swift">
+      </ContextState>
+      <ContextState
          contextName = "ItunesSongService.getSongsByQuery(query:completion:):ItunesSongService.swift">
          <PersistentStrings>
             <PersistentString
@@ -11,10 +30,49 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "PSItunesSongService.orderArray(songs:orderBy:):PSItunesSongService.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "(songs as NSArray).sortedArray(using: [sortDescriptor])">
+            </PersistentString>
+            <PersistentString
+               value = "songs.sorted(by: orderBy)">
+            </PersistentString>
+            <PersistentString
+               value = "#selector(NSString.localizedStandardCompare(_:))">
+            </PersistentString>
+            <PersistentString
+               value = "(songs as NSArray)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PSSongListTableViewController.tableView(_:numberOfRowsInSection:):PSSongListTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.songs">
+            </PersistentString>
+            <PersistentString
+               value = "self.songs?.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "closure #1 in ItunesSongService.getSongsByQuery(query:completion:):ItunesSongService.swift">
          <PersistentStrings>
             <PersistentString
                value = "response.">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PSSongTableViewCell.song.didset:PSSongTableViewCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.trackNameLabel">
+            </PersistentString>
+            <PersistentString
+               value = "self.trackNameLabel.text">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
