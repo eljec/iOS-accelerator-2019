@@ -51,6 +51,13 @@ class PSItunesSongService: PSSongService{
         task.resume()
     }
     
+    /**
+     Obtain the ordering method
+     
+     @param OrderBy enum
+     @param Bool asc
+     @return (PSSong, PSSong) -> Bool method to order
+     */
     func getOrderBy(orderBy:OrderBy, asc:Bool) -> (PSSong, PSSong) -> Bool{
         
         var ret: ((PSSong, PSSong) -> Bool)
