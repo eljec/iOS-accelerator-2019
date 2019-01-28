@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class PSSongDetailViewController: UIViewController {
 
@@ -22,20 +23,22 @@ class PSSongDetailViewController: UIViewController {
     fileprivate func initialize() {
         if let songItem = song {
             if let trackName = songItem.trackName{
-                self.trackNameLabel.text = trackName
+                self.trackNameLabel.text = "🎧: \(trackName)"
             }
             
             if let artistName = songItem.artistName{
-                self.artistNameLabel.text = artistName
+                self.artistNameLabel.text = "👨🏻‍🎤: \(artistName)"
             }
             
             if let url = URL(string: songItem.artworkUrl100!){
-                let data = try? Data(contentsOf: url)
-                self.collectionImageView.image = UIImage(data: data!)
+                DispatchQueue.main.async {
+                    let data = try? Data(contentsOf: url)
+                    self.collectionImageView.image = UIImage(data: data!)
+                }
             }
             
             if let collectionName = songItem.collectionName{
-                self.collectionNameLabel.text = collectionName
+                self.collectionNameLabel.text = "💽: \(collectionName)"
             }
             
             if let releaseDate = songItem.releaseDate{
@@ -43,9 +46,8 @@ class PSSongDetailViewController: UIViewController {
                 // initially set the format based on your datepicker date / server String
                 formatter.dateFormat = "dd/MM/yyyy"
                 let dateString = formatter.string(from: releaseDate)
-                self.releaseDateLabel.text = dateString
+                self.releaseDateLabel.text = "📅: \(dateString)"
             }
-            
         }
     }
     

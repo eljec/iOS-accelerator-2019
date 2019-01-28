@@ -13,19 +13,22 @@ class PSSongTableViewCell: UITableViewCell {
     @IBOutlet weak var trackNameLabel: UILabel!
     @IBOutlet weak var artworkImageView: UIImageView!
     @IBOutlet weak var collectionNameLabel: UILabel!
+    @IBOutlet weak var artistNameLabel: UILabel!
     
     var song: PSSong? {
         didSet {
             if let songItem = song {
-                self.trackNameLabel.text = songItem.trackName
-                self.collectionNameLabel.text = songItem.collectionName
+                self.trackNameLabel.text = "🎧: \(songItem.trackName ?? "")"
+                self.collectionNameLabel.text = "💽: \(songItem.collectionName ?? "")"
+                self.artistNameLabel.text = "👨🏻‍🎤: \(songItem.artistName ?? "")"
                 
                 if let imageUrl = songItem.artworkUrl60 {
-                    //DispatchQueue.main.async {
+                    DispatchQueue.main.async {
                         let url = URL(string: imageUrl)
                         let data = try? Data(contentsOf: url!)
                         self.artworkImageView.image = UIImage(data: data!)
-                    //}
+                        self.layoutSubviews()
+                    }
                 }
             }
         }
@@ -39,6 +42,11 @@ class PSSongTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
     }
     
 }

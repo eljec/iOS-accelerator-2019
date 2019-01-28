@@ -11,6 +11,17 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "closure #1 in PSItunesSongService.getSongsByQuery(query:orderBy:completion:errorCompletition:):PSItunesSongService.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "error">
+            </PersistentString>
+            <PersistentString
+               value = "error != nil">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "PSSongDetailViewController.viewDidLoad():PSSongDetailViewController.swift">
       </ContextState>
       <ContextState
@@ -81,6 +92,9 @@
                value = "self.songs?.count">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PSSongDetailViewController.buyTrack(_:):PSSongDetailViewController.swift">
       </ContextState>
       <ContextState
          contextName = "PSSongListTableViewController.tableView(_:cellForRowAt:):PSSongListTableViewController.swift">

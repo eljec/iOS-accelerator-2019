@@ -20,7 +20,6 @@ class PSSongSearchViewController: UIViewController {
         self.spinnerIndicator.hidesWhenStopped = true
     }
 
-
     @IBAction func searchButtonAction(_ sender: UIButton) {
         
         self.spinnerIndicator.startAnimating()
@@ -35,73 +34,35 @@ class PSSongSearchViewController: UIViewController {
             }
         }
         
-        songService.getSongsByQuery(query: self.songQueryText.text!, orderBy: getOrderBy(),  completion: completition)
-    
-        
-        /*[[ItunesService instance] songsByQuery:weakSelf.songSarchText.text andCompletitionBlock:^(NSArray *songsArray, NSError *error) {
-            if (!error) {
-            [weakSelf initializeViewListWitSongs:[weakSelf orderArray:songsArray]];
-            [weakSelf.spinner stopAnimating];
-            }
-            else
-            {
-            [weakSelf.spinner stopAnimating];
-            [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-            [weakSelf generalErrorToast: @"Error cargando canciones, consulte al alumno."];
-            }];
-            }
-            }];*/
-        
-    }
-    
-    func getOrderBy() -> (PSSong, PSSong) -> Bool{
-
-        let asc = self.ascSwitch.isOn
-        var ret: ((PSSong, PSSong) -> Bool)
-        
-        switch self.orderBySegment.selectedSegmentIndex {
-        case 0:
-            if(asc){
-                ret = { (s1: PSSong, s2: PSSong) -> Bool in
-                    s1.trackName ?? "" < s2.trackName  ?? ""
-                }
-            } else {
-                ret = { (s1: PSSong, s2: PSSong) -> Bool in
-                    s1.trackName ?? "" > s2.trackName  ?? ""
-                }
-            }
-        case 1:
-            if(asc){
-                ret = { (s1: PSSong, s2: PSSong) -> Bool in
-                    s1.releaseDate! < s2.releaseDate!
-                }
-            } else {
-                ret = { (s1: PSSong, s2: PSSong) -> Bool in
-                    s1.releaseDate!  > s2.releaseDate!
-                }
-            }
-        case 2:
-            if(asc){
-                ret = { (s1: PSSong, s2: PSSong) -> Bool in
-                    s1.trackId ?? -1 < s2.trackId  ?? -1
-                }
-            } else {
-                ret = { (s1: PSSong, s2: PSSong) -> Bool in
-                    s1.trackId ?? -1 > s2.trackId  ?? -1
-                }
-            }
-        default:
-            if(asc){
-                ret = { (s1: PSSong, s2: PSSong) -> Bool in
-                    s1.trackName ?? "" > s2.trackName  ?? ""
-                }
-            } else {
-                ret = { (s1: PSSong, s2: PSSong) -> Bool in
-                    s1.trackName ?? "" < s2.trackName  ?? ""
-                }
+        let errorCompletition = { (errorCause: NSError) -> Void in
+            DispatchQueue.main.async {
+                self.spinnerIndicator.stopAnimating()
+                self.showToast(message: "Unexpected Error found. Code:\(errorCause.code)")
             }
         }
-        return ret
+        
+        let orderBy:OrderBy = OrderBy(rawValue: (self.orderBySegment?.selectedSegmentIndex)!)!
+        
+        songService.getSongsByQuery(query: self.songQueryText.text!, orderBy: orderBy, asc: self.ascSwitch.isOn,  completion: completition, errorCompletition:errorCompletition )
+    }
+    
+    func showToast(message : String) {
+        
+        let toastLabel = UILabel(frame: CGRect(x: self.view.frame.size.width/2 - 150, y: self.view.frame.size.height-500, width: 300, height: 64))
+        toastLabel.backgroundColor = UIColor.red.withAlphaComponent(0.6)
+        toastLabel.textColor = UIColor.white
+        toastLabel.textAlignment = .center;
+        toastLabel.font = UIFont(name: "Montserrat-Light", size: 12.0)
+        toastLabel.text = message
+        toastLabel.alpha = 1.0
+        toastLabel.layer.cornerRadius = 10;
+        toastLabel.clipsToBounds  =  true
+        self.view.addSubview(toastLabel)
+        UIView.animate(withDuration: 4.0, delay: 0.1, options: .curveEaseOut, animations: {
+            toastLabel.alpha = 0.0
+        }, completion: {(isCompleted) in
+            toastLabel.removeFromSuperview()
+        })
     }
     
     /**
