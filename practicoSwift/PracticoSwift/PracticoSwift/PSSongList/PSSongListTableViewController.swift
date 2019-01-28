@@ -38,4 +38,10 @@ class PSSongListTableViewController: UITableViewController {
         return 90
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let psSongDetailViewController = PSSongDetailViewController()
+        psSongDetailViewController.song = self.songs![indexPath.row]
+    self.navigationController?.pushViewController(psSongDetailViewController, animated: true)
+    }
+    
 }

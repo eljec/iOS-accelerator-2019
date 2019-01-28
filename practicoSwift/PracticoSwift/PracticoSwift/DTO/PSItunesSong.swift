@@ -80,7 +80,13 @@ class PSItunesSong : NSObject, PSSong {
         artworkUrl100 = dictionary["artworkUrl100"] as? String
         collectionPrice = dictionary["collectionPrice"] as? Double
         trackPrice = dictionary["trackPrice"] as? Double
-        releaseDate = dictionary["releaseDate"] as? Date
+        if let releaseDateString = dictionary["releaseDate"]{
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy'-'MM'-'dd'T'HH':'mm':'ssZZZ"
+            let date = dateFormatter.date(from: releaseDateString as! String)
+            releaseDate = date
+        }
+        
         collectionExplicitness = dictionary["collectionExplicitness"] as? String
         trackExplicitness = dictionary["trackExplicitness"] as? String
         discCount = dictionary["discCount"] as? Int

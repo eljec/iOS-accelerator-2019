@@ -3,29 +3,35 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "PSSongListTableViewController.tableView(_:cellForRowAt:):PSSongListTableViewController.swift">
+         contextName = "closure #1 in ItunesSongService.getSongsByQuery(query:completion:):ItunesSongService.swift">
          <PersistentStrings>
             <PersistentString
-               value = "self.songs">
+               value = "response.">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "PSSongListViewController.songs.didset:PSSongListViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "songs">
-            </PersistentString>
-         </PersistentStrings>
+         contextName = "PSSongDetailViewController.viewDidLoad():PSSongDetailViewController.swift">
       </ContextState>
       <ContextState
          contextName = "PSSongTableViewCell.layoutSubviews():PSSongTableViewCell.swift">
       </ContextState>
       <ContextState
-         contextName = "ItunesSongService.getSongsByQuery(query:completion:):ItunesSongService.swift">
+         contextName = "PSSongTableViewCell.song.didset:PSSongTableViewCell.swift">
          <PersistentStrings>
             <PersistentString
-               value = "ITUNES_URL + query">
+               value = "self.trackNameLabel">
+            </PersistentString>
+            <PersistentString
+               value = "self.trackNameLabel.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PSSongDetailViewController.initialize():PSSongDetailViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "songItem.releaseDate">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -47,6 +53,25 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "ItunesSongService.getSongsByQuery(query:completion:):ItunesSongService.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "ITUNES_URL + query">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PSItunesSong.init(dictionary:):PSItunesSong.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "dictionary[&quot;releaseDate&quot;]">
+            </PersistentString>
+            <PersistentString
+               value = "dictionary[&quot;releaseDate&quot;] as? Date">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "PSSongListTableViewController.tableView(_:numberOfRowsInSection:):PSSongListTableViewController.swift">
          <PersistentStrings>
             <PersistentString
@@ -58,21 +83,26 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "closure #1 in ItunesSongService.getSongsByQuery(query:completion:):ItunesSongService.swift">
+         contextName = "PSSongListTableViewController.tableView(_:cellForRowAt:):PSSongListTableViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "response.">
+               value = "self.songs">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "PSSongTableViewCell.song.didset:PSSongTableViewCell.swift">
+         contextName = "PSSongListViewController.songs.didset:PSSongListViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "self.trackNameLabel">
+               value = "songs">
             </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PSSongDetailViewController.song.didset:PSSongDetailViewController.swift">
+         <PersistentStrings>
             <PersistentString
-               value = "self.trackNameLabel.text">
+               value = "self.artistNameLabel">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

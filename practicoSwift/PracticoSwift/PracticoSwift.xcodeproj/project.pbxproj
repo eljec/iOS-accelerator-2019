@@ -22,6 +22,8 @@
 		A7F20A6021FF474600DD1362 /* PSSongListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7F20A5E21FF474600DD1362 /* PSSongListTableViewController.xib */; };
 		A7F20A6321FF4A9700DD1362 /* PSSongTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F20A6121FF4A9700DD1362 /* PSSongTableViewCell.swift */; };
 		A7F20A6421FF4A9700DD1362 /* PSSongTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7F20A6221FF4A9700DD1362 /* PSSongTableViewCell.xib */; };
+		A7F20A6721FF6E7E00DD1362 /* PSSongDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F20A6521FF6E7E00DD1362 /* PSSongDetailViewController.swift */; };
+		A7F20A6821FF6E7E00DD1362 /* PSSongDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7F20A6621FF6E7E00DD1362 /* PSSongDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		A7F20A5E21FF474600DD1362 /* PSSongListTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PSSongListTableViewController.xib; sourceTree = "<group>"; };
 		A7F20A6121FF4A9700DD1362 /* PSSongTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSSongTableViewCell.swift; sourceTree = "<group>"; };
 		A7F20A6221FF4A9700DD1362 /* PSSongTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PSSongTableViewCell.xib; sourceTree = "<group>"; };
+		A7F20A6521FF6E7E00DD1362 /* PSSongDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSSongDetailViewController.swift; sourceTree = "<group>"; };
+		A7F20A6621FF6E7E00DD1362 /* PSSongDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PSSongDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +173,8 @@
 				A7F20A5E21FF474600DD1362 /* PSSongListTableViewController.xib */,
 				A7F20A6121FF4A9700DD1362 /* PSSongTableViewCell.swift */,
 				A7F20A6221FF4A9700DD1362 /* PSSongTableViewCell.xib */,
+				A7F20A6521FF6E7E00DD1362 /* PSSongDetailViewController.swift */,
+				A7F20A6621FF6E7E00DD1362 /* PSSongDetailViewController.xib */,
 			);
 			path = PSSongList;
 			sourceTree = "<group>";
@@ -278,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7F20A1721FB596300DD1362 /* LaunchScreen.storyboard in Resources */,
+				A7F20A6821FF6E7E00DD1362 /* PSSongDetailViewController.xib in Resources */,
 				A7F20A6021FF474600DD1362 /* PSSongListTableViewController.xib in Resources */,
 				A7F20A5721FBA3C500DD1362 /* PSSongSearchViewController.xib in Resources */,
 				A7F20A6421FF4A9700DD1362 /* PSSongTableViewCell.xib in Resources */,
@@ -313,6 +320,7 @@
 				A7F20A3E21FB5AFB00DD1362 /* PSItunesSong.swift in Sources */,
 				A7F20A4321FB5EB000DD1362 /* PSItunesSongService.swift in Sources */,
 				A7F20A5621FBA3C500DD1362 /* PSSongSearchViewController.swift in Sources */,
+				A7F20A6721FF6E7E00DD1362 /* PSSongDetailViewController.swift in Sources */,
 				A7F20A0D21FB596200DD1362 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
