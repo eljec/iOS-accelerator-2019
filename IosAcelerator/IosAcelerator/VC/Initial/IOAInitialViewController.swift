@@ -31,13 +31,18 @@ class IOAInitialViewController: UIViewController {
     }
     
     @IBAction func onClickSelection(_ sender: UIButton) {
+        
+        // Chequear el TextField
+        guard let text = self.searchTextField.text else{
+            return
+        }
+        
         // Lanzar Animacion
         indicatorView.startAnimating()
        
         // Formatear lo introducido
-        var url = baseUrl + (self.searchTextField.text ?? "")
+        var url = baseUrl + String.formattedWithoutRegExp(string: text)
         url = String.formattedURLParams(params: url)
-        
         
         // Obtengo si hay que invertir o no
         let switchIsOn = self.orderRevertSwitch.isOn
@@ -97,8 +102,17 @@ class IOAInitialViewController: UIViewController {
         // Error completion
         let onError: (Error?) -> Void = {
             error in
+            
+            OperationQueue.main.addOperation({
+                weakSelf?.indicatorView.stopAnimating()
+            })
+            
+            guard let error = error else {
+                return
+            }
+            
             let handlerError = IOAHandleError()
-            handlerError.handleError(error: error!, controller: self)
+            handlerError.handleError(error: error, controller: self)
         }
         
         let service = IOAService()

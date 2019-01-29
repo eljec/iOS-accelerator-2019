@@ -12,7 +12,10 @@ class IOAService: NSObject {
     func fetchUrl(strUrl: String, onSuccess:@escaping (Data?, URLResponse?) -> Void, onError:@escaping (Error?) -> Void){
         
         // Creo la Url
-        let url = URL(string: strUrl)!
+        guard let url = URL(string: strUrl) else {
+            onError(nil)
+            return
+        }
         
         // Control de Errores
         let closure : (Data?, URLResponse?, Error?) -> Void = {

@@ -37,4 +37,16 @@ extension String {
         let date = formatter.date(from: dateString)
         return date
     }
+    
+    static func formattedWithoutRegExp(string: String) -> String {
+        let regex = try! NSRegularExpression(pattern: "[%]", options: NSRegularExpression.Options.caseInsensitive)
+        let range = NSMakeRange(0, string.count)
+
+        let modString = regex.stringByReplacingMatches(in: string, options: [], range: range, withTemplate: "")
+        
+//        let strCriterioNuevo = string.replacingOccurrences(of: " ", with: "+")
+
+        print(modString)
+        return modString
+    }
 }
