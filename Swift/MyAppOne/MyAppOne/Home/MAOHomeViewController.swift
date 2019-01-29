@@ -13,10 +13,21 @@ class MAOHomeViewController: UIViewController {
     let url = "https://itunes.apple.com/search?term=the+beatles"
     // get temp response
     let data = MAOItunesApi()
+    let listViewController = MAOListViewController()    // Table View instance
 
-//    @IBOutlet weak var loadDataBtn: UIButton!
     
+    @IBOutlet weak var OrderByID: UIButton!
     
+    @IBAction func orderByID(_ sender: UIButton) {
+        data.getResults(urlQuery: url, completionHandler: { (data) in
+            guard let response = try? JSONDecoder().decode(Songs.self, from: data) else {
+                print("Error: Couldn't decode data into response")
+                return
+            }
+            let sortedArray = response.results.sorted(by: { Int($0.trackId!) > Int($1.trackId!) })
+            self.callListView(tracks: sortedArray)
+        })
+    }
     
     @IBAction func loadDataBtn(_ sender: UIButton) {
         data.getResults(urlQuery: url, completionHandler: { (data) in
@@ -24,22 +35,16 @@ class MAOHomeViewController: UIViewController {
                 print("Error: Couldn't decode data into response")
                 return
             }
-            
-//            let songs = response.results
-//            print(<#T##items: Any...##Any#>)
-            
-            DispatchQueue.main.async {
-//                let listViewController = MAOListViewController(nibName: "MAOListViewController", bundle: nil)
-                
-                // call second view
-                let listViewController = MAOListViewController()
-    
-                listViewController.tracks = response.results
-                self.navigationController?.pushViewController(listViewController, animated: true)
-                
-            }
-
+            self.callListView(tracks: response.results)
         })
+    }
+    
+    // call second view
+    func callListView(tracks: [Track]) -> Void {
+        DispatchQueue.main.async {
+            self.listViewController.tracks = tracks
+            self.navigationController?.pushViewController(self.listViewController, animated: true)
+        }
     }
     
     override func viewDidLoad() {
@@ -48,10 +53,6 @@ class MAOHomeViewController: UIViewController {
         // hide navigation bar
         self.navigationController?.setNavigationBarHidden(true, animated: false)
         
-
-        
-        // Ejemplo de closure en variable
-//        var aParameterAndReturn: (String) ->(String) =  { "\($0)" + ", hey there" }
         
 //        data.getResults(urlQuery: url, completionHandler: { (data) in
 //            guard let response = try? JSONDecoder().decode(Songs.self, from: data) else {

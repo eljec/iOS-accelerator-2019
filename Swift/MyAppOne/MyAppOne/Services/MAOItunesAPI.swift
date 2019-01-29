@@ -23,9 +23,6 @@ class MAOItunesApi {
             }
             do {
                 // data we are getting from network request
-//                let decoder = JSONDecoder()
-//                let response = try JSONDecoder().decode(Songs.self, from: dataResponse)
-//                print(response.results[0].trackName)
                 completionHandler(data!)
             } catch { print(error) }
         }

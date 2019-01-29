@@ -44,6 +44,7 @@ class MAOListViewController: UIViewController, UITableViewDataSource, UITableVie
                 }
             }
         }
+        
         return cell
     }
     
