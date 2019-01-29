@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController" customModule="MyAppOne" customModuleProvider="target">
+            <connections>
+                <outlet property="albumUIImageView" destination="gwb-Yp-Jja" id="I6q-Mc-X2Z"/>
+                <outlet property="artistNameLabel" destination="pbH-eg-624" id="16F-wL-In7"/>
+                <outlet property="collectionNameLabel" destination="JsQ-IM-IsD" id="VDe-Ux-0ha"/>
+                <outlet property="trackNameLabel" destination="dXu-kQ-cxT" id="dqv-EC-naK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gwb-Yp-Jja">
+                    <rect key="frame" x="94" y="66" width="132" height="130"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Collection Name" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JsQ-IM-IsD">
+                    <rect key="frame" x="16" y="347" width="288" height="41"/>
+                    <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L7T-b5-O2N">
+                    <rect key="frame" x="130" y="510.5" width="60" height="30"/>
+                    <state key="normal" title="Comprar"/>
+                    <connections>
+                        <action selector="buyButton:" destination="-1" eventType="touchUpInside" id="Zls-FK-ida"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXu-kQ-cxT">
+                    <rect key="frame" x="16" y="226" width="288" height="86"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="86" id="uUe-lJ-epf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Artist Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbH-eg-624">
+                    <rect key="frame" x="16" y="408.5" width="288" height="48"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="pbH-eg-624" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0Om-ig-dZw"/>
+                <constraint firstItem="dXu-kQ-cxT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0Zc-p7-MF7"/>
+                <constraint firstItem="pbH-eg-624" firstAttribute="top" secondItem="JsQ-IM-IsD" secondAttribute="bottom" constant="41" id="4ct-TI-KMK"/>
+                <constraint firstItem="L7T-b5-O2N" firstAttribute="top" secondItem="pbH-eg-624" secondAttribute="bottom" constant="78" id="FLS-dV-xYX"/>
+                <constraint firstItem="dXu-kQ-cxT" firstAttribute="leading" secondItem="JsQ-IM-IsD" secondAttribute="leading" id="Kxz-yj-BBo"/>
+                <constraint firstItem="pbH-eg-624" firstAttribute="centerX" secondItem="L7T-b5-O2N" secondAttribute="centerX" id="U9c-kZ-xr2"/>
+                <constraint firstItem="JsQ-IM-IsD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="X8s-5A-jpb"/>
+                <constraint firstItem="gwb-Yp-Jja" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="94" id="YVw-Av-AjH"/>
+                <constraint firstItem="dXu-kQ-cxT" firstAttribute="top" secondItem="gwb-Yp-Jja" secondAttribute="bottom" constant="30" id="a1e-oc-EYA"/>
+                <constraint firstItem="L7T-b5-O2N" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="bqg-Mn-BVH"/>
+                <constraint firstItem="dXu-kQ-cxT" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailingMargin" id="jzU-NZ-DCW"/>
+                <constraint firstItem="JsQ-IM-IsD" firstAttribute="trailing" secondItem="pbH-eg-624" secondAttribute="trailing" id="nvG-xJ-KXb"/>
+                <constraint firstItem="dXu-kQ-cxT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="pdW-10-7QB"/>
+                <constraint firstItem="gwb-Yp-Jja" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="46" id="sqO-KW-WMr"/>
+                <constraint firstItem="dXu-kQ-cxT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="226" id="xGw-FX-ZYT"/>
+                <constraint firstItem="JsQ-IM-IsD" firstAttribute="top" secondItem="dXu-kQ-cxT" secondAttribute="bottom" constant="35" id="xtK-w2-HJi"/>
+                <constraint firstItem="gwb-Yp-Jja" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yyq-xH-Sro"/>
+                <constraint firstItem="JsQ-IM-IsD" firstAttribute="leading" secondItem="pbH-eg-624" secondAttribute="leading" id="yzi-tH-hdz"/>
+                <constraint firstItem="dXu-kQ-cxT" firstAttribute="trailing" secondItem="JsQ-IM-IsD" secondAttribute="trailing" id="zAf-2l-3Eo"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="63.75" y="55.985915492957744"/>
+        </view>
+    </objects>
+</document>
