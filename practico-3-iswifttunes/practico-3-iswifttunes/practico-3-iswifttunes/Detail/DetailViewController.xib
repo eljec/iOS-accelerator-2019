@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController" customModule="practico_3_iswifttunes" customModuleProvider="target">
+            <connections>
+                <outlet property="artistName" destination="QS6-RI-NAI" id="y9w-eM-snz"/>
+                <outlet property="collectionImage" destination="REQ-Gy-hpu" id="eSd-EP-xea"/>
+                <outlet property="collectionName" destination="3uU-LQ-twm" id="cPj-4W-PeG"/>
+                <outlet property="container" destination="NPb-Wo-HWQ" id="HDH-O1-SP5"/>
+                <outlet property="primaryGenreName" destination="R9s-Bi-5gb" id="G1E-kg-NVK"/>
+                <outlet property="trackName" destination="Q40-iQ-XA0" id="2Lk-iK-1D8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NPb-Wo-HWQ">
+                    <rect key="frame" x="30" y="80" width="315" height="387"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Better Together" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q40-iQ-XA0">
+                            <rect key="frame" x="13" y="16" width="289" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="REQ-Gy-hpu">
+                            <rect key="frame" x="63" y="74" width="189" height="200"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="200" id="UOX-NK-wIB"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jack Johnson" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QS6-RI-NAI">
+                            <rect key="frame" x="13" y="282" width="289" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="0.310295141705073" blue="0.42794552804065411" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In Between Dreams (Bonus Track Version)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3uU-LQ-twm">
+                            <rect key="frame" x="13" y="43" width="279" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rock" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9s-Bi-5gb">
+                            <rect key="frame" x="13" y="306" width="289" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVb-cR-U1B">
+                            <rect key="frame" x="13" y="333" width="289" height="30"/>
+                            <state key="normal" title="Escuchar"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailingMargin" secondItem="Q40-iQ-XA0" secondAttribute="trailing" constant="5" id="A6Q-6P-whb"/>
+                        <constraint firstItem="R9s-Bi-5gb" firstAttribute="leading" secondItem="NPb-Wo-HWQ" secondAttribute="leadingMargin" constant="5" id="NCg-3q-OcZ"/>
+                        <constraint firstItem="DVb-cR-U1B" firstAttribute="top" secondItem="R9s-Bi-5gb" secondAttribute="bottom" constant="10" id="Oab-4l-fbb"/>
+                        <constraint firstItem="REQ-Gy-hpu" firstAttribute="top" secondItem="3uU-LQ-twm" secondAttribute="bottom" constant="14" id="OkL-Nb-PxV"/>
+                        <constraint firstItem="Q40-iQ-XA0" firstAttribute="leading" secondItem="NPb-Wo-HWQ" secondAttribute="leadingMargin" constant="5" id="W2i-bX-fW2"/>
+                        <constraint firstItem="QS6-RI-NAI" firstAttribute="leading" secondItem="NPb-Wo-HWQ" secondAttribute="leadingMargin" constant="5" id="Xcb-vV-YDG"/>
+                        <constraint firstAttribute="trailingMargin" secondItem="R9s-Bi-5gb" secondAttribute="trailing" constant="5" id="ZtM-Ha-aRn"/>
+                        <constraint firstItem="REQ-Gy-hpu" firstAttribute="centerX" secondItem="QS6-RI-NAI" secondAttribute="centerX" id="bDS-FG-QQT"/>
+                        <constraint firstAttribute="trailingMargin" secondItem="DVb-cR-U1B" secondAttribute="trailing" constant="5" id="cwp-0Y-vnD"/>
+                        <constraint firstItem="QS6-RI-NAI" firstAttribute="top" secondItem="REQ-Gy-hpu" secondAttribute="bottom" constant="8" symbolic="YES" id="hVd-pB-gg1"/>
+                        <constraint firstAttribute="trailingMargin" secondItem="QS6-RI-NAI" secondAttribute="trailing" constant="5" id="iGr-Ui-dXk"/>
+                        <constraint firstAttribute="trailingMargin" secondItem="3uU-LQ-twm" secondAttribute="trailing" constant="15" id="jyi-Mq-cin"/>
+                        <constraint firstItem="3uU-LQ-twm" firstAttribute="leading" secondItem="NPb-Wo-HWQ" secondAttribute="leadingMargin" constant="5" id="k3i-9f-lA5"/>
+                        <constraint firstItem="REQ-Gy-hpu" firstAttribute="leading" secondItem="NPb-Wo-HWQ" secondAttribute="leading" constant="63" id="kUo-Xc-JOJ"/>
+                        <constraint firstItem="R9s-Bi-5gb" firstAttribute="top" secondItem="QS6-RI-NAI" secondAttribute="bottom" constant="3" id="qCh-fC-D2o"/>
+                        <constraint firstItem="3uU-LQ-twm" firstAttribute="top" secondItem="NPb-Wo-HWQ" secondAttribute="topMargin" constant="35" id="uK1-uG-nA5"/>
+                        <constraint firstItem="DVb-cR-U1B" firstAttribute="leading" secondItem="NPb-Wo-HWQ" secondAttribute="leadingMargin" constant="5" id="yta-OD-vxJ"/>
+                        <constraint firstItem="Q40-iQ-XA0" firstAttribute="top" secondItem="NPb-Wo-HWQ" secondAttribute="topMargin" constant="8" id="z8M-wF-wSh"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="NPb-Wo-HWQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="60" id="4hb-eN-mPB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NPb-Wo-HWQ" secondAttribute="trailing" constant="30" id="oyE-Rm-Kra"/>
+                <constraint firstItem="NPb-Wo-HWQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="pT1-I0-q4j"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="NPb-Wo-HWQ" secondAttribute="bottom" constant="200" id="wpE-61-V3h"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="53.600000000000001" y="48.125937031484263"/>
+        </view>
+    </objects>
+</document>

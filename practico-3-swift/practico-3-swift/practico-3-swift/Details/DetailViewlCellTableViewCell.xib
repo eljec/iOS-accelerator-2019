@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="165" id="KGk-i7-Jjw" customClass="DetailViewCellTableViewCell" customModule="practico_3_swift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="510" height="165"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM" customClass="DetailViewCellTableViewCell" customModule="practico_3_swift" customModuleProvider="target">
+                <rect key="frame" x="0.0" y="0.0" width="510" height="164.5"/>
+                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In Between Dreams (Bonus Track Version)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lGw-wo-N8Y">
+                        <rect key="frame" x="15" y="15" width="480" height="21"/>
+                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="$9,99" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7SV-4b-o7p">
+                        <rect key="frame" x="467" y="115" width="28" height="11"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="9"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0,23" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQg-sX-P3v">
+                        <rect key="frame" x="474" y="98" width="21" height="11"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="9"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Jack Johnson" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CUY-M9-w9i">
+                        <rect key="frame" x="15" y="50" width="480" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="1" green="0.20397827479215958" blue="0.14108849982063887" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Rock" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBV-qo-8C9">
+                        <rect key="frame" x="15" y="70" width="480" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Collection Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhi-P2-QMU">
+                        <rect key="frame" x="15" y="110" width="69.5" height="11"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Track Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6u-1L-Ykb">
+                        <rect key="frame" x="15" y="95" width="49.5" height="11"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S6P-Ab-F8B">
+                        <rect key="frame" x="15" y="125" width="480" height="27"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" button="YES" link="YES"/>
+                        </accessibility>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                        <color key="tintColor" red="0.27235511608826679" green="0.30441669738185673" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <state key="normal" title="Comprar"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hhi-P2-QMU" firstAttribute="top" secondItem="D6u-1L-Ykb" secondAttribute="bottom" constant="4" id="62j-eK-uUg"/>
+                    <constraint firstItem="D6u-1L-Ykb" firstAttribute="top" secondItem="DBV-qo-8C9" secondAttribute="bottom" constant="13" id="CvZ-ix-COx"/>
+                    <constraint firstAttribute="trailing" secondItem="DBV-qo-8C9" secondAttribute="trailing" constant="15" id="D3I-kx-F4O"/>
+                    <constraint firstItem="7SV-4b-o7p" firstAttribute="top" secondItem="IQg-sX-P3v" secondAttribute="bottom" constant="6" id="Hc9-nO-u49"/>
+                    <constraint firstItem="DBV-qo-8C9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="I8s-14-ujD"/>
+                    <constraint firstAttribute="trailing" secondItem="S6P-Ab-F8B" secondAttribute="trailing" constant="15" id="ILX-89-9jx"/>
+                    <constraint firstItem="lGw-wo-N8Y" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="JMW-9I-sVF"/>
+                    <constraint firstItem="S6P-Ab-F8B" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Jc6-WI-97b"/>
+                    <constraint firstItem="D6u-1L-Ykb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Sf6-mY-riH"/>
+                    <constraint firstItem="lGw-wo-N8Y" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="UhA-Lc-4F5"/>
+                    <constraint firstAttribute="trailing" secondItem="7SV-4b-o7p" secondAttribute="trailing" constant="15" id="cfI-K8-bhg"/>
+                    <constraint firstAttribute="trailing" secondItem="lGw-wo-N8Y" secondAttribute="trailing" constant="15" id="cmZ-o7-ioG"/>
+                    <constraint firstAttribute="trailing" secondItem="IQg-sX-P3v" secondAttribute="trailing" constant="15" id="dFV-WQ-pRo"/>
+                    <constraint firstAttribute="trailing" secondItem="CUY-M9-w9i" secondAttribute="trailing" constant="15" id="daY-pE-gaq"/>
+                    <constraint firstItem="IQg-sX-P3v" firstAttribute="top" secondItem="DBV-qo-8C9" secondAttribute="bottom" constant="16" id="eap-6u-V7H"/>
+                    <constraint firstItem="DBV-qo-8C9" firstAttribute="top" secondItem="CUY-M9-w9i" secondAttribute="bottom" constant="2" id="hm5-aM-ze4"/>
+                    <constraint firstAttribute="bottom" secondItem="S6P-Ab-F8B" secondAttribute="bottom" constant="12.5" id="iLz-vZ-1Ur"/>
+                    <constraint firstItem="CUY-M9-w9i" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="skF-9U-ajD"/>
+                    <constraint firstItem="DBV-qo-8C9" firstAttribute="top" secondItem="CUY-M9-w9i" secondAttribute="bottom" constant="2" id="ugQ-sR-kSI"/>
+                    <constraint firstItem="hhi-P2-QMU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="w6R-5h-3ad"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="trackName" destination="lGw-wo-N8Y" id="69j-M6-f4j"/>
+            </connections>
+            <point key="canvasLocation" x="-424" y="50.824587706146929"/>
+        </tableViewCell>
+    </objects>
+</document>
