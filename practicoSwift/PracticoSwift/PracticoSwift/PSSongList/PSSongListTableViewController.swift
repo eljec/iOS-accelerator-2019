@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PSSongApi
 
 class PSSongListTableViewController: UITableViewController {
     

@@ -1,0 +1,22 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'PracticoSwift' do
+pod 'PSSongApi', :path =>"../../PodNetworking/PSSongApi"
+pod 'ProgressHUD'
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for PracticoSwift
+
+  target 'PracticoSwiftTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'PracticoSwiftUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

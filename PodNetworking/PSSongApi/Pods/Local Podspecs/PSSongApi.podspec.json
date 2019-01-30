@@ -1,0 +1,22 @@
+{
+  "name": "PSSongApi",
+  "version": "0.0.1",
+  "license": "ATR",
+  "homepage": "http://relatedcode.com",
+  "authors": {
+    "ATR Code": "info@atr.com"
+  },
+  "summary": "This library manage HTTP request for a 3 party app",
+  "source": {
+    "git": "https://github.com/relatedcode/ProgressHUD.git",
+    "tag": "v2.60"
+  },
+  "platforms": {
+    "ios": "9.3"
+  },
+  "source_files": [
+    "PSSongApi/PS*.{h,m}",
+    "PSSongApi/DTO/*.{h,m}",
+    "PSSongApi/Categories/*.{h,m}"
+  ]
+}

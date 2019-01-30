@@ -15,7 +15,6 @@
                 <outlet property="ascSwitch" destination="Yff-tY-UFJ" id="64c-Su-PYB"/>
                 <outlet property="orderBySegment" destination="bp2-ox-X58" id="wUI-dF-IDF"/>
                 <outlet property="songQueryText" destination="st0-uY-Qst" id="Tqb-O6-nmq"/>
-                <outlet property="spinnerIndicator" destination="SqW-p0-ny2" id="RUr-bJ-309"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -87,12 +86,6 @@
                         <action selector="searchButtonAction:" destination="-1" eventType="touchUpInside" id="R4n-Qb-AwX"/>
                     </connections>
                 </button>
-                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="SqW-p0-ny2">
-                    <rect key="frame" x="177" y="355" width="20" height="20"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="20" id="6KS-N1-xqx"/>
-                    </constraints>
-                </activityIndicatorView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -103,7 +96,6 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bp2-ox-X58" secondAttribute="trailing" constant="16" id="Bsh-Eg-6mx"/>
                 <constraint firstItem="j65-EA-A5I" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Ej7-yb-DtB"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HeY-g5-aIt" secondAttribute="trailing" constant="16" id="HSa-W2-U5d"/>
-                <constraint firstItem="SqW-p0-ny2" firstAttribute="top" secondItem="fal-2q-fTM" secondAttribute="bottom" constant="8" id="Hee-GC-2fe"/>
                 <constraint firstItem="bp2-ox-X58" firstAttribute="top" secondItem="gLe-KJ-Avr" secondAttribute="bottom" constant="8" id="Ly5-pn-NaP"/>
                 <constraint firstItem="gLe-KJ-Avr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="N58-Dk-D0l"/>
                 <constraint firstItem="gLe-KJ-Avr" firstAttribute="top" secondItem="st0-uY-Qst" secondAttribute="bottom" constant="8" id="Pzb-vo-JSQ"/>
@@ -113,8 +105,6 @@
                 <constraint firstItem="Yff-tY-UFJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="bSF-P7-iEZ"/>
                 <constraint firstItem="bp2-ox-X58" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="jek-mh-nno"/>
                 <constraint firstItem="j65-EA-A5I" firstAttribute="top" secondItem="bp2-ox-X58" secondAttribute="bottom" constant="8" id="mEQ-Ci-PIi"/>
-                <constraint firstItem="SqW-p0-ny2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="177" id="nFh-6D-C6Q"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SqW-p0-ny2" secondAttribute="trailing" constant="178" id="sc6-Zb-0d1"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fal-2q-fTM" secondAttribute="trailing" constant="164" id="xTw-dP-Qgd"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gLe-KJ-Avr" secondAttribute="trailing" constant="16" id="xfU-JI-PEt"/>
                 <constraint firstItem="fal-2q-fTM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="163" id="yfv-NB-e2A"/>

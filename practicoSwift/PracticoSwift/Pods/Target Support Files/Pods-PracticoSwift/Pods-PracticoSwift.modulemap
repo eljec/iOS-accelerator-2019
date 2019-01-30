@@ -1,0 +1,6 @@
+framework module Pods_PracticoSwift {
+  umbrella header "Pods-PracticoSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

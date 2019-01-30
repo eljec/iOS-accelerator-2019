@@ -8,6 +8,7 @@
 
 import UIKit
 import SafariServices
+import PSSongApi
 
 class PSSongDetailViewController: UIViewController {
 
@@ -41,13 +42,7 @@ class PSSongDetailViewController: UIViewController {
                 self.collectionNameLabel.text = "💽: \(collectionName)"
             }
             
-            if let releaseDate = songItem.releaseDate{
-                let formatter = DateFormatter()
-                // initially set the format based on your datepicker date / server String
-                formatter.dateFormat = "dd/MM/yyyy"
-                let dateString = formatter.string(from: releaseDate)
-                self.releaseDateLabel.text = "📅: \(dateString)"
-            }
+            self.releaseDateLabel.text = "📅: 01/02/2015"
         }
     }
     

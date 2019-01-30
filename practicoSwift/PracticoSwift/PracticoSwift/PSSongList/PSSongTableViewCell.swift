@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import PSSongApi
 class PSSongTableViewCell: UITableViewCell {
 
     @IBOutlet weak var trackNameLabel: UILabel!

@@ -7,62 +7,42 @@
 //
 
 import UIKit
+import PSSongApi
+import ProgressHUD
 
 class PSSongSearchViewController: UIViewController {
 
     @IBOutlet weak var songQueryText: UITextField!
     @IBOutlet weak var orderBySegment: UISegmentedControl!
     @IBOutlet weak var ascSwitch: UISwitch!
-    @IBOutlet weak var spinnerIndicator: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.spinnerIndicator.hidesWhenStopped = true
     }
 
     @IBAction func searchButtonAction(_ sender: UIButton) {
         
-        self.spinnerIndicator.startAnimating()
-        
+        ProgressHUD.show("Please wait...")
         let songService:PSSongService = PSItunesSongService()
         
-        let completition = { (songs: [PSSong]) -> Void in
-            
+        let completition = { (songs: [Any]?) -> Void in
             DispatchQueue.main.async {
-                self.initializeViewListWitSongs(songs:songs)
-                self.spinnerIndicator.stopAnimating() 
+                if let songsArray:[PSSong] = songs as? [PSSong]{
+                    self.initializeViewListWitSongs(songs:songsArray)
+                }
+            }
+            ProgressHUD.dismiss()
+        }
+        
+        let errorCompletition = { (errorCause: Error?) -> Void in
+            DispatchQueue.main.async {
+                ProgressHUD.showError("Unexpected Error found. Code:\(errorCause?.localizedDescription ?? "")", interaction: true)
             }
         }
         
-        let errorCompletition = { (errorCause: NSError) -> Void in
-            DispatchQueue.main.async {
-                self.spinnerIndicator.stopAnimating()
-                self.showToast(message: "Unexpected Error found. Code:\(errorCause.code)")
-            }
-        }
-        
-        let orderBy:OrderBy = getOrderBy()
-        
-        songService.getSongsByQuery(query: self.songQueryText.text!, orderBy: orderBy, asc: self.ascSwitch.isOn,  completion: completition, errorCompletition:errorCompletition )
-    }
-    
-    func showToast(message : String) {
-        
-        let toastLabel = UILabel(frame: CGRect(x: self.view.frame.size.width/2 - 150, y: self.view.frame.size.height-500, width: 300, height: 64))
-        toastLabel.backgroundColor = UIColor.red.withAlphaComponent(0.6)
-        toastLabel.textColor = UIColor.white
-        toastLabel.textAlignment = .center;
-        toastLabel.font = UIFont(name: "Montserrat-Light", size: 12.0)
-        toastLabel.text = message
-        toastLabel.alpha = 1.0
-        toastLabel.layer.cornerRadius = 10;
-        toastLabel.clipsToBounds  =  true
-        self.view.addSubview(toastLabel)
-        UIView.animate(withDuration: 4.0, delay: 0.1, options: .curveEaseOut, animations: {
-            toastLabel.alpha = 0.0
-        }, completion: {(isCompleted) in
-            toastLabel.removeFromSuperview()
-        })
+        let orderBy:PSSongOrderBy = getOrderBy()
+
+        songService.getSongsByQuery(self.songQueryText.text!, andOrderBy: orderBy, andAsc: self.ascSwitch.isOn, andCompletition: completition, andError: errorCompletition)
     }
     
     /**
@@ -78,7 +58,7 @@ class PSSongSearchViewController: UIViewController {
     
     }
     
-    func getOrderBy() -> OrderBy{
+    func getOrderBy() -> PSSongOrderBy{
         switch self.orderBySegment?.selectedSegmentIndex {
         case 0:
             return .trackName

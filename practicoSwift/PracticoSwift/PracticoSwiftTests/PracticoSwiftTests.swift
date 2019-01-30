@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import PSSongApi
 @testable import PracticoSwift
 
 class PracticoSwiftTests: XCTestCase {
@@ -24,18 +25,19 @@ class PracticoSwiftTests: XCTestCase {
         let query = "soda stereo"
         let expectation = XCTestExpectation(description: "Should Return something")
         
-        let completition = { (songs: [PSSong]) -> Void in
-            XCTAssertFalse(songs.isEmpty)
+        let completition = { (songs: [Any]?) -> Void in
+            XCTAssertFalse(songs?.isEmpty ?? true)
             expectation.fulfill()
         }
         
-        let errorCompletition  = { (_ errorCause:NSError) -> Void in
+        let errorCompletition = { (errorCause: Error?) -> Void in
             XCTAssertFalse(true, "Unexpected error")
             expectation.fulfill()
         }
         
         // while:
-        itunesSongService.getSongsByQuery(query: query, orderBy: OrderBy.trackName, asc: true, completion: completition, errorCompletition: errorCompletition)
+        
+        itunesSongService.getSongsByQuery(query, andOrderBy: PSSongOrderBy.trackName, andAsc: true, andCompletition: completition, andError: errorCompletition)
         
         // then
 

@@ -120,11 +120,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PracticoSwift/PSSongList/PSSongDetailViewController.swift"
-            timestampString = "570400745.150737"
+            timestampString = "570574170.899134"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "buyTrack(_:)"
             landmarkType = "7">
          </BreakpointContent>

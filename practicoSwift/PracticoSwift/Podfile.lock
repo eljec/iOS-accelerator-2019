@@ -1,0 +1,23 @@
+PODS:
+  - ProgressHUD (2.60)
+  - PSSongApi (0.0.1)
+
+DEPENDENCIES:
+  - ProgressHUD
+  - PSSongApi (from `../../PodNetworking/PSSongApi`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ProgressHUD
+
+EXTERNAL SOURCES:
+  PSSongApi:
+    :path: "../../PodNetworking/PSSongApi"
+
+SPEC CHECKSUMS:
+  ProgressHUD: 4e4efbaf4f5de8bd32e0c4c3b6644a90ea1a8c3e
+  PSSongApi: be6e8f290a37d1ab523ab2c331276711b1a156f4
+
+PODFILE CHECKSUM: bd332674e5466fb4edc5a5ae200ab7b48c98c628
+
+COCOAPODS: 1.5.3

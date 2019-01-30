@@ -1,0 +1,6 @@
+framework module PSSongApi {
+  umbrella header "PSSongApi-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - PSSongApi (0.0.1)
+
+DEPENDENCIES:
+  - PSSongApi (from `./`)
+
+EXTERNAL SOURCES:
+  PSSongApi:
+    :path: "./"
+
+SPEC CHECKSUMS:
+  PSSongApi: be6e8f290a37d1ab523ab2c331276711b1a156f4
+
+PODFILE CHECKSUM: 0d5096d4c857c6378ac0b5918da2a57aa0351e71
+
+COCOAPODS: 1.5.3
