@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import NetworkPod
 
 class MAOCustomTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -26,16 +27,17 @@ class MAOCustomTableViewController: UIViewController, UITableViewDelegate, UITab
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: MAOCustomTableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "CellID", for: indexPath) as! MAOCustomTableViewCell
+        let service: NetworkPod = NetworkPod()
         cell.topLabelCell.text = arrayItems[indexPath.row].trackName
         cell.bottomLabelCell.text = arrayItems[indexPath.row].collectionName
-        let url = URL(string: self.arrayItems[indexPath.row].artworkUrl100!)
-        let session = URLSession(configuration: .default)
-        let downloadPicTask = session.dataTask(with: url!) { (data, response, error) in
+        let url = self.arrayItems[indexPath.row].artworkUrl100!
+        service.request(forUserData: { (data) in
             DispatchQueue.main.async {
-                cell.imageCell.image = UIImage(data: data!)
+                cell.imageCell.image = UIImage(data: data)
             }
-        }
-        downloadPicTask.resume()
+        }, with: { (error) in
+            print("Cannot load image correctly")
+        }, partOfUrl: url)
         return cell
     }
     

@@ -20,15 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let viewController: MAOInitialViewController = MAOInitialViewController()
         let navController: UINavigationController = UINavigationController.init(rootViewController: viewController)
         self.window?.rootViewController = navController
-//        window?.rootViewController = UINavigationController(nibName: "MAOInitialViewController", bundle: nil)
         return true
-        
-//        UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController];
-//
-//        self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-//        self.window.rootViewController = navController;
-//        [self.window makeKeyAndVisible];
-        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

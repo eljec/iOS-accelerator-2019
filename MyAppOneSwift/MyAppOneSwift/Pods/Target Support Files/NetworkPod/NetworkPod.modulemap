@@ -1,0 +1,6 @@
+framework module NetworkPod {
+  umbrella header "NetworkPod-umbrella.h"
+
+  export *
+  module * { export * }
+}

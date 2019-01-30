@@ -1,0 +1,16 @@
+PODS:
+  - NetworkPod (0.0.1)
+
+DEPENDENCIES:
+  - NetworkPod (from `../../MyAppOneNetworkPod/NetworkPod/`)
+
+EXTERNAL SOURCES:
+  NetworkPod:
+    :path: "../../MyAppOneNetworkPod/NetworkPod/"
+
+SPEC CHECKSUMS:
+  NetworkPod: 5ce957ed8bc06b0aafbc47a80dedba97b7db73d2
+
+PODFILE CHECKSUM: ec6e6e639ab815ac8ca4b4718eaf76ac4ab26789
+
+COCOAPODS: 1.5.3

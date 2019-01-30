@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import NetworkPod
 
 class MAOInitialViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
@@ -42,19 +43,29 @@ class MAOInitialViewController: UIViewController, UIPickerViewDelegate, UIPicker
     }
  
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        let service: NetworkPod = NetworkPod()
+        var url: String = "https://itunes.apple.com/search?term="
         let strWithOutSpaces = (self.searchBar.text?.components(separatedBy: CharacterSet.whitespacesAndNewlines).joined(separator: ""))!
+        url.append(contentsOf: strWithOutSpaces)
         self.startAndShowActivityIndicator()
         let tableView = MAOCustomTableViewController(nibName: "MAOCustomTableViewController", bundle: nil)
-        requestForUserDataWith(from: strWithOutSpaces, completionHandlerSucess: { (jsonModel) in
+        service.request(forUserData: { (data) in
             self.stopAndHiddenActivityIndicator()
-            tableView.arrayItems = self.sortedArray(array: jsonModel.results, order: self.pickerData[row]!)
-            self.navigationController?.pushViewController(tableView, animated: true)
-        }) { (Error) in
+            DispatchQueue.main.async {
+                do {
+                    guard let response = try? JSONDecoder().decode(jsonModel.self, from: data) else {
+                        return
+                    }
+                    tableView.arrayItems = self.sortedArray(array: response.results, order: self.pickerData[row]!)
+                    self.navigationController?.pushViewController(tableView, animated: true)
+                }
+            }
+        }, with: { (error) in
             self.stopAndHiddenActivityIndicator()
             let alert: UIAlertController = .init(title: "Error Message", message: "Oh! Something went wrong, please press again", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Try Again", style: .default, handler: nil))
             self.present(alert, animated: true, completion: nil)
-        }
+        }, partOfUrl: url)
     }
     
     func startAndShowActivityIndicator() {
