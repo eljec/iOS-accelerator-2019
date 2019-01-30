@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16468F5E21FE278300868644 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16468F5D21FE278300868644 /* AppDelegate.swift */; };
+		16468F6021FE278300868644 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16468F5F21FE278300868644 /* ViewController.swift */; };
+		16468F6521FE278400868644 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16468F6421FE278400868644 /* Assets.xcassets */; };
+		16468F6821FE278400868644 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16468F6621FE278400868644 /* LaunchScreen.storyboard */; };
+		16468F7121FE27C600868644 /* MLServicesHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16468F7021FE27C600868644 /* MLServicesHelper.swift */; };
+		16468F7421FE285800868644 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16468F7321FE285800868644 /* Structs.swift */; };
+		16468F7821FE28D700868644 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16468F7621FE28D700868644 /* ListTableViewController.swift */; };
+		16468F7921FE28D700868644 /* ListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16468F7721FE28D700868644 /* ListTableViewController.xib */; };
+		16468F7C21FE2A8500868644 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16468F7B21FE2A8500868644 /* DetailTableViewCell.swift */; };
+		16468F7F21FF2D6800868644 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16468F7D21FF2D6800868644 /* DetailViewController.swift */; };
+		16468F8021FF2D6800868644 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16468F7E21FF2D6800868644 /* DetailViewController.xib */; };
+		16BE5B0F21FF4AE40022645D /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BE5B0D21FF4AE40022645D /* InitialViewController.swift */; };
+		16BE5B1021FF4AE40022645D /* InitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16BE5B0E21FF4AE40022645D /* InitialViewController.xib */; };
+		EE33B5F40AE7BBF59084410C /* Pods_practico_3_iswifttunes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD70B115E26E3F93D37663B /* Pods_practico_3_iswifttunes.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		16468F5A21FE278300868644 /* practico-3-iswifttunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "practico-3-iswifttunes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		16468F5D21FE278300868644 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		16468F5F21FE278300868644 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		16468F6421FE278400868644 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		16468F6721FE278400868644 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		16468F6921FE278400868644 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16468F7021FE27C600868644 /* MLServicesHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLServicesHelper.swift; sourceTree = "<group>"; };
+		16468F7321FE285800868644 /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
+		16468F7621FE28D700868644 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		16468F7721FE28D700868644 /* ListTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewController.xib; sourceTree = "<group>"; };
+		16468F7B21FE2A8500868644 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		16468F7D21FF2D6800868644 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		16468F7E21FF2D6800868644 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		16BE5B0D21FF4AE40022645D /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		16BE5B0E21FF4AE40022645D /* InitialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InitialViewController.xib; sourceTree = "<group>"; };
+		6A18031F1A2F654E59015F2A /* Pods-practico-3-iswifttunes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-practico-3-iswifttunes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-practico-3-iswifttunes/Pods-practico-3-iswifttunes.debug.xcconfig"; sourceTree = "<group>"; };
+		98E3F0B22DDB77994D6BFF00 /* Pods-practico-3-iswifttunes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-practico-3-iswifttunes.release.xcconfig"; path = "Pods/Target Support Files/Pods-practico-3-iswifttunes/Pods-practico-3-iswifttunes.release.xcconfig"; sourceTree = "<group>"; };
+		ACD70B115E26E3F93D37663B /* Pods_practico_3_iswifttunes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_practico_3_iswifttunes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		16468F5721FE278300868644 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE33B5F40AE7BBF59084410C /* Pods_practico_3_iswifttunes.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16468F5121FE278300868644 = {
+			isa = PBXGroup;
+			children = (
+				16468F5C21FE278300868644 /* practico-3-iswifttunes */,
+				16468F5B21FE278300868644 /* Products */,
+				CC10DAA8FABBE3AD357F6414 /* Pods */,
+				4EECB5FE844A7ED2410A2ACD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		16468F5B21FE278300868644 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16468F5A21FE278300868644 /* practico-3-iswifttunes.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		16468F5C21FE278300868644 /* practico-3-iswifttunes */ = {
+			isa = PBXGroup;
+			children = (
+				16BE5B0C21FF4ABF0022645D /* Initial */,
+				16468F7A21FE2A6600868644 /* Detail */,
+				16468F7521FE287900868644 /* List */,
+				16468F7221FE284000868644 /* Structs */,
+				16468F6F21FE27B600868644 /* Services */,
+				16468F5D21FE278300868644 /* AppDelegate.swift */,
+				16468F5F21FE278300868644 /* ViewController.swift */,
+				16468F6421FE278400868644 /* Assets.xcassets */,
+				16468F6621FE278400868644 /* LaunchScreen.storyboard */,
+				16468F6921FE278400868644 /* Info.plist */,
+			);
+			path = "practico-3-iswifttunes";
+			sourceTree = "<group>";
+		};
+		16468F6F21FE27B600868644 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				16468F7021FE27C600868644 /* MLServicesHelper.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		16468F7221FE284000868644 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				16468F7321FE285800868644 /* Structs.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		16468F7521FE287900868644 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				16468F7621FE28D700868644 /* ListTableViewController.swift */,
+				16468F7721FE28D700868644 /* ListTableViewController.xib */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		16468F7A21FE2A6600868644 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				16468F7B21FE2A8500868644 /* DetailTableViewCell.swift */,
+				16468F7D21FF2D6800868644 /* DetailViewController.swift */,
+				16468F7E21FF2D6800868644 /* DetailViewController.xib */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		16BE5B0C21FF4ABF0022645D /* Initial */ = {
+			isa = PBXGroup;
+			children = (
+				16BE5B0D21FF4AE40022645D /* InitialViewController.swift */,
+				16BE5B0E21FF4AE40022645D /* InitialViewController.xib */,
+			);
+			path = Initial;
+			sourceTree = "<group>";
+		};
+		4EECB5FE844A7ED2410A2ACD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACD70B115E26E3F93D37663B /* Pods_practico_3_iswifttunes.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC10DAA8FABBE3AD357F6414 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A18031F1A2F654E59015F2A /* Pods-practico-3-iswifttunes.debug.xcconfig */,
+				98E3F0B22DDB77994D6BFF00 /* Pods-practico-3-iswifttunes.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		16468F5921FE278300868644 /* practico-3-iswifttunes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16468F6C21FE278400868644 /* Build configuration list for PBXNativeTarget "practico-3-iswifttunes" */;
+			buildPhases = (
+				381E9ACA73E45567D57D28C3 /* [CP] Check Pods Manifest.lock */,
+				16468F5621FE278300868644 /* Sources */,
+				16468F5721FE278300868644 /* Frameworks */,
+				16468F5821FE278300868644 /* Resources */,
+				4EA7464F559C8632C2F7EA17 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "practico-3-iswifttunes";
+			productName = "practico-3-iswifttunes";
+			productReference = 16468F5A21FE278300868644 /* practico-3-iswifttunes.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		16468F5221FE278300868644 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Gonzalo Alexis Quarin";
+				TargetAttributes = {
+					16468F5921FE278300868644 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 16468F5521FE278300868644 /* Build configuration list for PBXProject "practico-3-iswifttunes" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 16468F5121FE278300868644;
+			productRefGroup = 16468F5B21FE278300868644 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				16468F5921FE278300868644 /* practico-3-iswifttunes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		16468F5821FE278300868644 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16468F6821FE278400868644 /* LaunchScreen.storyboard in Resources */,
+				16468F6521FE278400868644 /* Assets.xcassets in Resources */,
+				16BE5B1021FF4AE40022645D /* InitialViewController.xib in Resources */,
+				16468F7921FE28D700868644 /* ListTableViewController.xib in Resources */,
+				16468F8021FF2D6800868644 /* DetailViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		381E9ACA73E45567D57D28C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-practico-3-iswifttunes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4EA7464F559C8632C2F7EA17 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-practico-3-iswifttunes/Pods-practico-3-iswifttunes-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MELINetworking/MELINetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/ProgressHUD/ProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MELINetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-practico-3-iswifttunes/Pods-practico-3-iswifttunes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16468F5621FE278300868644 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16468F7C21FE2A8500868644 /* DetailTableViewCell.swift in Sources */,
+				16468F7421FE285800868644 /* Structs.swift in Sources */,
+				16468F7121FE27C600868644 /* MLServicesHelper.swift in Sources */,
+				16468F6021FE278300868644 /* ViewController.swift in Sources */,
+				16468F7821FE28D700868644 /* ListTableViewController.swift in Sources */,
+				16468F5E21FE278300868644 /* AppDelegate.swift in Sources */,
+				16468F7F21FF2D6800868644 /* DetailViewController.swift in Sources */,
+				16BE5B0F21FF4AE40022645D /* InitialViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		16468F6621FE278400868644 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16468F6721FE278400868644 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		16468F6A21FE278400868644 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		16468F6B21FE278400868644 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		16468F6D21FE278400868644 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A18031F1A2F654E59015F2A /* Pods-practico-3-iswifttunes.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 53FGRNCNDT;
+				INFOPLIST_FILE = "practico-3-iswifttunes/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mercadolibre.practico-3-iswifttunes.practico-3-iswifttunes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		16468F6E21FE278400868644 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98E3F0B22DDB77994D6BFF00 /* Pods-practico-3-iswifttunes.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 53FGRNCNDT;
+				INFOPLIST_FILE = "practico-3-iswifttunes/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mercadolibre.practico-3-iswifttunes.practico-3-iswifttunes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16468F5521FE278300868644 /* Build configuration list for PBXProject "practico-3-iswifttunes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16468F6A21FE278400868644 /* Debug */,
+				16468F6B21FE278400868644 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16468F6C21FE278400868644 /* Build configuration list for PBXNativeTarget "practico-3-iswifttunes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16468F6D21FE278400868644 /* Debug */,
+				16468F6E21FE278400868644 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 16468F5221FE278300868644 /* Project object */;
+}
