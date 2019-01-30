@@ -8,6 +8,7 @@
 
 import UIKit
 import NetworkPod
+import ProgressHUD
 
 class MAOInitialViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
@@ -62,9 +63,7 @@ class MAOInitialViewController: UIViewController, UIPickerViewDelegate, UIPicker
             }
         }, with: { (error) in
             self.stopAndHiddenActivityIndicator()
-            let alert: UIAlertController = .init(title: "Error Message", message: "Oh! Something went wrong, please press again", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Try Again", style: .default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
+            ProgressHUD.showError("Oh! Something went wrong, please press again")
         }, partOfUrl: url)
     }
     

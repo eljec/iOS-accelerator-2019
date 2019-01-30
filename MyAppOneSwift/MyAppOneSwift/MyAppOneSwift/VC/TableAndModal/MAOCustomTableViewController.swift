@@ -8,6 +8,7 @@
 
 import UIKit
 import NetworkPod
+import ProgressHUD
 
 class MAOCustomTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -36,7 +37,7 @@ class MAOCustomTableViewController: UIViewController, UITableViewDelegate, UITab
                 cell.imageCell.image = UIImage(data: data)
             }
         }, with: { (error) in
-            print("Cannot load image correctly")
+            ProgressHUD.showError("Cannot load image correctly")
         }, partOfUrl: url)
         return cell
     }

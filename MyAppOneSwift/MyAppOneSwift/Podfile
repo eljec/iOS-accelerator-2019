@@ -8,6 +8,7 @@ target 'MyAppOneSwift' do
   # Pods for MyAppOneSwift
 
   pod 'NetworkPod', :path => '../../MyAppOneNetworkPod/NetworkPod/'
+  pod 'ProgressHUD', :git => 'https://github.com/relatedcode/ProgressHUD.git'
 
   target 'MyAppOneSwiftTests' do
     inherit! :search_paths

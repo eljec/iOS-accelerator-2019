@@ -354,12 +354,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MyAppOneSwift/Pods-MyAppOneSwift-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/NetworkPod/NetworkPod.framework",
+				"${BUILT_PRODUCTS_DIR}/ProgressHUD/ProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NetworkPod.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
