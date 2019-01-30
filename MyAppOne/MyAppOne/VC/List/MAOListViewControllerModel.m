@@ -9,6 +9,10 @@
 #import "MAOListViewControllerModel.h"
 #import "ItunesSong.h"
 
+
+/**
+ Song model implementation.
+ */
 @implementation MAOListViewControllerModel
 
 
@@ -35,6 +39,9 @@
             self.trackPrice = itunesSong.trackPrice;
             self.trackId = itunesSong.trackId;
             self.releaseDate = itunesSong.releaseDate;
+            self.artworkUrl30 = itunesSong.artworkUrl30;
+            self.artworkUrl60 = itunesSong.artworkUrl60;
+            self.artworkUrl100 = itunesSong.artworkUrl100;
         }
     }
     return self;

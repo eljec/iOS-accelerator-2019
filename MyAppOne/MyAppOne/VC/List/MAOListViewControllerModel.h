@@ -9,8 +9,10 @@
 #import <Foundation/Foundation.h>
 #import "ItunesSong.h"
 
-NS_ASSUME_NONNULL_BEGIN
 
+/**
+ Song Model interface.
+ */
 @interface MAOListViewControllerModel : NSObject
 
 // MARK: properties
@@ -26,17 +28,19 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSNumber *collectionPrice;
 @property (nonatomic, strong) NSNumber *trackPrice;
 @property (nonatomic, strong) NSDate *releaseDate;
+@property (nonatomic, strong) NSString *artworkUrl30;
+@property (nonatomic, strong) NSString *artworkUrl60;
+@property (nonatomic, strong) NSString *artworkUrl100;
 
 // MARK: methods
 
 /**
  Initialize Song model with parameter.
  
- @param ItunesSong itunesSong
+ @param itunesSong itunesSong
  @return instancetype
  */
 - (instancetype)initWithItunesSong:(ItunesSong *)itunesSong;
 
 @end
 
-NS_ASSUME_NONNULL_END

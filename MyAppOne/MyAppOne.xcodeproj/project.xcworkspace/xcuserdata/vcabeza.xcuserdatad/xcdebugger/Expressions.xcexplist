@@ -3,9 +3,6 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "-[ItunesSong compareByTrackId:]:ItunesSong.m">
-      </ContextState>
-      <ContextState
          contextName = "-[MAOListViewController tableView:cellForRowAtIndexPath:]:MAOListViewController.m">
          <PersistentStrings>
             <PersistentString
@@ -14,10 +11,21 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "-[ItunesSong compareByTrackId:]:ItunesSong.m">
+      </ContextState>
+      <ContextState
          contextName = "-[ItunesService getSongsByQuery:]:ItunesService.m">
          <PersistentStrings>
             <PersistentString
                value = "response[0]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__57-[MAOSongListController tableView:cellForRowAtIndexPath:]_block_invoke:MAOSongListController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "song.trackViewUrl">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

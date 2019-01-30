@@ -7,11 +7,10 @@
 //
 
 #import "MAOInitialViewController.h"
-#import "MAOListViewController.h"
 #import "ItunesService.h"
 #import "ItunesSong.h"
-#import "MAOListViewController.h"
 #import "ItunesSong.h"
+#import "MAOSongTableViewController.h"
 
 
 /**
@@ -49,9 +48,11 @@
 - (void)initializeViewListWitSongs:(NSArray *)songs {
     NSMutableArray<MAOListViewControllerModel *> * maoListModel = [self getModeListFromItuneSongs:songs];
     
-    MAOListViewController *maoListViewController = [[MAOListViewController alloc] initWithModel:maoListModel];
-    [maoListViewController setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
-    [self.navigationController pushViewController:maoListViewController animated:YES];
+    MAOSongTableViewController *maoSongListController = [[MAOSongTableViewController alloc] initWithModel:maoListModel];
+    [maoSongListController setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
+    
+    //TODO: poner presenter MODAL
+    [self.navigationController pushViewController:maoSongListController animated:YES];
 }
 
 /**
@@ -104,16 +105,19 @@
 - (IBAction)onClickSelection:(id)sender {
     
     [self.spinner startAnimating];
-    [[ItunesService instance] getSongsByQuery:self.songSarchText.text andCompletitionBlock:^(NSArray *songsArray, NSError *error) {
+    
+    __weak typeof(self) weakSelf = self;
+    
+    [[ItunesService instance] songsByQuery:weakSelf.songSarchText.text andCompletitionBlock:^(NSArray *songsArray, NSError *error) {
         if (!error) {
-            [self initializeViewListWitSongs:[self orderArray:songsArray]];
-            [self.spinner stopAnimating];
+            [weakSelf initializeViewListWitSongs:[weakSelf orderArray:songsArray]];
+            [weakSelf.spinner stopAnimating];
         }
         else
         {
-            [self.spinner stopAnimating];
+            [weakSelf.spinner stopAnimating];
             [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-                [self generalErrorToast: @"Error cargando canciones, consulte al alumno."];
+                [weakSelf generalErrorToast: @"Error cargando canciones, consulte al alumno."];
             }];
         }
     }];
