@@ -1,0 +1,6 @@
+framework module Pods_practico_3_iswifttunes {
+  umbrella header "Pods-practico-3-iswifttunes-umbrella.h"
+
+  export *
+  module * { export * }
+}

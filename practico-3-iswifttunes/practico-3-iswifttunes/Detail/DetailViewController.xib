@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController" customModule="practico_3_iswifttunes" customModuleProvider="target">
+            <connections>
+                <outlet property="artistName" destination="QS6-RI-NAI" id="y9w-eM-snz"/>
+                <outlet property="collectionImage" destination="REQ-Gy-hpu" id="eSd-EP-xea"/>
+                <outlet property="collectionName" destination="3uU-LQ-twm" id="cPj-4W-PeG"/>
+                <outlet property="container" destination="NPb-Wo-HWQ" id="HDH-O1-SP5"/>
+                <outlet property="primaryGenreName" destination="R9s-Bi-5gb" id="G1E-kg-NVK"/>
+                <outlet property="trackName" destination="Q40-iQ-XA0" id="2Lk-iK-1D8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NPb-Wo-HWQ">
+                    <rect key="frame" x="30" y="80" width="315" height="437"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Better Together" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q40-iQ-XA0">
+                            <rect key="frame" x="18" y="23" width="279" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jack Johnson" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QS6-RI-NAI">
+                            <rect key="frame" x="18" y="75" width="279" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="0.310295141705073" blue="0.42794552804065411" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In Between Dreams (Bonus Track Version)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3uU-LQ-twm">
+                            <rect key="frame" x="18" y="48" width="279" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rock" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9s-Bi-5gb">
+                            <rect key="frame" x="18" y="100" width="279" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVb-cR-U1B">
+                            <rect key="frame" x="18" y="379" width="279" height="30"/>
+                            <state key="normal" title="Escuchar"/>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="REQ-Gy-hpu">
+                            <rect key="frame" x="18" y="127" width="279" height="242"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailingMargin" secondItem="Q40-iQ-XA0" secondAttribute="trailing" constant="10" id="0D2-bT-jRp"/>
+                        <constraint firstItem="Q40-iQ-XA0" firstAttribute="leading" secondItem="NPb-Wo-HWQ" secondAttribute="leadingMargin" constant="10" id="3gd-Ft-xxV"/>
+                        <constraint firstItem="R9s-Bi-5gb" firstAttribute="top" secondItem="3uU-LQ-twm" secondAttribute="bottom" constant="35" id="BlC-Yb-CZq"/>
+                        <constraint firstItem="QS6-RI-NAI" firstAttribute="leading" secondItem="NPb-Wo-HWQ" secondAttribute="leadingMargin" constant="10" id="Cwd-tg-FqJ"/>
+                        <constraint firstAttribute="trailingMargin" secondItem="DVb-cR-U1B" secondAttribute="trailing" constant="10" id="F1b-ry-MAk"/>
+                        <constraint firstItem="DVb-cR-U1B" firstAttribute="leading" secondItem="NPb-Wo-HWQ" secondAttribute="leadingMargin" constant="10" id="FAW-WP-QgH"/>
+                        <constraint firstItem="QS6-RI-NAI" firstAttribute="top" secondItem="3uU-LQ-twm" secondAttribute="bottom" constant="10" id="FyA-Cw-wfl"/>
+                        <constraint firstItem="REQ-Gy-hpu" firstAttribute="centerX" secondItem="NPb-Wo-HWQ" secondAttribute="centerX" id="Nrh-RP-E8L"/>
+                        <constraint firstAttribute="bottomMargin" secondItem="DVb-cR-U1B" secondAttribute="bottom" constant="20" id="Qio-7q-2FZ"/>
+                        <constraint firstItem="3uU-LQ-twm" firstAttribute="leading" secondItem="NPb-Wo-HWQ" secondAttribute="leadingMargin" constant="10" id="TTR-A3-bQc"/>
+                        <constraint firstAttribute="trailingMargin" secondItem="QS6-RI-NAI" secondAttribute="trailing" constant="10" id="Yt3-UZ-AV6"/>
+                        <constraint firstItem="3uU-LQ-twm" firstAttribute="top" secondItem="NPb-Wo-HWQ" secondAttribute="topMargin" constant="40" id="aLP-lt-cKk"/>
+                        <constraint firstItem="R9s-Bi-5gb" firstAttribute="leading" secondItem="NPb-Wo-HWQ" secondAttribute="leadingMargin" constant="10" id="chM-zl-jQ7"/>
+                        <constraint firstAttribute="trailingMargin" secondItem="3uU-LQ-twm" secondAttribute="trailing" constant="10" id="eCH-3l-liG"/>
+                        <constraint firstAttribute="trailingMargin" secondItem="R9s-Bi-5gb" secondAttribute="trailing" constant="10" id="hCr-xR-KcL"/>
+                        <constraint firstItem="Q40-iQ-XA0" firstAttribute="top" secondItem="NPb-Wo-HWQ" secondAttribute="topMargin" constant="15" id="pD3-GN-Qh3"/>
+                        <constraint firstItem="REQ-Gy-hpu" firstAttribute="centerY" secondItem="NPb-Wo-HWQ" secondAttribute="centerY" id="zir-Qe-KQ4"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="NPb-Wo-HWQ" secondAttribute="bottom" constant="150" id="N4h-AK-l7T"/>
+                <constraint firstItem="NPb-Wo-HWQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="TQI-5o-3eH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NPb-Wo-HWQ" secondAttribute="trailing" constant="30" id="bNH-8E-hR2"/>
+                <constraint firstItem="NPb-Wo-HWQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="60" id="s2c-MH-u8X"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="53.600000000000001" y="48.125937031484263"/>
+        </view>
+    </objects>
+</document>

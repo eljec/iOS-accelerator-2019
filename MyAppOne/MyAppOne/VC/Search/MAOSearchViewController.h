@@ -1,8 +1,8 @@
 //
-//  songDetailXIBView.h
+//  MAOSearchViewController.h
 //  MyAppOne
 //
-//  Created by Gonzalo Alexis Quarin on 12/01/2019.
+//  Created by Gonzalo Alexis Quarin on 18/01/2019.
 //  Copyright © 2019 iOS-accelerator. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface songDetailXIBView : UIView
+@interface MAOSearchViewController : UIViewController
 
 @end
 
