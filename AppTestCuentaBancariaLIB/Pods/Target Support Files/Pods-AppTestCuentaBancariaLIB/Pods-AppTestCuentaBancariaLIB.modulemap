@@ -1,0 +1,6 @@
+framework module Pods_AppTestCuentaBancariaLIB {
+  umbrella header "Pods-AppTestCuentaBancariaLIB-umbrella.h"
+
+  export *
+  module * { export * }
+}

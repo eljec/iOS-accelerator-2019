@@ -1,6 +1,0 @@
-framework module Pods_CuentaBancariaLIB {
-  umbrella header "Pods-CuentaBancariaLIB-umbrella.h"
-
-  export *
-  module * { export * }
-}

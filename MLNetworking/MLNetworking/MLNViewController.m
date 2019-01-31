@@ -8,7 +8,6 @@
 
 #import "MLNViewController.h"
 #import <MLNetworking/MLNetworking.h>
-#import <MLNetworking/MLNHandlerError.h>
 
 #define ML_URL @"https://api.mercadolibre.com/sites/"
 #define IMAGE_URL @"https://www.america-retail.com/static//2018/12/mercado-libre.jpg"
@@ -32,24 +31,24 @@
     };
     
     ErrorRequest error = ^void (NSError *error){
-        MLNHandlerError * handler = [[MLNHandlerError alloc] init];
-        [handler handlerError:error controller:self];
+        
     };
     
     
     MLNetworking* service = [[MLNetworking alloc] init];
     [service fetchUrlWithString:ML_URL onSuccess:success onError:error];
     
-    ImageRequest image = ^void (UIImage *image){
-        if (image != nil){
-            self.testImageView.image = image;
-        } else {
-            self.testImageView.image = [UIImage imageNamed:@"error"];
-        }
+    SuccessRequest imageSuccess = ^void (NSData *data, NSURLResponse *urlResponse){
+            self.testImageView.image = [UIImage imageWithData:data];
     };
     
+    ErrorRequest errorImage = ^void (NSError *error){
+        
+    };
+    
+    
     MLNetworking* service2 = [[MLNetworking alloc] init];
-    [service2 fetchImageFromUrl:IMAGE_URL onSuccess:image];
+    [service2 fetchUrlWithString:IMAGE_URL onSuccess:imageSuccess onError:errorImage];
 }
 
 /*
