@@ -13,7 +13,7 @@ class IOATableViewController: UIViewController, UITableViewDataSource, UITableVi
     @IBOutlet weak var trackTableView: UITableView!
    
     private let tracks: [Track]
-    private let cellID = "cellID"
+    private let CELL_ID = "cellID"
     
     init(model: [Track]){
         tracks = model
@@ -28,8 +28,7 @@ class IOATableViewController: UIViewController, UITableViewDataSource, UITableVi
         super.viewDidLoad()
         self.trackTableView.delegate = self
         self.trackTableView.dataSource = self
-        self.trackTableView.register(UINib(nibName:"IOATableViewCell", bundle:nil), forCellReuseIdentifier: cellID)
-        // Do any additional setup after loading the view.
+        self.trackTableView.register(UINib(nibName:"IOATableViewCell", bundle:nil), forCellReuseIdentifier: CELL_ID)
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -41,7 +40,8 @@ class IOATableViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! IOATableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: CELL_ID, for: indexPath) as! IOATableViewCell
+        cell.clear()
         cell.cargar(track: tracks[indexPath.row])
         return cell
     }

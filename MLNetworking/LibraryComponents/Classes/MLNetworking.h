@@ -11,10 +11,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MLNetworking : NSObject
 
--(void) fetchUrlWithString:(NSString *)strUrl onSuccess:
-(void(^)(NSData *data, NSURLResponse *urlResponse))onSuccess onError:(void(^)(NSError * error)) onError;
+typedef void (^SuccessRequest) (NSData *, NSURLResponse *);
+typedef void (^ErrorRequest) (NSError *);
 
--(void) fetchImageFromUrl:(NSString *)url onSuccess:(void(^)(UIImage *image))onSuccess;
+-(void) fetchUrlWithString:(NSString *)strUrl onSuccess:
+(SuccessRequest)onSuccess onError:(ErrorRequest) onError;
 
 @end
 

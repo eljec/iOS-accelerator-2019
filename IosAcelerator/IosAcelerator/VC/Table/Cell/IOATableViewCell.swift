@@ -32,10 +32,18 @@ class IOATableViewCell: UITableViewCell {
         if let thumbnail = track.artworkUrl100 {
             weak var weakSelf = self
             let service = MLNetworking()
-            service.fetchImage(fromUrl: thumbnail, onSuccess: {
-                image in
-                weakSelf?.trackImage.image = image
+            service.fetchUrl(with: thumbnail, onSuccess: {data, response in
+                    weakSelf?.trackImage.image = UIImage.init(data: data)
+            }, onError: {
+                error in
+                weakSelf?.trackImage.image = nil;
             })
         }
+    }
+    
+    func clear(){
+        trackName.text = "";
+        albumName.text = "";
+        trackImage.image = nil;
     }
 }

@@ -20,9 +20,8 @@ class IOAModalViewController: UIViewController {
     @IBOutlet weak var modalBuyButton: UIButton!
     @IBOutlet weak var modalContentView: UIView!
     
-    private let PURCHASE_MESSAGE = "Gracias por su compra"
-    
     private let track : Track
+    
     init(track: Track){
         self.track = track
         super.init(nibName: nil, bundle: nil)
@@ -55,9 +54,12 @@ class IOAModalViewController: UIViewController {
         // Load Image
         weak var weakSelf = self
         if let url = self.track.artworkUrl100 {
-            MLNetworking().fetchImage(fromUrl: url, onSuccess: {
-                image in
-                weakSelf?.modalImageView.image = image
+            MLNetworking().fetchUrl(with: url, onSuccess: {
+                data, response in
+                weakSelf?.modalImageView.image = UIImage(data: data)
+            }, onError: {
+                error in
+                weakSelf?.modalImageView.image = nil
             })
         }
     }
@@ -67,8 +69,7 @@ class IOAModalViewController: UIViewController {
     }
     
     @IBAction func comprarTrack(_ sender: UIButton) {
-        ProgressHUD.showSuccess(PURCHASE_MESSAGE)
-
+        IOAAlert.showBuy()
         //------- GO Track Itune Page -------//
         /*
         if let trackURLString = track.previewUrl {

@@ -11,7 +11,6 @@
 #endif
 
 #import "MLNetworking.h"
-#import "MLNHandlerError.h"
 
 FOUNDATION_EXPORT double MLNetworkingVersionNumber;
 FOUNDATION_EXPORT const unsigned char MLNetworkingVersionString[];

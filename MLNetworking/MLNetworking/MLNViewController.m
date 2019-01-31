@@ -10,7 +10,7 @@
 #import <MLNetworking/MLNetworking.h>
 #import <MLNetworking/MLNHandlerError.h>
 
-#define ML_URL @"https://api.mercfsfadolibre.com/sites/"
+#define ML_URL @"https://api.mercadolibre.com/sites/"
 #define IMAGE_URL @"https://www.america-retail.com/static//2018/12/mercado-libre.jpg"
 
 @interface MLNViewController ()
@@ -24,14 +24,14 @@
     [super viewDidLoad];
     NSLog(@"Hola");
     
-    void (^success) (NSData *, NSURLResponse *) = ^void (NSData *data, NSURLResponse *response) {
+    SuccessRequest success = ^void (NSData *data, NSURLResponse *response) {
         
         NSArray *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
         
         NSLog(@"%@", json);
     };
     
-    void (^error) (NSError *) = ^void (NSError *error){
+    ErrorRequest error = ^void (NSError *error){
         MLNHandlerError * handler = [[MLNHandlerError alloc] init];
         [handler handlerError:error controller:self];
     };
@@ -40,7 +40,7 @@
     MLNetworking* service = [[MLNetworking alloc] init];
     [service fetchUrlWithString:ML_URL onSuccess:success onError:error];
     
-    void (^image) (UIImage *) = ^void (UIImage *image){
+    ImageRequest image = ^void (UIImage *image){
         if (image != nil){
             self.testImageView.image = image;
         } else {

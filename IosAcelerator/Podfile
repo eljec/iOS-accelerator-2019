@@ -6,8 +6,8 @@ target 'IosAcelerator' do
   use_frameworks!
 
   # Pods for IosAcelerator
-  pod 'MLNetworking', :path => '../MLNetworking/'
-  #pod 'ProgressHUD', :git => 'https://github.com/relatedcode/ProgressHUD.git'
+  pod 'MLNetworking', :path => "../MLNetworking"
+  pod 'ProgressHUD', "~> 2.6"
 
   target 'IosAceleratorTests' do
     inherit! :search_paths

@@ -6,26 +6,32 @@
 //
 
 #import "MLNetworking.h"
+#define MIN_MEMORY_CACHE 16384
+#define MAX_MEMORY_CACHE 268435456
+
+@interface MLNetworking()
+@end
 
 @implementation MLNetworking
 
+typedef void (^CompletionHandler)(NSData *, NSURLResponse *, NSError *);
+
 -(void) fetchUrlWithString:(NSString *)strUrl onSuccess:
-(void(^)(NSData *data, NSURLResponse *urlResponse))onSuccess onError:(void(^)(NSError * error)) onError{
+(SuccessRequest)onSuccess onError:(ErrorRequest) onError{
     
     // Creo una cola global
     dispatch_queue_t global = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    
     dispatch_async(global, ^{
         
-        NSLog(@"main thread? ANS - %@",[NSThread isMainThread]? @"YES":@"NO");
-        NSURLSessionConfiguration *defaultConfigObject = [NSURLSessionConfiguration defaultSessionConfiguration];
+        NSString *cachePath = [NSTemporaryDirectory() stringByAppendingPathComponent:@"/mlnetworking.cache"];
         
-        NSString *cachePath = [NSTemporaryDirectory() stringByAppendingPathComponent:@"/nsurlsessiondemo.cache"];
-        
-        NSURLCache *myCache = [[NSURLCache alloc] initWithMemoryCapacity: 16384
-                                                            diskCapacity: 268435456
+        NSURLCache *myCache = [[NSURLCache alloc] initWithMemoryCapacity: MIN_MEMORY_CACHE
+                                                            diskCapacity: MAX_MEMORY_CACHE
                                                                 diskPath: cachePath];
-        defaultConfigObject.URLCache = myCache;
         
+        NSURLSessionConfiguration *defaultConfigObject = [NSURLSessionConfiguration defaultSessionConfiguration];
+        defaultConfigObject.URLCache = myCache;
         defaultConfigObject.requestCachePolicy = NSURLRequestUseProtocolCachePolicy;
         
         NSURLSession *delegateFreeSession = [NSURLSession sessionWithConfiguration: defaultConfigObject
@@ -33,35 +39,21 @@
                                                                      delegateQueue: [NSOperationQueue mainQueue]];
         
         
-        NSURL *dataURL = [NSURL URLWithString:strUrl];
         
+        NSURL *dataURL = [NSURL URLWithString:strUrl];
         NSURLRequest *request = [NSURLRequest requestWithURL:dataURL];
         
+        CompletionHandler completionHandler = ^void (NSData *data, NSURLResponse *urlResponse, NSError *error){
+            
+            if (!error){
+                onSuccess(data, urlResponse);
+            } else {
+                onError(error);
+            }
+        };
         
         [[delegateFreeSession dataTaskWithRequest:request
-                                completionHandler:^void (NSData *data, NSURLResponse *urlResponse, NSError *error){
-                                    
-                                    if (!error){
-                                        onSuccess(data, urlResponse);
-                                    } else {
-                                        onError(error);
-                                    }
-                                    
-                                }]resume];
+                                completionHandler:completionHandler]resume];
     });
 }
-
--(void)fetchImageFromUrl:(NSString *)url onSuccess:(void (^)(UIImage *))onSuccess{
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        
-        //Obtengo la imagen en bytes
-        NSData *data = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:url]];
-        
-        dispatch_async(dispatch_get_main_queue(), ^{
-            onSuccess([UIImage imageWithData:data]);
-        });
-    });
-}
-
-
 @end

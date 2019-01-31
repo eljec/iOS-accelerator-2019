@@ -11,8 +11,8 @@ import MLNetworking
 import ProgressHUD
 
 struct Sort {
-    static let track = 0
-    static let releaseDate = 1
+    static let TRACK = 0
+    static let RELEASE_DATE = 1
 }
 
 class IOAInitialViewController: UIViewController {
@@ -32,7 +32,10 @@ class IOAInitialViewController: UIViewController {
     
     func parserJson(data: Data?) -> IOAModel? {
         // Chequeo los datos
-        guard let data = data else { return nil }
+        guard let data = data else {
+            print("Error: Json is nil")
+            return nil
+        }
         
         // Decodifico y Chequeo que se haga correctamente
         guard let model = try? JSONDecoder().decode(IOAModel.self, from: data) else {
@@ -52,10 +55,10 @@ class IOAInitialViewController: UIViewController {
         
         // Ordenar
         switch (sortedAlg) {
-        case Sort.track:
+        case Sort.TRACK:
             results = self.ordenarPorTrack(array: results)
             break;
-        case Sort.releaseDate:
+        case Sort.RELEASE_DATE:
             results = self.ordenarPorFecha(array: results)
             break;
         default:
@@ -73,7 +76,12 @@ class IOAInitialViewController: UIViewController {
     
     func createURL() -> String? {
         // Chequear el TextField
-        guard let text = self.searchTextField.text else{
+        guard let text = self.searchTextField.text else {
+            return nil
+        }
+
+        guard !text.isEmpty else{
+            print("Error: No ha insertado ninguna busqueda")
             return nil
         }
         
@@ -85,24 +93,25 @@ class IOAInitialViewController: UIViewController {
     
     @IBAction func onClickSelection(_ sender: UIButton) {
         
-        guard let url = createURL() else {
-            return
-        }
-        
         // Lanzar Animacion
         ProgressHUD.show();
         
+        // Creamos la URL
+        guard let url = createURL() else {
+            IOAAlert.showError()
+            return
+        }
+        
         // Evitar Retaining circles
         weak var weakSelf = self
-        
         // Success Completion
-        let onSuccess: (Data?, URLResponse?) -> Void = {
+        let onSuccess: SuccessRequest = {
             (data, response) in
             
             // ------------  Parseo datos ------------//
             guard let model = weakSelf?.parserJson(data: data) else {
                 // Actualizo el estado en la UI
-                ProgressHUD.dismiss()
+                IOAAlert.showError()
                 return
             }
             
@@ -110,12 +119,11 @@ class IOAInitialViewController: UIViewController {
             // ------------  Realizo ordenamiento ------------//
             guard let results = weakSelf?.sortingSongs(model: model) else{
                 // Actualizo el estado en la UI
-                ProgressHUD.dismiss()
+                IOAAlert.showError()
                 return
             }
        
             // ------------ Actualizo la UI ------------//
-            
             // Stop Indicator
             ProgressHUD.dismiss()
             // Create Table Controller
@@ -124,17 +132,10 @@ class IOAInitialViewController: UIViewController {
         }
         
         // Error completion
-        let onError: (Error?) -> Void = {
+        let onError: ErrorRequest = {
             error in
-            // Stop Indicator
-            ProgressHUD.dismiss()
-            // Chequeo el error
-            guard let error = error else {
-                return
-            }
             // Manejo el error
-            let handlerError = MLNHandlerError()
-            handlerError.handlerError(error, controller: self)
+            IOAAlert.showError()
         }
         
         // Largo el Service
@@ -185,6 +186,5 @@ class IOAInitialViewController: UIViewController {
         let reversedArray = array.reversed()
         return Array(reversedArray)
     }
-    
 }
 

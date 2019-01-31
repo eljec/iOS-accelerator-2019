@@ -12,7 +12,7 @@
   },
   "source": {
     "git": "https://github.com/pedrowav/iOS-accelerator-2019.git",
-    "tag": "v4.0"
+    "tag": "cocoapods"
   },
   "source_files": "LibraryComponents/Classes/**/*.{h,m}",
   "resources": [
@@ -21,10 +21,5 @@
     "LibraryComponents/Assets/**/*.plist",
     "LibraryComponents/Assets/**/*.ttf"
   ],
-  "requires_arc": true,
-  "dependencies": {
-    "ProgressHUD": [
-
-    ]
-  }
+  "requires_arc": true
 }

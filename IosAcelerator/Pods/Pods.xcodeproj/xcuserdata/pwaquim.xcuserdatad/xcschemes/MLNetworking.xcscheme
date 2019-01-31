@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0318EC8DBDE03B367C747451B2C6CC1F"
+               BlueprintIdentifier = "E1391A38B247215F4F290468FA600A96"
                BlueprintName = "MLNetworking"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "MLNetworking.framework">
