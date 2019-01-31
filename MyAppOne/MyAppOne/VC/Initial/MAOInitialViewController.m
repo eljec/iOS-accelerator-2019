@@ -7,37 +7,38 @@
 //
 
 #import "MAOInitialViewController.h"
-#import "MAOListViewController.h"
 #import "MAOService.h"
 #import "MAOHandlerError.h"
 #import "NSString+FormattedDate.h"
+#import "MAOTableViewController.h"
 
+#define SORT_ALG_BY_TRACK 0
+#define SORT_ALG_BY_RELEASE_DATE 1
 
 @interface MAOInitialViewController ()
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *indicatorView;
-@property (weak, nonatomic) IBOutlet UISwitch *orderTrackSwitch;
-@property (weak, nonatomic) IBOutlet UISwitch *orderReleaseSwitch;
+@property (weak, nonatomic) IBOutlet UITextField *searchTextField;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *orderChooser;
 @property (weak, nonatomic) IBOutlet UISwitch *orderRevertSwitch;
-@property MAOService *service;
+
+@property (nonatomic) NSInteger selectedSortAlg;
 @end
 
 @implementation MAOInitialViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _service = [[MAOService alloc] init];
-    [_indicatorView setHidesWhenStopped:YES];
-    [_orderTrackSwitch setOn:NO];
-    [_orderReleaseSwitch setOn:NO];
-    [_orderRevertSwitch setOn:NO];
+    [self.indicatorView setHidesWhenStopped:YES];
+    [self.orderRevertSwitch setOn:NO];
+    self.selectedSortAlg = self.orderChooser.selectedSegmentIndex;
 }
 
 - (void)stopIndicatorAnim{
-    [_indicatorView stopAnimating];
+    [self.indicatorView stopAnimating];
 }
 
 - (void)startIndicatorAnim{
-    [_indicatorView startAnimating];
+    [self.indicatorView startAnimating];
 }
 
 - (NSArray<MAOListViewControllerModel *> *)ordenarPorTrack:(NSArray<MAOListViewControllerModel *> *)array{
@@ -57,7 +58,7 @@
         
         NSDate *primero = [NSString formattedString:[a releaseDate]];
         NSDate *segundo = [NSString formattedString:[b releaseDate]];
-
+        
         return [primero compare:segundo];
     }];
     
@@ -70,58 +71,76 @@
     return sortedArray;
 }
 
+- (IBAction)changeSearchOption:(UISegmentedControl *)sender {
+    self.selectedSortAlg = sender.selectedSegmentIndex;
+}
+
 - (IBAction)onClickSelection:(id)sender {
     
+    // Lanzo animacion
     [self startIndicatorAnim];
     
+    // Armo la URL
+    NSMutableString * URL = [[NSMutableString alloc] initWithFormat: @"https://itunes.apple.com/search?term="];
+    NSString *queryMusic = [NSString formattedURLParams:self.searchTextField.text];
+    [URL appendString:queryMusic];
+    
+    
+    // weak Self in block.
+    __weak typeof(self) weakSelf = self;
     // Creo un callback para manejar la respuesta al pedido a la api.
-    void (^callback) (NSData *data, NSURLResponse *response, NSError *error) = ^void (NSData *data, NSURLResponse *response, NSError *error) {
-
-        // Paro la animación del indicator
-        [self stopIndicatorAnim];
-
-        // Chequeo si hubo error
-        if (!error) {
+    void (^completionBlock) (NSData *data, NSURLResponse *response) = ^void (NSData *data, NSURLResponse *response) {
+        
+        typeof(self) strongSelf = weakSelf;
+        if (strongSelf){
             // Parseo los datos del json
-            NSArray<MAOListViewControllerModel *> *datos = [[MAOService sharedInstance] parserJson:data];
+            NSArray<MAOListViewControllerModel *> *datos = [[[MAOService alloc] init] parserJson:data];
             
-            // Pregunto si tengo que ordenar el array
-            BOOL ordenarPorTrack = [self.orderTrackSwitch isOn];
-            BOOL ordenarPorFecha = [self.orderReleaseSwitch isOn];
-            BOOL ordenarInvertido = [self.orderRevertSwitch isOn];
-
-            if (ordenarPorTrack){
-               datos = [self ordenarPorTrack:datos];
-            } else if (ordenarPorFecha){
-                datos = [self ordenarPorFecha:datos];
-            } else if (ordenarInvertido){
-                datos = [self ordenarInvertido:datos];
+            switch (strongSelf.selectedSortAlg) {
+                case SORT_ALG_BY_TRACK:
+                    datos = [strongSelf ordenarPorTrack:datos];
+                    break;
+                case SORT_ALG_BY_RELEASE_DATE:
+                    datos = [strongSelf ordenarPorFecha:datos];
+                    break;
             }
+            
+            // Invertir
+            BOOL ordenarInvertido = [strongSelf.orderRevertSwitch isOn];
+            if (ordenarInvertido){
+                datos = [strongSelf ordenarInvertido:datos];
+            }
+            
+            // Paro la animación del indicator
+            [strongSelf stopIndicatorAnim];
             
             // Hago el cambio de controller en el UIThread
             [[NSOperationQueue mainQueue] addOperationWithBlock:^{
                 // Creo el controller nuevo y le paso el array con los datos
-                MAOListViewController * controller = [[MAOListViewController alloc] initWithModel:datos];
+                MAOTableViewController * controller = [[MAOTableViewController alloc] initWithModel:datos];
                 // Pusheo el nuevo controller
-                [self.navigationController pushViewController:controller animated:YES];
-            }];
-        } else {
-            // Manejo el error en el UIThread
-            [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-                [[MAOHandlerError sharedInstance] handlerError:error response:response controller:self];
+                [strongSelf.navigationController pushViewController:controller animated:YES];
             }];
         }
-
     };
-
-    // Creo una cola global
-    dispatch_queue_t global = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-    dispatch_async(global, ^{
-        // Creo la URL
-        NSString * URL = @"https://itunes.apple.com/search?term=jack+johnson";
-        // Hago el pedido pasandole el callback para que se ejecute cuando termine
-        [self.service fetchJsonWithCompletionBlock:callback url:URL];
-    });
+    
+    
+    void (^errorBlock)(NSError *error) = ^void (NSError *error){
+        typeof(self) strongSelf = weakSelf;
+        if (strongSelf){
+            //Manejo el error en el UIThread
+            [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+                [[[MAOHandlerError alloc]init] handlerError:error controller:strongSelf];
+            }];
+        }
+    };
+    
+    
+    // Hago el pedido pasandole el callback para que se ejecute cuando termine
+    [[[MAOService alloc] init] fetchJsonWithCompletionBlock:completionBlock errorBlock:errorBlock url:URL];
+    
+    
+    
     
     
     // TODO
