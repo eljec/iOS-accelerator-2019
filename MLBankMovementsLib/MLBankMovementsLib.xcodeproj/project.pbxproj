@@ -8,12 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		C4A953D022038AAD00697961 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A953CF22038AAD00697961 /* AppDelegate.swift */; };
-		C4A953D222038AAD00697961 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A953D122038AAD00697961 /* ViewController.swift */; };
-		C4A953D522038AAD00697961 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4A953D322038AAD00697961 /* Main.storyboard */; };
 		C4A953D722038AAD00697961 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4A953D622038AAD00697961 /* Assets.xcassets */; };
-		C4A953DA22038AAD00697961 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4A953D822038AAD00697961 /* LaunchScreen.storyboard */; };
 		C4A953E522038AAD00697961 /* MLBankMovementsLibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A953E422038AAD00697961 /* MLBankMovementsLibTests.swift */; };
 		C4A953F022038AAD00697961 /* MLBankMovementsLibUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A953EF22038AAD00697961 /* MLBankMovementsLibUITests.swift */; };
+		C4A953FF22038CE200697961 /* MLBankMovementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A953FE22038CE200697961 /* MLBankMovementsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +34,7 @@
 /* Begin PBXFileReference section */
 		C4A953CC22038AAD00697961 /* MLBankMovementsLib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MLBankMovementsLib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A953CF22038AAD00697961 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C4A953D122038AAD00697961 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C4A953D422038AAD00697961 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C4A953D622038AAD00697961 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C4A953D922038AAD00697961 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4A953DB22038AAD00697961 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4A953E022038AAD00697961 /* MLBankMovementsLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MLBankMovementsLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A953E422038AAD00697961 /* MLBankMovementsLibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLBankMovementsLibTests.swift; sourceTree = "<group>"; };
@@ -47,6 +42,7 @@
 		C4A953EB22038AAD00697961 /* MLBankMovementsLibUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MLBankMovementsLibUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A953EF22038AAD00697961 /* MLBankMovementsLibUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLBankMovementsLibUITests.swift; sourceTree = "<group>"; };
 		C4A953F122038AAD00697961 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4A953FE22038CE200697961 /* MLBankMovementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLBankMovementsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +93,8 @@
 		C4A953CE22038AAD00697961 /* MLBankMovementsLib */ = {
 			isa = PBXGroup;
 			children = (
-				C4A953CF22038AAD00697961 /* AppDelegate.swift */,
-				C4A953D122038AAD00697961 /* ViewController.swift */,
-				C4A953D322038AAD00697961 /* Main.storyboard */,
-				C4A953D622038AAD00697961 /* Assets.xcassets */,
-				C4A953D822038AAD00697961 /* LaunchScreen.storyboard */,
-				C4A953DB22038AAD00697961 /* Info.plist */,
+				C4A953FD22038C8700697961 /* App */,
+				C4A953FE22038CE200697961 /* MLBankMovementsViewController.swift */,
 			);
 			path = MLBankMovementsLib;
 			sourceTree = "<group>";
@@ -123,6 +115,16 @@
 				C4A953F122038AAD00697961 /* Info.plist */,
 			);
 			path = MLBankMovementsLibUITests;
+			sourceTree = "<group>";
+		};
+		C4A953FD22038C8700697961 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C4A953CF22038AAD00697961 /* AppDelegate.swift */,
+				C4A953D622038AAD00697961 /* Assets.xcassets */,
+				C4A953DB22038AAD00697961 /* Info.plist */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4A953DA22038AAD00697961 /* LaunchScreen.storyboard in Resources */,
 				C4A953D722038AAD00697961 /* Assets.xcassets in Resources */,
-				C4A953D522038AAD00697961 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4A953D222038AAD00697961 /* ViewController.swift in Sources */,
+				C4A953FF22038CE200697961 /* MLBankMovementsViewController.swift in Sources */,
 				C4A953D022038AAD00697961 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,25 +291,6 @@
 			targetProxy = C4A953EC22038AAD00697961 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		C4A953D322038AAD00697961 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C4A953D422038AAD00697961 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C4A953D822038AAD00697961 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C4A953D922038AAD00697961 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C4A953F222038AAD00697961 /* Debug */ = {
@@ -433,7 +414,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MLBankMovementsLib/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MLBankMovementsLib/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,7 +431,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MLBankMovementsLib/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MLBankMovementsLib/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
