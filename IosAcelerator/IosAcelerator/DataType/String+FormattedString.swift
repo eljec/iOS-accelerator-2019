@@ -38,6 +38,7 @@ extension String {
         return date
     }
     
+    // Oportunidad de mejora no terminado
     static func formattedWithoutRegExp(string: String) -> String {
         let regex = try! NSRegularExpression(pattern: "[%]", options: NSRegularExpression.Options.caseInsensitive)
         let range = NSMakeRange(0, string.count)

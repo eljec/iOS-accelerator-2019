@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import MLNetworking
+import ProgressHUD
 
 class IOAModalViewController: UIViewController {
     
@@ -17,6 +19,8 @@ class IOAModalViewController: UIViewController {
     @IBOutlet weak var modalTrack: UILabel!
     @IBOutlet weak var modalBuyButton: UIButton!
     @IBOutlet weak var modalContentView: UIView!
+    
+    private let PURCHASE_MESSAGE = "Gracias por su compra"
     
     private let track : Track
     init(track: Track){
@@ -30,6 +34,8 @@ class IOAModalViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Set Visual Properties
         self.view.backgroundColor = UIColor(white: 0.0, alpha: 0.6);
         self.modalContentView.layer.cornerRadius = 10.0;
         self.modalBuyButton.backgroundColor = self.modalBuyButton.tintColor;
@@ -46,9 +52,11 @@ class IOAModalViewController: UIViewController {
             self.modalPrice.text = "---"
         }
         
+        // Load Image
         weak var weakSelf = self
         if let url = self.track.artworkUrl100 {
-            IOAService().fetchImageFromUrl(urlString: url, closure: { image in
+            MLNetworking().fetchImage(fromUrl: url, onSuccess: {
+                image in
                 weakSelf?.modalImageView.image = image
             })
         }
@@ -59,11 +67,16 @@ class IOAModalViewController: UIViewController {
     }
     
     @IBAction func comprarTrack(_ sender: UIButton) {
+        ProgressHUD.showSuccess(PURCHASE_MESSAGE)
+
+        //------- GO Track Itune Page -------//
+        /*
         if let trackURLString = track.previewUrl {
             let trackURLNil = URL(string: trackURLString)
             if let trackURL = trackURLNil {
                 UIApplication.shared.open(trackURL, options: [:], completionHandler: nil)
             }
         }
+        */
     }
 }

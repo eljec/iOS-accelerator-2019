@@ -12,7 +12,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IOAInitialViewController" customModule="IosAcelerator" customModuleProvider="target">
             <connections>
-                <outlet property="indicatorView" destination="flO-Wk-Yel" id="RmK-2m-dIB"/>
                 <outlet property="orderChooser" destination="iN0-l3-epB" id="WJX-Jh-hPB"/>
                 <outlet property="orderRevertSwitch" destination="Zyd-xx-6Pl" id="q7a-ba-JST"/>
                 <outlet property="searchTextField" destination="XGV-90-Xpr" id="99X-oG-stg"/>
@@ -39,12 +38,6 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="flO-Wk-Yel">
-                    <rect key="frame" x="150" y="152" width="20" height="20"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="20" id="sFn-tW-si2"/>
-                    </constraints>
-                </activityIndicatorView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pW9-jk-aLx">
                     <rect key="frame" x="136" y="269" width="48" height="30"/>
                     <constraints>
@@ -96,6 +89,7 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="XGV-90-Xpr" firstAttribute="top" secondItem="P8T-1F-ovc" secondAttribute="bottom" constant="153" id="7BF-mj-eZj"/>
                 <constraint firstItem="Zyd-xx-6Pl" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="F15-EU-Lsf"/>
                 <constraint firstItem="XGV-90-Xpr" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="F7N-mc-2N5"/>
                 <constraint firstItem="oUB-Sg-gA7" firstAttribute="top" secondItem="pW9-jk-aLx" secondAttribute="bottom" constant="15" id="Qff-OQ-5Cz"/>
@@ -108,12 +102,9 @@
                 <constraint firstItem="Zyd-xx-6Pl" firstAttribute="top" secondItem="dAP-3C-pvZ" secondAttribute="bottom" constant="8" id="fY8-4G-D51"/>
                 <constraint firstItem="pW9-jk-aLx" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="gXx-Q2-S8h"/>
                 <constraint firstItem="72d-SY-cZH" firstAttribute="top" secondItem="oUB-Sg-gA7" secondAttribute="bottom" constant="14" id="iKK-3a-fdt"/>
-                <constraint firstItem="XGV-90-Xpr" firstAttribute="top" secondItem="flO-Wk-Yel" secondAttribute="bottom" constant="53" id="iv5-hq-vmo"/>
                 <constraint firstItem="dAP-3C-pvZ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="jpg-no-OL5"/>
                 <constraint firstItem="pW9-jk-aLx" firstAttribute="top" secondItem="XGV-90-Xpr" secondAttribute="bottom" constant="14" id="k3a-5E-m5Q"/>
                 <constraint firstItem="oUB-Sg-gA7" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="qNP-bj-bqt"/>
-                <constraint firstItem="flO-Wk-Yel" firstAttribute="top" secondItem="P8T-1F-ovc" secondAttribute="bottom" constant="80" id="sZB-AN-c4x"/>
-                <constraint firstItem="flO-Wk-Yel" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="v9i-l0-dph"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="-104.8" y="165.96701649175412"/>

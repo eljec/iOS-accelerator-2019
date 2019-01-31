@@ -1,0 +1,23 @@
+PODS:
+  - MLNetworking (0.0.1):
+    - ProgressHUD
+  - ProgressHUD (2.60)
+
+DEPENDENCIES:
+  - MLNetworking (from `../MLNetworking/`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ProgressHUD
+
+EXTERNAL SOURCES:
+  MLNetworking:
+    :path: "../MLNetworking/"
+
+SPEC CHECKSUMS:
+  MLNetworking: cf0be33774a77eee6034f332767ea6fbd3732787
+  ProgressHUD: 4e4efbaf4f5de8bd32e0c4c3b6644a90ea1a8c3e
+
+PODFILE CHECKSUM: 1b19bf87e4ac5f3cc57efc0ff26e520ff630a946
+
+COCOAPODS: 1.5.3

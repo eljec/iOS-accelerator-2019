@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import MLNetworking
+import ProgressHUD
 
 struct Sort {
     static let track = 0
@@ -18,7 +20,6 @@ class IOAInitialViewController: UIViewController {
     @IBOutlet weak var orderChooser: UIView!
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var orderRevertSwitch: UISwitch!
-    @IBOutlet weak var indicatorView: UIActivityIndicatorView!
     
     private var selectedSortAlg: Int = 0
     private let baseUrl = "https://itunes.apple.com/search?term="
@@ -26,97 +27,119 @@ class IOAInitialViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         orderRevertSwitch.setOn(false, animated: false)
-        indicatorView.hidesWhenStopped = true
-        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    
+    func parserJson(data: Data?) -> IOAModel? {
+        // Chequeo los datos
+        guard let data = data else { return nil }
+        
+        // Decodifico y Chequeo que se haga correctamente
+        guard let model = try? JSONDecoder().decode(IOAModel.self, from: data) else {
+            print("Error: Couldn't decode data into IOAModel")
+            return nil
+        }
+        
+        return model
+    }
+    
+    func sortingSongs(model: IOAModel) -> [Track] {
+        // Obtener el algoritmo de ordenamiento deseado
+        let sortedAlg: Int = self.selectedSortAlg
+        
+        // Obtener los datos
+        var results: [Track] = model.results
+        
+        // Ordenar
+        switch (sortedAlg) {
+        case Sort.track:
+            results = self.ordenarPorTrack(array: results)
+            break;
+        case Sort.releaseDate:
+            results = self.ordenarPorFecha(array: results)
+            break;
+        default:
+            break;
+        }
+        
+        // Revertir si hace falta
+        let switchIsOn = self.orderRevertSwitch.isOn
+        if switchIsOn {
+            results = self.ordenarInvertido(array: results)
+        }
+        
+        return results
+    }
+    
+    func createURL() -> String? {
+        // Chequear el TextField
+        guard let text = self.searchTextField.text else{
+            return nil
+        }
+        
+        // Formatear lo introducido
+        var url = baseUrl + String.formattedWithoutRegExp(string: text)
+        url = String.formattedURLParams(params: url)
+        return url
     }
     
     @IBAction func onClickSelection(_ sender: UIButton) {
         
-        // Chequear el TextField
-        guard let text = self.searchTextField.text else{
+        guard let url = createURL() else {
             return
         }
         
         // Lanzar Animacion
-        indicatorView.startAnimating()
-       
-        // Formatear lo introducido
-        var url = baseUrl + String.formattedWithoutRegExp(string: text)
-        url = String.formattedURLParams(params: url)
+        ProgressHUD.show();
         
-        // Obtengo si hay que invertir o no
-        let switchIsOn = self.orderRevertSwitch.isOn
         // Evitar Retaining circles
         weak var weakSelf = self
+        
         // Success Completion
         let onSuccess: (Data?, URLResponse?) -> Void = {
             (data, response) in
             
-            // Chequeo los datos
-            guard let data = data else { return }
-            
-            // Decodifico y Chequeo que se haga correctamente
-            guard let model = try? JSONDecoder().decode(IOAModel.self, from: data) else {
-                print("Error: Couldn't decode data into IOAModel")
+            // ------------  Parseo datos ------------//
+            guard let model = weakSelf?.parserJson(data: data) else {
                 // Actualizo el estado en la UI
-                OperationQueue.main.addOperation({
-                    weakSelf?.indicatorView.stopAnimating()
-                })
+                ProgressHUD.dismiss()
                 return
             }
             
-            // Obtener el algoritmo de ordenamiento deseado
-            let sortedAlg: Int = weakSelf?.selectedSortAlg ?? 0
-            // Obtener los datos
-            var results: [Track] = model.results
             
-            // Ordenar
-            switch (sortedAlg) {
-            case Sort.track:
-                results = weakSelf?.ordenarPorTrack(array: results) ?? []
-                break;
-            case Sort.releaseDate:
-                results = weakSelf?.ordenarPorFecha(array: results) ?? []
-                break;
-            default:
-                break;
+            // ------------  Realizo ordenamiento ------------//
+            guard let results = weakSelf?.sortingSongs(model: model) else{
+                // Actualizo el estado en la UI
+                ProgressHUD.dismiss()
+                return
             }
+       
+            // ------------ Actualizo la UI ------------//
             
-            // Revertir si hace falta
-            if switchIsOn {
-                results = weakSelf?.ordenarInvertido(array: results) ?? []
-            }
-            
-            // Actualizo la UI
-            OperationQueue.main.addOperation({
-                // Stop Indicator
-                weakSelf?.indicatorView.stopAnimating()
-                
-                // Create Table Controller
-                let tableViewController = IOATableViewController(model: results)
-                
-                weakSelf?.navigationController?.pushViewController(tableViewController, animated: true)
-            })
+            // Stop Indicator
+            ProgressHUD.dismiss()
+            // Create Table Controller
+            let tableViewController = IOATableViewController(model: results)
+            weakSelf?.navigationController?.pushViewController(tableViewController, animated: true)
         }
         
         // Error completion
         let onError: (Error?) -> Void = {
             error in
-            
-            OperationQueue.main.addOperation({
-                weakSelf?.indicatorView.stopAnimating()
-            })
-            
+            // Stop Indicator
+            ProgressHUD.dismiss()
+            // Chequeo el error
             guard let error = error else {
                 return
             }
-            
-            let handlerError = IOAHandleError()
-            handlerError.handleError(error: error, controller: self)
+            // Manejo el error
+            let handlerError = MLNHandlerError()
+            handlerError.handlerError(error, controller: self)
         }
         
-        let service = IOAService()
-        service.fetchUrl(strUrl: url, onSuccess: onSuccess, onError: onError)
+        // Largo el Service
+        let service = MLNetworking()
+        service.fetchUrl(with: url, onSuccess: onSuccess, onError: onError)
     }
     
     

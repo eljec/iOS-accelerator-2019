@@ -1,0 +1,6 @@
+framework module MLNetworking {
+  umbrella header "MLNetworking-umbrella.h"
+
+  export *
+  module * { export * }
+}

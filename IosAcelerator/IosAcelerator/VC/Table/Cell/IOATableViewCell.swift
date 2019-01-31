@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MLNetworking
 
 class IOATableViewCell: UITableViewCell {
     @IBOutlet weak var trackName: UILabel!
@@ -30,8 +31,9 @@ class IOATableViewCell: UITableViewCell {
         
         if let thumbnail = track.artworkUrl100 {
             weak var weakSelf = self
-            let service = IOAService()
-            service.fetchImageFromUrl(urlString: thumbnail, closure: { image in
+            let service = MLNetworking()
+            service.fetchImage(fromUrl: thumbnail, onSuccess: {
+                image in
                 weakSelf?.trackImage.image = image
             })
         }

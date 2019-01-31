@@ -1,0 +1,30 @@
+{
+  "name": "MLNetworking",
+  "version": "0.0.1",
+  "summary": "A short description of MLNetworking.",
+  "homepage": "https://github.com/pedrowav/iOS-accelerator-2019",
+  "license": "None",
+  "authors": {
+    "Peter": "pedro.wav@gmail.com"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "git": "https://github.com/pedrowav/iOS-accelerator-2019.git",
+    "tag": "v4.0"
+  },
+  "source_files": "LibraryComponents/Classes/**/*.{h,m}",
+  "resources": [
+    "LibraryComponents/**/*.xib",
+    "LibraryComponents/Assets/**/*.xcassets",
+    "LibraryComponents/Assets/**/*.plist",
+    "LibraryComponents/Assets/**/*.ttf"
+  ],
+  "requires_arc": true,
+  "dependencies": {
+    "ProgressHUD": [
+
+    ]
+  }
+}
