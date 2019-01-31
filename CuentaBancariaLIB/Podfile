@@ -6,7 +6,7 @@ target 'CuentaBancariaLIB' do
   use_frameworks!
 
   # Pods for CuentaBancariaLIB
-  pod 'CuentaBancariaLIB', :path => './'
+  pod 'CuentaBancariaLIB', :path => "./"
   target 'CuentaBancariaLIBTests' do
     inherit! :search_paths
     # Pods for testing
