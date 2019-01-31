@@ -15,7 +15,12 @@ typedef NS_ENUM(NSUInteger, PSSongOrderBy) {
     trackId
 };
 
+typedef void (^SongCompletitionBlock)(NSArray<PSSong> *songsArray);
+typedef void (^SongErrorBlock)(NSError *error);
+
 @protocol PSSongService <NSObject>
--(void) getSongsByQuery:(NSString *) query andOrderBy:(PSSongOrderBy) orderBy andAsc: (BOOL) asc andCompletition:(void(^)(NSArray<PSSong> *songsArray)) completion andError:(void(^)(NSError *error)) errorCompletition;
+
+
+-(void) getSongsByQuery:(NSString *) query andOrderBy:(PSSongOrderBy) orderBy andAsc: (BOOL) asc andCompletition:(SongCompletitionBlock) completion andError:(SongErrorBlock) errorCompletition;
 
 @end

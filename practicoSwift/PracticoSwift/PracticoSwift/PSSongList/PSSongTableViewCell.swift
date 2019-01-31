@@ -23,11 +23,13 @@ class PSSongTableViewCell: UITableViewCell {
                 self.artistNameLabel.text = "👨🏻‍🎤: \(songItem.artistName ?? "")"
                 
                 if let imageUrl = songItem.artworkUrl60 {
-                    DispatchQueue.main.async {
+                    DispatchQueue.global().async {
                         let url = URL(string: imageUrl)
                         let data = try? Data(contentsOf: url!)
-                        self.artworkImageView.image = UIImage(data: data!)
-                        self.layoutSubviews()
+                        DispatchQueue.main.async {
+                            self.artworkImageView.image = UIImage(data: data!)
+                            self.layoutSubviews()
+                        }
                     }
                 }
             }

@@ -15,5 +15,5 @@
 #define SONGS_URL @"https://itunes.apple.com/search?term="
 
 @interface PSItunesSongService : NSObject <PSSongService>
--(void) getSongsByQuery:(NSString *) query andOrderBy:(PSSongOrderBy) orderBy andAsc: (BOOL) asc andCompletition:(void(^)(NSArray<PSSong> *songsArray)) completion andError:(void(^)(NSError *error)) errorCompletition;
+-(void) getSongsByQuery:(NSString *) query andOrderBy:(PSSongOrderBy) orderBy andAsc: (BOOL) asc andCompletition:(SongCompletitionBlock) completion andError:(SongErrorBlock) errorCompletition;
 @end

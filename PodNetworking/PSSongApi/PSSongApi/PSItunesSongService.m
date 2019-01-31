@@ -11,7 +11,7 @@
 #import "PSSong.h"
 
 @implementation PSItunesSongService
--(void) getSongsByQuery:(NSString *) query andOrderBy:(PSSongOrderBy) orderBy andAsc: (BOOL) asc andCompletition:(void(^)(NSArray<PSSong> *songsArray)) completion andError:(void(^)(NSError *error)) errorCompletition{
+-(void) getSongsByQuery:(NSString *) query andOrderBy:(PSSongOrderBy) orderBy andAsc: (BOOL) asc andCompletition:(SongCompletitionBlock) completion andError:(SongErrorBlock) errorCompletition{
     
     NSString *targetUrl = [NSString stringWithFormat:@"%@%@",SONGS_URL, [query urlencode]];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];

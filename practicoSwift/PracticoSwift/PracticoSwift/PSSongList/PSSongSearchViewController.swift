@@ -25,16 +25,18 @@ class PSSongSearchViewController: UIViewController {
         ProgressHUD.show("Please wait...")
         let songService:PSSongService = PSItunesSongService()
         
-        let completition = { (songs: [Any]?) -> Void in
+        let completition:SongCompletitionBlock = { (songs: [Any]?) -> Void in
             DispatchQueue.main.async {
-                if let songsArray:[PSSong] = songs as? [PSSong]{
-                    self.initializeViewListWitSongs(songs:songsArray)
+                guard let songsArray:[PSSong] = songs as? [PSSong] else {
+                    ProgressHUD.showError("Unexpected Error found.", interaction: true)
+                    return
                 }
+                self.initializeViewListWitSongs(songs:songsArray)
             }
             ProgressHUD.dismiss()
         }
         
-        let errorCompletition = { (errorCause: Error?) -> Void in
+        let errorCompletition:SongErrorBlock = { (errorCause: Error?) -> Void in
             DispatchQueue.main.async {
                 ProgressHUD.showError("Unexpected Error found. Code:\(errorCause?.localizedDescription ?? "")", interaction: true)
             }
