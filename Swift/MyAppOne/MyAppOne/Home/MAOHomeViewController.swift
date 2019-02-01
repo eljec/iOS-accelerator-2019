@@ -39,6 +39,31 @@ class MAOHomeViewController: UIViewController {
         })
     }
     
+    @IBAction func OrderByReleaseDate(_ sender: UIButton) {
+        data.getResults(urlQuery: url, completionHandler: { (data) in
+            guard let response = try? JSONDecoder().decode(Songs.self, from: data) else {
+                print("Error: Couldn't decode data into response")
+                return
+            }
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "dd-MM-yyyy"
+            let sortedArray = response.results.sorted(by: { $0.releaseDate! < $1.releaseDate! })
+            self.callListView(tracks: sortedArray)
+        })
+    }
+    
+    @IBAction func OrderByReverse(_ sender: UIButton) {
+        data.getResults(urlQuery: url, completionHandler: { (data) in
+            guard let response = try? JSONDecoder().decode(Songs.self, from: data) else {
+                print("Error: Couldn't decode data into response")
+                return
+            }
+            var sortedArray = response.results
+            sortedArray = sortedArray.reversed()
+            self.callListView(tracks: sortedArray)
+        })
+    }
+    
     // call second view
     func callListView(tracks: [Track]) -> Void {
         DispatchQueue.main.async {

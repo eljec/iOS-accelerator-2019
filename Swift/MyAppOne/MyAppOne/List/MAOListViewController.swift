@@ -22,8 +22,7 @@ class MAOListViewController: UIViewController, UITableViewDataSource, UITableVie
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellID", for: indexPath) as! trackTableViewCell   // casteamos
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "cellID", for: indexPath)  // casteamos la celda a nuestro propio tipo
-        
+        cell.clean()
         // shorthand
         let _track = tracks[indexPath.row]
         cell.artistNameLabel.text = _track.artistName
@@ -66,14 +65,20 @@ class MAOListViewController: UIViewController, UITableViewDataSource, UITableVie
         self.navigationController?.pushViewController(detailView, animated: true)
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.setNavigationBarHidden(false, animated: false)
+        
         // delegamos el datasource a el elemento mismo
         self.tracksTableView.dataSource = self
         self.tracksTableView.delegate = self
         self.tracksTableView.register(UINib(nibName: "trackTableViewCell", bundle: nil), forCellReuseIdentifier: "cellID")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        // seteamos el reload data cada vez que la vista se muestra
+//        self.tracksTableView.reloadData()
     }
     
     

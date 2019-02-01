@@ -27,4 +27,11 @@ class trackTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func clean() -> Void {
+        self.trackNameLabel.text = ""
+        self.artistNameLabel.text = ""
+        self.collectionNameLabel.text = ""
+        self.albumImageUIImageView.image = nil
+    }
+    
 }
