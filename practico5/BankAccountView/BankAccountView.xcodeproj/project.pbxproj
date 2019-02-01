@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		66C5F60B4174C6D4E999EBC7 /* Pods_BankAccountViewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F71F94748E9B6519D33C834 /* Pods_BankAccountViewTests.framework */; };
+		A741FF1622038FA3004F1F81 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A741FF1522038FA3004F1F81 /* AppDelegate.m */; };
+		A741FF1922038FA3004F1F81 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A741FF1822038FA3004F1F81 /* ViewController.m */; };
+		A741FF1C22038FA3004F1F81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A741FF1A22038FA3004F1F81 /* Main.storyboard */; };
+		A741FF1E22038FA4004F1F81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A741FF1D22038FA4004F1F81 /* Assets.xcassets */; };
+		A741FF2122038FA4004F1F81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A741FF1F22038FA4004F1F81 /* LaunchScreen.storyboard */; };
+		A741FF2422038FA4004F1F81 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A741FF2322038FA4004F1F81 /* main.m */; };
+		A741FF2E22038FA4004F1F81 /* BankAccountViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A741FF2D22038FA4004F1F81 /* BankAccountViewTests.m */; };
+		A741FF482204BD80004F1F81 /* BankAccountDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A741FF462204BD80004F1F81 /* BankAccountDetailViewController.m */; };
+		A741FF492204BD80004F1F81 /* BankAccountDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A741FF472204BD80004F1F81 /* BankAccountDetailViewController.xib */; };
+		A741FF4D2204C597004F1F81 /* BankAccountLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A741FF4B2204C597004F1F81 /* BankAccountLoginViewController.m */; };
+		A741FF4E2204C597004F1F81 /* BankAccountLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A741FF4C2204C597004F1F81 /* BankAccountLoginViewController.xib */; };
+		E1D9C44B287DB6C02687A2DB /* Pods_BankAccountView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76DA2C37D38C912747184A89 /* Pods_BankAccountView.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A741FF2A22038FA4004F1F81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A741FF0922038FA3004F1F81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A741FF1022038FA3004F1F81;
+			remoteInfo = BankAccountView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F0096E67381272092DE3778 /* Pods-BankAccountView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankAccountView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BankAccountView/Pods-BankAccountView.debug.xcconfig"; sourceTree = "<group>"; };
+		4887ECB8B93018D5FF9C5F9D /* Pods-BankAccountView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankAccountView.release.xcconfig"; path = "Pods/Target Support Files/Pods-BankAccountView/Pods-BankAccountView.release.xcconfig"; sourceTree = "<group>"; };
+		56B0A5CEDF8434FAFD2398B0 /* Pods-BankAccountViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankAccountViewTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BankAccountViewTests/Pods-BankAccountViewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		76DA2C37D38C912747184A89 /* Pods_BankAccountView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BankAccountView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F71F94748E9B6519D33C834 /* Pods_BankAccountViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BankAccountViewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A741FF1122038FA3004F1F81 /* BankAccountView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankAccountView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A741FF1422038FA3004F1F81 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A741FF1522038FA3004F1F81 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A741FF1722038FA3004F1F81 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A741FF1822038FA3004F1F81 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A741FF1B22038FA3004F1F81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A741FF1D22038FA4004F1F81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A741FF2022038FA4004F1F81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A741FF2222038FA4004F1F81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A741FF2322038FA4004F1F81 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A741FF2922038FA4004F1F81 /* BankAccountViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankAccountViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A741FF2D22038FA4004F1F81 /* BankAccountViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BankAccountViewTests.m; sourceTree = "<group>"; };
+		A741FF2F22038FA4004F1F81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A741FF38220481C2004F1F81 /* BankAccountView-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BankAccountView-Bridging-Header.h"; sourceTree = "<group>"; };
+		A741FF452204BD80004F1F81 /* BankAccountDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BankAccountDetailViewController.h; sourceTree = "<group>"; };
+		A741FF462204BD80004F1F81 /* BankAccountDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BankAccountDetailViewController.m; sourceTree = "<group>"; };
+		A741FF472204BD80004F1F81 /* BankAccountDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BankAccountDetailViewController.xib; sourceTree = "<group>"; };
+		A741FF4A2204C597004F1F81 /* BankAccountLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BankAccountLoginViewController.h; sourceTree = "<group>"; };
+		A741FF4B2204C597004F1F81 /* BankAccountLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BankAccountLoginViewController.m; sourceTree = "<group>"; };
+		A741FF4C2204C597004F1F81 /* BankAccountLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BankAccountLoginViewController.xib; sourceTree = "<group>"; };
+		E7F76AA1FF0AA7C6BD9ABE57 /* Pods-BankAccountViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankAccountViewTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BankAccountViewTests/Pods-BankAccountViewTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A741FF0E22038FA3004F1F81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1D9C44B287DB6C02687A2DB /* Pods_BankAccountView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A741FF2622038FA4004F1F81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66C5F60B4174C6D4E999EBC7 /* Pods_BankAccountViewTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D81005F7CE5B7CBCE2BF264 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F0096E67381272092DE3778 /* Pods-BankAccountView.debug.xcconfig */,
+				4887ECB8B93018D5FF9C5F9D /* Pods-BankAccountView.release.xcconfig */,
+				56B0A5CEDF8434FAFD2398B0 /* Pods-BankAccountViewTests.debug.xcconfig */,
+				E7F76AA1FF0AA7C6BD9ABE57 /* Pods-BankAccountViewTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A741FF0822038FA3004F1F81 = {
+			isa = PBXGroup;
+			children = (
+				A741FF1322038FA3004F1F81 /* BankAccountView */,
+				A741FF2C22038FA4004F1F81 /* BankAccountViewTests */,
+				A741FF1222038FA3004F1F81 /* Products */,
+				6D81005F7CE5B7CBCE2BF264 /* Pods */,
+				E3D77961BEDDD5C7C7C884BA /* Frameworks */,
+				A741FF38220481C2004F1F81 /* BankAccountView-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+		A741FF1222038FA3004F1F81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A741FF1122038FA3004F1F81 /* BankAccountView.app */,
+				A741FF2922038FA4004F1F81 /* BankAccountViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A741FF1322038FA3004F1F81 /* BankAccountView */ = {
+			isa = PBXGroup;
+			children = (
+				A741FF1422038FA3004F1F81 /* AppDelegate.h */,
+				A741FF1522038FA3004F1F81 /* AppDelegate.m */,
+				A741FF1722038FA3004F1F81 /* ViewController.h */,
+				A741FF1822038FA3004F1F81 /* ViewController.m */,
+				A741FF1A22038FA3004F1F81 /* Main.storyboard */,
+				A741FF1D22038FA4004F1F81 /* Assets.xcassets */,
+				A741FF1F22038FA4004F1F81 /* LaunchScreen.storyboard */,
+				A741FF2222038FA4004F1F81 /* Info.plist */,
+				A741FF2322038FA4004F1F81 /* main.m */,
+				A741FF452204BD80004F1F81 /* BankAccountDetailViewController.h */,
+				A741FF462204BD80004F1F81 /* BankAccountDetailViewController.m */,
+				A741FF472204BD80004F1F81 /* BankAccountDetailViewController.xib */,
+				A741FF4A2204C597004F1F81 /* BankAccountLoginViewController.h */,
+				A741FF4B2204C597004F1F81 /* BankAccountLoginViewController.m */,
+				A741FF4C2204C597004F1F81 /* BankAccountLoginViewController.xib */,
+			);
+			path = BankAccountView;
+			sourceTree = "<group>";
+		};
+		A741FF2C22038FA4004F1F81 /* BankAccountViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				A741FF2D22038FA4004F1F81 /* BankAccountViewTests.m */,
+				A741FF2F22038FA4004F1F81 /* Info.plist */,
+			);
+			path = BankAccountViewTests;
+			sourceTree = "<group>";
+		};
+		E3D77961BEDDD5C7C7C884BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76DA2C37D38C912747184A89 /* Pods_BankAccountView.framework */,
+				7F71F94748E9B6519D33C834 /* Pods_BankAccountViewTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A741FF1022038FA3004F1F81 /* BankAccountView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A741FF3222038FA4004F1F81 /* Build configuration list for PBXNativeTarget "BankAccountView" */;
+			buildPhases = (
+				5276A21FCFC97667CFE7507A /* [CP] Check Pods Manifest.lock */,
+				A741FF0D22038FA3004F1F81 /* Sources */,
+				A741FF0E22038FA3004F1F81 /* Frameworks */,
+				A741FF0F22038FA3004F1F81 /* Resources */,
+				74F3D5CC39C8143842FEFCE5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BankAccountView;
+			productName = BankAccountView;
+			productReference = A741FF1122038FA3004F1F81 /* BankAccountView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A741FF2822038FA4004F1F81 /* BankAccountViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A741FF3522038FA4004F1F81 /* Build configuration list for PBXNativeTarget "BankAccountViewTests" */;
+			buildPhases = (
+				5573CB9211D8A0D85EBDF4AD /* [CP] Check Pods Manifest.lock */,
+				A741FF2522038FA4004F1F81 /* Sources */,
+				A741FF2622038FA4004F1F81 /* Frameworks */,
+				A741FF2722038FA4004F1F81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A741FF2B22038FA4004F1F81 /* PBXTargetDependency */,
+			);
+			name = BankAccountViewTests;
+			productName = BankAccountViewTests;
+			productReference = A741FF2922038FA4004F1F81 /* BankAccountViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A741FF0922038FA3004F1F81 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "VICTOR ABEL CABEZA";
+				TargetAttributes = {
+					A741FF1022038FA3004F1F81 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					A741FF2822038FA4004F1F81 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = A741FF1022038FA3004F1F81;
+					};
+				};
+			};
+			buildConfigurationList = A741FF0C22038FA3004F1F81 /* Build configuration list for PBXProject "BankAccountView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A741FF0822038FA3004F1F81;
+			productRefGroup = A741FF1222038FA3004F1F81 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A741FF1022038FA3004F1F81 /* BankAccountView */,
+				A741FF2822038FA4004F1F81 /* BankAccountViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A741FF0F22038FA3004F1F81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A741FF2122038FA4004F1F81 /* LaunchScreen.storyboard in Resources */,
+				A741FF1E22038FA4004F1F81 /* Assets.xcassets in Resources */,
+				A741FF1C22038FA3004F1F81 /* Main.storyboard in Resources */,
+				A741FF492204BD80004F1F81 /* BankAccountDetailViewController.xib in Resources */,
+				A741FF4E2204C597004F1F81 /* BankAccountLoginViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A741FF2722038FA4004F1F81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5276A21FCFC97667CFE7507A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BankAccountView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5573CB9211D8A0D85EBDF4AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BankAccountViewTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74F3D5CC39C8143842FEFCE5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BankAccountView/Pods-BankAccountView-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BankApi/BankApi.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BankApi.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BankAccountView/Pods-BankAccountView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A741FF0D22038FA3004F1F81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A741FF1922038FA3004F1F81 /* ViewController.m in Sources */,
+				A741FF482204BD80004F1F81 /* BankAccountDetailViewController.m in Sources */,
+				A741FF2422038FA4004F1F81 /* main.m in Sources */,
+				A741FF4D2204C597004F1F81 /* BankAccountLoginViewController.m in Sources */,
+				A741FF1622038FA3004F1F81 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A741FF2522038FA4004F1F81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A741FF2E22038FA4004F1F81 /* BankAccountViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A741FF2B22038FA4004F1F81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A741FF1022038FA3004F1F81 /* BankAccountView */;
+			targetProxy = A741FF2A22038FA4004F1F81 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A741FF1A22038FA3004F1F81 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A741FF1B22038FA3004F1F81 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A741FF1F22038FA4004F1F81 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A741FF2022038FA4004F1F81 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A741FF3022038FA4004F1F81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A741FF3122038FA4004F1F81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A741FF3322038FA4004F1F81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F0096E67381272092DE3778 /* Pods-BankAccountView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WNQU35HMJ5;
+				INFOPLIST_FILE = BankAccountView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BankApi\"",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mercadolibre.BankAccountView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BankAccountView-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A741FF3422038FA4004F1F81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4887ECB8B93018D5FF9C5F9D /* Pods-BankAccountView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WNQU35HMJ5;
+				INFOPLIST_FILE = BankAccountView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mercadolibre.BankAccountView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BankAccountView-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A741FF3622038FA4004F1F81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56B0A5CEDF8434FAFD2398B0 /* Pods-BankAccountViewTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WNQU35HMJ5;
+				INFOPLIST_FILE = BankAccountViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mercadolibre.BankAccountViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BankAccountView.app/BankAccountView";
+			};
+			name = Debug;
+		};
+		A741FF3722038FA4004F1F81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7F76AA1FF0AA7C6BD9ABE57 /* Pods-BankAccountViewTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WNQU35HMJ5;
+				INFOPLIST_FILE = BankAccountViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mercadolibre.BankAccountViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BankAccountView.app/BankAccountView";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A741FF0C22038FA3004F1F81 /* Build configuration list for PBXProject "BankAccountView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A741FF3022038FA4004F1F81 /* Debug */,
+				A741FF3122038FA4004F1F81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A741FF3222038FA4004F1F81 /* Build configuration list for PBXNativeTarget "BankAccountView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A741FF3322038FA4004F1F81 /* Debug */,
+				A741FF3422038FA4004F1F81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A741FF3522038FA4004F1F81 /* Build configuration list for PBXNativeTarget "BankAccountViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A741FF3622038FA4004F1F81 /* Debug */,
+				A741FF3722038FA4004F1F81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A741FF0922038FA3004F1F81 /* Project object */;
+}

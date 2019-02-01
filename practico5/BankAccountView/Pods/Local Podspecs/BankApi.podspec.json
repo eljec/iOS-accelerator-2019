@@ -1,0 +1,24 @@
+{
+  "name": "BankApi",
+  "version": "0.0.1",
+  "license": "ATR",
+  "homepage": "http://relatedcode.com",
+  "authors": {
+    "ATR Code": "info@atr.com"
+  },
+  "summary": "This library manage HTTP request for a 3 party app",
+  "source": {
+    "git": "https://github.com/relatedcode/BankApi.git",
+    "tag": "v2.60"
+  },
+  "platforms": {
+    "ios": null
+  },
+  "source_files": "BankApi/*.{swift,h,m}",
+  "ios": {
+    "source_files": "BankApi/*.h"
+  },
+  "osx": {
+    "source_files": "BankApi/*.h"
+  }
+}

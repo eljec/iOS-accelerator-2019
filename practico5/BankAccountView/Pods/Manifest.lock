@@ -1,0 +1,16 @@
+PODS:
+  - BankApi (0.0.1)
+
+DEPENDENCIES:
+  - BankApi (from `../BankApi`)
+
+EXTERNAL SOURCES:
+  BankApi:
+    :path: "../BankApi"
+
+SPEC CHECKSUMS:
+  BankApi: 2c5c3f439795acf86dd810c07462c2e75974c829
+
+PODFILE CHECKSUM: 42c263cf33403889ed0503af4eb27ff267522590
+
+COCOAPODS: 1.5.3

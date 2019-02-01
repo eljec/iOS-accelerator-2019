@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[BankAccountDetailViewController tableView:cellForRowAtIndexPath:]:BankAccountDetailViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[movement getAmount]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[BankAccountDetailViewController refreshData]:BankAccountDetailViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[NSString stringWithFormat:@&quot;Account Number: %lu&quot;, [self.bankAccount getAccountNumber]]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ViewController viewDidLoad]:ViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[NSDate alloc] init]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[BankAccountDetailViewController configureColorAction:]:BankAccountDetailViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[BankAccountDetailViewController initWithBankAccount:]:BankAccountDetailViewController.m">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
