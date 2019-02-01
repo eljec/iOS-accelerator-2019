@@ -1,0 +1,6 @@
+framework module CuentaBancariaLIB {
+  umbrella header "CuentaBancariaLIB-umbrella.h"
+
+  export *
+  module * { export * }
+}
