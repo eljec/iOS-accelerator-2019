@@ -1,0 +1,6 @@
+framework module RGBankAccountLib {
+  umbrella header "RGBankAccountLib-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -18,6 +18,13 @@
 		14B0ECC721E6D417004B2173 /* MAOListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B0ECC521E6D417004B2173 /* MAOListViewController.m */; };
 		14B0ECC821E6D417004B2173 /* MAOListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B0ECC621E6D417004B2173 /* MAOListViewController.xib */; };
 		14B0ECCB21E790DD004B2173 /* MAOListViewControllerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B0ECCA21E790DD004B2173 /* MAOListViewControllerModel.m */; };
+		B371573B21F0E8090077FBD6 /* MAOListCustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B371573921F0E8090077FBD6 /* MAOListCustomViewController.m */; };
+		B371573C21F0E8090077FBD6 /* MAOListCustomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B371573A21F0E8090077FBD6 /* MAOListCustomViewController.xib */; };
+		B371574121F0EB220077FBD6 /* MAOCustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B371573F21F0EB220077FBD6 /* MAOCustomTableViewCell.m */; };
+		B371574221F0EB220077FBD6 /* MAOCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B371574021F0EB220077FBD6 /* MAOCustomTableViewCell.xib */; };
+		B371574721F104920077FBD6 /* MAODetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B371574521F104920077FBD6 /* MAODetailViewController.m */; };
+		B371574821F104920077FBD6 /* MAODetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B371574621F104920077FBD6 /* MAODetailViewController.xib */; };
+		B371574A21F20DAF0077FBD6 /* MAODetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B371574521F104920077FBD6 /* MAODetailViewController.m */; };
 		B397945F21E7AB730002ECEF /* MARequestService.m in Sources */ = {isa = PBXBuildFile; fileRef = B397945E21E7AB730002ECEF /* MARequestService.m */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +67,15 @@
 		14B0ECC621E6D417004B2173 /* MAOListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MAOListViewController.xib; sourceTree = "<group>"; };
 		14B0ECC921E790DD004B2173 /* MAOListViewControllerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAOListViewControllerModel.h; sourceTree = "<group>"; };
 		14B0ECCA21E790DD004B2173 /* MAOListViewControllerModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAOListViewControllerModel.m; sourceTree = "<group>"; };
+		B371573821F0E8090077FBD6 /* MAOListCustomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAOListCustomViewController.h; sourceTree = "<group>"; };
+		B371573921F0E8090077FBD6 /* MAOListCustomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAOListCustomViewController.m; sourceTree = "<group>"; };
+		B371573A21F0E8090077FBD6 /* MAOListCustomViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MAOListCustomViewController.xib; sourceTree = "<group>"; };
+		B371573E21F0EB220077FBD6 /* MAOCustomTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAOCustomTableViewCell.h; sourceTree = "<group>"; };
+		B371573F21F0EB220077FBD6 /* MAOCustomTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAOCustomTableViewCell.m; sourceTree = "<group>"; };
+		B371574021F0EB220077FBD6 /* MAOCustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MAOCustomTableViewCell.xib; sourceTree = "<group>"; };
+		B371574421F104920077FBD6 /* MAODetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAODetailViewController.h; sourceTree = "<group>"; };
+		B371574521F104920077FBD6 /* MAODetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAODetailViewController.m; sourceTree = "<group>"; };
+		B371574621F104920077FBD6 /* MAODetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MAODetailViewController.xib; sourceTree = "<group>"; };
 		B397945E21E7AB730002ECEF /* MARequestService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MARequestService.m; sourceTree = "<group>"; };
 		B397946021E7AB930002ECEF /* MARequestService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MARequestService.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,14 +128,15 @@
 		14B0EC8121E6D18C004B2173 /* MyAppOne */ = {
 			isa = PBXGroup;
 			children = (
-				B397945D21E7AB330002ECEF /* Services */,
-				14B0ECB421E6D215004B2173 /* VC */,
 				14B0EC8221E6D18C004B2173 /* AppDelegate.h */,
 				14B0EC8321E6D18C004B2173 /* AppDelegate.m */,
 				14B0EC8B21E6D190004B2173 /* Assets.xcassets */,
-				14B0EC8D21E6D190004B2173 /* LaunchScreen.storyboard */,
 				14B0EC9021E6D190004B2173 /* Info.plist */,
+				14B0EC8D21E6D190004B2173 /* LaunchScreen.storyboard */,
 				14B0EC9121E6D190004B2173 /* main.m */,
+				B371573D21F0E84D0077FBD6 /* Model */,
+				B397945D21E7AB330002ECEF /* Services */,
+				14B0ECB421E6D215004B2173 /* VC */,
 			);
 			path = MyAppOne;
 			sourceTree = "<group>";
@@ -145,6 +162,8 @@
 		14B0ECB421E6D215004B2173 /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				B371574321F104280077FBD6 /* Detail */,
+				B371573721F0E59D0077FBD6 /* ListCustom */,
 				14B0ECBE21E6D402004B2173 /* Initial */,
 				14B0ECBD21E6D402004B2173 /* List */,
 			);
@@ -157,8 +176,6 @@
 				14B0ECC421E6D417004B2173 /* MAOListViewController.h */,
 				14B0ECC521E6D417004B2173 /* MAOListViewController.m */,
 				14B0ECC621E6D417004B2173 /* MAOListViewController.xib */,
-				14B0ECC921E790DD004B2173 /* MAOListViewControllerModel.h */,
-				14B0ECCA21E790DD004B2173 /* MAOListViewControllerModel.m */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -171,6 +188,38 @@
 				14B0ECC121E6D402004B2173 /* MAOInitialViewController.m */,
 			);
 			path = Initial;
+			sourceTree = "<group>";
+		};
+		B371573721F0E59D0077FBD6 /* ListCustom */ = {
+			isa = PBXGroup;
+			children = (
+				B371573821F0E8090077FBD6 /* MAOListCustomViewController.h */,
+				B371573921F0E8090077FBD6 /* MAOListCustomViewController.m */,
+				B371573A21F0E8090077FBD6 /* MAOListCustomViewController.xib */,
+				B371573E21F0EB220077FBD6 /* MAOCustomTableViewCell.h */,
+				B371573F21F0EB220077FBD6 /* MAOCustomTableViewCell.m */,
+				B371574021F0EB220077FBD6 /* MAOCustomTableViewCell.xib */,
+			);
+			path = ListCustom;
+			sourceTree = "<group>";
+		};
+		B371573D21F0E84D0077FBD6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				14B0ECC921E790DD004B2173 /* MAOListViewControllerModel.h */,
+				14B0ECCA21E790DD004B2173 /* MAOListViewControllerModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B371574321F104280077FBD6 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				B371574421F104920077FBD6 /* MAODetailViewController.h */,
+				B371574521F104920077FBD6 /* MAODetailViewController.m */,
+				B371574621F104920077FBD6 /* MAODetailViewController.xib */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		B397945D21E7AB330002ECEF /* Services */ = {
@@ -287,6 +336,9 @@
 			files = (
 				14B0EC8F21E6D190004B2173 /* LaunchScreen.storyboard in Resources */,
 				14B0EC8C21E6D190004B2173 /* Assets.xcassets in Resources */,
+				B371574221F0EB220077FBD6 /* MAOCustomTableViewCell.xib in Resources */,
+				B371573C21F0E8090077FBD6 /* MAOListCustomViewController.xib in Resources */,
+				B371574821F104920077FBD6 /* MAODetailViewController.xib in Resources */,
 				14B0ECC821E6D417004B2173 /* MAOListViewController.xib in Resources */,
 				14B0ECC221E6D402004B2173 /* MAOInitialViewController.xib in Resources */,
 			);
@@ -314,10 +366,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				14B0EC9221E6D190004B2173 /* main.m in Sources */,
+				B371573B21F0E8090077FBD6 /* MAOListCustomViewController.m in Sources */,
 				14B0ECCB21E790DD004B2173 /* MAOListViewControllerModel.m in Sources */,
 				14B0ECC321E6D402004B2173 /* MAOInitialViewController.m in Sources */,
 				14B0ECC721E6D417004B2173 /* MAOListViewController.m in Sources */,
 				14B0EC8421E6D18C004B2173 /* AppDelegate.m in Sources */,
+				B371574721F104920077FBD6 /* MAODetailViewController.m in Sources */,
+				B371574121F0EB220077FBD6 /* MAOCustomTableViewCell.m in Sources */,
 				B397945F21E7AB730002ECEF /* MARequestService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,6 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14B0EC9C21E6D191004B2173 /* MyAppOneTests.m in Sources */,
+				B371574A21F20DAF0077FBD6 /* MAODetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

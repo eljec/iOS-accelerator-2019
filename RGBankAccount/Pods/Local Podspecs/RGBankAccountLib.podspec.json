@@ -1,0 +1,22 @@
+{
+  "name": "RGBankAccountLib",
+  "version": "0.0.1",
+  "summary": "A short description of CuentaBancariaLib.",
+  "description": "Esto es una descripción",
+  "homepage": "https://github.com/romangua?tab=repositories",
+  "license": "none",
+  "authors": {
+    "Roman Guarino": "romanguarino@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/romangua?tab=repositories"
+  },
+  "source_files": [
+    "RGBankAccountLib/RGBankAccount.swift",
+    "RGBankAccountLib/RGAccount.swift",
+    "RGBankAccountLib/RGMovement.swift"
+  ],
+  "platforms": {
+    "ios": "8.0"
+  }
+}

@@ -10,9 +10,6 @@
 
 @interface MARequestService : NSObject
 
-+(MARequestService *) sharedInstance;
-
--(void) fetchData:(void(^)(NSArray *dataArray, NSError *error)) completionBlock fromString:(NSString *)urlStr;
--(void) fetchData:(void(^)(NSArray *dataArray, NSError *error)) completionBlock fromURL:(NSURL *)url;
++(void) fetchDataFromUrl:(NSURL *)url success:(void (^)(NSArray *dataArray))onSuccess error:(void (^)(NSError *error))onError;
 
 @end

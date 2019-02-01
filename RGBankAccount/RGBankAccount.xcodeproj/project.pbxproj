@@ -1,0 +1,718 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20C3F1BECFCD468B3D44F258 /* Pods_RGBankAccount.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E359EEE9F7D9E78734F07DF /* Pods_RGBankAccount.framework */; };
+		69E26BE71F471E40A5256C21 /* Pods_RGBankAccountUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E9D66B8B040FB9C88AB51E5 /* Pods_RGBankAccountUITests.framework */; };
+		B3171715220389AD00607B1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3171714220389AD00607B1D /* AppDelegate.m */; };
+		B317171D220389AE00607B1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B317171C220389AE00607B1D /* Assets.xcassets */; };
+		B317172D220389AE00607B1D /* RGBankAccountTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B317172C220389AE00607B1D /* RGBankAccountTests.m */; };
+		B3171738220389AE00607B1D /* RGBankAccountUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3171737220389AE00607B1D /* RGBankAccountUITests.m */; };
+		B317174D22038A5700607B1D /* RGInitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B317174B22038A5700607B1D /* RGInitialViewController.m */; };
+		B317174E22038A5700607B1D /* RGInitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B317174C22038A5700607B1D /* RGInitialViewController.xib */; };
+		B317175022038B8200607B1D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B317174F22038B8200607B1D /* main.m */; };
+		B317175222038BED00607B1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B317175122038BED00607B1D /* LaunchScreen.storyboard */; };
+		B39A5EE02204E44700DEE322 /* RGMovementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B39A5EDE2204E44700DEE322 /* RGMovementViewController.m */; };
+		B39A5EE12204E44700DEE322 /* RGMovementViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B39A5EDF2204E44700DEE322 /* RGMovementViewController.xib */; };
+		D32C58C2B67F218E0F4755B2 /* Pods_RGBankAccountTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B723D85C906C5484859B4E80 /* Pods_RGBankAccountTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B3171729220389AE00607B1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3171708220389AD00607B1D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B317170F220389AD00607B1D;
+			remoteInfo = RGBankAccount;
+		};
+		B3171734220389AE00607B1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3171708220389AD00607B1D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B317170F220389AD00607B1D;
+			remoteInfo = RGBankAccount;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		32C07C17C88FD49BA5AC7D5A /* Pods-RGBankAccountTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RGBankAccountTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RGBankAccountTests/Pods-RGBankAccountTests.debug.xcconfig"; sourceTree = "<group>"; };
+		37CA675F2CADFBCE35359902 /* Pods-RGBankAccountUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RGBankAccountUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RGBankAccountUITests/Pods-RGBankAccountUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		392E6DBA45852F851C48B56F /* Pods-RGBankAccountUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RGBankAccountUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RGBankAccountUITests/Pods-RGBankAccountUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3E9D66B8B040FB9C88AB51E5 /* Pods_RGBankAccountUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RGBankAccountUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48E26E264215E524E4C9C9F8 /* Pods-RGBankAccountTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RGBankAccountTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RGBankAccountTests/Pods-RGBankAccountTests.release.xcconfig"; sourceTree = "<group>"; };
+		4E359EEE9F7D9E78734F07DF /* Pods_RGBankAccount.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RGBankAccount.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		59018EA1F192C0E7BBD9BDCE /* Pods-RGBankAccount.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RGBankAccount.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RGBankAccount/Pods-RGBankAccount.debug.xcconfig"; sourceTree = "<group>"; };
+		B2105AFD0EEF88763BA9BBE2 /* Pods-RGBankAccount.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RGBankAccount.release.xcconfig"; path = "Pods/Target Support Files/Pods-RGBankAccount/Pods-RGBankAccount.release.xcconfig"; sourceTree = "<group>"; };
+		B3171710220389AD00607B1D /* RGBankAccount.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RGBankAccount.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3171713220389AD00607B1D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B3171714220389AD00607B1D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B317171C220389AE00607B1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B3171721220389AE00607B1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3171728220389AE00607B1D /* RGBankAccountTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RGBankAccountTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B317172C220389AE00607B1D /* RGBankAccountTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RGBankAccountTests.m; sourceTree = "<group>"; };
+		B317172E220389AE00607B1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3171733220389AE00607B1D /* RGBankAccountUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RGBankAccountUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3171737220389AE00607B1D /* RGBankAccountUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RGBankAccountUITests.m; sourceTree = "<group>"; };
+		B3171739220389AE00607B1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B317174A22038A5700607B1D /* RGInitialViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RGInitialViewController.h; sourceTree = "<group>"; };
+		B317174B22038A5700607B1D /* RGInitialViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RGInitialViewController.m; sourceTree = "<group>"; };
+		B317174C22038A5700607B1D /* RGInitialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RGInitialViewController.xib; sourceTree = "<group>"; };
+		B317174F22038B8200607B1D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B317175122038BED00607B1D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B39A5EDD2204E44700DEE322 /* RGMovementViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RGMovementViewController.h; sourceTree = "<group>"; };
+		B39A5EDE2204E44700DEE322 /* RGMovementViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RGMovementViewController.m; sourceTree = "<group>"; };
+		B39A5EDF2204E44700DEE322 /* RGMovementViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RGMovementViewController.xib; sourceTree = "<group>"; };
+		B723D85C906C5484859B4E80 /* Pods_RGBankAccountTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RGBankAccountTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B317170D220389AD00607B1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20C3F1BECFCD468B3D44F258 /* Pods_RGBankAccount.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3171725220389AE00607B1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D32C58C2B67F218E0F4755B2 /* Pods_RGBankAccountTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3171730220389AE00607B1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69E26BE71F471E40A5256C21 /* Pods_RGBankAccountUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7FC15EC09C92C97DAB7DF6D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				59018EA1F192C0E7BBD9BDCE /* Pods-RGBankAccount.debug.xcconfig */,
+				B2105AFD0EEF88763BA9BBE2 /* Pods-RGBankAccount.release.xcconfig */,
+				32C07C17C88FD49BA5AC7D5A /* Pods-RGBankAccountTests.debug.xcconfig */,
+				48E26E264215E524E4C9C9F8 /* Pods-RGBankAccountTests.release.xcconfig */,
+				37CA675F2CADFBCE35359902 /* Pods-RGBankAccountUITests.debug.xcconfig */,
+				392E6DBA45852F851C48B56F /* Pods-RGBankAccountUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B3171707220389AD00607B1D = {
+			isa = PBXGroup;
+			children = (
+				B3171712220389AD00607B1D /* RGBankAccount */,
+				B317172B220389AE00607B1D /* RGBankAccountTests */,
+				B3171736220389AE00607B1D /* RGBankAccountUITests */,
+				B3171711220389AD00607B1D /* Products */,
+				7FC15EC09C92C97DAB7DF6D9 /* Pods */,
+				B9A940FE6B82B6B6AAAFCD47 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B3171711220389AD00607B1D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3171710220389AD00607B1D /* RGBankAccount.app */,
+				B3171728220389AE00607B1D /* RGBankAccountTests.xctest */,
+				B3171733220389AE00607B1D /* RGBankAccountUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3171712220389AD00607B1D /* RGBankAccount */ = {
+			isa = PBXGroup;
+			children = (
+				B3171713220389AD00607B1D /* AppDelegate.h */,
+				B3171714220389AD00607B1D /* AppDelegate.m */,
+				B317171C220389AE00607B1D /* Assets.xcassets */,
+				B3171721220389AE00607B1D /* Info.plist */,
+				B317174A22038A5700607B1D /* RGInitialViewController.h */,
+				B317175122038BED00607B1D /* LaunchScreen.storyboard */,
+				B317174B22038A5700607B1D /* RGInitialViewController.m */,
+				B317174F22038B8200607B1D /* main.m */,
+				B317174C22038A5700607B1D /* RGInitialViewController.xib */,
+				B39A5EDD2204E44700DEE322 /* RGMovementViewController.h */,
+				B39A5EDE2204E44700DEE322 /* RGMovementViewController.m */,
+				B39A5EDF2204E44700DEE322 /* RGMovementViewController.xib */,
+			);
+			path = RGBankAccount;
+			sourceTree = "<group>";
+		};
+		B317172B220389AE00607B1D /* RGBankAccountTests */ = {
+			isa = PBXGroup;
+			children = (
+				B317172C220389AE00607B1D /* RGBankAccountTests.m */,
+				B317172E220389AE00607B1D /* Info.plist */,
+			);
+			path = RGBankAccountTests;
+			sourceTree = "<group>";
+		};
+		B3171736220389AE00607B1D /* RGBankAccountUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B3171737220389AE00607B1D /* RGBankAccountUITests.m */,
+				B3171739220389AE00607B1D /* Info.plist */,
+			);
+			path = RGBankAccountUITests;
+			sourceTree = "<group>";
+		};
+		B9A940FE6B82B6B6AAAFCD47 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E359EEE9F7D9E78734F07DF /* Pods_RGBankAccount.framework */,
+				B723D85C906C5484859B4E80 /* Pods_RGBankAccountTests.framework */,
+				3E9D66B8B040FB9C88AB51E5 /* Pods_RGBankAccountUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B317170F220389AD00607B1D /* RGBankAccount */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B317173C220389AE00607B1D /* Build configuration list for PBXNativeTarget "RGBankAccount" */;
+			buildPhases = (
+				088916CD2F3E68C546900F87 /* [CP] Check Pods Manifest.lock */,
+				B317170C220389AD00607B1D /* Sources */,
+				B317170D220389AD00607B1D /* Frameworks */,
+				B317170E220389AD00607B1D /* Resources */,
+				02342914A4CF2AE9B4BF8E40 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RGBankAccount;
+			productName = RGBankAccount;
+			productReference = B3171710220389AD00607B1D /* RGBankAccount.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B3171727220389AE00607B1D /* RGBankAccountTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B317173F220389AE00607B1D /* Build configuration list for PBXNativeTarget "RGBankAccountTests" */;
+			buildPhases = (
+				B32F429EFB7950FFE3FDC39F /* [CP] Check Pods Manifest.lock */,
+				B3171724220389AE00607B1D /* Sources */,
+				B3171725220389AE00607B1D /* Frameworks */,
+				B3171726220389AE00607B1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B317172A220389AE00607B1D /* PBXTargetDependency */,
+			);
+			name = RGBankAccountTests;
+			productName = RGBankAccountTests;
+			productReference = B3171728220389AE00607B1D /* RGBankAccountTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B3171732220389AE00607B1D /* RGBankAccountUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3171742220389AE00607B1D /* Build configuration list for PBXNativeTarget "RGBankAccountUITests" */;
+			buildPhases = (
+				63FFE4D605FA79B5C4338E77 /* [CP] Check Pods Manifest.lock */,
+				B317172F220389AE00607B1D /* Sources */,
+				B3171730220389AE00607B1D /* Frameworks */,
+				B3171731220389AE00607B1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3171735220389AE00607B1D /* PBXTargetDependency */,
+			);
+			name = RGBankAccountUITests;
+			productName = RGBankAccountUITests;
+			productReference = B3171733220389AE00607B1D /* RGBankAccountUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3171708220389AD00607B1D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Román Guarino";
+				TargetAttributes = {
+					B317170F220389AD00607B1D = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					B3171727220389AE00607B1D = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = B317170F220389AD00607B1D;
+					};
+					B3171732220389AE00607B1D = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = B317170F220389AD00607B1D;
+					};
+				};
+			};
+			buildConfigurationList = B317170B220389AD00607B1D /* Build configuration list for PBXProject "RGBankAccount" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B3171707220389AD00607B1D;
+			productRefGroup = B3171711220389AD00607B1D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B317170F220389AD00607B1D /* RGBankAccount */,
+				B3171727220389AE00607B1D /* RGBankAccountTests */,
+				B3171732220389AE00607B1D /* RGBankAccountUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B317170E220389AD00607B1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B39A5EE12204E44700DEE322 /* RGMovementViewController.xib in Resources */,
+				B317175222038BED00607B1D /* LaunchScreen.storyboard in Resources */,
+				B317174E22038A5700607B1D /* RGInitialViewController.xib in Resources */,
+				B317171D220389AE00607B1D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3171726220389AE00607B1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3171731220389AE00607B1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02342914A4CF2AE9B4BF8E40 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RGBankAccount/Pods-RGBankAccount-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ProgressHUD/ProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/RGBankAccountLib/RGBankAccountLib.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RGBankAccountLib.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RGBankAccount/Pods-RGBankAccount-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		088916CD2F3E68C546900F87 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RGBankAccount-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63FFE4D605FA79B5C4338E77 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RGBankAccountUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B32F429EFB7950FFE3FDC39F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RGBankAccountTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B317170C220389AD00607B1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B39A5EE02204E44700DEE322 /* RGMovementViewController.m in Sources */,
+				B317174D22038A5700607B1D /* RGInitialViewController.m in Sources */,
+				B317175022038B8200607B1D /* main.m in Sources */,
+				B3171715220389AD00607B1D /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3171724220389AE00607B1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B317172D220389AE00607B1D /* RGBankAccountTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B317172F220389AE00607B1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3171738220389AE00607B1D /* RGBankAccountUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B317172A220389AE00607B1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B317170F220389AD00607B1D /* RGBankAccount */;
+			targetProxy = B3171729220389AE00607B1D /* PBXContainerItemProxy */;
+		};
+		B3171735220389AE00607B1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B317170F220389AD00607B1D /* RGBankAccount */;
+			targetProxy = B3171734220389AE00607B1D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B317173A220389AE00607B1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B317173B220389AE00607B1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B317173D220389AE00607B1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59018EA1F192C0E7BBD9BDCE /* Pods-RGBankAccount.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RGBankAccount/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RGCuentaBancariaLib\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "acelerator-meli.RGBankAccount";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B317173E220389AE00607B1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2105AFD0EEF88763BA9BBE2 /* Pods-RGBankAccount.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RGBankAccount/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "acelerator-meli.RGBankAccount";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B3171740220389AE00607B1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32C07C17C88FD49BA5AC7D5A /* Pods-RGBankAccountTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RGBankAccountTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "acelerator-meli.RGBankAccountTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RGBankAccount.app/RGBankAccount";
+			};
+			name = Debug;
+		};
+		B3171741220389AE00607B1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48E26E264215E524E4C9C9F8 /* Pods-RGBankAccountTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RGBankAccountTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "acelerator-meli.RGBankAccountTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RGBankAccount.app/RGBankAccount";
+			};
+			name = Release;
+		};
+		B3171743220389AE00607B1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37CA675F2CADFBCE35359902 /* Pods-RGBankAccountUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RGBankAccountUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "acelerator-meli.RGBankAccountUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RGBankAccount;
+			};
+			name = Debug;
+		};
+		B3171744220389AE00607B1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 392E6DBA45852F851C48B56F /* Pods-RGBankAccountUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RGBankAccountUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "acelerator-meli.RGBankAccountUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RGBankAccount;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B317170B220389AD00607B1D /* Build configuration list for PBXProject "RGBankAccount" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B317173A220389AE00607B1D /* Debug */,
+				B317173B220389AE00607B1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B317173C220389AE00607B1D /* Build configuration list for PBXNativeTarget "RGBankAccount" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B317173D220389AE00607B1D /* Debug */,
+				B317173E220389AE00607B1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B317173F220389AE00607B1D /* Build configuration list for PBXNativeTarget "RGBankAccountTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3171740220389AE00607B1D /* Debug */,
+				B3171741220389AE00607B1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3171742220389AE00607B1D /* Build configuration list for PBXNativeTarget "RGBankAccountUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3171743220389AE00607B1D /* Debug */,
+				B3171744220389AE00607B1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B3171708220389AD00607B1D /* Project object */;
+}
