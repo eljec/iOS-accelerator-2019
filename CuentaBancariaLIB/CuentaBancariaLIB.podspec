@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   # s.description  = <<-DESC
   #                  DESC
 
-  s.homepage     = "https://github.com/tonymillion/Reachability"
+  s.homepage     = "https://github.com/pedrowav/iOS-accelerator-2019/tree/practico5/CuentaBancariaLIB"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/tonymillion/Reachability.git", :tag => "v3.1.0" }
+  s.source       = { :git => "https://github.com/pedrowav/iOS-accelerator-2019/tree/practico5/CuentaBancariaLIB", :tag => "v0.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
