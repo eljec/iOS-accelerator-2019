@@ -1,0 +1,6 @@
+framework module BankApi {
+  umbrella header "BankApi-umbrella.h"
+
+  export *
+  module * { export * }
+}
