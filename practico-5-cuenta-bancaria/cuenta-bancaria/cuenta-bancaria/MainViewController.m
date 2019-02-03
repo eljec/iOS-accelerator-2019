@@ -13,12 +13,15 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UILabel *saldo;
+@property (weak, nonatomic) IBOutlet UITextField *importe;
+- (IBAction)addImporte:(id)sender;
 
 @end
 
 @implementation MainViewController
 
 static NSString *_identifier = @"id_cell";
+    Cuenta *cuenta;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -29,9 +32,8 @@ static NSString *_identifier = @"id_cell";
 }
 
 - (void) loadData {
-    Cuenta *cuenta = [CuentaService getCuenta];
-    self.saldo.text = [NSString stringWithFormat:@"%f", cuenta.saldo];
-    
+    cuenta = [CuentaService getCuenta];
+    self.saldo.text = [NSString stringWithFormat: @"$ %@", cuenta.saldoString];
 }
 
 - (void) registerTable {
@@ -50,15 +52,43 @@ static NSString *_identifier = @"id_cell";
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:_identifier];
     }
     
-    cell.textLabel.text = @"02/02/1992 | $500,00";
+    Movimiento *movimiento = [cuenta.movimientos objectAtIndex: indexPath.row];
+    NSString *importe = movimiento.importeString;
+    NSString *fecha = movimiento.fecha;
+    
+    cell.textLabel.text = [NSString stringWithFormat: @"$ %@ | %@", importe, fecha];
     
     return cell;
 }
 
 - (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 15;
+    return cuenta.movimientos.count;
 }
 
+- (IBAction)load:(id)sender {
+    cuenta.saldo = 0.0;
+    cuenta.movimientos = [NSArray array];
+    
+    BOOL resultado = [CuentaService saveWithCuenta:cuenta];
+    
+    if (resultado){
+        [self loadData];
+        [self.tableView reloadData];
+    }
+}
 
-
+- (IBAction)addImporte:(id)sender {
+    NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
+    numberFormatter.numberStyle = NSNumberFormatterDecimalStyle;
+    
+    float _importe = [numberFormatter numberFromString: self.importe.text ].floatValue;
+    [cuenta addMovimientoWithImporte: _importe];
+    BOOL resultado = [CuentaService saveWithCuenta:cuenta];
+    
+    if (resultado){
+        self.importe.text = @"";
+        [self.tableView reloadData];
+    }
+    
+}
 @end

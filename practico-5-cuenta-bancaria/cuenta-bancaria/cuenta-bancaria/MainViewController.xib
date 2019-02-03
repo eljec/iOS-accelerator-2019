@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
             <connections>
+                <outlet property="importe" destination="03Z-S0-Uhn" id="hsX-rn-JxD"/>
                 <outlet property="saldo" destination="Baf-HR-PAX" id="GtC-2Y-JVw"/>
                 <outlet property="tableView" destination="c7a-iE-ntR" id="t81-vK-4oQ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -40,6 +41,9 @@
                         <constraint firstAttribute="width" constant="30" id="qOb-gD-uwH"/>
                     </constraints>
                     <state key="normal" title="+"/>
+                    <connections>
+                        <action selector="addImporte:" destination="-1" eventType="touchUpInside" id="LaV-S2-o6Q"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 539,39" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Baf-HR-PAX">
                     <rect key="frame" x="10" y="27" width="355" height="32"/>
@@ -57,6 +61,14 @@
                     <rect key="frame" x="10" y="173" width="355" height="466"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sl2-UO-7D1">
+                    <rect key="frame" x="317" y="91" width="39" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Reset"/>
+                    <connections>
+                        <action selector="load:" destination="-1" eventType="touchUpInside" id="0Lx-vU-H4r"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
