@@ -1,0 +1,696 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		032B205890E72418D395F717 /* Pods_cuenta_bancaria.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C928C1AD4DA700180A6162B6 /* Pods_cuenta_bancaria.framework */; };
+		1644B1F88E16D7D33A034177 /* Pods_cuenta_bancariaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D357465F047376EF26D4F1 /* Pods_cuenta_bancariaUITests.framework */; };
+		165872D62204E5D000B1EF81 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 165872D52204E5D000B1EF81 /* AppDelegate.m */; };
+		165872DE2204E5D200B1EF81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 165872DD2204E5D200B1EF81 /* Assets.xcassets */; };
+		165872E42204E5D200B1EF81 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 165872E32204E5D200B1EF81 /* main.m */; };
+		165872EE2204E5D200B1EF81 /* cuenta_bancariaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 165872ED2204E5D200B1EF81 /* cuenta_bancariaTests.m */; };
+		165872F92204E5D200B1EF81 /* cuenta_bancariaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 165872F82204E5D200B1EF81 /* cuenta_bancariaUITests.m */; };
+		165873132206126A00B1EF81 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 165873112206126A00B1EF81 /* MainViewController.m */; };
+		165873142206126A00B1EF81 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 165873122206126A00B1EF81 /* MainViewController.xib */; };
+		E924CED9CE9E349F28DC2919 /* Pods_cuenta_bancariaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06CF920A20697CEB370DD946 /* Pods_cuenta_bancariaTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		165872EA2204E5D200B1EF81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 165872C92204E5D000B1EF81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 165872D02204E5D000B1EF81;
+			remoteInfo = "cuenta-bancaria";
+		};
+		165872F52204E5D200B1EF81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 165872C92204E5D000B1EF81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 165872D02204E5D000B1EF81;
+			remoteInfo = "cuenta-bancaria";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06CF920A20697CEB370DD946 /* Pods_cuenta_bancariaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cuenta_bancariaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		165872D12204E5D000B1EF81 /* cuenta-bancaria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cuenta-bancaria.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		165872D42204E5D000B1EF81 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		165872D52204E5D000B1EF81 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		165872DD2204E5D200B1EF81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		165872E22204E5D200B1EF81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		165872E32204E5D200B1EF81 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		165872E92204E5D200B1EF81 /* cuenta-bancariaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cuenta-bancariaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		165872ED2204E5D200B1EF81 /* cuenta_bancariaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cuenta_bancariaTests.m; sourceTree = "<group>"; };
+		165872EF2204E5D200B1EF81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		165872F42204E5D200B1EF81 /* cuenta-bancariaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cuenta-bancariaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		165872F82204E5D200B1EF81 /* cuenta_bancariaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cuenta_bancariaUITests.m; sourceTree = "<group>"; };
+		165872FA2204E5D200B1EF81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		165873102206126A00B1EF81 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		165873112206126A00B1EF81 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		165873122206126A00B1EF81 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		2081820D9373457DF1B86684 /* Pods-cuenta-bancariaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cuenta-bancariaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-cuenta-bancariaUITests/Pods-cuenta-bancariaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		278F1536470DC6C450F99AB4 /* Pods-cuenta-bancariaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cuenta-bancariaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cuenta-bancariaUITests/Pods-cuenta-bancariaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4475C648064456F110B08B5D /* Pods-cuenta-bancariaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cuenta-bancariaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-cuenta-bancariaTests/Pods-cuenta-bancariaTests.release.xcconfig"; sourceTree = "<group>"; };
+		520C5B8C548972F68E6D63E0 /* Pods-cuenta-bancaria.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cuenta-bancaria.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cuenta-bancaria/Pods-cuenta-bancaria.debug.xcconfig"; sourceTree = "<group>"; };
+		59035A6AE8F26AC74818B38C /* Pods-cuenta-bancaria.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cuenta-bancaria.release.xcconfig"; path = "Pods/Target Support Files/Pods-cuenta-bancaria/Pods-cuenta-bancaria.release.xcconfig"; sourceTree = "<group>"; };
+		A5D357465F047376EF26D4F1 /* Pods_cuenta_bancariaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cuenta_bancariaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C928C1AD4DA700180A6162B6 /* Pods_cuenta_bancaria.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cuenta_bancaria.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE812F9D3C0350BC4542A90F /* Pods-cuenta-bancariaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cuenta-bancariaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cuenta-bancariaTests/Pods-cuenta-bancariaTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		165872CE2204E5D000B1EF81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				032B205890E72418D395F717 /* Pods_cuenta_bancaria.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		165872E62204E5D200B1EF81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E924CED9CE9E349F28DC2919 /* Pods_cuenta_bancariaTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		165872F12204E5D200B1EF81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1644B1F88E16D7D33A034177 /* Pods_cuenta_bancariaUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		165872C82204E5D000B1EF81 = {
+			isa = PBXGroup;
+			children = (
+				165872D32204E5D000B1EF81 /* cuenta-bancaria */,
+				165872EC2204E5D200B1EF81 /* cuenta-bancariaTests */,
+				165872F72204E5D200B1EF81 /* cuenta-bancariaUITests */,
+				165872D22204E5D000B1EF81 /* Products */,
+				732CD2EF7CDBE1CC5AE8A97E /* Pods */,
+				D1B31C3FD3DC398AE230B26E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		165872D22204E5D000B1EF81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				165872D12204E5D000B1EF81 /* cuenta-bancaria.app */,
+				165872E92204E5D200B1EF81 /* cuenta-bancariaTests.xctest */,
+				165872F42204E5D200B1EF81 /* cuenta-bancariaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		165872D32204E5D000B1EF81 /* cuenta-bancaria */ = {
+			isa = PBXGroup;
+			children = (
+				165872D42204E5D000B1EF81 /* AppDelegate.h */,
+				165872D52204E5D000B1EF81 /* AppDelegate.m */,
+				165872DD2204E5D200B1EF81 /* Assets.xcassets */,
+				165872E22204E5D200B1EF81 /* Info.plist */,
+				165872E32204E5D200B1EF81 /* main.m */,
+				165873102206126A00B1EF81 /* MainViewController.h */,
+				165873112206126A00B1EF81 /* MainViewController.m */,
+				165873122206126A00B1EF81 /* MainViewController.xib */,
+			);
+			path = "cuenta-bancaria";
+			sourceTree = "<group>";
+		};
+		165872EC2204E5D200B1EF81 /* cuenta-bancariaTests */ = {
+			isa = PBXGroup;
+			children = (
+				165872ED2204E5D200B1EF81 /* cuenta_bancariaTests.m */,
+				165872EF2204E5D200B1EF81 /* Info.plist */,
+			);
+			path = "cuenta-bancariaTests";
+			sourceTree = "<group>";
+		};
+		165872F72204E5D200B1EF81 /* cuenta-bancariaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				165872F82204E5D200B1EF81 /* cuenta_bancariaUITests.m */,
+				165872FA2204E5D200B1EF81 /* Info.plist */,
+			);
+			path = "cuenta-bancariaUITests";
+			sourceTree = "<group>";
+		};
+		732CD2EF7CDBE1CC5AE8A97E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				520C5B8C548972F68E6D63E0 /* Pods-cuenta-bancaria.debug.xcconfig */,
+				59035A6AE8F26AC74818B38C /* Pods-cuenta-bancaria.release.xcconfig */,
+				FE812F9D3C0350BC4542A90F /* Pods-cuenta-bancariaTests.debug.xcconfig */,
+				4475C648064456F110B08B5D /* Pods-cuenta-bancariaTests.release.xcconfig */,
+				278F1536470DC6C450F99AB4 /* Pods-cuenta-bancariaUITests.debug.xcconfig */,
+				2081820D9373457DF1B86684 /* Pods-cuenta-bancariaUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D1B31C3FD3DC398AE230B26E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C928C1AD4DA700180A6162B6 /* Pods_cuenta_bancaria.framework */,
+				06CF920A20697CEB370DD946 /* Pods_cuenta_bancariaTests.framework */,
+				A5D357465F047376EF26D4F1 /* Pods_cuenta_bancariaUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		165872D02204E5D000B1EF81 /* cuenta-bancaria */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 165872FD2204E5D200B1EF81 /* Build configuration list for PBXNativeTarget "cuenta-bancaria" */;
+			buildPhases = (
+				29FF8C4C2B21E78C705B8149 /* [CP] Check Pods Manifest.lock */,
+				165872CD2204E5D000B1EF81 /* Sources */,
+				165872CE2204E5D000B1EF81 /* Frameworks */,
+				165872CF2204E5D000B1EF81 /* Resources */,
+				81C356D9C2E39141F3258073 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "cuenta-bancaria";
+			productName = "cuenta-bancaria";
+			productReference = 165872D12204E5D000B1EF81 /* cuenta-bancaria.app */;
+			productType = "com.apple.product-type.application";
+		};
+		165872E82204E5D200B1EF81 /* cuenta-bancariaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 165873002204E5D200B1EF81 /* Build configuration list for PBXNativeTarget "cuenta-bancariaTests" */;
+			buildPhases = (
+				6BF051E4330899FF15A7D2FA /* [CP] Check Pods Manifest.lock */,
+				165872E52204E5D200B1EF81 /* Sources */,
+				165872E62204E5D200B1EF81 /* Frameworks */,
+				165872E72204E5D200B1EF81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				165872EB2204E5D200B1EF81 /* PBXTargetDependency */,
+			);
+			name = "cuenta-bancariaTests";
+			productName = "cuenta-bancariaTests";
+			productReference = 165872E92204E5D200B1EF81 /* cuenta-bancariaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		165872F32204E5D200B1EF81 /* cuenta-bancariaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 165873032204E5D200B1EF81 /* Build configuration list for PBXNativeTarget "cuenta-bancariaUITests" */;
+			buildPhases = (
+				25BED585BE1B088A8852B7F0 /* [CP] Check Pods Manifest.lock */,
+				165872F02204E5D200B1EF81 /* Sources */,
+				165872F12204E5D200B1EF81 /* Frameworks */,
+				165872F22204E5D200B1EF81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				165872F62204E5D200B1EF81 /* PBXTargetDependency */,
+			);
+			name = "cuenta-bancariaUITests";
+			productName = "cuenta-bancariaUITests";
+			productReference = 165872F42204E5D200B1EF81 /* cuenta-bancariaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		165872C92204E5D000B1EF81 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Accelerator-Meli";
+				TargetAttributes = {
+					165872D02204E5D000B1EF81 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					165872E82204E5D200B1EF81 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 165872D02204E5D000B1EF81;
+					};
+					165872F32204E5D200B1EF81 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 165872D02204E5D000B1EF81;
+					};
+				};
+			};
+			buildConfigurationList = 165872CC2204E5D000B1EF81 /* Build configuration list for PBXProject "cuenta-bancaria" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 165872C82204E5D000B1EF81;
+			productRefGroup = 165872D22204E5D000B1EF81 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				165872D02204E5D000B1EF81 /* cuenta-bancaria */,
+				165872E82204E5D200B1EF81 /* cuenta-bancariaTests */,
+				165872F32204E5D200B1EF81 /* cuenta-bancariaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		165872CF2204E5D000B1EF81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				165872DE2204E5D200B1EF81 /* Assets.xcassets in Resources */,
+				165873142206126A00B1EF81 /* MainViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		165872E72204E5D200B1EF81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		165872F22204E5D200B1EF81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25BED585BE1B088A8852B7F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cuenta-bancariaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		29FF8C4C2B21E78C705B8149 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cuenta-bancaria-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BF051E4330899FF15A7D2FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cuenta-bancariaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81C356D9C2E39141F3258073 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-cuenta-bancaria/Pods-cuenta-bancaria-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CuentaBancariaLib/CuentaBancariaLib.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CuentaBancariaLib.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cuenta-bancaria/Pods-cuenta-bancaria-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		165872CD2204E5D000B1EF81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				165872E42204E5D200B1EF81 /* main.m in Sources */,
+				165873132206126A00B1EF81 /* MainViewController.m in Sources */,
+				165872D62204E5D000B1EF81 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		165872E52204E5D200B1EF81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				165872EE2204E5D200B1EF81 /* cuenta_bancariaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		165872F02204E5D200B1EF81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				165872F92204E5D200B1EF81 /* cuenta_bancariaUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		165872EB2204E5D200B1EF81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 165872D02204E5D000B1EF81 /* cuenta-bancaria */;
+			targetProxy = 165872EA2204E5D200B1EF81 /* PBXContainerItemProxy */;
+		};
+		165872F62204E5D200B1EF81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 165872D02204E5D000B1EF81 /* cuenta-bancaria */;
+			targetProxy = 165872F52204E5D200B1EF81 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		165872FB2204E5D200B1EF81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		165872FC2204E5D200B1EF81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		165872FE2204E5D200B1EF81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 520C5B8C548972F68E6D63E0 /* Pods-cuenta-bancaria.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "cuenta-bancaria/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mercadolibre.cuenta-bancaria.cuenta-bancaria";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		165872FF2204E5D200B1EF81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59035A6AE8F26AC74818B38C /* Pods-cuenta-bancaria.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "cuenta-bancaria/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mercadolibre.cuenta-bancaria.cuenta-bancaria";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		165873012204E5D200B1EF81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE812F9D3C0350BC4542A90F /* Pods-cuenta-bancariaTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "cuenta-bancariaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mercadolibre.cuenta-bancaria.cuenta-bancariaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cuenta-bancaria.app/cuenta-bancaria";
+			};
+			name = Debug;
+		};
+		165873022204E5D200B1EF81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4475C648064456F110B08B5D /* Pods-cuenta-bancariaTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "cuenta-bancariaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mercadolibre.cuenta-bancaria.cuenta-bancariaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cuenta-bancaria.app/cuenta-bancaria";
+			};
+			name = Release;
+		};
+		165873042204E5D200B1EF81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 278F1536470DC6C450F99AB4 /* Pods-cuenta-bancariaUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "cuenta-bancariaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mercadolibre.cuenta-bancaria.cuenta-bancariaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "cuenta-bancaria";
+			};
+			name = Debug;
+		};
+		165873052204E5D200B1EF81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2081820D9373457DF1B86684 /* Pods-cuenta-bancariaUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "cuenta-bancariaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mercadolibre.cuenta-bancaria.cuenta-bancariaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "cuenta-bancaria";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		165872CC2204E5D000B1EF81 /* Build configuration list for PBXProject "cuenta-bancaria" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				165872FB2204E5D200B1EF81 /* Debug */,
+				165872FC2204E5D200B1EF81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		165872FD2204E5D200B1EF81 /* Build configuration list for PBXNativeTarget "cuenta-bancaria" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				165872FE2204E5D200B1EF81 /* Debug */,
+				165872FF2204E5D200B1EF81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		165873002204E5D200B1EF81 /* Build configuration list for PBXNativeTarget "cuenta-bancariaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				165873012204E5D200B1EF81 /* Debug */,
+				165873022204E5D200B1EF81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		165873032204E5D200B1EF81 /* Build configuration list for PBXNativeTarget "cuenta-bancariaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				165873042204E5D200B1EF81 /* Debug */,
+				165873052204E5D200B1EF81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 165872C92204E5D000B1EF81 /* Project object */;
+}
