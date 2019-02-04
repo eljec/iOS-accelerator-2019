@@ -1,0 +1,19 @@
+{
+  "name": "RGNetworking",
+  "version": "0.0.1",
+  "license": "MIT",
+  "homepage": "https://github.com/eljec/iOS-accelerator-2019",
+  "authors": {
+    "Related Code": "romanguarino@gmail.com"
+  },
+  "summary": "A short description of MeliDevSDK",
+  "source": {
+    "git": "https://github.com/eljec/iOS-accelerator-2019.git",
+    "tag": "0.0.1"
+  },
+  "platforms": {
+    "ios": "9.3"
+  },
+  "source_files": "RGNetworking/RGNetworking/RGNetworking.{h,m}",
+  "requires_arc": true
+}

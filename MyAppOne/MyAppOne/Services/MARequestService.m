@@ -11,34 +11,21 @@
 
 @implementation MARequestService
 
-+(MARequestService *) sharedInstance
-{
-    static MARequestService *_sharedInstance = nil;
++(void) fetchDataFromUrl:(NSURL *)url success:(void (^)(NSArray *))onSuccess error:(void (^)(NSError *))onError {
+    NSURLSession *defaultSession = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
     
     static dispatch_once_t onceToken;
-    
     dispatch_once(&onceToken, ^{
-        _sharedInstance = [[MARequestService alloc] init];
+        NSURLSessionDataTask *dataTask = [defaultSession dataTaskWithURL: url completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+            if(!error) {
+                NSArray *dataArray = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+                onSuccess(dataArray);
+            } else {
+                onError(error);
+            }
+        }];
+        [dataTask resume];
     });
-    return _sharedInstance;
-}
-
--(void) fetchData:(void (^)(NSArray *, NSError *))completionBlock fromString:(NSString *)urlStr {
-    NSURL *url = [NSURL URLWithString:urlStr];
-    [self fetchData:^(NSArray *dataArray, NSError *error) {
-        completionBlock(dataArray, error);
-    } fromURL:url];
-}
-
--(void) fetchData:(void (^)(NSArray *, NSError *))completionBlock fromURL:(NSURL *)url {
-    NSURLSessionConfiguration *defaultSessionConfiguration = [NSURLSessionConfiguration defaultSessionConfiguration];
-    NSURLSession *defaultSession = [NSURLSession sessionWithConfiguration:defaultSessionConfiguration];
-    
-    NSURLSessionDataTask *dataTask = [defaultSession dataTaskWithURL: url completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-        NSArray *dataArray = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
-        completionBlock (dataArray, error);
-    }];
-    [dataTask resume];
 }
 
 @end

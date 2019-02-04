@@ -1,0 +1,1198 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		081E05C1313B29C672A40D3B8C5509B4 /* RGMovement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C7B0D9AE0ED1385395EA7910E39BC3 /* RGMovement.swift */; };
+		08378B01B7B0D58FDC15600CCFAE17BF /* RGBankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BEF5946FE27CF1C77F298D8A04A695 /* RGBankAccount.swift */; };
+		0D6E96CE27E0D53FEB740AF469FC4410 /* ProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 79A1A25C4BB936778D5C807CEA0D7495 /* ProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		10490453FBE9CDBA15F10CD6C389F7B6 /* Pods-RGBankAccountTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DAE71D59844F3C2932A48A7C6E92A6 /* Pods-RGBankAccountTests-dummy.m */; };
+		11BF3FA4F94755B45CC0B09D2463B61C /* Pods-RGBankAccount-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EE9CBD57650F160805CDFC9C2FDA2D1 /* Pods-RGBankAccount-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33E6B99A3143EDDB5EC6DAAB5BDAE092 /* RGAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C547D08CD6E42974E4E2CCBC9776FAB /* RGAccount.swift */; };
+		3A3C5B8320EA59C3B46B8C5D8753ABB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		3CBE6F77EA7C91A50EE574B45239F12C /* Pods-RGBankAccountTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D83848F92FE0ED37081A155F16CC199 /* Pods-RGBankAccountTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4417AA0CE48A6A1B69B40A847552C12C /* ProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9BA08B0830009D559D22C314F5F46C /* ProgressHUD-dummy.m */; };
+		5B5F9360D77212571FC426870808054A /* ProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B28E5A0D77FD67F3847F6E4E295F78E /* ProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62E81300924EED1160E78BE9E9B34F4F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		7D93BF7C41E6772B1CB89CE92F80389A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		A1C4A040FA9D52982646DA72BA060273 /* Pods-RGBankAccountUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D2ADBEDAEA24ACB56A0F66F62A4C60 /* Pods-RGBankAccountUITests-dummy.m */; };
+		A4BFC816F89631D51234B849A3C5D65C /* Pods-RGBankAccountUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 455E7E25AE26412C2141226E650F38D6 /* Pods-RGBankAccountUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A933B85303579CE2795E1EF95BB2CB8F /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 264149D7163856029B38D241463941E0 /* ProgressHUD.bundle */; };
+		CCB34CEB56672E4BF4B840DC9D0E6F2C /* RGBankAccountLib-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FEB9EA4C2FBB2248BFB4320C03DA36E /* RGBankAccountLib-dummy.m */; };
+		CDB934A28BE7CC4D1791C6590579FCF7 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A294D34DDD00183CDD451B5F165F8A8F /* ProgressHUD.m */; };
+		E53F4D30F2E6461FA1CE444408A49011 /* RGBankAccountLib-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D6EF016A71479619F2EEBC7F99720C20 /* RGBankAccountLib-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9A5A4259FADE130A8A224424CB887C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		EFDC28CBEFBFC31A78267875C3055EE3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		F938986AB45C49379AD3394576F26A43 /* Pods-RGBankAccount-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4696B11116CF4DE2CCD7D2E9AB7420 /* Pods-RGBankAccount-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		144557E967C82E64EB3C77F6F07A54D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A383B10211BD6A5BE8BD30C4F209EA8C;
+			remoteInfo = "Pods-RGBankAccount";
+		};
+		451480589D336468D82D44E4BB4D70D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D5280C44D3EF9A2932E48086E59FB46;
+			remoteInfo = ProgressHUD;
+		};
+		46A3795C34A0EB26D5728E10D33DACB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D688725357A2C7AB826163D20F9081B;
+			remoteInfo = RGBankAccountLib;
+		};
+		DA6ADFC29C4BFA481675F2BEEE58D960 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A383B10211BD6A5BE8BD30C4F209EA8C;
+			remoteInfo = "Pods-RGBankAccount";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01BF0B04ACB90690B5EA92F66CEADE5D /* Pods-RGBankAccountUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RGBankAccountUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		05D2ADBEDAEA24ACB56A0F66F62A4C60 /* Pods-RGBankAccountUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RGBankAccountUITests-dummy.m"; sourceTree = "<group>"; };
+		05EEECD81560C7DB2D80353221D168F3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07CC54DB02DB9DBCFD6EE6CAB0D8BEBF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08CBF1AC9621F98EB4EDC7DD306F7734 /* Pods-RGBankAccountTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RGBankAccountTests-resources.sh"; sourceTree = "<group>"; };
+		1D4753795D48135B98AA02DA4AEE1991 /* Pods-RGBankAccountUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RGBankAccountUITests-frameworks.sh"; sourceTree = "<group>"; };
+		24BEF5946FE27CF1C77F298D8A04A695 /* RGBankAccount.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RGBankAccount.swift; path = RGBankAccountLib/RGBankAccount.swift; sourceTree = "<group>"; };
+		264149D7163856029B38D241463941E0 /* ProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = ProgressHUD.bundle; path = ProgressHUD/ProgressHUD/ProgressHUD.bundle; sourceTree = "<group>"; };
+		3266D715CD067DC3F2E180A0D655C1D9 /* RGBankAccountLib-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RGBankAccountLib-prefix.pch"; sourceTree = "<group>"; };
+		347B98C47B9D845F75BB70C7AF06FA77 /* ProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ProgressHUD.modulemap; sourceTree = "<group>"; };
+		35A7744D7B93A167A88EBB70B2DDC7C9 /* Pods-RGBankAccountTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RGBankAccountTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3998C334FA39C646C747B607DD0BCCE1 /* RGBankAccountLib.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = RGBankAccountLib.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3B28E5A0D77FD67F3847F6E4E295F78E /* ProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		3EE9CBD57650F160805CDFC9C2FDA2D1 /* Pods-RGBankAccount-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RGBankAccount-umbrella.h"; sourceTree = "<group>"; };
+		44D3D1C669AE23DF68C3EC5F7830EE0E /* Pods-RGBankAccount.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RGBankAccount.debug.xcconfig"; sourceTree = "<group>"; };
+		455E7E25AE26412C2141226E650F38D6 /* Pods-RGBankAccountUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RGBankAccountUITests-umbrella.h"; sourceTree = "<group>"; };
+		4EA56C2AE02E2001956019E7ADA84329 /* Pods-RGBankAccountUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RGBankAccountUITests.modulemap"; sourceTree = "<group>"; };
+		4EF5601E44047C707BF95C21E806AF76 /* Pods-RGBankAccountUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RGBankAccountUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4FEB9EA4C2FBB2248BFB4320C03DA36E /* RGBankAccountLib-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RGBankAccountLib-dummy.m"; sourceTree = "<group>"; };
+		5603F4D59076DEB1A4F5F09859725885 /* ProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ProgressHUD.framework; path = ProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D83848F92FE0ED37081A155F16CC199 /* Pods-RGBankAccountTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RGBankAccountTests-umbrella.h"; sourceTree = "<group>"; };
+		61A9A86F29B9A28348D80410B32A2083 /* Pods-RGBankAccount.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RGBankAccount.modulemap"; sourceTree = "<group>"; };
+		66DAE71D59844F3C2932A48A7C6E92A6 /* Pods-RGBankAccountTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RGBankAccountTests-dummy.m"; sourceTree = "<group>"; };
+		6C7A81DE1C3A8A2A20BC85A615185269 /* Pods-RGBankAccountUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RGBankAccountUITests-resources.sh"; sourceTree = "<group>"; };
+		6E56565581C03523465822315A2B5DE3 /* Pods-RGBankAccountTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RGBankAccountTests.release.xcconfig"; sourceTree = "<group>"; };
+		79A1A25C4BB936778D5C807CEA0D7495 /* ProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ProgressHUD.h; path = ProgressHUD/ProgressHUD/ProgressHUD.h; sourceTree = "<group>"; };
+		7C547D08CD6E42974E4E2CCBC9776FAB /* RGAccount.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RGAccount.swift; path = RGBankAccountLib/RGAccount.swift; sourceTree = "<group>"; };
+		8912C1E3B3653DA4EC37EED97004FC3F /* Pods_RGBankAccount.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RGBankAccount.framework; path = "Pods-RGBankAccount.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		893B5FC482E3C9397197C52A2E52B22E /* RGBankAccountLib.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RGBankAccountLib.xcconfig; sourceTree = "<group>"; };
+		8A7C6B10752905FCD6190118F5B1414B /* Pods-RGBankAccountTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RGBankAccountTests-frameworks.sh"; sourceTree = "<group>"; };
+		8ABF4629F4DE5FA8EAFDDF91295F4C88 /* Pods-RGBankAccountTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RGBankAccountTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A294D34DDD00183CDD451B5F165F8A8F /* ProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ProgressHUD.m; path = ProgressHUD/ProgressHUD/ProgressHUD.m; sourceTree = "<group>"; };
+		AD3D108E61613AA668375E832386B042 /* ProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ProgressHUD.xcconfig; sourceTree = "<group>"; };
+		AF70795B77995903C9EB5AA197E19D98 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B517E367E9F50401F27BF8144CD1AC5E /* Pods-RGBankAccount-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RGBankAccount-resources.sh"; sourceTree = "<group>"; };
+		B82A53724E60042B9242D9132E05AE9F /* ProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		BC0BD03B3FDC88BDD8031E44A32AE0F0 /* RGBankAccountLib.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RGBankAccountLib.modulemap; sourceTree = "<group>"; };
+		BD6E5BA0A86A5851A5EE5792D1C5D1E0 /* RGBankAccountLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RGBankAccountLib.framework; path = RGBankAccountLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3041345A5CC3C3AF76DB4BD6B54782F /* Pods-RGBankAccount-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RGBankAccount-frameworks.sh"; sourceTree = "<group>"; };
+		C40B5C8583B030E341A90F9BA16EDBAB /* Pods-RGBankAccount.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RGBankAccount.release.xcconfig"; sourceTree = "<group>"; };
+		C91D12F9A88F6546B11961101B2BEEC7 /* Pods_RGBankAccountUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RGBankAccountUITests.framework; path = "Pods-RGBankAccountUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD9C853A96D4F63C1253954356304B30 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CED0D78E96FDC384FB6E41DEAEA716D2 /* Pods-RGBankAccountTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RGBankAccountTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D1D4BC7B341C2188729F6EFB8A2142CD /* Pods-RGBankAccountUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RGBankAccountUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D61D5AAADC6EA2EF6651714C100DEAEF /* Pods-RGBankAccount-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RGBankAccount-acknowledgements.plist"; sourceTree = "<group>"; };
+		D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D6EF016A71479619F2EEBC7F99720C20 /* RGBankAccountLib-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RGBankAccountLib-umbrella.h"; sourceTree = "<group>"; };
+		D8C7B0D9AE0ED1385395EA7910E39BC3 /* RGMovement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RGMovement.swift; path = RGBankAccountLib/RGMovement.swift; sourceTree = "<group>"; };
+		DEBFD36D8D5CC812550666523B8F6C4D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6C7B771A1DF2DF6D0D52A4A849F13BE /* Pods-RGBankAccountTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RGBankAccountTests.modulemap"; sourceTree = "<group>"; };
+		EAAAEBD991BB5DBD923DCF56A5AB7232 /* Pods-RGBankAccount-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RGBankAccount-acknowledgements.markdown"; sourceTree = "<group>"; };
+		ED4696B11116CF4DE2CCD7D2E9AB7420 /* Pods-RGBankAccount-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RGBankAccount-dummy.m"; sourceTree = "<group>"; };
+		EF9BA08B0830009D559D22C314F5F46C /* ProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		FA4C2FF30DFAEB4D113BD2F612620F99 /* Pods_RGBankAccountTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RGBankAccountTests.framework; path = "Pods-RGBankAccountTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD57A4CF1AF6243C312CC7F9B13ECD06 /* Pods-RGBankAccountUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RGBankAccountUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		31BB727C2382056D2B301FF368B2562D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A3C5B8320EA59C3B46B8C5D8753ABB3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		582363F39A117C93CECE6E488F7BD376 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9A5A4259FADE130A8A224424CB887C4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0B729F9EFA52FA3AC9E36301DA1B6FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D93BF7C41E6772B1CB89CE92F80389A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE9EFDDAFBB499A3365FFEF137BC3FDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFDC28CBEFBFC31A78267875C3055EE3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F581898D1C9710853FAD4725C32C4E57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62E81300924EED1160E78BE9E9B34F4F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02AE8906044DF03CBE0BE942F53C47E6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				264149D7163856029B38D241463941E0 /* ProgressHUD.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2B37D5BDFEE1B5026264536FC146CE30 /* ProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				79A1A25C4BB936778D5C807CEA0D7495 /* ProgressHUD.h */,
+				A294D34DDD00183CDD451B5F165F8A8F /* ProgressHUD.m */,
+				02AE8906044DF03CBE0BE942F53C47E6 /* Resources */,
+				E8FA6B23388376365DEB445AAB7C57DE /* Support Files */,
+			);
+			name = ProgressHUD;
+			path = ProgressHUD;
+			sourceTree = "<group>";
+		};
+		2CC131896BBC0F12662D4245806EB22A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D806BF86D0F86E23AF0E52EC5968C229 /* Pods-RGBankAccount */,
+				396CC7730E06F6EFF341F8B15EFA436A /* Pods-RGBankAccountTests */,
+				323FF62DC812E859DA8FFFB2108D86F7 /* Pods-RGBankAccountUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		323FF62DC812E859DA8FFFB2108D86F7 /* Pods-RGBankAccountUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DEBFD36D8D5CC812550666523B8F6C4D /* Info.plist */,
+				4EA56C2AE02E2001956019E7ADA84329 /* Pods-RGBankAccountUITests.modulemap */,
+				FD57A4CF1AF6243C312CC7F9B13ECD06 /* Pods-RGBankAccountUITests-acknowledgements.markdown */,
+				D1D4BC7B341C2188729F6EFB8A2142CD /* Pods-RGBankAccountUITests-acknowledgements.plist */,
+				05D2ADBEDAEA24ACB56A0F66F62A4C60 /* Pods-RGBankAccountUITests-dummy.m */,
+				1D4753795D48135B98AA02DA4AEE1991 /* Pods-RGBankAccountUITests-frameworks.sh */,
+				6C7A81DE1C3A8A2A20BC85A615185269 /* Pods-RGBankAccountUITests-resources.sh */,
+				455E7E25AE26412C2141226E650F38D6 /* Pods-RGBankAccountUITests-umbrella.h */,
+				01BF0B04ACB90690B5EA92F66CEADE5D /* Pods-RGBankAccountUITests.debug.xcconfig */,
+				4EF5601E44047C707BF95C21E806AF76 /* Pods-RGBankAccountUITests.release.xcconfig */,
+			);
+			name = "Pods-RGBankAccountUITests";
+			path = "Target Support Files/Pods-RGBankAccountUITests";
+			sourceTree = "<group>";
+		};
+		396CC7730E06F6EFF341F8B15EFA436A /* Pods-RGBankAccountTests */ = {
+			isa = PBXGroup;
+			children = (
+				07CC54DB02DB9DBCFD6EE6CAB0D8BEBF /* Info.plist */,
+				E6C7B771A1DF2DF6D0D52A4A849F13BE /* Pods-RGBankAccountTests.modulemap */,
+				8ABF4629F4DE5FA8EAFDDF91295F4C88 /* Pods-RGBankAccountTests-acknowledgements.markdown */,
+				CED0D78E96FDC384FB6E41DEAEA716D2 /* Pods-RGBankAccountTests-acknowledgements.plist */,
+				66DAE71D59844F3C2932A48A7C6E92A6 /* Pods-RGBankAccountTests-dummy.m */,
+				8A7C6B10752905FCD6190118F5B1414B /* Pods-RGBankAccountTests-frameworks.sh */,
+				08CBF1AC9621F98EB4EDC7DD306F7734 /* Pods-RGBankAccountTests-resources.sh */,
+				5D83848F92FE0ED37081A155F16CC199 /* Pods-RGBankAccountTests-umbrella.h */,
+				35A7744D7B93A167A88EBB70B2DDC7C9 /* Pods-RGBankAccountTests.debug.xcconfig */,
+				6E56565581C03523465822315A2B5DE3 /* Pods-RGBankAccountTests.release.xcconfig */,
+			);
+			name = "Pods-RGBankAccountTests";
+			path = "Target Support Files/Pods-RGBankAccountTests";
+			sourceTree = "<group>";
+		};
+		44D5347904CF754D6785B84253F2574A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		505E90371165E6D4E80495AF385DCF15 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				3998C334FA39C646C747B607DD0BCCE1 /* RGBankAccountLib.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		6765BCBE81A97B36815EDD4C11056720 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C804B439E0051A309EDEDDA67DB0762B /* RGBankAccountLib */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				6765BCBE81A97B36815EDD4C11056720 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				CAD275ECE6087C54BAB7D5A6EAFC5EBE /* Pods */,
+				BEE2445EF60F2DFDA2CC072855723BD4 /* Products */,
+				2CC131896BBC0F12662D4245806EB22A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8091776BF3702E88CCB411F72A035CDE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				05EEECD81560C7DB2D80353221D168F3 /* Info.plist */,
+				BC0BD03B3FDC88BDD8031E44A32AE0F0 /* RGBankAccountLib.modulemap */,
+				893B5FC482E3C9397197C52A2E52B22E /* RGBankAccountLib.xcconfig */,
+				4FEB9EA4C2FBB2248BFB4320C03DA36E /* RGBankAccountLib-dummy.m */,
+				3266D715CD067DC3F2E180A0D655C1D9 /* RGBankAccountLib-prefix.pch */,
+				D6EF016A71479619F2EEBC7F99720C20 /* RGBankAccountLib-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../RGBankAccount/Pods/Target Support Files/RGBankAccountLib";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44D5347904CF754D6785B84253F2574A /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BEE2445EF60F2DFDA2CC072855723BD4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8912C1E3B3653DA4EC37EED97004FC3F /* Pods_RGBankAccount.framework */,
+				FA4C2FF30DFAEB4D113BD2F612620F99 /* Pods_RGBankAccountTests.framework */,
+				C91D12F9A88F6546B11961101B2BEEC7 /* Pods_RGBankAccountUITests.framework */,
+				5603F4D59076DEB1A4F5F09859725885 /* ProgressHUD.framework */,
+				BD6E5BA0A86A5851A5EE5792D1C5D1E0 /* RGBankAccountLib.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C804B439E0051A309EDEDDA67DB0762B /* RGBankAccountLib */ = {
+			isa = PBXGroup;
+			children = (
+				7C547D08CD6E42974E4E2CCBC9776FAB /* RGAccount.swift */,
+				24BEF5946FE27CF1C77F298D8A04A695 /* RGBankAccount.swift */,
+				D8C7B0D9AE0ED1385395EA7910E39BC3 /* RGMovement.swift */,
+				505E90371165E6D4E80495AF385DCF15 /* Pod */,
+				8091776BF3702E88CCB411F72A035CDE /* Support Files */,
+			);
+			name = RGBankAccountLib;
+			path = ../../RGBankAccountLib;
+			sourceTree = "<group>";
+		};
+		CAD275ECE6087C54BAB7D5A6EAFC5EBE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2B37D5BDFEE1B5026264536FC146CE30 /* ProgressHUD */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D806BF86D0F86E23AF0E52EC5968C229 /* Pods-RGBankAccount */ = {
+			isa = PBXGroup;
+			children = (
+				CD9C853A96D4F63C1253954356304B30 /* Info.plist */,
+				61A9A86F29B9A28348D80410B32A2083 /* Pods-RGBankAccount.modulemap */,
+				EAAAEBD991BB5DBD923DCF56A5AB7232 /* Pods-RGBankAccount-acknowledgements.markdown */,
+				D61D5AAADC6EA2EF6651714C100DEAEF /* Pods-RGBankAccount-acknowledgements.plist */,
+				ED4696B11116CF4DE2CCD7D2E9AB7420 /* Pods-RGBankAccount-dummy.m */,
+				C3041345A5CC3C3AF76DB4BD6B54782F /* Pods-RGBankAccount-frameworks.sh */,
+				B517E367E9F50401F27BF8144CD1AC5E /* Pods-RGBankAccount-resources.sh */,
+				3EE9CBD57650F160805CDFC9C2FDA2D1 /* Pods-RGBankAccount-umbrella.h */,
+				44D3D1C669AE23DF68C3EC5F7830EE0E /* Pods-RGBankAccount.debug.xcconfig */,
+				C40B5C8583B030E341A90F9BA16EDBAB /* Pods-RGBankAccount.release.xcconfig */,
+			);
+			name = "Pods-RGBankAccount";
+			path = "Target Support Files/Pods-RGBankAccount";
+			sourceTree = "<group>";
+		};
+		E8FA6B23388376365DEB445AAB7C57DE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF70795B77995903C9EB5AA197E19D98 /* Info.plist */,
+				347B98C47B9D845F75BB70C7AF06FA77 /* ProgressHUD.modulemap */,
+				AD3D108E61613AA668375E832386B042 /* ProgressHUD.xcconfig */,
+				EF9BA08B0830009D559D22C314F5F46C /* ProgressHUD-dummy.m */,
+				B82A53724E60042B9242D9132E05AE9F /* ProgressHUD-prefix.pch */,
+				3B28E5A0D77FD67F3847F6E4E295F78E /* ProgressHUD-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ProgressHUD";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		048A3647DEDEDD2CAFD59AAB65D23EF7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4BFC816F89631D51234B849A3C5D65C /* Pods-RGBankAccountUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A912C41DED8314BE6A9563E63716EED /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CBE6F77EA7C91A50EE574B45239F12C /* Pods-RGBankAccountTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7707A5CF40B83FBECC4CBCDD3873156C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E53F4D30F2E6461FA1CE444408A49011 /* RGBankAccountLib-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AD0F4E22D086FB78A0C872529EE9E9C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11BF3FA4F94755B45CC0B09D2463B61C /* Pods-RGBankAccount-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		852B90E413717B60948262973EC8D951 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B5F9360D77212571FC426870808054A /* ProgressHUD-umbrella.h in Headers */,
+				0D6E96CE27E0D53FEB740AF469FC4410 /* ProgressHUD.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0D5280C44D3EF9A2932E48086E59FB46 /* ProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 452059C17CC973988EEFC7FDD0D08F61 /* Build configuration list for PBXNativeTarget "ProgressHUD" */;
+			buildPhases = (
+				852B90E413717B60948262973EC8D951 /* Headers */,
+				42EE9950D2A1B4B802CC8327A10950B2 /* Sources */,
+				C0B729F9EFA52FA3AC9E36301DA1B6FC /* Frameworks */,
+				3C4E747F205A7BD99456E2DCF2CBB86C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProgressHUD;
+			productName = ProgressHUD;
+			productReference = 5603F4D59076DEB1A4F5F09859725885 /* ProgressHUD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2EB43C81C1CCCB90FCCEFE8E93D695B4 /* Pods-RGBankAccountUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E592362EA2B10C84DBBBE9D48277EA32 /* Build configuration list for PBXNativeTarget "Pods-RGBankAccountUITests" */;
+			buildPhases = (
+				048A3647DEDEDD2CAFD59AAB65D23EF7 /* Headers */,
+				E52C3B57FF3126DF0131A672580799F4 /* Sources */,
+				582363F39A117C93CECE6E488F7BD376 /* Frameworks */,
+				715FD767F127E9E0AF02EB751C0F8DED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D329D0BE20E353C9B847208CB970B4B /* PBXTargetDependency */,
+			);
+			name = "Pods-RGBankAccountUITests";
+			productName = "Pods-RGBankAccountUITests";
+			productReference = C91D12F9A88F6546B11961101B2BEEC7 /* Pods_RGBankAccountUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		390106780B5B8B017603AAC6755F1267 /* Pods-RGBankAccountTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C497517DC211353ECC4373ABE551D59F /* Build configuration list for PBXNativeTarget "Pods-RGBankAccountTests" */;
+			buildPhases = (
+				5A912C41DED8314BE6A9563E63716EED /* Headers */,
+				7827EFF8261AE33210F4A8E3B1BDD934 /* Sources */,
+				F581898D1C9710853FAD4725C32C4E57 /* Frameworks */,
+				B25C202C5641CB19CA26835BA8E2695B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44C216B75625607F44EDA3213AC9831E /* PBXTargetDependency */,
+			);
+			name = "Pods-RGBankAccountTests";
+			productName = "Pods-RGBankAccountTests";
+			productReference = FA4C2FF30DFAEB4D113BD2F612620F99 /* Pods_RGBankAccountTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5D688725357A2C7AB826163D20F9081B /* RGBankAccountLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5406B2AD754A1B5B859FC23E5CF56F08 /* Build configuration list for PBXNativeTarget "RGBankAccountLib" */;
+			buildPhases = (
+				7707A5CF40B83FBECC4CBCDD3873156C /* Headers */,
+				66624EDB29F5E6CA3471E4475C449004 /* Sources */,
+				DE9EFDDAFBB499A3365FFEF137BC3FDE /* Frameworks */,
+				0113CBCA6898C9E47FAC40DF8DC74E75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RGBankAccountLib;
+			productName = RGBankAccountLib;
+			productReference = BD6E5BA0A86A5851A5EE5792D1C5D1E0 /* RGBankAccountLib.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A383B10211BD6A5BE8BD30C4F209EA8C /* Pods-RGBankAccount */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D3DFF30D4F753F2DDDEAB2E2FED2F9A /* Build configuration list for PBXNativeTarget "Pods-RGBankAccount" */;
+			buildPhases = (
+				7AD0F4E22D086FB78A0C872529EE9E9C /* Headers */,
+				C6FB6B392432B5CF8EE31F638B999981 /* Sources */,
+				31BB727C2382056D2B301FF368B2562D /* Frameworks */,
+				DBF10C168B7843A42205E30BC71844C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7ADED0CDFB28EDF5EB7A9B5EB2CA995B /* PBXTargetDependency */,
+				7459EAD9907ED811C1CCDA92F7A0ECDB /* PBXTargetDependency */,
+			);
+			name = "Pods-RGBankAccount";
+			productName = "Pods-RGBankAccount";
+			productReference = 8912C1E3B3653DA4EC37EED97004FC3F /* Pods_RGBankAccount.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = BEE2445EF60F2DFDA2CC072855723BD4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A383B10211BD6A5BE8BD30C4F209EA8C /* Pods-RGBankAccount */,
+				390106780B5B8B017603AAC6755F1267 /* Pods-RGBankAccountTests */,
+				2EB43C81C1CCCB90FCCEFE8E93D695B4 /* Pods-RGBankAccountUITests */,
+				0D5280C44D3EF9A2932E48086E59FB46 /* ProgressHUD */,
+				5D688725357A2C7AB826163D20F9081B /* RGBankAccountLib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0113CBCA6898C9E47FAC40DF8DC74E75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C4E747F205A7BD99456E2DCF2CBB86C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A933B85303579CE2795E1EF95BB2CB8F /* ProgressHUD.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		715FD767F127E9E0AF02EB751C0F8DED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B25C202C5641CB19CA26835BA8E2695B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBF10C168B7843A42205E30BC71844C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42EE9950D2A1B4B802CC8327A10950B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4417AA0CE48A6A1B69B40A847552C12C /* ProgressHUD-dummy.m in Sources */,
+				CDB934A28BE7CC4D1791C6590579FCF7 /* ProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66624EDB29F5E6CA3471E4475C449004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33E6B99A3143EDDB5EC6DAAB5BDAE092 /* RGAccount.swift in Sources */,
+				08378B01B7B0D58FDC15600CCFAE17BF /* RGBankAccount.swift in Sources */,
+				CCB34CEB56672E4BF4B840DC9D0E6F2C /* RGBankAccountLib-dummy.m in Sources */,
+				081E05C1313B29C672A40D3B8C5509B4 /* RGMovement.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7827EFF8261AE33210F4A8E3B1BDD934 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10490453FBE9CDBA15F10CD6C389F7B6 /* Pods-RGBankAccountTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6FB6B392432B5CF8EE31F638B999981 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F938986AB45C49379AD3394576F26A43 /* Pods-RGBankAccount-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E52C3B57FF3126DF0131A672580799F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C4A040FA9D52982646DA72BA060273 /* Pods-RGBankAccountUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44C216B75625607F44EDA3213AC9831E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-RGBankAccount";
+			target = A383B10211BD6A5BE8BD30C4F209EA8C /* Pods-RGBankAccount */;
+			targetProxy = DA6ADFC29C4BFA481675F2BEEE58D960 /* PBXContainerItemProxy */;
+		};
+		7459EAD9907ED811C1CCDA92F7A0ECDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RGBankAccountLib;
+			target = 5D688725357A2C7AB826163D20F9081B /* RGBankAccountLib */;
+			targetProxy = 46A3795C34A0EB26D5728E10D33DACB5 /* PBXContainerItemProxy */;
+		};
+		7ADED0CDFB28EDF5EB7A9B5EB2CA995B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ProgressHUD;
+			target = 0D5280C44D3EF9A2932E48086E59FB46 /* ProgressHUD */;
+			targetProxy = 451480589D336468D82D44E4BB4D70D2 /* PBXContainerItemProxy */;
+		};
+		9D329D0BE20E353C9B847208CB970B4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-RGBankAccount";
+			target = A383B10211BD6A5BE8BD30C4F209EA8C /* Pods-RGBankAccount */;
+			targetProxy = 144557E967C82E64EB3C77F6F07A54D5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		090C167DA7822FD953E03A9857BD693D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35A7744D7B93A167A88EBB70B2DDC7C9 /* Pods-RGBankAccountTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RGBankAccountTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RGBankAccountTests/Pods-RGBankAccountTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0AA3B91655AF95B1F49159CD8085CD89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8000995DA02063BF3777393CD52061DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		8FDD87783191827A05F5ADBD54B997B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD3D108E61613AA668375E832386B042 /* ProgressHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ProgressHUD/ProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ProgressHUD/ProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = ProgressHUD;
+				PRODUCT_NAME = ProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		90D5F2F788DB0F0D31EAD8B4B3EB2DAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E56565581C03523465822315A2B5DE3 /* Pods-RGBankAccountTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RGBankAccountTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RGBankAccountTests/Pods-RGBankAccountTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9F37AB94F12A4A65AFFC3CE21BB08474 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C40B5C8583B030E341A90F9BA16EDBAB /* Pods-RGBankAccount.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RGBankAccount/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RGBankAccount/Pods-RGBankAccount.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ABBA1759BA303381C920B8A7E02A9C37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EF5601E44047C707BF95C21E806AF76 /* Pods-RGBankAccountUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RGBankAccountUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RGBankAccountUITests/Pods-RGBankAccountUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ABE2FA512576532117A1B81764E5906B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 893B5FC482E3C9397197C52A2E52B22E /* RGBankAccountLib.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RGBankAccountLib/RGBankAccountLib-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RGBankAccountLib/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/RGBankAccountLib/RGBankAccountLib.modulemap";
+				PRODUCT_MODULE_NAME = RGBankAccountLib;
+				PRODUCT_NAME = RGBankAccountLib;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C2488034C21DDC95BC4B90BA98C8A25D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 893B5FC482E3C9397197C52A2E52B22E /* RGBankAccountLib.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RGBankAccountLib/RGBankAccountLib-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RGBankAccountLib/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/RGBankAccountLib/RGBankAccountLib.modulemap";
+				PRODUCT_MODULE_NAME = RGBankAccountLib;
+				PRODUCT_NAME = RGBankAccountLib;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CDD916A3DD13621739E128C6761414C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01BF0B04ACB90690B5EA92F66CEADE5D /* Pods-RGBankAccountUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RGBankAccountUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RGBankAccountUITests/Pods-RGBankAccountUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E471ED609D4EA6F06D4233068F887FA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44D3D1C669AE23DF68C3EC5F7830EE0E /* Pods-RGBankAccount.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RGBankAccount/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RGBankAccount/Pods-RGBankAccount.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EF73F05304A4759F6E2EF53CBEFDDB66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD3D108E61613AA668375E832386B042 /* ProgressHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ProgressHUD/ProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ProgressHUD/ProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = ProgressHUD;
+				PRODUCT_NAME = ProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AA3B91655AF95B1F49159CD8085CD89 /* Debug */,
+				8000995DA02063BF3777393CD52061DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		452059C17CC973988EEFC7FDD0D08F61 /* Build configuration list for PBXNativeTarget "ProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF73F05304A4759F6E2EF53CBEFDDB66 /* Debug */,
+				8FDD87783191827A05F5ADBD54B997B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5406B2AD754A1B5B859FC23E5CF56F08 /* Build configuration list for PBXNativeTarget "RGBankAccountLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABE2FA512576532117A1B81764E5906B /* Debug */,
+				C2488034C21DDC95BC4B90BA98C8A25D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D3DFF30D4F753F2DDDEAB2E2FED2F9A /* Build configuration list for PBXNativeTarget "Pods-RGBankAccount" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E471ED609D4EA6F06D4233068F887FA9 /* Debug */,
+				9F37AB94F12A4A65AFFC3CE21BB08474 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C497517DC211353ECC4373ABE551D59F /* Build configuration list for PBXNativeTarget "Pods-RGBankAccountTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				090C167DA7822FD953E03A9857BD693D /* Debug */,
+				90D5F2F788DB0F0D31EAD8B4B3EB2DAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E592362EA2B10C84DBBBE9D48277EA32 /* Build configuration list for PBXNativeTarget "Pods-RGBankAccountUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDD916A3DD13621739E128C6761414C2 /* Debug */,
+				ABBA1759BA303381C920B8A7E02A9C37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
