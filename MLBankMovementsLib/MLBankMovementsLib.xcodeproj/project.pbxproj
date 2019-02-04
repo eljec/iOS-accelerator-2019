@@ -11,7 +11,7 @@
 		C4A953D722038AAD00697961 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4A953D622038AAD00697961 /* Assets.xcassets */; };
 		C4A953E522038AAD00697961 /* MLBankMovementsLibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A953E422038AAD00697961 /* MLBankMovementsLibTests.swift */; };
 		C4A953F022038AAD00697961 /* MLBankMovementsLibUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A953EF22038AAD00697961 /* MLBankMovementsLibUITests.swift */; };
-		C4A953FF22038CE200697961 /* MLBankMovementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A953FE22038CE200697961 /* MLBankMovementsViewController.swift */; };
+		C4A954012203923600697961 /* MLBankMovements.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A954002203923600697961 /* MLBankMovements.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +42,7 @@
 		C4A953EB22038AAD00697961 /* MLBankMovementsLibUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MLBankMovementsLibUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A953EF22038AAD00697961 /* MLBankMovementsLibUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLBankMovementsLibUITests.swift; sourceTree = "<group>"; };
 		C4A953F122038AAD00697961 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C4A953FE22038CE200697961 /* MLBankMovementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLBankMovementsViewController.swift; sourceTree = "<group>"; };
+		C4A954002203923600697961 /* MLBankMovements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLBankMovements.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				C4A953FD22038C8700697961 /* App */,
-				C4A953FE22038CE200697961 /* MLBankMovementsViewController.swift */,
+				C4A954002203923600697961 /* MLBankMovements.swift */,
 			);
 			path = MLBankMovementsLib;
 			sourceTree = "<group>";
@@ -256,8 +256,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4A953FF22038CE200697961 /* MLBankMovementsViewController.swift in Sources */,
 				C4A953D022038AAD00697961 /* AppDelegate.swift in Sources */,
+				C4A954012203923600697961 /* MLBankMovements.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

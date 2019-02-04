@@ -16,6 +16,7 @@
                 <outlet property="balanceText" destination="pq8-9w-TNX" id="qs1-oJ-UL0"/>
                 <outlet property="inputMoney" destination="Kxv-KO-5di" id="HC2-st-XAA"/>
                 <outlet property="inputMoneyButton" destination="BY5-4I-Qgh" id="F6I-ta-uGs"/>
+                <outlet property="transactionsView" destination="gSG-mF-xE8" id="j0N-mv-hpK"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -24,8 +25,25 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pq8-9w-TNX">
+                    <rect key="frame" x="40" y="257.5" width="240" height="54"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="pq8-9w-TNX" secondAttribute="height" multiplier="15:8" constant="138.75" id="lOq-p1-Mqh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gSG-mF-xE8">
+                    <rect key="frame" x="0.0" y="342" width="320" height="190"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="190" id="n7b-CH-fSx"/>
+                        <constraint firstAttribute="width" constant="320" id="q9n-oo-ujb"/>
+                    </constraints>
+                </tableView>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kxv-KO-5di">
-                    <rect key="frame" x="31" y="83" width="150" height="30"/>
+                    <rect key="frame" x="20" y="56" width="150" height="30"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="Kxv-KO-5di" secondAttribute="height" multiplier="5:1" id="rvu-ng-h19"/>
                     </constraints>
@@ -36,52 +54,45 @@
                         <action selector="moneyToInsert:" destination="-1" eventType="editingDidEnd" id="BXM-Ul-cOs"/>
                     </connections>
                 </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OnT-xL-mef">
+                    <rect key="frame" x="112" y="173" width="96" height="62.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="OnT-xL-mef" secondAttribute="height" multiplier="23:15" id="otn-Rd-NoG"/>
+                    </constraints>
+                    <state key="normal" title="Show balance"/>
+                    <connections>
+                        <action selector="showBalance:" destination="-1" eventType="touchUpInside" id="Bax-OW-abT"/>
+                    </connections>
+                </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BY5-4I-Qgh">
-                    <rect key="frame" x="202" y="83" width="46" height="30"/>
+                    <rect key="frame" x="191" y="47" width="76" height="49.5"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="BY5-4I-Qgh" secondAttribute="height" multiplier="23:15" id="Ide-gQ-MGp"/>
                     </constraints>
-                    <state key="normal" title="Button">
+                    <state key="normal" title="Send value">
                         <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="sendMoneyToBalance:" destination="-1" eventType="touchUpInside" id="u4T-10-qir"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OnT-xL-mef">
-                    <rect key="frame" x="137" y="312" width="46" height="30"/>
-                    <constraints>
-                        <constraint firstAttribute="width" secondItem="OnT-xL-mef" secondAttribute="height" multiplier="23:15" id="otn-Rd-NoG"/>
-                    </constraints>
-                    <state key="normal" title="Button"/>
-                    <connections>
-                        <action selector="showBalance:" destination="-1" eventType="touchUpInside" id="Bax-OW-abT"/>
-                    </connections>
-                </button>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="aaa" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pq8-9w-TNX">
-                    <rect key="frame" x="40" y="397" width="240" height="128"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstAttribute="width" secondItem="pq8-9w-TNX" secondAttribute="height" multiplier="15:8" id="lOq-p1-Mqh"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                </textView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="pq8-9w-TNX" firstAttribute="top" secondItem="OnT-xL-mef" secondAttribute="bottom" constant="55" id="0l0-PX-Wpy"/>
-                <constraint firstItem="Kxv-KO-5di" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="63" id="343-2e-phO"/>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="pq8-9w-TNX" secondAttribute="trailing" constant="40" id="Ear-6f-WoV"/>
-                <constraint firstItem="BY5-4I-Qgh" firstAttribute="leading" secondItem="Kxv-KO-5di" secondAttribute="trailing" constant="21" id="KH5-HU-6i4"/>
-                <constraint firstItem="Kxv-KO-5di" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="31" id="Mxj-8h-Mgm"/>
-                <constraint firstItem="pq8-9w-TNX" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="40" id="aKG-tp-byY"/>
-                <constraint firstItem="OnT-xL-mef" firstAttribute="top" secondItem="Kxv-KO-5di" secondAttribute="bottom" constant="199" id="hLG-fL-dwZ"/>
-                <constraint firstItem="OnT-xL-mef" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="137" id="qRl-j1-cjL"/>
-                <constraint firstItem="BY5-4I-Qgh" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="63" id="qbu-gW-y3W"/>
+                <constraint firstItem="OnT-xL-mef" firstAttribute="centerX" secondItem="pq8-9w-TNX" secondAttribute="centerX" id="Asg-zR-KXE"/>
+                <constraint firstItem="OnT-xL-mef" firstAttribute="top" secondItem="Kxv-KO-5di" secondAttribute="bottom" constant="87" id="DnZ-87-4NP"/>
+                <constraint firstItem="BY5-4I-Qgh" firstAttribute="leading" secondItem="Kxv-KO-5di" secondAttribute="trailing" constant="21" id="HwT-cb-uwM"/>
+                <constraint firstItem="gSG-mF-xE8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="NhJ-ru-0kq"/>
+                <constraint firstItem="pq8-9w-TNX" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="40" id="Xqo-zD-0HX"/>
+                <constraint firstItem="Kxv-KO-5di" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="36" id="d8L-fA-Cex"/>
+                <constraint firstItem="Kxv-KO-5di" firstAttribute="top" secondItem="BY5-4I-Qgh" secondAttribute="top" constant="9" id="gXa-tc-nVY"/>
+                <constraint firstItem="gSG-mF-xE8" firstAttribute="top" secondItem="pq8-9w-TNX" secondAttribute="bottom" constant="30" id="ig5-7i-DGc"/>
+                <constraint firstItem="pq8-9w-TNX" firstAttribute="top" secondItem="OnT-xL-mef" secondAttribute="bottom" constant="22" id="nzc-Gt-CDP"/>
+                <constraint firstItem="Kxv-KO-5di" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="q5k-tw-Sg0"/>
+                <constraint firstItem="pq8-9w-TNX" firstAttribute="centerX" secondItem="gSG-mF-xE8" secondAttribute="centerX" id="qZg-YA-IOq"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
-            <point key="canvasLocation" x="138.75" y="153.16901408450704"/>
+            <point key="canvasLocation" x="-270" y="107.74647887323944"/>
         </view>
     </objects>
 </document>
