@@ -24,6 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [MLBankMovements startAccountWithAccountOwner:@"Yo"];
     [self changeColorForBalance];
     _balanceText.text = [NSString stringWithFormat:@"%ld" ,(long)[MLBankMovements loadValues]];
     _inputMoneyButton.titleLabel.text = @"Insert Value";

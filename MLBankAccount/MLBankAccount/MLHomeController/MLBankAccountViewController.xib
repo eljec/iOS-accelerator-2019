@@ -63,7 +63,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESu-lI-i38">
-                    <rect key="frame" x="59" y="438" width="141" height="30"/>
+                    <rect key="frame" x="59" y="459" width="141" height="30"/>
                     <state key="normal" title="Show all Movements"/>
                     <connections>
                         <action selector="goToBalance:" destination="-1" eventType="touchUpInside" id="02X-V2-PEl"/>
@@ -73,7 +73,7 @@
             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
             <constraints>
                 <constraint firstItem="OnT-xL-mef" firstAttribute="top" secondItem="Kxv-KO-5di" secondAttribute="bottom" constant="81" id="DnZ-87-4NP"/>
-                <constraint firstItem="ESu-lI-i38" firstAttribute="top" secondItem="pq8-9w-TNX" secondAttribute="bottom" constant="187" id="Gfg-0J-cRV"/>
+                <constraint firstItem="ESu-lI-i38" firstAttribute="top" secondItem="pq8-9w-TNX" secondAttribute="bottom" constant="208" id="Gfg-0J-cRV"/>
                 <constraint firstItem="BY5-4I-Qgh" firstAttribute="leading" secondItem="Kxv-KO-5di" secondAttribute="trailing" constant="21" id="HwT-cb-uwM"/>
                 <constraint firstItem="pq8-9w-TNX" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="WH0-ID-C5S"/>
                 <constraint firstItem="pq8-9w-TNX" firstAttribute="top" secondItem="OnT-xL-mef" secondAttribute="bottom" constant="16" id="aIY-F2-DM7"/>

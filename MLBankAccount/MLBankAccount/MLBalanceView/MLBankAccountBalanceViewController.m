@@ -18,7 +18,7 @@
 @implementation MLBankAccountBalanceViewController
 
 /**
- Se agrega funcionalidad pull-to-refresh(refreshControl) a la balanceTable
+ pull-to-refresh(refreshControl) actualiza los valores de la balanceTable
  */
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -49,9 +49,9 @@
 }
 
 - (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    MLBankMovements *transactionsCount = [[MLBankMovements alloc] init];
-    NSInteger atr = transactionsCount.balanceCount;
-    return atr;
+    MLBankMovements *transactions = [[MLBankMovements alloc] init];
+    NSInteger transactionsCount = transactions.balanceCount;
+    return transactionsCount;
 }
 
 /**
