@@ -91,6 +91,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C43392292208716700474BD9 /* MLBalanceView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MLBalanceView;
+			sourceTree = "<group>";
+		};
 		C4A9537F2203882800697961 = {
 			isa = PBXGroup;
 			children = (
@@ -116,7 +123,8 @@
 		C4A9538A2203882800697961 /* MLBankAccount */ = {
 			isa = PBXGroup;
 			children = (
-				C4A953BD2203883100697961 /* HomeController */,
+				C43392292208716700474BD9 /* MLBalanceView */,
+				C4A953BD2203883100697961 /* MLHomeController */,
 				C4A9538B2203882800697961 /* AppDelegate.h */,
 				C4A9538C2203882800697961 /* AppDelegate.m */,
 				C4A953942203882900697961 /* Assets.xcassets */,
@@ -144,14 +152,14 @@
 			path = MLBankAccountUITests;
 			sourceTree = "<group>";
 		};
-		C4A953BD2203883100697961 /* HomeController */ = {
+		C4A953BD2203883100697961 /* MLHomeController */ = {
 			isa = PBXGroup;
 			children = (
 				C4A953BE2203884E00697961 /* MLBankAccountViewController.h */,
 				C4A953BF2203884E00697961 /* MLBankAccountViewController.m */,
 				C4A953C02203884E00697961 /* MLBankAccountViewController.xib */,
 			);
-			path = HomeController;
+			path = MLHomeController;
 			sourceTree = "<group>";
 		};
 		F9808FA383229797B9B9168D /* Frameworks */ = {

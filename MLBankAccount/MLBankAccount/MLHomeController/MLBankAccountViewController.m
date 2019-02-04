@@ -11,11 +11,13 @@
 
 
 @interface MLBankAccountViewController ()
+
 @property (weak, nonatomic) IBOutlet UITextField *inputMoney;
 @property (weak, nonatomic) IBOutlet UIButton *inputMoneyButton;
 @property (weak, nonatomic) IBOutlet UIButton *balanceButton;
 @property (weak, nonatomic) IBOutlet UITextView *balanceText;
 @property (weak, nonatomic) IBOutlet UITableView *transactionsView;
+@property (strong, nonatomic) UIRefreshControl *refreshControl;
 
 @end
 
@@ -23,15 +25,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    [MLBankMovements delete];
+    [self changeColorForBalance];
     _balanceText.text = [NSString stringWithFormat:@"%ld" ,(long)[MLBankMovements loadValues]];
     _inputMoneyButton.titleLabel.text = @"Insert Value";
     _balanceButton.titleLabel.text = @"Show balance";
-    [self changeColorForBalance];
     _transactionsView.delegate = self;
     _transactionsView.dataSource = self;
+    _transactionsView.refreshControl = _refreshControl;
     [_transactionsView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
+    [_transactionsView addSubview:_refreshControl];
+    _refreshControl = [[UIRefreshControl alloc] init];
+    [_refreshControl addTarget:self action:@selector(refreshTable) forControlEvents: UIControlEventValueChanged];
 
+}
+
+- (void)refreshTable {
+    [_refreshControl endRefreshing];
+    [_transactionsView reloadData];
 }
 
 - (IBAction)moneyToInsert:(id)sender {
@@ -71,7 +81,5 @@
     NSInteger atr = transactionsCount.balanceCount;
     return atr;
 }
-
-
 
 @end
