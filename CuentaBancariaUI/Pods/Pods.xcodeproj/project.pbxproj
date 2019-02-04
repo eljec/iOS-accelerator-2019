@@ -1,0 +1,995 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02CB2084D9B5676D838BA12E2BE04ACD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		1FCFFD4694BBE71C3DEC47796C840CF0 /* Pods-CuentaBancariaUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B25738CE4875FA4DD8ABD2398E73B21 /* Pods-CuentaBancariaUI-dummy.m */; };
+		419876F3C2EE5ACA0C33FC2BB7CE0B34 /* CBTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1294ADAC154A7758826A0F5E40B6832A /* CBTransaction.swift */; };
+		57BED55FB1D5FE8009A60D1350330DD0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		71351FE15F412339973BB32ECB2CF490 /* Pods-CuentaBancariaUIUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 99610A990C04720082F3211122933E24 /* Pods-CuentaBancariaUIUITests-dummy.m */; };
+		86B3C160EB9EAFE652F112DBB3497AE1 /* Pods-CuentaBancariaUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C33FAA7C962828E72571A0FC5202E6A /* Pods-CuentaBancariaUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB7CD1397E61999EB23E99F51C65F123 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		ABF64777D8786458AA99E8F3E443331D /* Pods-CuentaBancariaUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EA8A95A5C6C35D1A4DED788C3ADC7BB /* Pods-CuentaBancariaUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B621EB2CA141523E05EB1D346E1F12A7 /* Pods-CuentaBancariaUIUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA29580020789007ECAE45B39089AF3 /* Pods-CuentaBancariaUIUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF7AE3669807A715D208DC01AA90BB4A /* CuentaBancariaLIB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD60FA3F57545EF146B86BA9C485F49 /* CuentaBancariaLIB-dummy.m */; };
+		D802AEC2E301EACE3282EA6AC05765EC /* Pods-CuentaBancariaUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BE5ACBFB01DAADA2C69BB60B636CD5 /* Pods-CuentaBancariaUITests-dummy.m */; };
+		DCFB1617837C4BC4A1BF9DF2DAFAB486 /* CBErrorColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4458A2263E02CB6A00514DB770B1070 /* CBErrorColor.swift */; };
+		E257FBBFBAC995E5201DE8F787A33C2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		E7795815C9C4544E5B857C347EB7D99D /* CuentaBancariaLIB-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D877B3EC9EC433910E6605D11CA10DEA /* CuentaBancariaLIB-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC6B5CE7A29E149115126C851B6B836F /* CBCuenta.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EC0CFF78198994E1C2F0991334C74D /* CBCuenta.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B451B16684003E7791A63D758959C30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B28DBADBE0156A8B626C4540755E78B6;
+			remoteInfo = CuentaBancariaLIB;
+		};
+		52C594A1278B0A5EA82C5CC796426727 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A9590EBB0F211C2F07AA3186C7F841B;
+			remoteInfo = "Pods-CuentaBancariaUI";
+		};
+		8011031068F8F6EDD256125BD9069350 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A9590EBB0F211C2F07AA3186C7F841B;
+			remoteInfo = "Pods-CuentaBancariaUI";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10F99B45838C9D070E0109607BDF03D4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1294ADAC154A7758826A0F5E40B6832A /* CBTransaction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CBTransaction.swift; path = LibraryComponents/Classes/CBTransaction.swift; sourceTree = "<group>"; };
+		155355EC29C41B6CE7BF581D6996B9F3 /* Pods-CuentaBancariaUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CuentaBancariaUI.debug.xcconfig"; sourceTree = "<group>"; };
+		1A0373EC62579C1210E2C4F6E10526BC /* Pods-CuentaBancariaUI-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CuentaBancariaUI-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1AEB6C29BB5456AA39F821BC24CE6F4F /* Pods-CuentaBancariaUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CuentaBancariaUITests.modulemap"; sourceTree = "<group>"; };
+		1FA29580020789007ECAE45B39089AF3 /* Pods-CuentaBancariaUIUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CuentaBancariaUIUITests-umbrella.h"; sourceTree = "<group>"; };
+		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2699C8E4582B65410BAE82CF8181C589 /* Pods_CuentaBancariaUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CuentaBancariaUI.framework; path = "Pods-CuentaBancariaUI.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		26BE5ACBFB01DAADA2C69BB60B636CD5 /* Pods-CuentaBancariaUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CuentaBancariaUITests-dummy.m"; sourceTree = "<group>"; };
+		28A64870B968C3B8AA97FFDFAC3BB59F /* Pods_CuentaBancariaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CuentaBancariaUITests.framework; path = "Pods-CuentaBancariaUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		35E8AA837B368CFA3B73D8A1163009D7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C0787CF696DA9AB0C1D6CF8D101A52F /* CuentaBancariaLIB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CuentaBancariaLIB.framework; path = CuentaBancariaLIB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CC82375CB98D9FAC6907EC319230332 /* Pods-CuentaBancariaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CuentaBancariaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3EA8A95A5C6C35D1A4DED788C3ADC7BB /* Pods-CuentaBancariaUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CuentaBancariaUI-umbrella.h"; sourceTree = "<group>"; };
+		41739444234615E70B63E55B9AB4EC89 /* CuentaBancariaLIB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CuentaBancariaLIB.xcconfig; sourceTree = "<group>"; };
+		4A8A84507E4C41ACB38061357A52F99B /* Pods-CuentaBancariaUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CuentaBancariaUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		4AD60FA3F57545EF146B86BA9C485F49 /* CuentaBancariaLIB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CuentaBancariaLIB-dummy.m"; sourceTree = "<group>"; };
+		509B27CDB269E76D31134A5897536917 /* Pods-CuentaBancariaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CuentaBancariaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		53FCDF8CBC5F9DE58F31245C6E337670 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5661646C65802EDDD3EC9C969ADC91A8 /* Pods-CuentaBancariaUIUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CuentaBancariaUIUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5868C7D0C971A07382EE323EFAA8131B /* Pods_CuentaBancariaUIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CuentaBancariaUIUITests.framework; path = "Pods-CuentaBancariaUIUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F1B9D0A866C0D36336C49E78DC8477E /* Pods-CuentaBancariaUIUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CuentaBancariaUIUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6A93D9684A97D047386CE3A197C0F6EA /* CuentaBancariaLIB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CuentaBancariaLIB-prefix.pch"; sourceTree = "<group>"; };
+		6F27D3A1F176052BB595A52279E7249F /* Pods-CuentaBancariaUI-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CuentaBancariaUI-resources.sh"; sourceTree = "<group>"; };
+		6FCF3186D4319C00724BE51732D790CE /* Pods-CuentaBancariaUIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CuentaBancariaUIUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7B25738CE4875FA4DD8ABD2398E73B21 /* Pods-CuentaBancariaUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CuentaBancariaUI-dummy.m"; sourceTree = "<group>"; };
+		7B42464838B58D14DFBCBE2B80175488 /* Pods-CuentaBancariaUIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CuentaBancariaUIUITests.release.xcconfig"; sourceTree = "<group>"; };
+		80D7B790B66E970C62B3B9320CA339CD /* Pods-CuentaBancariaUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CuentaBancariaUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8CE50CF0B93543EA34E53F753B23B8A2 /* Pods-CuentaBancariaUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CuentaBancariaUITests-resources.sh"; sourceTree = "<group>"; };
+		94773040C7D2BEC85B32F888C43D348A /* Pods-CuentaBancariaUIUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CuentaBancariaUIUITests.modulemap"; sourceTree = "<group>"; };
+		99610A990C04720082F3211122933E24 /* Pods-CuentaBancariaUIUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CuentaBancariaUIUITests-dummy.m"; sourceTree = "<group>"; };
+		9C33FAA7C962828E72571A0FC5202E6A /* Pods-CuentaBancariaUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CuentaBancariaUITests-umbrella.h"; sourceTree = "<group>"; };
+		9D3A04D9917DBE8819E19789361C8962 /* Pods-CuentaBancariaUIUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CuentaBancariaUIUITests-resources.sh"; sourceTree = "<group>"; };
+		B4458A2263E02CB6A00514DB770B1070 /* CBErrorColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CBErrorColor.swift; path = LibraryComponents/Classes/CBErrorColor.swift; sourceTree = "<group>"; };
+		B6EC0CFF78198994E1C2F0991334C74D /* CBCuenta.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CBCuenta.swift; path = LibraryComponents/Classes/CBCuenta.swift; sourceTree = "<group>"; };
+		B7CCE52B4961D0BC0782BC7D79DDD238 /* Pods-CuentaBancariaUI-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CuentaBancariaUI-acknowledgements.plist"; sourceTree = "<group>"; };
+		C63D788B766C8996E87B65FE1F7CAF2C /* Pods-CuentaBancariaUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CuentaBancariaUI.modulemap"; sourceTree = "<group>"; };
+		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D67835E47A928BB5E0D7944FAF629D0B /* Pods-CuentaBancariaUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CuentaBancariaUI.release.xcconfig"; sourceTree = "<group>"; };
+		D877B3EC9EC433910E6605D11CA10DEA /* CuentaBancariaLIB-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CuentaBancariaLIB-umbrella.h"; sourceTree = "<group>"; };
+		D9248E5DBC0D6E17AFFD01809040D3A4 /* CuentaBancariaLIB.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CuentaBancariaLIB.modulemap; sourceTree = "<group>"; };
+		DA33F5BC3208DEA9E08499C0891C95F3 /* CuentaBancariaLIB.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = CuentaBancariaLIB.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E5E2D72419E02028E9352E8188CA3EAC /* Pods-CuentaBancariaUI-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CuentaBancariaUI-frameworks.sh"; sourceTree = "<group>"; };
+		EE212E3575863742917DE0D6AFAE0D45 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE9ED8BA203FEA0FB836A6B2BC38245F /* Pods-CuentaBancariaUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CuentaBancariaUITests-frameworks.sh"; sourceTree = "<group>"; };
+		F5562F9FE2CA09031779D7C43F8744C4 /* Pods-CuentaBancariaUIUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CuentaBancariaUIUITests-frameworks.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		82EC3F70D1777C0FE4355E097DAB5998 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02CB2084D9B5676D838BA12E2BE04ACD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		896ED12D63724C6359125CCA75FF01F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E257FBBFBAC995E5201DE8F787A33C2B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D8D2F145B3F361EED7A3330347FB450 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57BED55FB1D5FE8009A60D1350330DD0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8557178DD15A6BA4ED9C024EBDF921D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB7CD1397E61999EB23E99F51C65F123 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0319B00F4234D1BA8499CE56D243119D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D9248E5DBC0D6E17AFFD01809040D3A4 /* CuentaBancariaLIB.modulemap */,
+				41739444234615E70B63E55B9AB4EC89 /* CuentaBancariaLIB.xcconfig */,
+				4AD60FA3F57545EF146B86BA9C485F49 /* CuentaBancariaLIB-dummy.m */,
+				6A93D9684A97D047386CE3A197C0F6EA /* CuentaBancariaLIB-prefix.pch */,
+				D877B3EC9EC433910E6605D11CA10DEA /* CuentaBancariaLIB-umbrella.h */,
+				35E8AA837B368CFA3B73D8A1163009D7 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../CuentaBancariaUI/Pods/Target Support Files/CuentaBancariaLIB";
+			sourceTree = "<group>";
+		};
+		18DC75E4BDC14429736A08E2F7F8567E /* Pods-CuentaBancariaUIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				10F99B45838C9D070E0109607BDF03D4 /* Info.plist */,
+				94773040C7D2BEC85B32F888C43D348A /* Pods-CuentaBancariaUIUITests.modulemap */,
+				5661646C65802EDDD3EC9C969ADC91A8 /* Pods-CuentaBancariaUIUITests-acknowledgements.markdown */,
+				5F1B9D0A866C0D36336C49E78DC8477E /* Pods-CuentaBancariaUIUITests-acknowledgements.plist */,
+				99610A990C04720082F3211122933E24 /* Pods-CuentaBancariaUIUITests-dummy.m */,
+				F5562F9FE2CA09031779D7C43F8744C4 /* Pods-CuentaBancariaUIUITests-frameworks.sh */,
+				9D3A04D9917DBE8819E19789361C8962 /* Pods-CuentaBancariaUIUITests-resources.sh */,
+				1FA29580020789007ECAE45B39089AF3 /* Pods-CuentaBancariaUIUITests-umbrella.h */,
+				6FCF3186D4319C00724BE51732D790CE /* Pods-CuentaBancariaUIUITests.debug.xcconfig */,
+				7B42464838B58D14DFBCBE2B80175488 /* Pods-CuentaBancariaUIUITests.release.xcconfig */,
+			);
+			name = "Pods-CuentaBancariaUIUITests";
+			path = "Target Support Files/Pods-CuentaBancariaUIUITests";
+			sourceTree = "<group>";
+		};
+		35AFB4029090141A81B2E14BC1BF4792 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3BE3B1E469C4137EC44F7CBABE125532 /* CuentaBancariaLIB */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		3BE3B1E469C4137EC44F7CBABE125532 /* CuentaBancariaLIB */ = {
+			isa = PBXGroup;
+			children = (
+				B6EC0CFF78198994E1C2F0991334C74D /* CBCuenta.swift */,
+				B4458A2263E02CB6A00514DB770B1070 /* CBErrorColor.swift */,
+				1294ADAC154A7758826A0F5E40B6832A /* CBTransaction.swift */,
+				A922D9751799ED7E1E4FA6571177ABCD /* Pod */,
+				0319B00F4234D1BA8499CE56D243119D /* Support Files */,
+			);
+			name = CuentaBancariaLIB;
+			path = ../../CuentaBancariaLIB;
+			sourceTree = "<group>";
+		};
+		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		9B9EBC193FA9902EE1BCCCE6C037FCD4 /* Pods-CuentaBancariaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				53FCDF8CBC5F9DE58F31245C6E337670 /* Info.plist */,
+				1AEB6C29BB5456AA39F821BC24CE6F4F /* Pods-CuentaBancariaUITests.modulemap */,
+				80D7B790B66E970C62B3B9320CA339CD /* Pods-CuentaBancariaUITests-acknowledgements.markdown */,
+				4A8A84507E4C41ACB38061357A52F99B /* Pods-CuentaBancariaUITests-acknowledgements.plist */,
+				26BE5ACBFB01DAADA2C69BB60B636CD5 /* Pods-CuentaBancariaUITests-dummy.m */,
+				EE9ED8BA203FEA0FB836A6B2BC38245F /* Pods-CuentaBancariaUITests-frameworks.sh */,
+				8CE50CF0B93543EA34E53F753B23B8A2 /* Pods-CuentaBancariaUITests-resources.sh */,
+				9C33FAA7C962828E72571A0FC5202E6A /* Pods-CuentaBancariaUITests-umbrella.h */,
+				3CC82375CB98D9FAC6907EC319230332 /* Pods-CuentaBancariaUITests.debug.xcconfig */,
+				509B27CDB269E76D31134A5897536917 /* Pods-CuentaBancariaUITests.release.xcconfig */,
+			);
+			name = "Pods-CuentaBancariaUITests";
+			path = "Target Support Files/Pods-CuentaBancariaUITests";
+			sourceTree = "<group>";
+		};
+		A3012335F3CF4094E6E47F014F4BA67B /* Pods-CuentaBancariaUI */ = {
+			isa = PBXGroup;
+			children = (
+				EE212E3575863742917DE0D6AFAE0D45 /* Info.plist */,
+				C63D788B766C8996E87B65FE1F7CAF2C /* Pods-CuentaBancariaUI.modulemap */,
+				1A0373EC62579C1210E2C4F6E10526BC /* Pods-CuentaBancariaUI-acknowledgements.markdown */,
+				B7CCE52B4961D0BC0782BC7D79DDD238 /* Pods-CuentaBancariaUI-acknowledgements.plist */,
+				7B25738CE4875FA4DD8ABD2398E73B21 /* Pods-CuentaBancariaUI-dummy.m */,
+				E5E2D72419E02028E9352E8188CA3EAC /* Pods-CuentaBancariaUI-frameworks.sh */,
+				6F27D3A1F176052BB595A52279E7249F /* Pods-CuentaBancariaUI-resources.sh */,
+				3EA8A95A5C6C35D1A4DED788C3ADC7BB /* Pods-CuentaBancariaUI-umbrella.h */,
+				155355EC29C41B6CE7BF581D6996B9F3 /* Pods-CuentaBancariaUI.debug.xcconfig */,
+				D67835E47A928BB5E0D7944FAF629D0B /* Pods-CuentaBancariaUI.release.xcconfig */,
+			);
+			name = "Pods-CuentaBancariaUI";
+			path = "Target Support Files/Pods-CuentaBancariaUI";
+			sourceTree = "<group>";
+		};
+		A922D9751799ED7E1E4FA6571177ABCD /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				DA33F5BC3208DEA9E08499C0891C95F3 /* CuentaBancariaLIB.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				24390EFD555DD124430DFF9724065945 /* Podfile */,
+				35AFB4029090141A81B2E14BC1BF4792 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				E4A2E3F59EF57E07A0B109EC0FF8ED0C /* Products */,
+				F0CDDA80DF7F49F16CD688A59A851BE9 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E4A2E3F59EF57E07A0B109EC0FF8ED0C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C0787CF696DA9AB0C1D6CF8D101A52F /* CuentaBancariaLIB.framework */,
+				2699C8E4582B65410BAE82CF8181C589 /* Pods_CuentaBancariaUI.framework */,
+				28A64870B968C3B8AA97FFDFAC3BB59F /* Pods_CuentaBancariaUITests.framework */,
+				5868C7D0C971A07382EE323EFAA8131B /* Pods_CuentaBancariaUIUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0CDDA80DF7F49F16CD688A59A851BE9 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A3012335F3CF4094E6E47F014F4BA67B /* Pods-CuentaBancariaUI */,
+				9B9EBC193FA9902EE1BCCCE6C037FCD4 /* Pods-CuentaBancariaUITests */,
+				18DC75E4BDC14429736A08E2F7F8567E /* Pods-CuentaBancariaUIUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2D7874456FF6A3A2DA9977C839CD767B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7795815C9C4544E5B857C347EB7D99D /* CuentaBancariaLIB-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A80AB47DF7113FADB54C9D8E1E0EF85 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86B3C160EB9EAFE652F112DBB3497AE1 /* Pods-CuentaBancariaUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		808BD0ABE11F1315D9A2DD796186389A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABF64777D8786458AA99E8F3E443331D /* Pods-CuentaBancariaUI-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B553A1D17D76220C9993CD3F9195752A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B621EB2CA141523E05EB1D346E1F12A7 /* Pods-CuentaBancariaUIUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2A9590EBB0F211C2F07AA3186C7F841B /* Pods-CuentaBancariaUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BEF15FA5F3EBED410EB98942BFEA6F8 /* Build configuration list for PBXNativeTarget "Pods-CuentaBancariaUI" */;
+			buildPhases = (
+				808BD0ABE11F1315D9A2DD796186389A /* Headers */,
+				573CBA742251EC959DDD70958CE25540 /* Sources */,
+				8D8D2F145B3F361EED7A3330347FB450 /* Frameworks */,
+				77A322F216D24649E3C244C510233A76 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8784F19EAB2F0B145101E5F7A28C7D34 /* PBXTargetDependency */,
+			);
+			name = "Pods-CuentaBancariaUI";
+			productName = "Pods-CuentaBancariaUI";
+			productReference = 2699C8E4582B65410BAE82CF8181C589 /* Pods_CuentaBancariaUI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6A54034A5BAB765DF89192F553DBF715 /* Pods-CuentaBancariaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7ED3F6B9EAEE1DB890E2E949C1F54329 /* Build configuration list for PBXNativeTarget "Pods-CuentaBancariaUITests" */;
+			buildPhases = (
+				7A80AB47DF7113FADB54C9D8E1E0EF85 /* Headers */,
+				4A2EF12035174107BAF8167C758CD794 /* Sources */,
+				896ED12D63724C6359125CCA75FF01F6 /* Frameworks */,
+				31E8777AA4E8213E2670CB010B1733B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD71AA35B153F5474CC5B367BD6C08BD /* PBXTargetDependency */,
+			);
+			name = "Pods-CuentaBancariaUITests";
+			productName = "Pods-CuentaBancariaUITests";
+			productReference = 28A64870B968C3B8AA97FFDFAC3BB59F /* Pods_CuentaBancariaUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B28DBADBE0156A8B626C4540755E78B6 /* CuentaBancariaLIB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DFB6313FC514910298F3123A3B986B5 /* Build configuration list for PBXNativeTarget "CuentaBancariaLIB" */;
+			buildPhases = (
+				2D7874456FF6A3A2DA9977C839CD767B /* Headers */,
+				051CE2DA433E77E87CE84E7910E67494 /* Sources */,
+				82EC3F70D1777C0FE4355E097DAB5998 /* Frameworks */,
+				A87FAD6BCC3F363B726E3D4C5F36177F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CuentaBancariaLIB;
+			productName = CuentaBancariaLIB;
+			productReference = 3C0787CF696DA9AB0C1D6CF8D101A52F /* CuentaBancariaLIB.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B914639E3F277E0DD7CA4FECB97064C9 /* Pods-CuentaBancariaUIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CDC48E5C1D794D10A2314DEB56968DE /* Build configuration list for PBXNativeTarget "Pods-CuentaBancariaUIUITests" */;
+			buildPhases = (
+				B553A1D17D76220C9993CD3F9195752A /* Headers */,
+				D87AD9668D4F6D81C01F80F12E467365 /* Sources */,
+				F8557178DD15A6BA4ED9C024EBDF921D /* Frameworks */,
+				DBBAF668712B60AE8083D30E8CAD7643 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04401162AFC325074BBD27B4B65DDEF7 /* PBXTargetDependency */,
+			);
+			name = "Pods-CuentaBancariaUIUITests";
+			productName = "Pods-CuentaBancariaUIUITests";
+			productReference = 5868C7D0C971A07382EE323EFAA8131B /* Pods_CuentaBancariaUIUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = E4A2E3F59EF57E07A0B109EC0FF8ED0C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B28DBADBE0156A8B626C4540755E78B6 /* CuentaBancariaLIB */,
+				2A9590EBB0F211C2F07AA3186C7F841B /* Pods-CuentaBancariaUI */,
+				6A54034A5BAB765DF89192F553DBF715 /* Pods-CuentaBancariaUITests */,
+				B914639E3F277E0DD7CA4FECB97064C9 /* Pods-CuentaBancariaUIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		31E8777AA4E8213E2670CB010B1733B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77A322F216D24649E3C244C510233A76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A87FAD6BCC3F363B726E3D4C5F36177F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBBAF668712B60AE8083D30E8CAD7643 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		051CE2DA433E77E87CE84E7910E67494 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC6B5CE7A29E149115126C851B6B836F /* CBCuenta.swift in Sources */,
+				DCFB1617837C4BC4A1BF9DF2DAFAB486 /* CBErrorColor.swift in Sources */,
+				419876F3C2EE5ACA0C33FC2BB7CE0B34 /* CBTransaction.swift in Sources */,
+				CF7AE3669807A715D208DC01AA90BB4A /* CuentaBancariaLIB-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A2EF12035174107BAF8167C758CD794 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D802AEC2E301EACE3282EA6AC05765EC /* Pods-CuentaBancariaUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		573CBA742251EC959DDD70958CE25540 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FCFFD4694BBE71C3DEC47796C840CF0 /* Pods-CuentaBancariaUI-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D87AD9668D4F6D81C01F80F12E467365 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71351FE15F412339973BB32ECB2CF490 /* Pods-CuentaBancariaUIUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04401162AFC325074BBD27B4B65DDEF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-CuentaBancariaUI";
+			target = 2A9590EBB0F211C2F07AA3186C7F841B /* Pods-CuentaBancariaUI */;
+			targetProxy = 52C594A1278B0A5EA82C5CC796426727 /* PBXContainerItemProxy */;
+		};
+		8784F19EAB2F0B145101E5F7A28C7D34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CuentaBancariaLIB;
+			target = B28DBADBE0156A8B626C4540755E78B6 /* CuentaBancariaLIB */;
+			targetProxy = 2B451B16684003E7791A63D758959C30 /* PBXContainerItemProxy */;
+		};
+		DD71AA35B153F5474CC5B367BD6C08BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-CuentaBancariaUI";
+			target = 2A9590EBB0F211C2F07AA3186C7F841B /* Pods-CuentaBancariaUI */;
+			targetProxy = 8011031068F8F6EDD256125BD9069350 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		068A219F9C384FD572D523EEE317D0C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		30CF8EAEB364FFAA841FE4175677D596 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 155355EC29C41B6CE7BF581D6996B9F3 /* Pods-CuentaBancariaUI.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CuentaBancariaUI/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CuentaBancariaUI/Pods-CuentaBancariaUI.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		61B438AF986D9104D089300AB980608F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41739444234615E70B63E55B9AB4EC89 /* CuentaBancariaLIB.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CuentaBancariaLIB/CuentaBancariaLIB-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CuentaBancariaLIB/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CuentaBancariaLIB/CuentaBancariaLIB.modulemap";
+				PRODUCT_MODULE_NAME = CuentaBancariaLIB;
+				PRODUCT_NAME = CuentaBancariaLIB;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		61EF963CDD3BFA93C8E2609CF04FA848 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CC82375CB98D9FAC6907EC319230332 /* Pods-CuentaBancariaUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CuentaBancariaUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CuentaBancariaUITests/Pods-CuentaBancariaUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7B4AFD922C8ED1A40DB309D86BF769C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FCF3186D4319C00724BE51732D790CE /* Pods-CuentaBancariaUIUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CuentaBancariaUIUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CuentaBancariaUIUITests/Pods-CuentaBancariaUIUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		93F3484D7DEC6E98F1A79ACD5E5BD975 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41739444234615E70B63E55B9AB4EC89 /* CuentaBancariaLIB.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CuentaBancariaLIB/CuentaBancariaLIB-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CuentaBancariaLIB/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CuentaBancariaLIB/CuentaBancariaLIB.modulemap";
+				PRODUCT_MODULE_NAME = CuentaBancariaLIB;
+				PRODUCT_NAME = CuentaBancariaLIB;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B187D807EBF9B928FE9048ACC5D409D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 509B27CDB269E76D31134A5897536917 /* Pods-CuentaBancariaUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CuentaBancariaUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CuentaBancariaUITests/Pods-CuentaBancariaUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BC8A80D21883982055DC24BC68921787 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D67835E47A928BB5E0D7944FAF629D0B /* Pods-CuentaBancariaUI.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CuentaBancariaUI/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CuentaBancariaUI/Pods-CuentaBancariaUI.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E29B0B57C53FF8C9953CE2983686A7F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		FB15FCDE4F3B8FA21C03A23BB89CB7D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B42464838B58D14DFBCBE2B80175488 /* Pods-CuentaBancariaUIUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CuentaBancariaUIUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CuentaBancariaUIUITests/Pods-CuentaBancariaUIUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0BEF15FA5F3EBED410EB98942BFEA6F8 /* Build configuration list for PBXNativeTarget "Pods-CuentaBancariaUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30CF8EAEB364FFAA841FE4175677D596 /* Debug */,
+				BC8A80D21883982055DC24BC68921787 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E29B0B57C53FF8C9953CE2983686A7F9 /* Debug */,
+				068A219F9C384FD572D523EEE317D0C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CDC48E5C1D794D10A2314DEB56968DE /* Build configuration list for PBXNativeTarget "Pods-CuentaBancariaUIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B4AFD922C8ED1A40DB309D86BF769C9 /* Debug */,
+				FB15FCDE4F3B8FA21C03A23BB89CB7D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DFB6313FC514910298F3123A3B986B5 /* Build configuration list for PBXNativeTarget "CuentaBancariaLIB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93F3484D7DEC6E98F1A79ACD5E5BD975 /* Debug */,
+				61B438AF986D9104D089300AB980608F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7ED3F6B9EAEE1DB890E2E949C1F54329 /* Build configuration list for PBXNativeTarget "Pods-CuentaBancariaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61EF963CDD3BFA93C8E2609CF04FA848 /* Debug */,
+				B187D807EBF9B928FE9048ACC5D409D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

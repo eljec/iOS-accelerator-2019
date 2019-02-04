@@ -1,0 +1,16 @@
+PODS:
+  - MLNetworking (0.0.1)
+
+DEPENDENCIES:
+  - MLNetworking (from `./`)
+
+EXTERNAL SOURCES:
+  MLNetworking:
+    :path: "./"
+
+SPEC CHECKSUMS:
+  MLNetworking: 320915b1aaf0897881b652ed266d9fdbd3547221
+
+PODFILE CHECKSUM: 6483150be64acc147ec64a3c233c3ad9b827f57e
+
+COCOAPODS: 1.5.3

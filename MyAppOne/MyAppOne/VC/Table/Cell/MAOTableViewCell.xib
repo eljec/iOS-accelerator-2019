@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="215" id="nB3-KZ-FtE" customClass="MAOTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="215"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nB3-KZ-FtE" id="F5j-Bf-xsy">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="214.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre track" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8KB-mB-jBf">
+                        <rect key="frame" x="16" y="11" width="343" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g6h-YU-fuN">
+                        <rect key="frame" x="82" y="39.5" width="210" height="136.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="136.5" id="O7f-RA-Sor"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre Album" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Sh-j9-QgF">
+                        <rect key="frame" x="16" y="183.5" width="343" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9Sh-j9-QgF" firstAttribute="leading" secondItem="F5j-Bf-xsy" secondAttribute="leadingMargin" id="1Li-PH-50B"/>
+                    <constraint firstItem="9Sh-j9-QgF" firstAttribute="trailing" secondItem="F5j-Bf-xsy" secondAttribute="trailingMargin" id="3qc-Nv-210"/>
+                    <constraint firstItem="8KB-mB-jBf" firstAttribute="leading" secondItem="F5j-Bf-xsy" secondAttribute="leadingMargin" id="8FM-nM-6jT"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="g6h-YU-fuN" secondAttribute="trailing" constant="67" id="Wyb-hy-Jvm"/>
+                    <constraint firstItem="9Sh-j9-QgF" firstAttribute="bottom" secondItem="F5j-Bf-xsy" secondAttribute="bottomMargin" id="cbq-su-iO7"/>
+                    <constraint firstItem="8KB-mB-jBf" firstAttribute="top" secondItem="F5j-Bf-xsy" secondAttribute="topMargin" id="cxZ-CI-TKg"/>
+                    <constraint firstItem="g6h-YU-fuN" firstAttribute="top" secondItem="8KB-mB-jBf" secondAttribute="bottom" constant="8" id="fZg-9l-FYl"/>
+                    <constraint firstItem="g6h-YU-fuN" firstAttribute="leading" secondItem="F5j-Bf-xsy" secondAttribute="leadingMargin" constant="66" id="lOW-3a-QAf"/>
+                    <constraint firstItem="9Sh-j9-QgF" firstAttribute="top" secondItem="g6h-YU-fuN" secondAttribute="bottom" constant="7.5" id="lri-5N-ChX"/>
+                    <constraint firstItem="8KB-mB-jBf" firstAttribute="trailing" secondItem="F5j-Bf-xsy" secondAttribute="trailingMargin" id="pod-fN-j3q"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="maoAlbumLabel" destination="9Sh-j9-QgF" id="nPW-La-nXQ"/>
+                <outlet property="maoImageView" destination="g6h-YU-fuN" id="uWb-0P-2kA"/>
+                <outlet property="maoTrackLabel" destination="8KB-mB-jBf" id="NpM-KP-jAk"/>
+            </connections>
+            <point key="canvasLocation" x="293.60000000000002" y="43.628185907046479"/>
+        </tableViewCell>
+    </objects>
+</document>

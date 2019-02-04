@@ -1,0 +1,6 @@
+framework module Pods_IosAcelerator {
+  umbrella header "Pods-IosAcelerator-umbrella.h"
+
+  export *
+  module * { export * }
+}

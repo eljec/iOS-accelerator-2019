@@ -1,0 +1,25 @@
+{
+  "name": "CuentaBancariaLIB",
+  "version": "0.0.1",
+  "summary": "A short description of CuentaBancariaLIB.",
+  "homepage": "https://github.com/pedrowav/iOS-accelerator-2019/tree/practico5/CuentaBancariaLIB",
+  "license": "None",
+  "authors": {
+    "Peter": "pedro.wav@gmail.com"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source": {
+    "git": "https://github.com/pedrowav/iOS-accelerator-2019/tree/practico5/CuentaBancariaLIB",
+    "tag": "v0.0.1"
+  },
+  "source_files": "LibraryComponents/Classes/**/*.{swift}",
+  "resources": [
+    "LibraryComponents/**/*.xib",
+    "LibraryComponents/Assets/**/*.xcassets",
+    "LibraryComponents/Assets/**/*.plist",
+    "LibraryComponents/Assets/**/*.ttf"
+  ],
+  "requires_arc": true
+}

@@ -1,0 +1,16 @@
+PODS:
+  - CuentaBancariaLIB (0.0.1)
+
+DEPENDENCIES:
+  - CuentaBancariaLIB (from `../CuentaBancariaLIB/`)
+
+EXTERNAL SOURCES:
+  CuentaBancariaLIB:
+    :path: "../CuentaBancariaLIB/"
+
+SPEC CHECKSUMS:
+  CuentaBancariaLIB: 521a4ef4710262d24acadd7c584c916ffa8bf60a
+
+PODFILE CHECKSUM: df03a208d7a045a275ecf6a3e525ce328ed50c08
+
+COCOAPODS: 1.5.3

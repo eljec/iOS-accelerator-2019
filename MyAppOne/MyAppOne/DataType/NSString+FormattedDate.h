@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-
 @interface NSString(FormattedDate)
 +(NSDate *) formattedString:(NSString *)dateString;
++(NSString *) formattedURLParams:(NSString *)params;
 @end
 
