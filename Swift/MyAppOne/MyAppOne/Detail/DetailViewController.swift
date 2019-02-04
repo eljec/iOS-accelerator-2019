@@ -16,8 +16,11 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var trackNameLabel: UILabel!
     @IBOutlet weak var collectionNameLabel: UILabel!
     @IBOutlet weak var artistNameLabel: UILabel!
+    
     @IBAction func buyButton(_ sender: UIButton) {
-        
+        if let currentUrl = self.track.previewUrl {
+            goUrl(currentUrl)
+        }
     }
     
     init(_ obj: Track) {
@@ -36,9 +39,8 @@ class DetailViewController: UIViewController {
         self.trackNameLabel.text = self.track.trackName
         self.collectionNameLabel.text = self.track.collectionName
         self.artistNameLabel.text = self.track.artistName
-//        self.artistNameLabel.translatesAutoresizingMaskIntoConstraints = false
         
-        // load image
+        // load image 
         DispatchQueue.global().async {
             if let url = self.track.artworkUrl100 {
                 if let urlObject = URL(string: url) {
@@ -53,16 +55,12 @@ class DetailViewController: UIViewController {
             }
         }
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    // func to open the preview URL
+    func goUrl(_ url: String) -> Void {
+        if let urlToOpen = URL(string: url) {
+            UIApplication.shared.open(urlToOpen, options: [:])
+        }
     }
-    */
 
 }

@@ -10,13 +10,11 @@ import UIKit
 
 class MAOListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    //    let songs : [Songs] = []
     var tracks = [Track]()
     @IBOutlet weak var tracksTableView: UITableView!
     
     // from protocol UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //        return songs.resultCount
         return tracks.count
     }
     
@@ -56,12 +54,13 @@ class MAOListViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.row)
+
         //getting the index path of selected row
-        let indexPath = tableView.indexPathForSelectedRow
+        let _indexPath = tableView.indexPathForSelectedRow
+        
         //getting the current cell from the index path
-        let trackObject = tracks[(indexPath?.row)!]
-        let detailView = DetailViewController(trackObject)
+        let _trackObject = tracks[(_indexPath?.row)!]
+        let detailView = DetailViewController(_trackObject)
         self.navigationController?.pushViewController(detailView, animated: true)
     }
     
@@ -78,18 +77,7 @@ class MAOListViewController: UIViewController, UITableViewDataSource, UITableVie
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         // seteamos el reload data cada vez que la vista se muestra
-//        self.tracksTableView.reloadData()
+        self.tracksTableView.reloadData()
     }
-    
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
     
 }

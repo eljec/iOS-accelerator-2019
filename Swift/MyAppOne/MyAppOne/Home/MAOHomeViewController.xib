@@ -57,7 +57,6 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Invertir orden inicial"/>
                     <connections>
-                        <action selector="OrderByReleaseDate:" destination="-1" eventType="touchUpInside" id="F5c-wF-7qu"/>
                         <action selector="OrderByReverse:" destination="-1" eventType="touchUpInside" id="aox-uK-m5g"/>
                     </connections>
                 </button>

@@ -45,10 +45,10 @@ class MAOHomeViewController: UIViewController {
                 print("Error: Couldn't decode data into response")
                 return
             }
-            let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "dd-MM-yyyy"
-            let sortedArray = response.results.sorted(by: { $0.releaseDate! < $1.releaseDate! })
-            self.callListView(tracks: sortedArray)
+            let _dateFormatter = DateFormatter()
+            _dateFormatter.dateFormat = "dd-MM-yyyy"
+            let _sortedArray = response.results.sorted(by: { $0.releaseDate! < $1.releaseDate! })
+            self.callListView(tracks: _sortedArray)
         })
     }
     
@@ -58,9 +58,9 @@ class MAOHomeViewController: UIViewController {
                 print("Error: Couldn't decode data into response")
                 return
             }
-            var sortedArray = response.results
-            sortedArray = sortedArray.reversed()
-            self.callListView(tracks: sortedArray)
+            var _sortedArray = response.results
+            _sortedArray = _sortedArray.reversed()
+            self.callListView(tracks: _sortedArray)
         })
     }
     
@@ -78,25 +78,6 @@ class MAOHomeViewController: UIViewController {
         // hide navigation bar
         self.navigationController?.setNavigationBarHidden(true, animated: false)
         
-        
-//        data.getResults(urlQuery: url, completionHandler: { (data) in
-//            guard let response = try? JSONDecoder().decode(Songs.self, from: data) else {
-//                print("Error: Couldn't decode data into response")
-//                return
-//            }
-//             print(response.results[0].trackName)
-//        })
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

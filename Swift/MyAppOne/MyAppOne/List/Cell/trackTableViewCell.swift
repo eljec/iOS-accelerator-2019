@@ -27,6 +27,7 @@ class trackTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    // clean the cell
     func clean() -> Void {
         self.trackNameLabel.text = ""
         self.artistNameLabel.text = ""
