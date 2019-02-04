@@ -8,10 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "MLBankAccountBalanceViewController.h"
+#import "MLBankMovementsLib-Swift.h"
+
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MLBankAccountViewController : UIViewController
+
+@property (strong, nonatomic) NSArray<Account *> *account;
 
 @end
 

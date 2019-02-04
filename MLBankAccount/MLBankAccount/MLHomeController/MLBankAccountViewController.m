@@ -7,7 +7,6 @@
 //
 
 #import "MLBankAccountViewController.h"
-#import "MLBankMovementsLib-Swift.h"
 
 
 @interface MLBankAccountViewController ()
@@ -18,15 +17,16 @@
 @property (weak, nonatomic) IBOutlet UITextView *balanceText;
 @property (weak, nonatomic) IBOutlet UIButton *goToBalanceTable;
 
+
 @end
 
 @implementation MLBankAccountViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [MLBankMovements startAccountWithAccountOwner:@"Yo"];
+    _account = [MLBankMovements startAccountWithAccountOwner:@"Yo"];
     [self changeColorForBalance];
-    _balanceText.text = [NSString stringWithFormat:@"%ld" ,(long)[MLBankMovements loadValues]];
+    _balanceText.text = [NSString stringWithFormat:@"%ld" ,(long)[MLBankMovements loadValuesWithAccounts:_account]];
     _inputMoneyButton.titleLabel.text = @"Insert Value";
     _balanceButton.titleLabel.text = @"Show balance";
 }
@@ -35,10 +35,10 @@
 }
 
 - (IBAction)sendMoneyToBalance:(id)sender {
-    [MLBankMovements saveWithValue:_inputMoney.text.integerValue accountOwner:@"Yo"];
+    _account = [MLBankMovements saveWithValue:_inputMoney.text.integerValue accountOwner:@"Yo"];
 }
 - (IBAction)showBalance:(id)sender {
-    self.balanceText.text = [NSString stringWithFormat:@"%ld" ,(long)[MLBankMovements loadValues]];
+    self.balanceText.text = [NSString stringWithFormat:@"%ld" ,(long)[MLBankMovements loadValuesWithAccounts:_account]];
     [self changeColorForBalance];
 }
 
@@ -46,7 +46,7 @@
  De acuerdo al valor numerico de la transaccion le asigna un color al texto mostrado en el balance
  */
 - (void)changeColorForBalance {
-    if ([MLBankMovements loadValues] >= 0) {
+    if ([MLBankMovements loadValuesWithAccounts:_account] >= 0) {
         _balanceText.textColor = UIColor.greenColor;
     } else {
         _balanceText.textColor = UIColor.redColor;
@@ -54,7 +54,7 @@
 }
 
 - (IBAction)goToBalance:(id)sender {
-    MLBankAccountBalanceViewController *balanceView = [[MLBankAccountBalanceViewController alloc] init];
+    MLBankAccountBalanceViewController *balanceView = [[MLBankAccountBalanceViewController alloc] initWith:_account];
     [self.navigationController pushViewController:balanceView animated:true];
 }
 

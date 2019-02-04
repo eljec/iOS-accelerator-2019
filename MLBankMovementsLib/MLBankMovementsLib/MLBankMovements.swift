@@ -38,7 +38,7 @@ import UIKit
 
 @objc public class MLBankMovements: NSObject {
     
-    @objc public static func startAccount(accountOwner: String) {
+    @objc public static func startAccount(accountOwner: String) -> [Account] {
         let userDefaults = UserDefaults.standard
         var accounts: [Account] = []
         let accountsData  = userDefaults.object(forKey: "accounts") as? Data ?? nil
@@ -50,46 +50,29 @@ import UIKit
         } else {
             accounts = NSKeyedUnarchiver.unarchiveObject(with: accountsData!) as! [Account]
         }
+        return accounts
     }
 
-    @objc public static func loadValues() -> Int {
-        let userDefaults = UserDefaults.standard
-        let accountsData  = userDefaults.object(forKey: "accounts") as! Data
-        var accounts = NSKeyedUnarchiver.unarchiveObject(with: accountsData) as! [Account]
-        return accounts[accounts.count - 1].accountBalance
+    @objc public static func loadValues(accounts: [Account]) -> Int {
+         return accounts[accounts.count - 1].accountBalance
     }
     
-    @objc public func balanceCount() -> Int {
-        var accounts: [Account] = []
-        let userDefaults = UserDefaults.standard
-        let accountsData  = userDefaults.object(forKey: "accounts") as! Data
-        accounts = NSKeyedUnarchiver.unarchiveObject(with: accountsData) as! [Account]
+    @objc public func balanceCount(accounts: [Account]) -> Int {
         return accounts.count
     }
     
-    @objc public func loadAccountOwnerFromArray() -> [Account] {
-        var accounts: [Account] = []
-        let userDefaults = UserDefaults.standard
-        let accountsData  = userDefaults.object(forKey: "accounts") as! Data
-        accounts = NSKeyedUnarchiver.unarchiveObject(with: accountsData) as! [Account]
+    @objc public func loadAccountOwnerFromArray(accounts: [Account]) -> [Account] {
         return accounts
     }
     
-    @objc public static func save(value: Int, accountOwner: String) {
+    @objc public static func save(value: Int, accountOwner: String) -> [Account] {
         let userDefaults = UserDefaults.standard
-        let accountsData  = userDefaults.object(forKey: "accounts") as? Data ?? nil
-        var accounts: [Account] = []
-
-        if (accountsData == nil) {
-            accounts.append(Account(value: value, accountOwner: accountOwner, accountBalance: value))
-        } else {
-            let dataAccounts = userDefaults.object(forKey: "accounts") as! Data
-            accounts = NSKeyedUnarchiver.unarchiveObject(with: dataAccounts) as! [Account]
-            accounts.append(Account(value: value, accountOwner: accountOwner, accountBalance: value + accounts[accounts.count - 1].accountBalance))
-        }
+        var accounts = startAccount(accountOwner: accountOwner)
+        accounts.append(Account(value: value, accountOwner: accountOwner, accountBalance: value + accounts[accounts.count - 1].accountBalance))
         let encodedData = NSKeyedArchiver.archivedData(withRootObject: accounts)
         userDefaults.set(encodedData, forKey: "accounts")
         userDefaults.synchronize()
+        return accounts
     }
     
     @objc public static func delete() {

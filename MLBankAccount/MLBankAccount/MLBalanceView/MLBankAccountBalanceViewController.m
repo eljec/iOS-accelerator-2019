@@ -7,11 +7,11 @@
 //
 
 #import "MLBankAccountBalanceViewController.h"
-#import "MLBankMovementsLib-Swift.h"
 
 @interface MLBankAccountBalanceViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *balanceTableView;
 @property (strong, nonatomic) UIRefreshControl *refreshControl;
+@property (strong, nonatomic) NSArray<Account *> *accounts;
 
 @end
 
@@ -24,11 +24,20 @@
     [super viewDidLoad];
     _balanceTableView.delegate = self;
     _balanceTableView.dataSource = self;
+    // Refresh Control
     _refreshControl = [[UIRefreshControl alloc] init];
     _balanceTableView.refreshControl = _refreshControl;
     [_balanceTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
     [_balanceTableView addSubview:_refreshControl];
     [_refreshControl addTarget:self action:@selector(refreshTable) forControlEvents: UIControlEventValueChanged];
+}
+
+- (instancetype)initWith:(NSArray<Account *> *)accounts{
+    self = [super init];
+    if (self) {
+        _accounts = accounts;
+    }
+    return self;
 }
 
 /**
@@ -44,13 +53,12 @@
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     [self changeColorOf:transactionsItems in:cell at:indexPath];
-    cell.textLabel.text = [NSString stringWithFormat:@"%@ \t\t\t\t\t\t\t\t     %ld", transactionsItems.loadAccountOwnerFromArray[indexPath.row].accountOwner, (long)transactionsItems.loadAccountOwnerFromArray[indexPath.row].value];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@ \t\t\t\t\t\t\t\t     %ld", [transactionsItems  loadAccountOwnerFromArrayWithAccounts:_accounts][indexPath.row].accountOwner, (long)[transactionsItems loadAccountOwnerFromArrayWithAccounts:_accounts][indexPath.row].value];
     return cell;
 }
 
 - (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    MLBankMovements *transactions = [[MLBankMovements alloc] init];
-    NSInteger transactionsCount = transactions.balanceCount;
+    NSInteger transactionsCount = _accounts.count;
     return transactionsCount;
 }
 
@@ -58,7 +66,7 @@
  De acuerdo al valor numerico de la transaccion le da un color u otro a cada transaccion.
  */
 - (void)changeColorOf:(MLBankMovements *)transactionsItems in:(UITableViewCell *)cell at:(NSIndexPath *)indexPath {
-    if ((long)transactionsItems.loadAccountOwnerFromArray[indexPath.row].value >= 0) {
+    if ([_accounts objectAtIndex:indexPath.row].value >= 0) {
         cell.textLabel.textColor = UIColor.greenColor;
     } else {
         cell.textLabel.textColor = UIColor.redColor;
