@@ -41,6 +41,9 @@
     [self changeColorForBalance];
 }
 
+/**
+ De acuerdo al valor numerico de la transaccion le asigna un color al texto mostrado en el balance
+ */
 - (void)changeColorForBalance {
     if ([MLBankMovements loadValues] >= 0) {
         _balanceText.textColor = UIColor.greenColor;
