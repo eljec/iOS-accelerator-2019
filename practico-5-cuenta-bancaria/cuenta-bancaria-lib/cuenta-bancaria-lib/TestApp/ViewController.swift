@@ -13,33 +13,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+        let cuenta = CuentaService.getCuenta()
+        cuenta.nombre = "Default"
+        cuenta.saldo = 150.0
+        cuenta.addMovimiento(importe: 100.0)
         
-        let cuenta = Cuenta(nombre: "Default", saldo: 150.0)
-        let userDefaults = UserDefaults.standard
+        let resultado = CuentaService.save(cuenta: cuenta)
         
-        do {
-            
-            let encodedData: Data = try NSKeyedArchiver.archivedData(withRootObject: cuenta, requiringSecureCoding: true)
-            
-            userDefaults.set(encodedData, forKey: "cuenta")
-            userDefaults.synchronize()
-            
-        } catch let error{
-            print("Se produjo un error al guardar los datos en User Defaults: Error -> \(error)")
-        }
-        
-        
-        let decoded  = userDefaults.object(forKey: "cuenta") as! Data
-        
-        do{
-            
-            let decodedData: Cuenta = try NSKeyedUnarchiver.unarchivedObject(ofClass: Cuenta.self, from: decoded)!
-            print("\(decodedData)")
-            
-        }catch let error {
-            print("Se produjo un error al obtener los datos en User Defaults: Error -> \(error)")
-        }
-        
+        print("Resultado: \(resultado), \(cuenta), \(cuenta.movimientos.count)")
         
     }
     

@@ -14,29 +14,37 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UILabel *saldo;
 @property (weak, nonatomic) IBOutlet UITextField *importe;
+
 - (IBAction)addImporte:(id)sender;
 
 @end
 
 @implementation MainViewController
 
-static NSString *_identifier = @"id_cell";
-    Cuenta *cuenta;
+  static NSString *_identifier = @"id_cell";
+  Cuenta *cuenta;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self registerTable];
+    [self registerUIComponents];
     [self loadData];
-    
 }
 
 - (void) loadData {
-    cuenta = [CuentaService getCuenta];
+    
+    if(cuenta == nil){
+        cuenta = [CuentaService getCuenta];
+    }
+    
+    [self loadSaldo];
+}
+
+- (void) loadSaldo {
     self.saldo.text = [NSString stringWithFormat: @"$ %@", cuenta.saldoString];
 }
 
-- (void) registerTable {
+- (void) registerUIComponents {
     [self.tableView registerClass: [UITableViewCell class] forCellReuseIdentifier:_identifier];
     
     [self.tableView setDelegate:self];
@@ -50,6 +58,7 @@ static NSString *_identifier = @"id_cell";
     
     if(cell == nil){
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:_identifier];
+        [cell.textLabel setTextAlignment: NSTextAlignmentRight];
     }
     
     Movimiento *movimiento = [cuenta.movimientos objectAtIndex: indexPath.row];
@@ -82,11 +91,15 @@ static NSString *_identifier = @"id_cell";
     numberFormatter.numberStyle = NSNumberFormatterDecimalStyle;
     
     float _importe = [numberFormatter numberFromString: self.importe.text ].floatValue;
+    
     [cuenta addMovimientoWithImporte: _importe];
+    
     BOOL resultado = [CuentaService saveWithCuenta:cuenta];
     
     if (resultado){
         self.importe.text = @"";
+        
+        [self loadSaldo];
         [self.tableView reloadData];
     }
     

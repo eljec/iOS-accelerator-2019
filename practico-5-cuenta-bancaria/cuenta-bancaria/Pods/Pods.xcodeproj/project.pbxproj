@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -49,12 +49,12 @@
 
 /* Begin PBXFileReference section */
 		0F00FE2A300372FD642ED9A03B70D504 /* Pods-cuenta-bancariaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-cuenta-bancariaTests.release.xcconfig"; sourceTree = "<group>"; };
-		16A111B4DDA921EB02337FB5D52AB5F7 /* Pods_cuenta_bancaria.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_cuenta_bancaria.framework; path = "Pods-cuenta-bancaria.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		16A111B4DDA921EB02337FB5D52AB5F7 /* Pods_cuenta_bancaria.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cuenta_bancaria.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		178D8DCC5E503B83FDF4383D787BEAA9 /* CuentaBancariaLib.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CuentaBancariaLib.xcconfig; sourceTree = "<group>"; };
 		1919969771929EFA3F2B9890285F4ADF /* Cuenta.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cuenta.swift; path = "cuenta-bancaria-lib/Shared/Cuenta.swift"; sourceTree = "<group>"; };
 		20ADD41E9942E482A23B986C121AB688 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		238FFC643FC954232A29D4AF067AA1CC /* Pods-cuenta-bancariaUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-cuenta-bancariaUITests-frameworks.sh"; sourceTree = "<group>"; };
-		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		246F8A1C64DB61DF39889650643AE398 /* Pods-cuenta-bancariaUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-cuenta-bancariaUITests.modulemap"; sourceTree = "<group>"; };
 		2782F1926777621CE27C7388376F6F14 /* Pods-cuenta-bancariaUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-cuenta-bancariaUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		3093B948BE8AD9E6D4C449BFBA6B676F /* Pods-cuenta-bancariaUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-cuenta-bancariaUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -74,10 +74,10 @@
 		6E7C28A5C9D3CDB4044B93E82ED581E2 /* Pods-cuenta-bancariaTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-cuenta-bancariaTests-dummy.m"; sourceTree = "<group>"; };
 		798F8A1C48F95144CDEE202ADF1844E8 /* Pods-cuenta-bancaria-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-cuenta-bancaria-resources.sh"; sourceTree = "<group>"; };
 		8470E6CE5CA3A302ABD5D4DB041B0A14 /* Pods-cuenta-bancaria.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-cuenta-bancaria.debug.xcconfig"; sourceTree = "<group>"; };
-		8CBBC2AA504047FAA4A6F8448626401A /* Pods_cuenta_bancariaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_cuenta_bancariaUITests.framework; path = "Pods-cuenta-bancariaUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CBBC2AA504047FAA4A6F8448626401A /* Pods_cuenta_bancariaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cuenta_bancariaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		942DC9F93E32903D4C3023A73A743443 /* Pods-cuenta-bancariaTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-cuenta-bancariaTests-umbrella.h"; sourceTree = "<group>"; };
 		945339D71309826AC4BA6AF795F35437 /* Pods-cuenta-bancariaTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-cuenta-bancariaTests.modulemap"; sourceTree = "<group>"; };
-		98ED9A63BE75DA8C3D11F5064672E63B /* CuentaBancariaLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CuentaBancariaLib.framework; path = CuentaBancariaLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98ED9A63BE75DA8C3D11F5064672E63B /* CuentaBancariaLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CuentaBancariaLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA7D3ADD3200CADE71A99F8FAAFB4813 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD04FF0D467C5BC62648A922A5CF0892 /* Pods-cuenta-bancariaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-cuenta-bancariaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B3678D2D4AEDD088A1F1224BFB92B961 /* CuentaBancariaLib-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CuentaBancariaLib-umbrella.h"; sourceTree = "<group>"; };
@@ -88,11 +88,11 @@
 		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CD0F20808414E8F49E899FD23511501F /* CuentaBancariaLib-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CuentaBancariaLib-prefix.pch"; sourceTree = "<group>"; };
 		CE7C265E09F5953B34A492BA03099F75 /* Pods-cuenta-bancariaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-cuenta-bancariaTests.debug.xcconfig"; sourceTree = "<group>"; };
-		DA74AD437E17DC56E8645A7087CB2028 /* Pods_cuenta_bancariaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_cuenta_bancariaTests.framework; path = "Pods-cuenta-bancariaTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA74AD437E17DC56E8645A7087CB2028 /* Pods_cuenta_bancariaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cuenta_bancariaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA6242234156F9CE4C296C687E1BE5C /* Pods-cuenta-bancaria.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-cuenta-bancaria.release.xcconfig"; sourceTree = "<group>"; };
 		E3C56C61FB8FA9C2AE04872899375286 /* Pods-cuenta-bancariaTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-cuenta-bancariaTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		EFD2212D6C9F05C257AECC06D5080B28 /* Pods-cuenta-bancaria-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-cuenta-bancaria-acknowledgements.plist"; sourceTree = "<group>"; };
-		FECFAA883E1DE223F961F6B55D327643 /* CuentaBancariaLib.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = CuentaBancariaLib.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FECFAA883E1DE223F961F6B55D327643 /* CuentaBancariaLib.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = CuentaBancariaLib.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -395,7 +395,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1010;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -562,8 +562,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -586,11 +585,7 @@
 				INFOPLIST_FILE = "Target Support Files/CuentaBancariaLib/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/CuentaBancariaLib/CuentaBancariaLib.modulemap";
 				PRODUCT_MODULE_NAME = CuentaBancariaLib;
 				PRODUCT_NAME = CuentaBancariaLib;
@@ -621,11 +616,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-cuenta-bancariaUITests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-cuenta-bancariaUITests/Pods-cuenta-bancariaUITests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -646,7 +637,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8470E6CE5CA3A302ABD5D4DB041B0A14 /* Pods-cuenta-bancaria.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -660,11 +651,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-cuenta-bancaria/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-cuenta-bancaria/Pods-cuenta-bancaria.modulemap";
 				OTHER_LDFLAGS = "";
@@ -698,11 +685,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-cuenta-bancariaTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-cuenta-bancariaTests/Pods-cuenta-bancariaTests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -803,11 +786,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-cuenta-bancariaTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-cuenta-bancariaTests/Pods-cuenta-bancariaTests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -827,7 +806,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DBA6242234156F9CE4C296C687E1BE5C /* Pods-cuenta-bancaria.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -841,11 +820,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-cuenta-bancaria/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-cuenta-bancaria/Pods-cuenta-bancaria.modulemap";
 				OTHER_LDFLAGS = "";
@@ -879,11 +854,7 @@
 				INFOPLIST_FILE = "Target Support Files/CuentaBancariaLib/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/CuentaBancariaLib/CuentaBancariaLib.modulemap";
 				PRODUCT_MODULE_NAME = CuentaBancariaLib;
 				PRODUCT_NAME = CuentaBancariaLib;
@@ -915,11 +886,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-cuenta-bancariaUITests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-cuenta-bancariaUITests/Pods-cuenta-bancariaUITests.modulemap";
 				OTHER_LDFLAGS = "";
