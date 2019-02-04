@@ -15,11 +15,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *artistName;
 @property (nonatomic, copy) NSString *collectionName;
 @property (nonatomic, copy) NSString *trackName;
-
 @property (nonatomic, copy) NSString *artistViewUrl;
 @property (nonatomic, copy) NSString *collectionViewUrl;
 @property (nonatomic, copy) NSString *trackViewUrl;
-
+@property (nonatomic, copy) NSString *artworkUrl100;
 @property (nonatomic, strong) NSNumber *collectionPrice;
 @property (nonatomic, strong) NSNumber *trackPrice;
 @property (nonatomic, strong) NSNumber *trackId;
@@ -29,7 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 // initWithDictionary custom method to initialize model
-+ (instancetype) initWithDictionary:(NSDictionary *) diccionario;
+- (instancetype) initWithDictionary:(NSDictionary *) diccionario;
 
 @end
 

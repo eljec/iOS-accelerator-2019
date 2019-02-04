@@ -11,23 +11,25 @@
 @implementation MAOListViewControllerModel
 
 // siempre que se haga un init se devuelve instancetype para respetar herencia
-+ (instancetype) initWithDictionary:(NSDictionary *) diccionario{
+- (instancetype) initWithDictionary:(NSDictionary *) diccionario{
     
-    MAOListViewControllerModel *model = [[MAOListViewControllerModel alloc] init];
+    //MAOListViewControllerModel *model = [[MAOListViewControllerModel alloc] init];
+    self = [super init];
     
-    model.artistName = diccionario[@"artistName"];
-    model.collectionName = diccionario[@"collectionName"];
-    model.trackName = diccionario[@"trackName"];
-    model.artistViewUrl = diccionario[@"artistiViewUrl"];
-    model.collectionViewUrl = diccionario[@"collectionViewUrl"];
-    model.trackViewUrl = diccionario[@"trackViewUrl"];
-    model.collectionPrice = diccionario[@"collectionPrice"];
-    model.trackPrice = diccionario[@"trackPrice"];
-    model.trackId = diccionario[@"trackId"];
-    model.releaseDateString = diccionario[@"releaseDate"];
-    model.releaseDate = diccionario[@"releaseDate"];
+    _artistName = diccionario[@"artistName"];
+    _collectionName = diccionario[@"collectionName"];
+    _trackName = diccionario[@"trackName"];
+    _artistViewUrl = diccionario[@"artistiViewUrl"];
+    _collectionViewUrl = diccionario[@"collectionViewUrl"];
+    _trackViewUrl = diccionario[@"trackViewUrl"];
+    _collectionPrice = diccionario[@"collectionPrice"];
+    _trackPrice = diccionario[@"trackPrice"];
+    _trackId = diccionario[@"trackId"];
+    _releaseDateString = diccionario[@"releaseDate"];
+    _releaseDate = diccionario[@"releaseDate"];
+    _artworkUrl100 = diccionario[@"artworkUrl100"];
     
-    return model;
+    return self;
 }
 
 @end
