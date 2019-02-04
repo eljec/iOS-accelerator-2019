@@ -21,7 +21,6 @@
     [super viewDidLoad];
    
     self.amountTextField.delegate = self;
-    self.amountTextField.text = [NSString stringWithFormat:@"0"];
 
     [CBCuenta chooseErrorColorWithColor: CBErrorColorRED];
     [self showBalance:nil];
@@ -41,13 +40,14 @@
 }
 
 - (IBAction)addAmount:(UIButton *)sender {
+    [self textFieldShouldReturn:self.amountTextField];
     NSString *amountString = self.amountTextField.text;
     double amount = [amountString doubleValue];
     
     CBTransaction *transaction = [[CBTransaction alloc] initWithAmount: amount];
     [CBCuenta addWithTransaccion: transaction];
     
-    self.amountTextField.text = [NSString stringWithFormat:@"0"];
+    self.amountTextField.text = nil;
 }
 
 

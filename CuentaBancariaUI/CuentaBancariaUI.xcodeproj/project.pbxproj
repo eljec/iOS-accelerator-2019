@@ -15,7 +15,7 @@
 		973348E42204BF6100CF59B5 /* CuentaBancariaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 973348E32204BF6100CF59B5 /* CuentaBancariaUITests.m */; };
 		973348EF2204BF6100CF59B5 /* CuentaBancariaUIUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 973348EE2204BF6100CF59B5 /* CuentaBancariaUIUITests.m */; };
 		973348FF2204C02300CF59B5 /* CBInitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 973348FE2204C02300CF59B5 /* CBInitViewController.m */; };
-		973349012204C0C500CF59B5 /* CBInitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 973349002204C0C500CF59B5 /* CBInitViewController.xib */; };
+		973349062204EBBF00CF59B5 /* CBInitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 973349052204EBBF00CF59B5 /* CBInitViewController.xib */; };
 		EEF8A6F4EBA64E23E9FEA912 /* Pods_CuentaBancariaUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 730A1EED92FDCAEE4AAE33B8 /* Pods_CuentaBancariaUI.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,7 +56,7 @@
 		973348F02204BF6100CF59B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		973348FD2204C02300CF59B5 /* CBInitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBInitViewController.h; sourceTree = "<group>"; };
 		973348FE2204C02300CF59B5 /* CBInitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBInitViewController.m; sourceTree = "<group>"; };
-		973349002204C0C500CF59B5 /* CBInitViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CBInitViewController.xib; path = ../../../ViewControllers/CBInitViewController.xib; sourceTree = "<group>"; };
+		973349052204EBBF00CF59B5 /* CBInitViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBInitViewController.xib; sourceTree = "<group>"; };
 		B56D7A683DFEA6249D465AFA /* Pods-CuentaBancariaUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuentaBancariaUI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CuentaBancariaUI/Pods-CuentaBancariaUI.debug.xcconfig"; sourceTree = "<group>"; };
 		CCA08AD6862D18A00138A5F7 /* Pods_CuentaBancariaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CuentaBancariaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5CB2F5F6BDA891509B64367 /* Pods-CuentaBancariaUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuentaBancariaUI.release.xcconfig"; path = "Pods/Target Support Files/Pods-CuentaBancariaUI/Pods-CuentaBancariaUI.release.xcconfig"; sourceTree = "<group>"; };
@@ -170,7 +170,7 @@
 		973348FC2204C00800CF59B5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				973349002204C0C500CF59B5 /* CBInitViewController.xib */,
+				973349052204EBBF00CF59B5 /* CBInitViewController.xib */,
 				973348FD2204C02300CF59B5 /* CBInitViewController.h */,
 				973348FE2204C02300CF59B5 /* CBInitViewController.m */,
 			);
@@ -285,7 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				973348D42204BF6100CF59B5 /* Assets.xcassets in Resources */,
-				973349012204C0C500CF59B5 /* CBInitViewController.xib in Resources */,
+				973349062204EBBF00CF59B5 /* CBInitViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

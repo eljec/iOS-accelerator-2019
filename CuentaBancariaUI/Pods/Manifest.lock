@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../CuentaBancariaLIB/"
 
 SPEC CHECKSUMS:
-  CuentaBancariaLIB: fd2ecdca675a1c0ae48f8d5601e3771942447a3f
+  CuentaBancariaLIB: 521a4ef4710262d24acadd7c584c916ffa8bf60a
 
 PODFILE CHECKSUM: df03a208d7a045a275ecf6a3e525ce328ed50c08
 
