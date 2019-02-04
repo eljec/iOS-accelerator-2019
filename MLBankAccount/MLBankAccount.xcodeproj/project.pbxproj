@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		458B566ACC09CD7FB9D7D43D /* Pods_MLBankAccount.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28A36B746B2526347CC6077A /* Pods_MLBankAccount.framework */; };
 		674C9DD4534D3A021072A37D /* Pods_MLBankAccountUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDEE33B82A51ABC3ED5F7BFC /* Pods_MLBankAccountUITests.framework */; };
+		C433922D2208720700474BD9 /* MLBankAccountBalanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C433922B2208720700474BD9 /* MLBankAccountBalanceViewController.m */; };
+		C433922E2208720700474BD9 /* MLBankAccountBalanceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C433922C2208720700474BD9 /* MLBankAccountBalanceViewController.xib */; };
 		C4A9538D2203882800697961 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A9538C2203882800697961 /* AppDelegate.m */; };
 		C4A953952203882900697961 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4A953942203882900697961 /* Assets.xcassets */; };
 		C4A9539B2203882900697961 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A9539A2203882900697961 /* main.m */; };
@@ -44,6 +46,9 @@
 		6196163ED92E42B5412C1FF3 /* Pods-MLBankAccount.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLBankAccount.release.xcconfig"; path = "Pods/Target Support Files/Pods-MLBankAccount/Pods-MLBankAccount.release.xcconfig"; sourceTree = "<group>"; };
 		6311E8A3BD1E9F4427BC85F1 /* Pods_MLBankAccountTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MLBankAccountTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		872CD6D726A94919EA74C8F0 /* Pods-MLBankAccountUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLBankAccountUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MLBankAccountUITests/Pods-MLBankAccountUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C433922A2208720700474BD9 /* MLBankAccountBalanceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLBankAccountBalanceViewController.h; sourceTree = "<group>"; };
+		C433922B2208720700474BD9 /* MLBankAccountBalanceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLBankAccountBalanceViewController.m; sourceTree = "<group>"; };
+		C433922C2208720700474BD9 /* MLBankAccountBalanceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MLBankAccountBalanceViewController.xib; sourceTree = "<group>"; };
 		C4A953882203882800697961 /* MLBankAccount.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MLBankAccount.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A9538B2203882800697961 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C4A9538C2203882800697961 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -94,6 +99,9 @@
 		C43392292208716700474BD9 /* MLBalanceView */ = {
 			isa = PBXGroup;
 			children = (
+				C433922A2208720700474BD9 /* MLBankAccountBalanceViewController.h */,
+				C433922B2208720700474BD9 /* MLBankAccountBalanceViewController.m */,
+				C433922C2208720700474BD9 /* MLBankAccountBalanceViewController.xib */,
 			);
 			path = MLBalanceView;
 			sourceTree = "<group>";
@@ -294,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4A953C22203884E00697961 /* MLBankAccountViewController.xib in Resources */,
+				C433922E2208720700474BD9 /* MLBankAccountBalanceViewController.xib in Resources */,
 				C4A953952203882900697961 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +421,7 @@
 			files = (
 				C4A953C12203884E00697961 /* MLBankAccountViewController.m in Sources */,
 				C4A9539B2203882900697961 /* main.m in Sources */,
+				C433922D2208720700474BD9 /* MLBankAccountBalanceViewController.m in Sources */,
 				C4A9538D2203882800697961 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

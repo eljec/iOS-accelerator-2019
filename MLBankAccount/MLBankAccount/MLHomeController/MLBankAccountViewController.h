@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "MLBankAccountBalanceViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MLBankAccountViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface MLBankAccountViewController : UIViewController
 
 @end
 

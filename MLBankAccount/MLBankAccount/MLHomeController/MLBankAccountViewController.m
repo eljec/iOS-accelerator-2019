@@ -16,8 +16,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *inputMoneyButton;
 @property (weak, nonatomic) IBOutlet UIButton *balanceButton;
 @property (weak, nonatomic) IBOutlet UITextView *balanceText;
-@property (weak, nonatomic) IBOutlet UITableView *transactionsView;
-@property (strong, nonatomic) UIRefreshControl *refreshControl;
+@property (weak, nonatomic) IBOutlet UIButton *goToBalanceTable;
 
 @end
 
@@ -29,23 +28,11 @@
     _balanceText.text = [NSString stringWithFormat:@"%ld" ,(long)[MLBankMovements loadValues]];
     _inputMoneyButton.titleLabel.text = @"Insert Value";
     _balanceButton.titleLabel.text = @"Show balance";
-    _transactionsView.delegate = self;
-    _transactionsView.dataSource = self;
-    _transactionsView.refreshControl = _refreshControl;
-    [_transactionsView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
-    [_transactionsView addSubview:_refreshControl];
-    _refreshControl = [[UIRefreshControl alloc] init];
-    [_refreshControl addTarget:self action:@selector(refreshTable) forControlEvents: UIControlEventValueChanged];
-
-}
-
-- (void)refreshTable {
-    [_refreshControl endRefreshing];
-    [_transactionsView reloadData];
 }
 
 - (IBAction)moneyToInsert:(id)sender {
 }
+
 - (IBAction)sendMoneyToBalance:(id)sender {
     [MLBankMovements saveWithValue:_inputMoney.text.integerValue accountOwner:@"Yo"];
 }
@@ -62,24 +49,9 @@
     }
 }
 
-- (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
-    MLBankMovements *transactionsItems = [[MLBankMovements alloc] init];
-    
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    if ((long)transactionsItems.loadAccountOwnerFromArray[indexPath.row].value >= 0) {
-        cell.textLabel.textColor = UIColor.greenColor;
-    } else {
-        cell.textLabel.textColor = UIColor.redColor;
-    }
-    cell.textLabel.text = [NSString stringWithFormat:@"%@ \t\t\t\t\t\t\t\t\t %ld", transactionsItems.loadAccountOwnerFromArray[indexPath.row].accountOwner, (long)transactionsItems.loadAccountOwnerFromArray[indexPath.row].value];
-    return cell;
-}
-
-- (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    MLBankMovements *transactionsCount = [[MLBankMovements alloc] init];
-    NSInteger atr = transactionsCount.balanceCount;
-    return atr;
+- (IBAction)goToBalance:(id)sender {
+    MLBankAccountBalanceViewController *balanceView = [[MLBankAccountBalanceViewController alloc] init];
+    [self.navigationController pushViewController:balanceView animated:true];
 }
 
 @end
