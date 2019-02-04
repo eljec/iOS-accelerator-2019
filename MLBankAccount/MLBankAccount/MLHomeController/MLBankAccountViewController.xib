@@ -42,9 +42,6 @@
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
-                    <connections>
-                        <action selector="moneyToInsert:" destination="-1" eventType="editingDidEnd" id="BXM-Ul-cOs"/>
-                    </connections>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OnT-xL-mef">
                     <rect key="frame" x="112" y="167" width="96" height="30"/>
@@ -63,19 +60,28 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESu-lI-i38">
-                    <rect key="frame" x="59" y="459" width="141" height="30"/>
+                    <rect key="frame" x="59" y="387" width="141" height="30"/>
                     <state key="normal" title="Show all Movements"/>
                     <connections>
                         <action selector="goToBalance:" destination="-1" eventType="touchUpInside" id="02X-V2-PEl"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7y-bl-HMa">
+                    <rect key="frame" x="16" y="446" width="173" height="30"/>
+                    <state key="normal" title="Delete items from acount"/>
+                    <connections>
+                        <action selector="deleteMovementsFromAccount:" destination="-1" eventType="touchUpInside" id="swp-v2-zCm"/>
                     </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
             <constraints>
                 <constraint firstItem="OnT-xL-mef" firstAttribute="top" secondItem="Kxv-KO-5di" secondAttribute="bottom" constant="81" id="DnZ-87-4NP"/>
-                <constraint firstItem="ESu-lI-i38" firstAttribute="top" secondItem="pq8-9w-TNX" secondAttribute="bottom" constant="208" id="Gfg-0J-cRV"/>
+                <constraint firstItem="ESu-lI-i38" firstAttribute="top" secondItem="pq8-9w-TNX" secondAttribute="bottom" constant="136" id="Gfg-0J-cRV"/>
                 <constraint firstItem="BY5-4I-Qgh" firstAttribute="leading" secondItem="Kxv-KO-5di" secondAttribute="trailing" constant="21" id="HwT-cb-uwM"/>
+                <constraint firstItem="d7y-bl-HMa" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="16" id="UMg-zu-mph"/>
                 <constraint firstItem="pq8-9w-TNX" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="WH0-ID-C5S"/>
+                <constraint firstItem="d7y-bl-HMa" firstAttribute="top" secondItem="ESu-lI-i38" secondAttribute="bottom" constant="29" id="YzP-3G-dRM"/>
                 <constraint firstItem="pq8-9w-TNX" firstAttribute="top" secondItem="OnT-xL-mef" secondAttribute="bottom" constant="16" id="aIY-F2-DM7"/>
                 <constraint firstItem="Kxv-KO-5di" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="36" id="d8L-fA-Cex"/>
                 <constraint firstItem="Kxv-KO-5di" firstAttribute="top" secondItem="BY5-4I-Qgh" secondAttribute="top" id="gXa-tc-nVY"/>

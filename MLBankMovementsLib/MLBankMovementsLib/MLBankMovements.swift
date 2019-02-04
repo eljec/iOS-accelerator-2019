@@ -38,40 +38,42 @@ import UIKit
 
 @objc public class MLBankMovements: NSObject {
     
-    @objc public static func startAccount(accountOwner: String) -> [Account] {
-        let userDefaults = UserDefaults.standard
+    static let userDefaults = UserDefaults.standard
+    
+    static func save(accounts: [Account]) {
+        var encodeData = Data()
+        if #available(iOS 11.0, *) {
+            encodeData = try! NSKeyedArchiver.archivedData(withRootObject: accounts, requiringSecureCoding: false)
+            userDefaults.set(encodeData, forKey: "accounts")
+            userDefaults.synchronize()
+        }
+    }
+    
+    @objc public static func getAccount() -> [Account] {
         var accounts: [Account] = []
+        
         let accountsData  = userDefaults.object(forKey: "accounts") as? Data ?? nil
         if (accountsData == nil) {
-            accounts.append(Account(value: 0, accountOwner: accountOwner, accountBalance: 0))
-            let encodedData = NSKeyedArchiver.archivedData(withRootObject: accounts)
-            userDefaults.set(encodedData, forKey: "accounts")
-            userDefaults.synchronize()
+            save(accounts: accounts)
         } else {
-            accounts = NSKeyedUnarchiver.unarchiveObject(with: accountsData!) as! [Account]
+            accounts = try! NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(accountsData!) as! [Account]
         }
         return accounts
     }
 
-    @objc public static func loadValues(accounts: [Account]) -> Int {
-         return accounts[accounts.count - 1].accountBalance
+    @objc public static func getBalance(accounts: [Account]) -> Int {
+        var balance = 0;
+        if accounts.count != 0 {
+            balance = accounts.last!.accountBalance
+        }
+        return balance
     }
     
-    @objc public func balanceCount(accounts: [Account]) -> Int {
-        return accounts.count
-    }
-    
-    @objc public func loadAccountOwnerFromArray(accounts: [Account]) -> [Account] {
-        return accounts
-    }
-    
-    @objc public static func save(value: Int, accountOwner: String) -> [Account] {
-        let userDefaults = UserDefaults.standard
-        var accounts = startAccount(accountOwner: accountOwner)
-        accounts.append(Account(value: value, accountOwner: accountOwner, accountBalance: value + accounts[accounts.count - 1].accountBalance))
-        let encodedData = NSKeyedArchiver.archivedData(withRootObject: accounts)
-        userDefaults.set(encodedData, forKey: "accounts")
-        userDefaults.synchronize()
+    @objc public static func saveMovementInAccount(value: Int, accountOwner: String) -> [Account] {
+        var accounts = getAccount()
+        print(accounts)
+        accounts.append(Account(value: value, accountOwner: accountOwner, accountBalance: value + getBalance(accounts: accounts)))
+        save(accounts: accounts)
         return accounts
     }
     

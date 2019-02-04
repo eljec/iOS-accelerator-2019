@@ -17,28 +17,33 @@
 @property (weak, nonatomic) IBOutlet UITextView *balanceText;
 @property (weak, nonatomic) IBOutlet UIButton *goToBalanceTable;
 
-
 @end
 
 @implementation MLBankAccountViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _account = [MLBankMovements startAccountWithAccountOwner:@"Yo"];
+    [self loadAccountData];
     [self changeColorForBalance];
-    _balanceText.text = [NSString stringWithFormat:@"%ld" ,(long)[MLBankMovements loadValuesWithAccounts:_account]];
-    _inputMoneyButton.titleLabel.text = @"Insert Value";
-    _balanceButton.titleLabel.text = @"Show balance";
 }
 
-- (IBAction)moneyToInsert:(id)sender {
+-(void) loadAccountData {
+    _account = [MLBankMovements getAccount];
+    [self updateBalanceLabel];
+}
+
+- (NSString * _Nonnull)updateBalanceLabel {
+    return _balanceText.text = [NSString stringWithFormat:@"%ld" ,(long)[MLBankMovements getBalanceWithAccounts:_account]];
 }
 
 - (IBAction)sendMoneyToBalance:(id)sender {
-    _account = [MLBankMovements saveWithValue:_inputMoney.text.integerValue accountOwner:@"Yo"];
+    _account = [MLBankMovements saveMovementInAccountWithValue:_inputMoney.text.integerValue accountOwner:@"Yo"];
+    _inputMoney.text = @"";
+    [self updateBalanceLabel];
 }
+
 - (IBAction)showBalance:(id)sender {
-    self.balanceText.text = [NSString stringWithFormat:@"%ld" ,(long)[MLBankMovements loadValuesWithAccounts:_account]];
+    [self updateBalanceLabel];
     [self changeColorForBalance];
 }
 
@@ -46,7 +51,7 @@
  De acuerdo al valor numerico de la transaccion le asigna un color al texto mostrado en el balance
  */
 - (void)changeColorForBalance {
-    if ([MLBankMovements loadValuesWithAccounts:_account] >= 0) {
+    if ([MLBankMovements getBalanceWithAccounts:_account] >= 0) {
         _balanceText.textColor = UIColor.greenColor;
     } else {
         _balanceText.textColor = UIColor.redColor;
@@ -56,6 +61,10 @@
 - (IBAction)goToBalance:(id)sender {
     MLBankAccountBalanceViewController *balanceView = [[MLBankAccountBalanceViewController alloc] initWith:_account];
     [self.navigationController pushViewController:balanceView animated:true];
+}
+- (IBAction)deleteMovementsFromAccount:(id)sender {
+    [MLBankMovements delete];
+    [self loadAccountData];
 }
 
 @end
