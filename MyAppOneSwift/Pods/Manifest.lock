@@ -1,0 +1,26 @@
+PODS:
+  - ProgressHUD (2.60)
+  - RGNetworking (0.0.1)
+
+DEPENDENCIES:
+  - ProgressHUD (from `https://github.com/relatedcode/ProgressHUD.git`)
+  - RGNetworking (from `../RGNetworking`)
+
+EXTERNAL SOURCES:
+  ProgressHUD:
+    :git: https://github.com/relatedcode/ProgressHUD.git
+  RGNetworking:
+    :path: "../RGNetworking"
+
+CHECKOUT OPTIONS:
+  ProgressHUD:
+    :commit: 6fff548ce8f1d86dea26ace6628b79fce38efa16
+    :git: https://github.com/relatedcode/ProgressHUD.git
+
+SPEC CHECKSUMS:
+  ProgressHUD: 4e4efbaf4f5de8bd32e0c4c3b6644a90ea1a8c3e
+  RGNetworking: d88696c307158d28424b87f87cbf3be2e7c36ca0
+
+PODFILE CHECKSUM: f1c50f23a9ab67129688eee691d21a2e9924aa97
+
+COCOAPODS: 1.5.3

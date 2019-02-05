@@ -1,0 +1,33 @@
+PODS:
+  - iOS-Color-Picker (1.2)
+  - ProgressHUD (2.60)
+  - RGBankAccountLib (0.0.1)
+
+DEPENDENCIES:
+  - iOS-Color-Picker
+  - ProgressHUD (from `https://github.com/relatedcode/ProgressHUD.git`)
+  - RGBankAccountLib (from `../RGBankAccountLib`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - iOS-Color-Picker
+
+EXTERNAL SOURCES:
+  ProgressHUD:
+    :git: https://github.com/relatedcode/ProgressHUD.git
+  RGBankAccountLib:
+    :path: "../RGBankAccountLib"
+
+CHECKOUT OPTIONS:
+  ProgressHUD:
+    :commit: 6fff548ce8f1d86dea26ace6628b79fce38efa16
+    :git: https://github.com/relatedcode/ProgressHUD.git
+
+SPEC CHECKSUMS:
+  iOS-Color-Picker: 4284a4d744a7cafe9d22d4b66eefc45342b80f1d
+  ProgressHUD: 4e4efbaf4f5de8bd32e0c4c3b6644a90ea1a8c3e
+  RGBankAccountLib: e71f3acb425fed1d845cbe7676afc3b1926f5571
+
+PODFILE CHECKSUM: f1c9f646c86537ac9b5eda2fc2abb18ed7e82555
+
+COCOAPODS: 1.5.3

@@ -1,0 +1,1427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10490453FBE9CDBA15F10CD6C389F7B6 /* Pods-RGBankAccountTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DAE71D59844F3C2932A48A7C6E92A6 /* Pods-RGBankAccountTests-dummy.m */; };
+		23FC427BC8A16ED07A7D839D14F9F0AD /* FCColorPickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CED4EB4E74EA9B43F6C90DD8B230A7B0 /* FCColorPickerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30A3EB980D8E3B144ED121AF83363442 /* RGBankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BEF5946FE27CF1C77F298D8A04A695 /* RGBankAccount.swift */; };
+		3156B785DDD0164F6941C705A46192AF /* FCColorPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCD7F798C156AEA653BED8FE396B453 /* FCColorPickerViewController.m */; };
+		36C9C8D172C7C32E44E6D5E67D9106E4 /* iOS-Color-Picker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 09637A3346C7798D854B113A9F055053 /* iOS-Color-Picker-dummy.m */; };
+		3CBE6F77EA7C91A50EE574B45239F12C /* Pods-RGBankAccountTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D83848F92FE0ED37081A155F16CC199 /* Pods-RGBankAccountTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41E39C600BAF66C35C81930D1BD04C87 /* ProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D4A50578A1201C73BE15952CC8AECE0 /* ProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A64469A1EBC0C6795CF820D8FCA834E /* RGBankAccountLib-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FEB9EA4C2FBB2248BFB4320C03DA36E /* RGBankAccountLib-dummy.m */; };
+		4F4850E39CD65853ED164AE5E357DBBD /* colormap.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BB2993AAB0659F8C3E1D0BCAC8A4762 /* colormap.png */; };
+		5125A6B557B404A6533130284E49DCDC /* RGAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C547D08CD6E42974E4E2CCBC9776FAB /* RGAccount.swift */; };
+		57064BF6659F9249EB1D0B050B8A0F49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 749ADD089E805C2D7E7DF8BD44F537E3 /* Foundation.framework */; };
+		62E81300924EED1160E78BE9E9B34F4F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 749ADD089E805C2D7E7DF8BD44F537E3 /* Foundation.framework */; };
+		65FF652FB1F5BB84D4BBA9EC5C5BB6CB /* RGMovement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C7B0D9AE0ED1385395EA7910E39BC3 /* RGMovement.swift */; };
+		66E9F707F22CF6ACE0968E5F13B68457 /* FCColorSwatchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0CC3277F28DD027E4A7EBBC0EC4FCE /* FCColorSwatchView.m */; };
+		722BBA1E10128DFD16C84315EA6B43D6 /* ProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E04001711D7AAD2E70A2F799785E8562 /* ProgressHUD-dummy.m */; };
+		7ACAB714CE090FE1B0D8310C2258E800 /* FCBrightDarkGradView.h in Headers */ = {isa = PBXBuildFile; fileRef = 277F013BD600F618D090A0B4F8507DD1 /* FCBrightDarkGradView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7C7D14E2906976DB20B15AB7E032D121 /* Pods-RGBankAccount-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4696B11116CF4DE2CCD7D2E9AB7420 /* Pods-RGBankAccount-dummy.m */; };
+		7D7070FBC9D6939030F7458A5C9AF420 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E886B8A5323A225031593C734420F7 /* CoreGraphics.framework */; };
+		844BBDB472F0CCAB9CB55CDCB03ED23D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 749ADD089E805C2D7E7DF8BD44F537E3 /* Foundation.framework */; };
+		8B2C3F99195C5C9FFE858B4184288E40 /* FCBrightDarkGradView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E48B9F93F1141655E7A2C892748F9A /* FCBrightDarkGradView.m */; };
+		8F6773245205FC18215F5D001127204E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 749ADD089E805C2D7E7DF8BD44F537E3 /* Foundation.framework */; };
+		93459DA5E479B76CF2C502DF6F7A6593 /* ProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F994BB557825E3F1463F79DF282038DA /* ProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1C4A040FA9D52982646DA72BA060273 /* Pods-RGBankAccountUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D2ADBEDAEA24ACB56A0F66F62A4C60 /* Pods-RGBankAccountUITests-dummy.m */; };
+		A4A566560DA864E97084DFE5F635584D /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D97CFC87583473988E2C066C1019DAC /* ProgressHUD.m */; };
+		A4BFC816F89631D51234B849A3C5D65C /* Pods-RGBankAccountUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 455E7E25AE26412C2141226E650F38D6 /* Pods-RGBankAccountUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB138675E5DEAC8B60582E7ECF1EC629 /* FCColorSwatchView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A67F0190C23CA9ED7AE53CA081DF566 /* FCColorSwatchView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C001FE1C5C82CF42C037B452154CEF08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 749ADD089E805C2D7E7DF8BD44F537E3 /* Foundation.framework */; };
+		CA988356B1193C7BC4F87DF0E7FDB52B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8205DCE243CEBCEAAFFDB2563B65CD4 /* QuartzCore.framework */; };
+		CDB208440FD5572B4734D9EB2E154B4A /* Pods-RGBankAccount-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EE9CBD57650F160805CDFC9C2FDA2D1 /* Pods-RGBankAccount-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDF8310379E39451E550C024651EC664 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBE2CE86CEAA9896D6244DE9999C4B48 /* UIKit.framework */; };
+		DFA2C2E17E98977C6E57EB494A0C6C08 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D382068CA7854B2BCA6E42E96356C4E3 /* ProgressHUD.bundle */; };
+		E1CA698E1C340EF921211D2BC694BAB0 /* RGBankAccountLib-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D6EF016A71479619F2EEBC7F99720C20 /* RGBankAccountLib-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9A5A4259FADE130A8A224424CB887C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 749ADD089E805C2D7E7DF8BD44F537E3 /* Foundation.framework */; };
+		EFBA3E96F4040ED2A2634DF73EEFDBA2 /* iOS-Color-Picker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A475A4D1463AAFB2825766F01C79840F /* iOS-Color-Picker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5A365950535F9961B0C17BE64110F09 /* FCColorPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B3B2FE1667C1D38352EE69EC5D9A01C /* FCColorPickerViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		144557E967C82E64EB3C77F6F07A54D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C6EF5243091C1CFFC7A594963618C31;
+			remoteInfo = "Pods-RGBankAccount";
+		};
+		36ED954276B356D3D2D7BBD24B1ABC41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53F85F6DFBF8FF36E96A14FAB1D90704;
+			remoteInfo = "iOS-Color-Picker";
+		};
+		DA6ADFC29C4BFA481675F2BEEE58D960 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C6EF5243091C1CFFC7A594963618C31;
+			remoteInfo = "Pods-RGBankAccount";
+		};
+		E39CDD4A46A77CECBC48829FA153B578 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55724CE58CBD6F02678855C4C7A6E008;
+			remoteInfo = RGBankAccountLib;
+		};
+		EB50653DBF23B4728018E217D2F93E35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E66251A6757F57EFE4BBCD045D21186E;
+			remoteInfo = ProgressHUD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01BF0B04ACB90690B5EA92F66CEADE5D /* Pods-RGBankAccountUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RGBankAccountUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		05D2ADBEDAEA24ACB56A0F66F62A4C60 /* Pods-RGBankAccountUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RGBankAccountUITests-dummy.m"; sourceTree = "<group>"; };
+		05EEECD81560C7DB2D80353221D168F3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07CC54DB02DB9DBCFD6EE6CAB0D8BEBF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08CBF1AC9621F98EB4EDC7DD306F7734 /* Pods-RGBankAccountTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RGBankAccountTests-resources.sh"; sourceTree = "<group>"; };
+		09637A3346C7798D854B113A9F055053 /* iOS-Color-Picker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iOS-Color-Picker-dummy.m"; sourceTree = "<group>"; };
+		0D97CFC87583473988E2C066C1019DAC /* ProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ProgressHUD.m; path = ProgressHUD/ProgressHUD/ProgressHUD.m; sourceTree = "<group>"; };
+		1C80E6391E23FBF238638707EC213810 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CCD7F798C156AEA653BED8FE396B453 /* FCColorPickerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FCColorPickerViewController.m; sourceTree = "<group>"; };
+		1D4753795D48135B98AA02DA4AEE1991 /* Pods-RGBankAccountUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RGBankAccountUITests-frameworks.sh"; sourceTree = "<group>"; };
+		1D4A50578A1201C73BE15952CC8AECE0 /* ProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ProgressHUD.h; path = ProgressHUD/ProgressHUD/ProgressHUD.h; sourceTree = "<group>"; };
+		24A5BCE14A25423ED158045623FCE3E9 /* ProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ProgressHUD.framework; path = ProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24BEF5946FE27CF1C77F298D8A04A695 /* RGBankAccount.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RGBankAccount.swift; path = RGBankAccountLib/RGBankAccount.swift; sourceTree = "<group>"; };
+		277F013BD600F618D090A0B4F8507DD1 /* FCBrightDarkGradView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FCBrightDarkGradView.h; path = Private/FCBrightDarkGradView.h; sourceTree = "<group>"; };
+		3266D715CD067DC3F2E180A0D655C1D9 /* RGBankAccountLib-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RGBankAccountLib-prefix.pch"; sourceTree = "<group>"; };
+		35A7744D7B93A167A88EBB70B2DDC7C9 /* Pods-RGBankAccountTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RGBankAccountTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3998C334FA39C646C747B607DD0BCCE1 /* RGBankAccountLib.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = RGBankAccountLib.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3C0CC3277F28DD027E4A7EBBC0EC4FCE /* FCColorSwatchView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FCColorSwatchView.m; path = Private/FCColorSwatchView.m; sourceTree = "<group>"; };
+		3EE9CBD57650F160805CDFC9C2FDA2D1 /* Pods-RGBankAccount-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RGBankAccount-umbrella.h"; sourceTree = "<group>"; };
+		44D3D1C669AE23DF68C3EC5F7830EE0E /* Pods-RGBankAccount.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RGBankAccount.debug.xcconfig"; sourceTree = "<group>"; };
+		455E7E25AE26412C2141226E650F38D6 /* Pods-RGBankAccountUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RGBankAccountUITests-umbrella.h"; sourceTree = "<group>"; };
+		4786E555EF698C9C193428E24C50CA5A /* iOS_Color_Picker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = iOS_Color_Picker.framework; path = "iOS-Color-Picker.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BB2993AAB0659F8C3E1D0BCAC8A4762 /* colormap.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = colormap.png; path = Resources/colormap.png; sourceTree = "<group>"; };
+		4EA56C2AE02E2001956019E7ADA84329 /* Pods-RGBankAccountUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RGBankAccountUITests.modulemap"; sourceTree = "<group>"; };
+		4EF5601E44047C707BF95C21E806AF76 /* Pods-RGBankAccountUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RGBankAccountUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4FEB9EA4C2FBB2248BFB4320C03DA36E /* RGBankAccountLib-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RGBankAccountLib-dummy.m"; sourceTree = "<group>"; };
+		54E48B9F93F1141655E7A2C892748F9A /* FCBrightDarkGradView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FCBrightDarkGradView.m; path = Private/FCBrightDarkGradView.m; sourceTree = "<group>"; };
+		556A0E8F3EA4FD6CCBD5CEBB10E8AB59 /* ProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ProgressHUD.xcconfig; sourceTree = "<group>"; };
+		5D83848F92FE0ED37081A155F16CC199 /* Pods-RGBankAccountTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RGBankAccountTests-umbrella.h"; sourceTree = "<group>"; };
+		61A9A86F29B9A28348D80410B32A2083 /* Pods-RGBankAccount.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RGBankAccount.modulemap"; sourceTree = "<group>"; };
+		66DAE71D59844F3C2932A48A7C6E92A6 /* Pods-RGBankAccountTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RGBankAccountTests-dummy.m"; sourceTree = "<group>"; };
+		66EDE44391BC67D81893BF4CCDB663CC /* iOS-Color-Picker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "iOS-Color-Picker.modulemap"; sourceTree = "<group>"; };
+		6C7A81DE1C3A8A2A20BC85A615185269 /* Pods-RGBankAccountUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RGBankAccountUITests-resources.sh"; sourceTree = "<group>"; };
+		6E56565581C03523465822315A2B5DE3 /* Pods-RGBankAccountTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RGBankAccountTests.release.xcconfig"; sourceTree = "<group>"; };
+		749ADD089E805C2D7E7DF8BD44F537E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7A67F0190C23CA9ED7AE53CA081DF566 /* FCColorSwatchView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FCColorSwatchView.h; path = Private/FCColorSwatchView.h; sourceTree = "<group>"; };
+		7C547D08CD6E42974E4E2CCBC9776FAB /* RGAccount.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RGAccount.swift; path = RGBankAccountLib/RGAccount.swift; sourceTree = "<group>"; };
+		83861A1518ED111F09E6409B94FA784D /* Pods_RGBankAccountUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RGBankAccountUITests.framework; path = "Pods-RGBankAccountUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		893B5FC482E3C9397197C52A2E52B22E /* RGBankAccountLib.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RGBankAccountLib.xcconfig; sourceTree = "<group>"; };
+		8A7C6B10752905FCD6190118F5B1414B /* Pods-RGBankAccountTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RGBankAccountTests-frameworks.sh"; sourceTree = "<group>"; };
+		8A841240B7307B93A42EDE01F868C2A9 /* iOS-Color-Picker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iOS-Color-Picker-prefix.pch"; sourceTree = "<group>"; };
+		8ABF4629F4DE5FA8EAFDDF91295F4C88 /* Pods-RGBankAccountTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RGBankAccountTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9B3B2FE1667C1D38352EE69EC5D9A01C /* FCColorPickerViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = FCColorPickerViewController.xib; sourceTree = "<group>"; };
+		A475A4D1463AAFB2825766F01C79840F /* iOS-Color-Picker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iOS-Color-Picker-umbrella.h"; sourceTree = "<group>"; };
+		A5F327D279027374A1408AF9E3889DEE /* RGBankAccountLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RGBankAccountLib.framework; path = RGBankAccountLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B34805DF6C672C6364B457C3F580646E /* ProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ProgressHUD.modulemap; sourceTree = "<group>"; };
+		B4855FED7889E1FEE2A19D4C11FF3B96 /* Pods_RGBankAccount.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RGBankAccount.framework; path = "Pods-RGBankAccount.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B517E367E9F50401F27BF8144CD1AC5E /* Pods-RGBankAccount-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RGBankAccount-resources.sh"; sourceTree = "<group>"; };
+		B6C8C365C6383BD47FB27E57030E5192 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8E886B8A5323A225031593C734420F7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		BC0BD03B3FDC88BDD8031E44A32AE0F0 /* RGBankAccountLib.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RGBankAccountLib.modulemap; sourceTree = "<group>"; };
+		C3041345A5CC3C3AF76DB4BD6B54782F /* Pods-RGBankAccount-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RGBankAccount-frameworks.sh"; sourceTree = "<group>"; };
+		C40B5C8583B030E341A90F9BA16EDBAB /* Pods-RGBankAccount.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RGBankAccount.release.xcconfig"; sourceTree = "<group>"; };
+		C7E94E782E5B61F1441F8C6921CA3FEA /* iOS-Color-Picker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "iOS-Color-Picker.xcconfig"; sourceTree = "<group>"; };
+		CD9C853A96D4F63C1253954356304B30 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CED0D78E96FDC384FB6E41DEAEA716D2 /* Pods-RGBankAccountTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RGBankAccountTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		CED4EB4E74EA9B43F6C90DD8B230A7B0 /* FCColorPickerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FCColorPickerViewController.h; sourceTree = "<group>"; };
+		D1D4BC7B341C2188729F6EFB8A2142CD /* Pods-RGBankAccountUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RGBankAccountUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D382068CA7854B2BCA6E42E96356C4E3 /* ProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = ProgressHUD.bundle; path = ProgressHUD/ProgressHUD/ProgressHUD.bundle; sourceTree = "<group>"; };
+		D61D5AAADC6EA2EF6651714C100DEAEF /* Pods-RGBankAccount-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RGBankAccount-acknowledgements.plist"; sourceTree = "<group>"; };
+		D6EF016A71479619F2EEBC7F99720C20 /* RGBankAccountLib-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RGBankAccountLib-umbrella.h"; sourceTree = "<group>"; };
+		D8C7B0D9AE0ED1385395EA7910E39BC3 /* RGMovement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RGMovement.swift; path = RGBankAccountLib/RGMovement.swift; sourceTree = "<group>"; };
+		DEBFD36D8D5CC812550666523B8F6C4D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E04001711D7AAD2E70A2F799785E8562 /* ProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		E6C7B771A1DF2DF6D0D52A4A849F13BE /* Pods-RGBankAccountTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RGBankAccountTests.modulemap"; sourceTree = "<group>"; };
+		EAAAEBD991BB5DBD923DCF56A5AB7232 /* Pods-RGBankAccount-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RGBankAccount-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EBE2CE86CEAA9896D6244DE9999C4B48 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		ED4696B11116CF4DE2CCD7D2E9AB7420 /* Pods-RGBankAccount-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RGBankAccount-dummy.m"; sourceTree = "<group>"; };
+		F55E2237BA76E7B876391EDB8A4FA62C /* ProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		F8205DCE243CEBCEAAFFDB2563B65CD4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		F85CA783F601D6B80758C4CA25AE5EAB /* Pods_RGBankAccountTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RGBankAccountTests.framework; path = "Pods-RGBankAccountTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F994BB557825E3F1463F79DF282038DA /* ProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		FD57A4CF1AF6243C312CC7F9B13ECD06 /* Pods-RGBankAccountUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RGBankAccountUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3176014D3A0E1D9CC4B0673CBD8C748C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C001FE1C5C82CF42C037B452154CEF08 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		582363F39A117C93CECE6E488F7BD376 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9A5A4259FADE130A8A224424CB887C4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6687D394CBF848F1BF4555F424B410BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				844BBDB472F0CCAB9CB55CDCB03ED23D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8227D2F95ED2B7274C69967736343909 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D7070FBC9D6939030F7458A5C9AF420 /* CoreGraphics.framework in Frameworks */,
+				57064BF6659F9249EB1D0B050B8A0F49 /* Foundation.framework in Frameworks */,
+				CA988356B1193C7BC4F87DF0E7FDB52B /* QuartzCore.framework in Frameworks */,
+				DDF8310379E39451E550C024651EC664 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E6AA86C601A3C7DD9A5EC666B9AC3EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F6773245205FC18215F5D001127204E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F581898D1C9710853FAD4725C32C4E57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62E81300924EED1160E78BE9E9B34F4F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4725EC43CB891FB958E82D265451CEF5 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2CC131896BBC0F12662D4245806EB22A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D806BF86D0F86E23AF0E52EC5968C229 /* Pods-RGBankAccount */,
+				396CC7730E06F6EFF341F8B15EFA436A /* Pods-RGBankAccountTests */,
+				323FF62DC812E859DA8FFFB2108D86F7 /* Pods-RGBankAccountUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		323FF62DC812E859DA8FFFB2108D86F7 /* Pods-RGBankAccountUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DEBFD36D8D5CC812550666523B8F6C4D /* Info.plist */,
+				4EA56C2AE02E2001956019E7ADA84329 /* Pods-RGBankAccountUITests.modulemap */,
+				FD57A4CF1AF6243C312CC7F9B13ECD06 /* Pods-RGBankAccountUITests-acknowledgements.markdown */,
+				D1D4BC7B341C2188729F6EFB8A2142CD /* Pods-RGBankAccountUITests-acknowledgements.plist */,
+				05D2ADBEDAEA24ACB56A0F66F62A4C60 /* Pods-RGBankAccountUITests-dummy.m */,
+				1D4753795D48135B98AA02DA4AEE1991 /* Pods-RGBankAccountUITests-frameworks.sh */,
+				6C7A81DE1C3A8A2A20BC85A615185269 /* Pods-RGBankAccountUITests-resources.sh */,
+				455E7E25AE26412C2141226E650F38D6 /* Pods-RGBankAccountUITests-umbrella.h */,
+				01BF0B04ACB90690B5EA92F66CEADE5D /* Pods-RGBankAccountUITests.debug.xcconfig */,
+				4EF5601E44047C707BF95C21E806AF76 /* Pods-RGBankAccountUITests.release.xcconfig */,
+			);
+			name = "Pods-RGBankAccountUITests";
+			path = "Target Support Files/Pods-RGBankAccountUITests";
+			sourceTree = "<group>";
+		};
+		396CC7730E06F6EFF341F8B15EFA436A /* Pods-RGBankAccountTests */ = {
+			isa = PBXGroup;
+			children = (
+				07CC54DB02DB9DBCFD6EE6CAB0D8BEBF /* Info.plist */,
+				E6C7B771A1DF2DF6D0D52A4A849F13BE /* Pods-RGBankAccountTests.modulemap */,
+				8ABF4629F4DE5FA8EAFDDF91295F4C88 /* Pods-RGBankAccountTests-acknowledgements.markdown */,
+				CED0D78E96FDC384FB6E41DEAEA716D2 /* Pods-RGBankAccountTests-acknowledgements.plist */,
+				66DAE71D59844F3C2932A48A7C6E92A6 /* Pods-RGBankAccountTests-dummy.m */,
+				8A7C6B10752905FCD6190118F5B1414B /* Pods-RGBankAccountTests-frameworks.sh */,
+				08CBF1AC9621F98EB4EDC7DD306F7734 /* Pods-RGBankAccountTests-resources.sh */,
+				5D83848F92FE0ED37081A155F16CC199 /* Pods-RGBankAccountTests-umbrella.h */,
+				35A7744D7B93A167A88EBB70B2DDC7C9 /* Pods-RGBankAccountTests.debug.xcconfig */,
+				6E56565581C03523465822315A2B5DE3 /* Pods-RGBankAccountTests.release.xcconfig */,
+			);
+			name = "Pods-RGBankAccountTests";
+			path = "Target Support Files/Pods-RGBankAccountTests";
+			sourceTree = "<group>";
+		};
+		3D11311C788DCA9CC68F21C02E69614D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D382068CA7854B2BCA6E42E96356C4E3 /* ProgressHUD.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4725EC43CB891FB958E82D265451CEF5 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B8E886B8A5323A225031593C734420F7 /* CoreGraphics.framework */,
+				749ADD089E805C2D7E7DF8BD44F537E3 /* Foundation.framework */,
+				F8205DCE243CEBCEAAFFDB2563B65CD4 /* QuartzCore.framework */,
+				EBE2CE86CEAA9896D6244DE9999C4B48 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		505E90371165E6D4E80495AF385DCF15 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				3998C334FA39C646C747B607DD0BCCE1 /* RGBankAccountLib.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		5A514CAAC352B57CFE0461827777D844 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4786E555EF698C9C193428E24C50CA5A /* iOS_Color_Picker.framework */,
+				B4855FED7889E1FEE2A19D4C11FF3B96 /* Pods_RGBankAccount.framework */,
+				F85CA783F601D6B80758C4CA25AE5EAB /* Pods_RGBankAccountTests.framework */,
+				83861A1518ED111F09E6409B94FA784D /* Pods_RGBankAccountUITests.framework */,
+				24A5BCE14A25423ED158045623FCE3E9 /* ProgressHUD.framework */,
+				A5F327D279027374A1408AF9E3889DEE /* RGBankAccountLib.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5DDD18D93255ED6C3BBDDD10836AD28B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A264B866F3943C8F0D15CABE348C7B0A /* iOS-Color-Picker */,
+				8BE4797BC03780DE11BBC58B9D4F0501 /* ProgressHUD */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		60FEAD48CCF7AF48B5218ACD00747906 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4BB2993AAB0659F8C3E1D0BCAC8A4762 /* colormap.png */,
+				9B3B2FE1667C1D38352EE69EC5D9A01C /* FCColorPickerViewController.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		6765BCBE81A97B36815EDD4C11056720 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C804B439E0051A309EDEDDA67DB0762B /* RGBankAccountLib */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				6765BCBE81A97B36815EDD4C11056720 /* Development Pods */,
+				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
+				5DDD18D93255ED6C3BBDDD10836AD28B /* Pods */,
+				5A514CAAC352B57CFE0461827777D844 /* Products */,
+				2CC131896BBC0F12662D4245806EB22A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8091776BF3702E88CCB411F72A035CDE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				05EEECD81560C7DB2D80353221D168F3 /* Info.plist */,
+				BC0BD03B3FDC88BDD8031E44A32AE0F0 /* RGBankAccountLib.modulemap */,
+				893B5FC482E3C9397197C52A2E52B22E /* RGBankAccountLib.xcconfig */,
+				4FEB9EA4C2FBB2248BFB4320C03DA36E /* RGBankAccountLib-dummy.m */,
+				3266D715CD067DC3F2E180A0D655C1D9 /* RGBankAccountLib-prefix.pch */,
+				D6EF016A71479619F2EEBC7F99720C20 /* RGBankAccountLib-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../RGBankAccount/Pods/Target Support Files/RGBankAccountLib";
+			sourceTree = "<group>";
+		};
+		8BE4797BC03780DE11BBC58B9D4F0501 /* ProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				1D4A50578A1201C73BE15952CC8AECE0 /* ProgressHUD.h */,
+				0D97CFC87583473988E2C066C1019DAC /* ProgressHUD.m */,
+				3D11311C788DCA9CC68F21C02E69614D /* Resources */,
+				D4F43F1402C936951ABCF4019D1B3732 /* Support Files */,
+			);
+			name = ProgressHUD;
+			path = ProgressHUD;
+			sourceTree = "<group>";
+		};
+		A264B866F3943C8F0D15CABE348C7B0A /* iOS-Color-Picker */ = {
+			isa = PBXGroup;
+			children = (
+				277F013BD600F618D090A0B4F8507DD1 /* FCBrightDarkGradView.h */,
+				54E48B9F93F1141655E7A2C892748F9A /* FCBrightDarkGradView.m */,
+				CED4EB4E74EA9B43F6C90DD8B230A7B0 /* FCColorPickerViewController.h */,
+				1CCD7F798C156AEA653BED8FE396B453 /* FCColorPickerViewController.m */,
+				7A67F0190C23CA9ED7AE53CA081DF566 /* FCColorSwatchView.h */,
+				3C0CC3277F28DD027E4A7EBBC0EC4FCE /* FCColorSwatchView.m */,
+				60FEAD48CCF7AF48B5218ACD00747906 /* Resources */,
+				F9064624496FE00B8A7A09E56EF6117D /* Support Files */,
+			);
+			name = "iOS-Color-Picker";
+			path = "iOS-Color-Picker";
+			sourceTree = "<group>";
+		};
+		C804B439E0051A309EDEDDA67DB0762B /* RGBankAccountLib */ = {
+			isa = PBXGroup;
+			children = (
+				7C547D08CD6E42974E4E2CCBC9776FAB /* RGAccount.swift */,
+				24BEF5946FE27CF1C77F298D8A04A695 /* RGBankAccount.swift */,
+				D8C7B0D9AE0ED1385395EA7910E39BC3 /* RGMovement.swift */,
+				505E90371165E6D4E80495AF385DCF15 /* Pod */,
+				8091776BF3702E88CCB411F72A035CDE /* Support Files */,
+			);
+			name = RGBankAccountLib;
+			path = ../../RGBankAccountLib;
+			sourceTree = "<group>";
+		};
+		D4F43F1402C936951ABCF4019D1B3732 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6C8C365C6383BD47FB27E57030E5192 /* Info.plist */,
+				B34805DF6C672C6364B457C3F580646E /* ProgressHUD.modulemap */,
+				556A0E8F3EA4FD6CCBD5CEBB10E8AB59 /* ProgressHUD.xcconfig */,
+				E04001711D7AAD2E70A2F799785E8562 /* ProgressHUD-dummy.m */,
+				F55E2237BA76E7B876391EDB8A4FA62C /* ProgressHUD-prefix.pch */,
+				F994BB557825E3F1463F79DF282038DA /* ProgressHUD-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ProgressHUD";
+			sourceTree = "<group>";
+		};
+		D806BF86D0F86E23AF0E52EC5968C229 /* Pods-RGBankAccount */ = {
+			isa = PBXGroup;
+			children = (
+				CD9C853A96D4F63C1253954356304B30 /* Info.plist */,
+				61A9A86F29B9A28348D80410B32A2083 /* Pods-RGBankAccount.modulemap */,
+				EAAAEBD991BB5DBD923DCF56A5AB7232 /* Pods-RGBankAccount-acknowledgements.markdown */,
+				D61D5AAADC6EA2EF6651714C100DEAEF /* Pods-RGBankAccount-acknowledgements.plist */,
+				ED4696B11116CF4DE2CCD7D2E9AB7420 /* Pods-RGBankAccount-dummy.m */,
+				C3041345A5CC3C3AF76DB4BD6B54782F /* Pods-RGBankAccount-frameworks.sh */,
+				B517E367E9F50401F27BF8144CD1AC5E /* Pods-RGBankAccount-resources.sh */,
+				3EE9CBD57650F160805CDFC9C2FDA2D1 /* Pods-RGBankAccount-umbrella.h */,
+				44D3D1C669AE23DF68C3EC5F7830EE0E /* Pods-RGBankAccount.debug.xcconfig */,
+				C40B5C8583B030E341A90F9BA16EDBAB /* Pods-RGBankAccount.release.xcconfig */,
+			);
+			name = "Pods-RGBankAccount";
+			path = "Target Support Files/Pods-RGBankAccount";
+			sourceTree = "<group>";
+		};
+		F9064624496FE00B8A7A09E56EF6117D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1C80E6391E23FBF238638707EC213810 /* Info.plist */,
+				66EDE44391BC67D81893BF4CCDB663CC /* iOS-Color-Picker.modulemap */,
+				C7E94E782E5B61F1441F8C6921CA3FEA /* iOS-Color-Picker.xcconfig */,
+				09637A3346C7798D854B113A9F055053 /* iOS-Color-Picker-dummy.m */,
+				8A841240B7307B93A42EDE01F868C2A9 /* iOS-Color-Picker-prefix.pch */,
+				A475A4D1463AAFB2825766F01C79840F /* iOS-Color-Picker-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/iOS-Color-Picker";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		048A3647DEDEDD2CAFD59AAB65D23EF7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4BFC816F89631D51234B849A3C5D65C /* Pods-RGBankAccountUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28F1B46A0C15BA958430C908437D4131 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1CA698E1C340EF921211D2BC694BAB0 /* RGBankAccountLib-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A912C41DED8314BE6A9563E63716EED /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CBE6F77EA7C91A50EE574B45239F12C /* Pods-RGBankAccountTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F7617C1C208DB0D97E9F5A5F18B6213 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93459DA5E479B76CF2C502DF6F7A6593 /* ProgressHUD-umbrella.h in Headers */,
+				41E39C600BAF66C35C81930D1BD04C87 /* ProgressHUD.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69CB9B2EB081A822F9C21A0E551FBD4C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ACAB714CE090FE1B0D8310C2258E800 /* FCBrightDarkGradView.h in Headers */,
+				23FC427BC8A16ED07A7D839D14F9F0AD /* FCColorPickerViewController.h in Headers */,
+				AB138675E5DEAC8B60582E7ECF1EC629 /* FCColorSwatchView.h in Headers */,
+				EFBA3E96F4040ED2A2634DF73EEFDBA2 /* iOS-Color-Picker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6F55DF08865345E7B9E96C842A16788 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDB208440FD5572B4734D9EB2E154B4A /* Pods-RGBankAccount-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2EB43C81C1CCCB90FCCEFE8E93D695B4 /* Pods-RGBankAccountUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E592362EA2B10C84DBBBE9D48277EA32 /* Build configuration list for PBXNativeTarget "Pods-RGBankAccountUITests" */;
+			buildPhases = (
+				048A3647DEDEDD2CAFD59AAB65D23EF7 /* Headers */,
+				E52C3B57FF3126DF0131A672580799F4 /* Sources */,
+				582363F39A117C93CECE6E488F7BD376 /* Frameworks */,
+				715FD767F127E9E0AF02EB751C0F8DED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D329D0BE20E353C9B847208CB970B4B /* PBXTargetDependency */,
+			);
+			name = "Pods-RGBankAccountUITests";
+			productName = "Pods-RGBankAccountUITests";
+			productReference = 83861A1518ED111F09E6409B94FA784D /* Pods_RGBankAccountUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		390106780B5B8B017603AAC6755F1267 /* Pods-RGBankAccountTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C497517DC211353ECC4373ABE551D59F /* Build configuration list for PBXNativeTarget "Pods-RGBankAccountTests" */;
+			buildPhases = (
+				5A912C41DED8314BE6A9563E63716EED /* Headers */,
+				7827EFF8261AE33210F4A8E3B1BDD934 /* Sources */,
+				F581898D1C9710853FAD4725C32C4E57 /* Frameworks */,
+				B25C202C5641CB19CA26835BA8E2695B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44C216B75625607F44EDA3213AC9831E /* PBXTargetDependency */,
+			);
+			name = "Pods-RGBankAccountTests";
+			productName = "Pods-RGBankAccountTests";
+			productReference = F85CA783F601D6B80758C4CA25AE5EAB /* Pods_RGBankAccountTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		53F85F6DFBF8FF36E96A14FAB1D90704 /* iOS-Color-Picker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24B4AE945F8367EF333E95BF645AB02F /* Build configuration list for PBXNativeTarget "iOS-Color-Picker" */;
+			buildPhases = (
+				69CB9B2EB081A822F9C21A0E551FBD4C /* Headers */,
+				F65280869050CC8064945D165DB4F7BD /* Sources */,
+				8227D2F95ED2B7274C69967736343909 /* Frameworks */,
+				7B2AE77FA90F56E9DD1284998C704A35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS-Color-Picker";
+			productName = "iOS-Color-Picker";
+			productReference = 4786E555EF698C9C193428E24C50CA5A /* iOS_Color_Picker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		55724CE58CBD6F02678855C4C7A6E008 /* RGBankAccountLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7DDBE70214701832EACA75F8C9C9764 /* Build configuration list for PBXNativeTarget "RGBankAccountLib" */;
+			buildPhases = (
+				28F1B46A0C15BA958430C908437D4131 /* Headers */,
+				1371079B00D584B4D00D5302817A143C /* Sources */,
+				3176014D3A0E1D9CC4B0673CBD8C748C /* Frameworks */,
+				1D58B61885E32E2496DA7D24F53F410C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RGBankAccountLib;
+			productName = RGBankAccountLib;
+			productReference = A5F327D279027374A1408AF9E3889DEE /* RGBankAccountLib.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6C6EF5243091C1CFFC7A594963618C31 /* Pods-RGBankAccount */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9472F3C9EC37BF63445BE0A6305FE53B /* Build configuration list for PBXNativeTarget "Pods-RGBankAccount" */;
+			buildPhases = (
+				D6F55DF08865345E7B9E96C842A16788 /* Headers */,
+				9B287E2857A6B0EB9AE40D8E82737925 /* Sources */,
+				6687D394CBF848F1BF4555F424B410BD /* Frameworks */,
+				31F4A84CE0CFA77D50AFC46DFAC6D55C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E779540FFCDBB45470796B6CCE7C7BBF /* PBXTargetDependency */,
+				60913B49958E45D4EEF64D56CCF788E8 /* PBXTargetDependency */,
+				5A574DC9EFD21D3D991D6C9B8EBF499B /* PBXTargetDependency */,
+			);
+			name = "Pods-RGBankAccount";
+			productName = "Pods-RGBankAccount";
+			productReference = B4855FED7889E1FEE2A19D4C11FF3B96 /* Pods_RGBankAccount.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E66251A6757F57EFE4BBCD045D21186E /* ProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95FE09D26751E1375E1ACE8FB2CDE90D /* Build configuration list for PBXNativeTarget "ProgressHUD" */;
+			buildPhases = (
+				5F7617C1C208DB0D97E9F5A5F18B6213 /* Headers */,
+				36CB54D34836A083DBAF669129E6C683 /* Sources */,
+				8E6AA86C601A3C7DD9A5EC666B9AC3EB /* Frameworks */,
+				0CB29671D0DC24A701704A9AF4787972 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProgressHUD;
+			productName = ProgressHUD;
+			productReference = 24A5BCE14A25423ED158045623FCE3E9 /* ProgressHUD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 5A514CAAC352B57CFE0461827777D844 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				53F85F6DFBF8FF36E96A14FAB1D90704 /* iOS-Color-Picker */,
+				6C6EF5243091C1CFFC7A594963618C31 /* Pods-RGBankAccount */,
+				390106780B5B8B017603AAC6755F1267 /* Pods-RGBankAccountTests */,
+				2EB43C81C1CCCB90FCCEFE8E93D695B4 /* Pods-RGBankAccountUITests */,
+				E66251A6757F57EFE4BBCD045D21186E /* ProgressHUD */,
+				55724CE58CBD6F02678855C4C7A6E008 /* RGBankAccountLib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0CB29671D0DC24A701704A9AF4787972 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFA2C2E17E98977C6E57EB494A0C6C08 /* ProgressHUD.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D58B61885E32E2496DA7D24F53F410C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31F4A84CE0CFA77D50AFC46DFAC6D55C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		715FD767F127E9E0AF02EB751C0F8DED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B2AE77FA90F56E9DD1284998C704A35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F4850E39CD65853ED164AE5E357DBBD /* colormap.png in Resources */,
+				F5A365950535F9961B0C17BE64110F09 /* FCColorPickerViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B25C202C5641CB19CA26835BA8E2695B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1371079B00D584B4D00D5302817A143C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5125A6B557B404A6533130284E49DCDC /* RGAccount.swift in Sources */,
+				30A3EB980D8E3B144ED121AF83363442 /* RGBankAccount.swift in Sources */,
+				4A64469A1EBC0C6795CF820D8FCA834E /* RGBankAccountLib-dummy.m in Sources */,
+				65FF652FB1F5BB84D4BBA9EC5C5BB6CB /* RGMovement.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36CB54D34836A083DBAF669129E6C683 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				722BBA1E10128DFD16C84315EA6B43D6 /* ProgressHUD-dummy.m in Sources */,
+				A4A566560DA864E97084DFE5F635584D /* ProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7827EFF8261AE33210F4A8E3B1BDD934 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10490453FBE9CDBA15F10CD6C389F7B6 /* Pods-RGBankAccountTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B287E2857A6B0EB9AE40D8E82737925 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C7D14E2906976DB20B15AB7E032D121 /* Pods-RGBankAccount-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E52C3B57FF3126DF0131A672580799F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C4A040FA9D52982646DA72BA060273 /* Pods-RGBankAccountUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F65280869050CC8064945D165DB4F7BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B2C3F99195C5C9FFE858B4184288E40 /* FCBrightDarkGradView.m in Sources */,
+				3156B785DDD0164F6941C705A46192AF /* FCColorPickerViewController.m in Sources */,
+				66E9F707F22CF6ACE0968E5F13B68457 /* FCColorSwatchView.m in Sources */,
+				36C9C8D172C7C32E44E6D5E67D9106E4 /* iOS-Color-Picker-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44C216B75625607F44EDA3213AC9831E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-RGBankAccount";
+			target = 6C6EF5243091C1CFFC7A594963618C31 /* Pods-RGBankAccount */;
+			targetProxy = DA6ADFC29C4BFA481675F2BEEE58D960 /* PBXContainerItemProxy */;
+		};
+		5A574DC9EFD21D3D991D6C9B8EBF499B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "iOS-Color-Picker";
+			target = 53F85F6DFBF8FF36E96A14FAB1D90704 /* iOS-Color-Picker */;
+			targetProxy = 36ED954276B356D3D2D7BBD24B1ABC41 /* PBXContainerItemProxy */;
+		};
+		60913B49958E45D4EEF64D56CCF788E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RGBankAccountLib;
+			target = 55724CE58CBD6F02678855C4C7A6E008 /* RGBankAccountLib */;
+			targetProxy = E39CDD4A46A77CECBC48829FA153B578 /* PBXContainerItemProxy */;
+		};
+		9D329D0BE20E353C9B847208CB970B4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-RGBankAccount";
+			target = 6C6EF5243091C1CFFC7A594963618C31 /* Pods-RGBankAccount */;
+			targetProxy = 144557E967C82E64EB3C77F6F07A54D5 /* PBXContainerItemProxy */;
+		};
+		E779540FFCDBB45470796B6CCE7C7BBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ProgressHUD;
+			target = E66251A6757F57EFE4BBCD045D21186E /* ProgressHUD */;
+			targetProxy = EB50653DBF23B4728018E217D2F93E35 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		090C167DA7822FD953E03A9857BD693D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35A7744D7B93A167A88EBB70B2DDC7C9 /* Pods-RGBankAccountTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RGBankAccountTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RGBankAccountTests/Pods-RGBankAccountTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0AA3B91655AF95B1F49159CD8085CD89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		1D8806072D6F58EFCAE553B15F5F4056 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 556A0E8F3EA4FD6CCBD5CEBB10E8AB59 /* ProgressHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ProgressHUD/ProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ProgressHUD/ProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = ProgressHUD;
+				PRODUCT_NAME = ProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3A651BB78060179FF68B9CCECC775AAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7E94E782E5B61F1441F8C6921CA3FEA /* iOS-Color-Picker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/iOS-Color-Picker/iOS-Color-Picker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/iOS-Color-Picker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/iOS-Color-Picker/iOS-Color-Picker.modulemap";
+				PRODUCT_MODULE_NAME = iOS_Color_Picker;
+				PRODUCT_NAME = iOS_Color_Picker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4065F1F61A5C028F0B677FE85936130B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7E94E782E5B61F1441F8C6921CA3FEA /* iOS-Color-Picker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/iOS-Color-Picker/iOS-Color-Picker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/iOS-Color-Picker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/iOS-Color-Picker/iOS-Color-Picker.modulemap";
+				PRODUCT_MODULE_NAME = iOS_Color_Picker;
+				PRODUCT_NAME = iOS_Color_Picker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		558B7E61B700598C58A4251A40FF049F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 893B5FC482E3C9397197C52A2E52B22E /* RGBankAccountLib.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RGBankAccountLib/RGBankAccountLib-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RGBankAccountLib/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/RGBankAccountLib/RGBankAccountLib.modulemap";
+				PRODUCT_MODULE_NAME = RGBankAccountLib;
+				PRODUCT_NAME = RGBankAccountLib;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		58AD6452E7B96810B3A201AF7D66888D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44D3D1C669AE23DF68C3EC5F7830EE0E /* Pods-RGBankAccount.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RGBankAccount/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RGBankAccount/Pods-RGBankAccount.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8000995DA02063BF3777393CD52061DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		8D5FB51EF2B9305C416315B09092952A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C40B5C8583B030E341A90F9BA16EDBAB /* Pods-RGBankAccount.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RGBankAccount/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RGBankAccount/Pods-RGBankAccount.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		90D5F2F788DB0F0D31EAD8B4B3EB2DAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E56565581C03523465822315A2B5DE3 /* Pods-RGBankAccountTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RGBankAccountTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RGBankAccountTests/Pods-RGBankAccountTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ABBA1759BA303381C920B8A7E02A9C37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EF5601E44047C707BF95C21E806AF76 /* Pods-RGBankAccountUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RGBankAccountUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RGBankAccountUITests/Pods-RGBankAccountUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C27C658CDCD8E62AFDE2872A745A7463 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 893B5FC482E3C9397197C52A2E52B22E /* RGBankAccountLib.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RGBankAccountLib/RGBankAccountLib-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RGBankAccountLib/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/RGBankAccountLib/RGBankAccountLib.modulemap";
+				PRODUCT_MODULE_NAME = RGBankAccountLib;
+				PRODUCT_NAME = RGBankAccountLib;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CDD916A3DD13621739E128C6761414C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01BF0B04ACB90690B5EA92F66CEADE5D /* Pods-RGBankAccountUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RGBankAccountUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RGBankAccountUITests/Pods-RGBankAccountUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EC25DAD9DF36D76090B03BF096778C27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 556A0E8F3EA4FD6CCBD5CEBB10E8AB59 /* ProgressHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ProgressHUD/ProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ProgressHUD/ProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = ProgressHUD;
+				PRODUCT_NAME = ProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24B4AE945F8367EF333E95BF645AB02F /* Build configuration list for PBXNativeTarget "iOS-Color-Picker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A651BB78060179FF68B9CCECC775AAC /* Debug */,
+				4065F1F61A5C028F0B677FE85936130B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AA3B91655AF95B1F49159CD8085CD89 /* Debug */,
+				8000995DA02063BF3777393CD52061DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9472F3C9EC37BF63445BE0A6305FE53B /* Build configuration list for PBXNativeTarget "Pods-RGBankAccount" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58AD6452E7B96810B3A201AF7D66888D /* Debug */,
+				8D5FB51EF2B9305C416315B09092952A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95FE09D26751E1375E1ACE8FB2CDE90D /* Build configuration list for PBXNativeTarget "ProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC25DAD9DF36D76090B03BF096778C27 /* Debug */,
+				1D8806072D6F58EFCAE553B15F5F4056 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C497517DC211353ECC4373ABE551D59F /* Build configuration list for PBXNativeTarget "Pods-RGBankAccountTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				090C167DA7822FD953E03A9857BD693D /* Debug */,
+				90D5F2F788DB0F0D31EAD8B4B3EB2DAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E592362EA2B10C84DBBBE9D48277EA32 /* Build configuration list for PBXNativeTarget "Pods-RGBankAccountUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDD916A3DD13621739E128C6761414C2 /* Debug */,
+				ABBA1759BA303381C920B8A7E02A9C37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7DDBE70214701832EACA75F8C9C9764 /* Build configuration list for PBXNativeTarget "RGBankAccountLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				558B7E61B700598C58A4251A40FF049F /* Debug */,
+				C27C658CDCD8E62AFDE2872A745A7463 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
