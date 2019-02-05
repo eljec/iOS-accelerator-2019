@@ -1,0 +1,26 @@
+PODS:
+  - MELINetworking (0.0.1)
+  - ProgressHUD (2.60)
+
+DEPENDENCIES:
+  - MELINetworking (from `../pod-networking`)
+  - ProgressHUD (from `https://github.com/relatedcode/ProgressHUD.git`)
+
+EXTERNAL SOURCES:
+  MELINetworking:
+    :path: "../pod-networking"
+  ProgressHUD:
+    :git: https://github.com/relatedcode/ProgressHUD.git
+
+CHECKOUT OPTIONS:
+  ProgressHUD:
+    :commit: 6fff548ce8f1d86dea26ace6628b79fce38efa16
+    :git: https://github.com/relatedcode/ProgressHUD.git
+
+SPEC CHECKSUMS:
+  MELINetworking: 41d7f583c6e78b012caa3a91730c30364872d74f
+  ProgressHUD: 4e4efbaf4f5de8bd32e0c4c3b6644a90ea1a8c3e
+
+PODFILE CHECKSUM: 78e19c3c924fba615553c474f763f30716a73025
+
+COCOAPODS: 1.5.3

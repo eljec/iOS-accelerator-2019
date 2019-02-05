@@ -92,8 +92,8 @@ orderArrayBlockType orderByProperty = ^ NSArray * (NSArray *array, NSString *pro
          NSMutableArray *resultArray = [[NSMutableArray alloc] init];
          
          for(NSDictionary *item in [array valueForKey: @"results"]){
-             [resultArray addObject: [MAOListViewControllerModel initWithDictionary: item]];
-             NSLog(@"Response: %@", item);
+             [resultArray addObject: [[MAOListViewControllerModel alloc] initWithDictionary: item]];
+//             NSLog(@"Response: %@", item);
          }
          
          [self openMAOListView:orderArray(resultArray, property)];

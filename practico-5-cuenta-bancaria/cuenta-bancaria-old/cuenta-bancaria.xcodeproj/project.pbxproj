@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		161CE8B72204CCAA00A1536A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 161CE8B52204CCAA00A1536A /* MainViewController.m */; };
+		161CE8B82204CCAA00A1536A /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 161CE8B62204CCAA00A1536A /* MainViewController.xib */; };
+		16C3ACC72203835400EEE131 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C3ACC62203835400EEE131 /* AppDelegate.m */; };
+		16C3ACCF2203835500EEE131 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16C3ACCE2203835500EEE131 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		16C3ACDB2203835500EEE131 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16C3ACBA2203835400EEE131 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16C3ACC12203835400EEE131;
+			remoteInfo = "cuenta-bancaria";
+		};
+		16C3ACE62203835500EEE131 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16C3ACBA2203835400EEE131 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16C3ACC12203835400EEE131;
+			remoteInfo = "cuenta-bancaria";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		161CE8B42204CCAA00A1536A /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		161CE8B52204CCAA00A1536A /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		161CE8B62204CCAA00A1536A /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		165872C72204E44A00B1EF81 /* cuenta-bancaria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cuenta-bancaria.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		16C3ACC52203835400EEE131 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		16C3ACC62203835400EEE131 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		16C3ACCE2203835500EEE131 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		16C3ACD32203835500EEE131 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16C3ACDA2203835500EEE131 /* cuenta-bancariaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "cuenta-bancariaTests.xctest"; path = "/Users/gquarin/git-repos/iOS-accelerator-2019/practico-5-cuenta-bancaria/cuenta-bancaria/build/Debug-iphoneos/cuenta-bancariaTests.xctest"; sourceTree = "<absolute>"; };
+		16C3ACE52203835500EEE131 /* cuenta-bancariaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "cuenta-bancariaUITests.xctest"; path = "/Users/gquarin/git-repos/iOS-accelerator-2019/practico-5-cuenta-bancaria/cuenta-bancaria/build/Debug-iphoneos/cuenta-bancariaUITests.xctest"; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		16C3ACBF2203835400EEE131 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16C3ACD72203835500EEE131 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16C3ACE22203835500EEE131 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16C3ACB92203835400EEE131 = {
+			isa = PBXGroup;
+			children = (
+				16C3ACC42203835400EEE131 /* cuenta-bancaria */,
+				165872C72204E44A00B1EF81 /* cuenta-bancaria.app */,
+			);
+			sourceTree = "<group>";
+		};
+		16C3ACC42203835400EEE131 /* cuenta-bancaria */ = {
+			isa = PBXGroup;
+			children = (
+				16C3ACC52203835400EEE131 /* AppDelegate.h */,
+				16C3ACC62203835400EEE131 /* AppDelegate.m */,
+				16C3ACCE2203835500EEE131 /* Assets.xcassets */,
+				16C3ACD32203835500EEE131 /* Info.plist */,
+				161CE8B42204CCAA00A1536A /* MainViewController.h */,
+				161CE8B52204CCAA00A1536A /* MainViewController.m */,
+				161CE8B62204CCAA00A1536A /* MainViewController.xib */,
+			);
+			path = "cuenta-bancaria";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		16C3ACC12203835400EEE131 /* cuenta-bancaria */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16C3ACEE2203835500EEE131 /* Build configuration list for PBXNativeTarget "cuenta-bancaria" */;
+			buildPhases = (
+				16C3ACBE2203835400EEE131 /* Sources */,
+				16C3ACBF2203835400EEE131 /* Frameworks */,
+				16C3ACC02203835400EEE131 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "cuenta-bancaria";
+			productName = "cuenta-bancaria";
+			productReference = 165872C72204E44A00B1EF81 /* cuenta-bancaria.app */;
+			productType = "com.apple.product-type.application";
+		};
+		16C3ACD92203835500EEE131 /* cuenta-bancariaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16C3ACF12203835500EEE131 /* Build configuration list for PBXNativeTarget "cuenta-bancariaTests" */;
+			buildPhases = (
+				16C3ACD62203835500EEE131 /* Sources */,
+				16C3ACD72203835500EEE131 /* Frameworks */,
+				16C3ACD82203835500EEE131 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16C3ACDC2203835500EEE131 /* PBXTargetDependency */,
+			);
+			name = "cuenta-bancariaTests";
+			productName = "cuenta-bancariaTests";
+			productReference = 16C3ACDA2203835500EEE131 /* cuenta-bancariaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		16C3ACE42203835500EEE131 /* cuenta-bancariaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16C3ACF42203835500EEE131 /* Build configuration list for PBXNativeTarget "cuenta-bancariaUITests" */;
+			buildPhases = (
+				16C3ACE12203835500EEE131 /* Sources */,
+				16C3ACE22203835500EEE131 /* Frameworks */,
+				16C3ACE32203835500EEE131 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16C3ACE72203835500EEE131 /* PBXTargetDependency */,
+			);
+			name = "cuenta-bancariaUITests";
+			productName = "cuenta-bancariaUITests";
+			productReference = 16C3ACE52203835500EEE131 /* cuenta-bancariaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		16C3ACBA2203835400EEE131 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Accelerator-Meli";
+				TargetAttributes = {
+					16C3ACC12203835400EEE131 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					16C3ACD92203835500EEE131 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 16C3ACC12203835400EEE131;
+					};
+					16C3ACE42203835500EEE131 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 16C3ACC12203835400EEE131;
+					};
+				};
+			};
+			buildConfigurationList = 16C3ACBD2203835400EEE131 /* Build configuration list for PBXProject "cuenta-bancaria" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 16C3ACB92203835400EEE131;
+			productRefGroup = 16C3ACB92203835400EEE131;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				16C3ACC12203835400EEE131 /* cuenta-bancaria */,
+				16C3ACD92203835500EEE131 /* cuenta-bancariaTests */,
+				16C3ACE42203835500EEE131 /* cuenta-bancariaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		16C3ACC02203835400EEE131 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16C3ACCF2203835500EEE131 /* Assets.xcassets in Resources */,
+				161CE8B82204CCAA00A1536A /* MainViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16C3ACD82203835500EEE131 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16C3ACE32203835500EEE131 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16C3ACBE2203835400EEE131 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16C3ACC72203835400EEE131 /* AppDelegate.m in Sources */,
+				161CE8B72204CCAA00A1536A /* MainViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16C3ACD62203835500EEE131 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16C3ACE12203835500EEE131 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		16C3ACDC2203835500EEE131 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16C3ACC12203835400EEE131 /* cuenta-bancaria */;
+			targetProxy = 16C3ACDB2203835500EEE131 /* PBXContainerItemProxy */;
+		};
+		16C3ACE72203835500EEE131 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16C3ACC12203835400EEE131 /* cuenta-bancaria */;
+			targetProxy = 16C3ACE62203835500EEE131 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		16C3ACEC2203835500EEE131 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		16C3ACED2203835500EEE131 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		16C3ACEF2203835500EEE131 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"BUNDLE_LOADER[arch=*]" = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "cuenta-bancaria/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACH_O_TYPE = mh_execute;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mercadolibre.cuenta-bancaria.cuenta-bancaria";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "cuenta-bancaria/cuenta-bancaria-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		16C3ACF02203835500EEE131 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "cuenta-bancaria/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACH_O_TYPE = mh_execute;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mercadolibre.cuenta-bancaria.cuenta-bancaria";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "cuenta-bancaria/cuenta-bancaria-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		16C3ACF22203835500EEE131 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "cuenta-bancariaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mercadolibre.cuenta-bancaria.cuenta-bancariaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cuenta-bancaria.app/cuenta-bancaria";
+			};
+			name = Debug;
+		};
+		16C3ACF32203835500EEE131 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "cuenta-bancariaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mercadolibre.cuenta-bancaria.cuenta-bancariaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cuenta-bancaria.app/cuenta-bancaria";
+			};
+			name = Release;
+		};
+		16C3ACF52203835500EEE131 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "cuenta-bancariaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mercadolibre.cuenta-bancaria.cuenta-bancariaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "cuenta-bancaria";
+			};
+			name = Debug;
+		};
+		16C3ACF62203835500EEE131 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "cuenta-bancariaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mercadolibre.cuenta-bancaria.cuenta-bancariaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "cuenta-bancaria";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16C3ACBD2203835400EEE131 /* Build configuration list for PBXProject "cuenta-bancaria" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16C3ACEC2203835500EEE131 /* Debug */,
+				16C3ACED2203835500EEE131 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16C3ACEE2203835500EEE131 /* Build configuration list for PBXNativeTarget "cuenta-bancaria" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16C3ACEF2203835500EEE131 /* Debug */,
+				16C3ACF02203835500EEE131 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16C3ACF12203835500EEE131 /* Build configuration list for PBXNativeTarget "cuenta-bancariaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16C3ACF22203835500EEE131 /* Debug */,
+				16C3ACF32203835500EEE131 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16C3ACF42203835500EEE131 /* Build configuration list for PBXNativeTarget "cuenta-bancariaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16C3ACF52203835500EEE131 /* Debug */,
+				16C3ACF62203835500EEE131 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 16C3ACBA2203835400EEE131 /* Project object */;
+}

@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1624C9A32201EC27008910F9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1624C9A22201EC27008910F9 /* AppDelegate.m */; };
+		1624C9AB2201EC27008910F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1624C9AA2201EC27008910F9 /* Assets.xcassets */; };
+		1624C9B12201EC27008910F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1624C9B02201EC27008910F9 /* main.m */; };
+		1624C9D52201EC5C008910F9 /* MELINetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1624C9D42201EC5C008910F9 /* MELINetworking.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1624C9B72201EC27008910F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1624C9962201EC27008910F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1624C99D2201EC27008910F9;
+			remoteInfo = "pod-networking";
+		};
+		1624C9C22201EC27008910F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1624C9962201EC27008910F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1624C99D2201EC27008910F9;
+			remoteInfo = "pod-networking";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1624C99E2201EC27008910F9 /* pod-networking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pod-networking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1624C9A12201EC27008910F9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1624C9A22201EC27008910F9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1624C9AA2201EC27008910F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1624C9AF2201EC27008910F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1624C9B02201EC27008910F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1624C9B62201EC27008910F9 /* pod-networkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "pod-networkingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1624C9C12201EC27008910F9 /* pod-networkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "pod-networkingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1624C9D32201EC5C008910F9 /* MELINetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MELINetworking.h; sourceTree = "<group>"; };
+		1624C9D42201EC5C008910F9 /* MELINetworking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MELINetworking.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1624C99B2201EC27008910F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1624C9B32201EC27008910F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1624C9BE2201EC27008910F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1624C9952201EC27008910F9 = {
+			isa = PBXGroup;
+			children = (
+				1624C9A02201EC27008910F9 /* pod-networking */,
+				1624C99F2201EC27008910F9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1624C99F2201EC27008910F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1624C99E2201EC27008910F9 /* pod-networking.app */,
+				1624C9B62201EC27008910F9 /* pod-networkingTests.xctest */,
+				1624C9C12201EC27008910F9 /* pod-networkingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1624C9A02201EC27008910F9 /* pod-networking */ = {
+			isa = PBXGroup;
+			children = (
+				1624C9A12201EC27008910F9 /* AppDelegate.h */,
+				1624C9A22201EC27008910F9 /* AppDelegate.m */,
+				1624C9AA2201EC27008910F9 /* Assets.xcassets */,
+				1624C9AF2201EC27008910F9 /* Info.plist */,
+				1624C9B02201EC27008910F9 /* main.m */,
+				1624C9D32201EC5C008910F9 /* MELINetworking.h */,
+				1624C9D42201EC5C008910F9 /* MELINetworking.m */,
+			);
+			path = "pod-networking";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1624C99D2201EC27008910F9 /* pod-networking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1624C9CA2201EC27008910F9 /* Build configuration list for PBXNativeTarget "pod-networking" */;
+			buildPhases = (
+				1624C99A2201EC27008910F9 /* Sources */,
+				1624C99B2201EC27008910F9 /* Frameworks */,
+				1624C99C2201EC27008910F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "pod-networking";
+			productName = "pod-networking";
+			productReference = 1624C99E2201EC27008910F9 /* pod-networking.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1624C9B52201EC27008910F9 /* pod-networkingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1624C9CD2201EC27008910F9 /* Build configuration list for PBXNativeTarget "pod-networkingTests" */;
+			buildPhases = (
+				1624C9B22201EC27008910F9 /* Sources */,
+				1624C9B32201EC27008910F9 /* Frameworks */,
+				1624C9B42201EC27008910F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1624C9B82201EC27008910F9 /* PBXTargetDependency */,
+			);
+			name = "pod-networkingTests";
+			productName = "pod-networkingTests";
+			productReference = 1624C9B62201EC27008910F9 /* pod-networkingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1624C9C02201EC27008910F9 /* pod-networkingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1624C9D02201EC27008910F9 /* Build configuration list for PBXNativeTarget "pod-networkingUITests" */;
+			buildPhases = (
+				1624C9BD2201EC27008910F9 /* Sources */,
+				1624C9BE2201EC27008910F9 /* Frameworks */,
+				1624C9BF2201EC27008910F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1624C9C32201EC27008910F9 /* PBXTargetDependency */,
+			);
+			name = "pod-networkingUITests";
+			productName = "pod-networkingUITests";
+			productReference = 1624C9C12201EC27008910F9 /* pod-networkingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1624C9962201EC27008910F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Accelerator-Meli";
+				TargetAttributes = {
+					1624C99D2201EC27008910F9 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					1624C9B52201EC27008910F9 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 1624C99D2201EC27008910F9;
+					};
+					1624C9C02201EC27008910F9 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 1624C99D2201EC27008910F9;
+					};
+				};
+			};
+			buildConfigurationList = 1624C9992201EC27008910F9 /* Build configuration list for PBXProject "pod-networking" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1624C9952201EC27008910F9;
+			productRefGroup = 1624C99F2201EC27008910F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1624C99D2201EC27008910F9 /* pod-networking */,
+				1624C9B52201EC27008910F9 /* pod-networkingTests */,
+				1624C9C02201EC27008910F9 /* pod-networkingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1624C99C2201EC27008910F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1624C9AB2201EC27008910F9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1624C9B42201EC27008910F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1624C9BF2201EC27008910F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1624C99A2201EC27008910F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1624C9B12201EC27008910F9 /* main.m in Sources */,
+				1624C9A32201EC27008910F9 /* AppDelegate.m in Sources */,
+				1624C9D52201EC5C008910F9 /* MELINetworking.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1624C9B22201EC27008910F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1624C9BD2201EC27008910F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1624C9B82201EC27008910F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1624C99D2201EC27008910F9 /* pod-networking */;
+			targetProxy = 1624C9B72201EC27008910F9 /* PBXContainerItemProxy */;
+		};
+		1624C9C32201EC27008910F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1624C99D2201EC27008910F9 /* pod-networking */;
+			targetProxy = 1624C9C22201EC27008910F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1624C9C82201EC27008910F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1624C9C92201EC27008910F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1624C9CB2201EC27008910F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "pod-networking/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mercadolibre.pod-networking.pod-networking";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1624C9CC2201EC27008910F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "pod-networking/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mercadolibre.pod-networking.pod-networking";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1624C9CE2201EC27008910F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "pod-networkingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mercadolibre.pod-networking.pod-networkingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pod-networking.app/pod-networking";
+			};
+			name = Debug;
+		};
+		1624C9CF2201EC27008910F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "pod-networkingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mercadolibre.pod-networking.pod-networkingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pod-networking.app/pod-networking";
+			};
+			name = Release;
+		};
+		1624C9D12201EC27008910F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "pod-networkingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mercadolibre.pod-networking.pod-networkingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "pod-networking";
+			};
+			name = Debug;
+		};
+		1624C9D22201EC27008910F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "pod-networkingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mercadolibre.pod-networking.pod-networkingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "pod-networking";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1624C9992201EC27008910F9 /* Build configuration list for PBXProject "pod-networking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1624C9C82201EC27008910F9 /* Debug */,
+				1624C9C92201EC27008910F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1624C9CA2201EC27008910F9 /* Build configuration list for PBXNativeTarget "pod-networking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1624C9CB2201EC27008910F9 /* Debug */,
+				1624C9CC2201EC27008910F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1624C9CD2201EC27008910F9 /* Build configuration list for PBXNativeTarget "pod-networkingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1624C9CE2201EC27008910F9 /* Debug */,
+				1624C9CF2201EC27008910F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1624C9D02201EC27008910F9 /* Build configuration list for PBXNativeTarget "pod-networkingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1624C9D12201EC27008910F9 /* Debug */,
+				1624C9D22201EC27008910F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1624C9962201EC27008910F9 /* Project object */;
+}

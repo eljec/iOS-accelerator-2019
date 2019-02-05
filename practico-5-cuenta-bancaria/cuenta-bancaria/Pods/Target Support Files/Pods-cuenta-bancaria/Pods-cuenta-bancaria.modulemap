@@ -1,0 +1,6 @@
+framework module Pods_cuenta_bancaria {
+  umbrella header "Pods-cuenta-bancaria-umbrella.h"
+
+  export *
+  module * { export * }
+}

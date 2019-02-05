@@ -1,0 +1,18 @@
+{
+  "name": "CuentaBancariaLib",
+  "version": "0.0.1",
+  "summary": "A short description of CuentaBancariaLib.",
+  "description": "Esto es una descripción",
+  "homepage": "https://github.com/gquarin?tab=repositories",
+  "license": "none",
+  "authors": {
+    "Gonzalo": "quaringonzalo@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/gquarin?tab=repositories"
+  },
+  "source_files": "cuenta-bancaria-lib/Shared/*.swift",
+  "platforms": {
+    "ios": "8.0"
+  }
+}

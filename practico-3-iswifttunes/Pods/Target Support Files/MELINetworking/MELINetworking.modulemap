@@ -1,0 +1,6 @@
+framework module MELINetworking {
+  umbrella header "MELINetworking-umbrella.h"
+
+  export *
+  module * { export * }
+}
