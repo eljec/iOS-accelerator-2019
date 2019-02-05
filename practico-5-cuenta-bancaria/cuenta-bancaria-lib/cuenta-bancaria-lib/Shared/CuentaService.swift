@@ -16,22 +16,21 @@ import Foundation
     
     @objc public static func getCuenta() -> Cuenta{
         var cuenta = Cuenta()
-        
-        
+            
         if (UserDefaults.standard.object(forKey: _cuentaKey) == nil) {
-            let resultadoCrearCuenta = save(cuenta: cuenta)
-            print("\(resultadoCrearCuenta)")
+            let resultado = save(cuenta: cuenta)
+            if(!resultado){
+                print("Ocurrió un error al inicializar la cuenta")
+            }
         }
         
         let decoded: Any? = UserDefaults.standard.object(forKey: _cuentaKey)
-
+        
         do{
-            
             cuenta = try NSKeyedUnarchiver.unarchivedObject(ofClass: Cuenta.self, from: decoded as! Data) ?? cuenta
-            
+        
             cuenta.movimientos = getMovimientos()
             print("\(cuenta)")
-
             
         }catch let error {
             print("Se produjo un error al obtener los CUENTA en User Defaults: Error -> \(error)")
@@ -40,9 +39,14 @@ import Foundation
         return cuenta
     }
     
+    fileprivate static func saveUserData(_ encodedData: Data, key: String) {
+        UserDefaults.standard.set(encodedData, forKey: key)
+        UserDefaults.standard.synchronize()
+    }
+    
     @objc public static func save(cuenta: Cuenta) -> Bool{
-        
         var resultado = false
+        
         do {
             
             let encodedData: Data = try NSKeyedArchiver.archivedData(withRootObject: cuenta, requiringSecureCoding: true)
@@ -50,8 +54,7 @@ import Foundation
             resultado = saveMovimiento(movimiento: cuenta.movimientos)
             
             if(resultado){
-                UserDefaults.standard.set(encodedData, forKey: _cuentaKey)
-                UserDefaults.standard.synchronize()
+                saveUserData(encodedData, key: _cuentaKey)
             }
             
             return resultado
@@ -94,8 +97,7 @@ import Foundation
             
             let encodedData: Data = try NSKeyedArchiver.archivedData(withRootObject: movimiento, requiringSecureCoding: true)
             
-            UserDefaults.standard.set(encodedData, forKey: _movimientoskey)
-            UserDefaults.standard.synchronize()
+            saveUserData(encodedData, key: _movimientoskey)
             
             return true
             
@@ -104,6 +106,11 @@ import Foundation
         }
         
         return false
+    }
+    
+    public static func removeKeys(){
+        UserDefaults.standard.removeObject(forKey: _cuentaKey)
+        UserDefaults.standard.removeObject(forKey: _movimientoskey)
     }
     
 }
