@@ -1,0 +1,6 @@
+framework module Pods_MLBankAccount {
+  umbrella header "Pods-MLBankAccount-umbrella.h"
+
+  export *
+  module * { export * }
+}

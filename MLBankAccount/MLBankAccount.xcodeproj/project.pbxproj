@@ -1,0 +1,739 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		458B566ACC09CD7FB9D7D43D /* Pods_MLBankAccount.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28A36B746B2526347CC6077A /* Pods_MLBankAccount.framework */; };
+		674C9DD4534D3A021072A37D /* Pods_MLBankAccountUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDEE33B82A51ABC3ED5F7BFC /* Pods_MLBankAccountUITests.framework */; };
+		C433922D2208720700474BD9 /* MLBankAccountBalanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C433922B2208720700474BD9 /* MLBankAccountBalanceViewController.m */; };
+		C433922E2208720700474BD9 /* MLBankAccountBalanceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C433922C2208720700474BD9 /* MLBankAccountBalanceViewController.xib */; };
+		C4A9538D2203882800697961 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A9538C2203882800697961 /* AppDelegate.m */; };
+		C4A953952203882900697961 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4A953942203882900697961 /* Assets.xcassets */; };
+		C4A9539B2203882900697961 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A9539A2203882900697961 /* main.m */; };
+		C4A953A52203882900697961 /* MLBankAccountTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A953A42203882900697961 /* MLBankAccountTests.m */; };
+		C4A953B02203882900697961 /* MLBankAccountUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A953AF2203882900697961 /* MLBankAccountUITests.m */; };
+		C4A953C12203884E00697961 /* MLBankAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A953BF2203884E00697961 /* MLBankAccountViewController.m */; };
+		C4A953C22203884E00697961 /* MLBankAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4A953C02203884E00697961 /* MLBankAccountViewController.xib */; };
+		D27DE32FEB85FD8436F06762 /* Pods_MLBankAccountTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6311E8A3BD1E9F4427BC85F1 /* Pods_MLBankAccountTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C4A953A12203882900697961 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4A953802203882800697961 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4A953872203882800697961;
+			remoteInfo = MLBankAccount;
+		};
+		C4A953AC2203882900697961 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4A953802203882800697961 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4A953872203882800697961;
+			remoteInfo = MLBankAccount;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01ECEF83CE126D9A9FEE24F8 /* Pods-MLBankAccountTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLBankAccountTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MLBankAccountTests/Pods-MLBankAccountTests.release.xcconfig"; sourceTree = "<group>"; };
+		22125ABA4C6D9F33D43419CB /* Pods-MLBankAccountUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLBankAccountUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MLBankAccountUITests/Pods-MLBankAccountUITests.release.xcconfig"; sourceTree = "<group>"; };
+		28A36B746B2526347CC6077A /* Pods_MLBankAccount.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MLBankAccount.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35D887C4611881C33DA10D33 /* Pods-MLBankAccount.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLBankAccount.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MLBankAccount/Pods-MLBankAccount.debug.xcconfig"; sourceTree = "<group>"; };
+		6196163ED92E42B5412C1FF3 /* Pods-MLBankAccount.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLBankAccount.release.xcconfig"; path = "Pods/Target Support Files/Pods-MLBankAccount/Pods-MLBankAccount.release.xcconfig"; sourceTree = "<group>"; };
+		6311E8A3BD1E9F4427BC85F1 /* Pods_MLBankAccountTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MLBankAccountTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		872CD6D726A94919EA74C8F0 /* Pods-MLBankAccountUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLBankAccountUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MLBankAccountUITests/Pods-MLBankAccountUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C433922A2208720700474BD9 /* MLBankAccountBalanceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLBankAccountBalanceViewController.h; sourceTree = "<group>"; };
+		C433922B2208720700474BD9 /* MLBankAccountBalanceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLBankAccountBalanceViewController.m; sourceTree = "<group>"; };
+		C433922C2208720700474BD9 /* MLBankAccountBalanceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MLBankAccountBalanceViewController.xib; sourceTree = "<group>"; };
+		C4A953882203882800697961 /* MLBankAccount.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MLBankAccount.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4A9538B2203882800697961 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C4A9538C2203882800697961 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C4A953942203882900697961 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4A953992203882900697961 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4A9539A2203882900697961 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C4A953A02203882900697961 /* MLBankAccountTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MLBankAccountTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4A953A42203882900697961 /* MLBankAccountTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLBankAccountTests.m; sourceTree = "<group>"; };
+		C4A953A62203882900697961 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4A953AB2203882900697961 /* MLBankAccountUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MLBankAccountUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4A953AF2203882900697961 /* MLBankAccountUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLBankAccountUITests.m; sourceTree = "<group>"; };
+		C4A953B12203882900697961 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4A953BE2203884E00697961 /* MLBankAccountViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLBankAccountViewController.h; sourceTree = "<group>"; };
+		C4A953BF2203884E00697961 /* MLBankAccountViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLBankAccountViewController.m; sourceTree = "<group>"; };
+		C4A953C02203884E00697961 /* MLBankAccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MLBankAccountViewController.xib; sourceTree = "<group>"; };
+		EDEE33B82A51ABC3ED5F7BFC /* Pods_MLBankAccountUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MLBankAccountUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8A07BF88C75281E6D59706A /* Pods-MLBankAccountTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLBankAccountTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MLBankAccountTests/Pods-MLBankAccountTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4A953852203882800697961 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				458B566ACC09CD7FB9D7D43D /* Pods_MLBankAccount.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4A9539D2203882900697961 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D27DE32FEB85FD8436F06762 /* Pods_MLBankAccountTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4A953A82203882900697961 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				674C9DD4534D3A021072A37D /* Pods_MLBankAccountUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C43392292208716700474BD9 /* MLBalanceView */ = {
+			isa = PBXGroup;
+			children = (
+				C433922A2208720700474BD9 /* MLBankAccountBalanceViewController.h */,
+				C433922B2208720700474BD9 /* MLBankAccountBalanceViewController.m */,
+				C433922C2208720700474BD9 /* MLBankAccountBalanceViewController.xib */,
+			);
+			path = MLBalanceView;
+			sourceTree = "<group>";
+		};
+		C4A9537F2203882800697961 = {
+			isa = PBXGroup;
+			children = (
+				C4A9538A2203882800697961 /* MLBankAccount */,
+				C4A953A32203882900697961 /* MLBankAccountTests */,
+				C4A953AE2203882900697961 /* MLBankAccountUITests */,
+				C4A953892203882800697961 /* Products */,
+				FE3D117AC20C40685F4FB9B3 /* Pods */,
+				F9808FA383229797B9B9168D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C4A953892203882800697961 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4A953882203882800697961 /* MLBankAccount.app */,
+				C4A953A02203882900697961 /* MLBankAccountTests.xctest */,
+				C4A953AB2203882900697961 /* MLBankAccountUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4A9538A2203882800697961 /* MLBankAccount */ = {
+			isa = PBXGroup;
+			children = (
+				C43392292208716700474BD9 /* MLBalanceView */,
+				C4A953BD2203883100697961 /* MLHomeController */,
+				C4A9538B2203882800697961 /* AppDelegate.h */,
+				C4A9538C2203882800697961 /* AppDelegate.m */,
+				C4A953942203882900697961 /* Assets.xcassets */,
+				C4A953992203882900697961 /* Info.plist */,
+				C4A9539A2203882900697961 /* main.m */,
+			);
+			path = MLBankAccount;
+			sourceTree = "<group>";
+		};
+		C4A953A32203882900697961 /* MLBankAccountTests */ = {
+			isa = PBXGroup;
+			children = (
+				C4A953A42203882900697961 /* MLBankAccountTests.m */,
+				C4A953A62203882900697961 /* Info.plist */,
+			);
+			path = MLBankAccountTests;
+			sourceTree = "<group>";
+		};
+		C4A953AE2203882900697961 /* MLBankAccountUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C4A953AF2203882900697961 /* MLBankAccountUITests.m */,
+				C4A953B12203882900697961 /* Info.plist */,
+			);
+			path = MLBankAccountUITests;
+			sourceTree = "<group>";
+		};
+		C4A953BD2203883100697961 /* MLHomeController */ = {
+			isa = PBXGroup;
+			children = (
+				C4A953BE2203884E00697961 /* MLBankAccountViewController.h */,
+				C4A953BF2203884E00697961 /* MLBankAccountViewController.m */,
+				C4A953C02203884E00697961 /* MLBankAccountViewController.xib */,
+			);
+			path = MLHomeController;
+			sourceTree = "<group>";
+		};
+		F9808FA383229797B9B9168D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28A36B746B2526347CC6077A /* Pods_MLBankAccount.framework */,
+				6311E8A3BD1E9F4427BC85F1 /* Pods_MLBankAccountTests.framework */,
+				EDEE33B82A51ABC3ED5F7BFC /* Pods_MLBankAccountUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE3D117AC20C40685F4FB9B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				35D887C4611881C33DA10D33 /* Pods-MLBankAccount.debug.xcconfig */,
+				6196163ED92E42B5412C1FF3 /* Pods-MLBankAccount.release.xcconfig */,
+				F8A07BF88C75281E6D59706A /* Pods-MLBankAccountTests.debug.xcconfig */,
+				01ECEF83CE126D9A9FEE24F8 /* Pods-MLBankAccountTests.release.xcconfig */,
+				872CD6D726A94919EA74C8F0 /* Pods-MLBankAccountUITests.debug.xcconfig */,
+				22125ABA4C6D9F33D43419CB /* Pods-MLBankAccountUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4A953872203882800697961 /* MLBankAccount */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4A953B42203882900697961 /* Build configuration list for PBXNativeTarget "MLBankAccount" */;
+			buildPhases = (
+				50CE3817B33992EF9542260E /* [CP] Check Pods Manifest.lock */,
+				C4A953842203882800697961 /* Sources */,
+				C4A953852203882800697961 /* Frameworks */,
+				C4A953862203882800697961 /* Resources */,
+				624C33F37F998DA88335CD27 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MLBankAccount;
+			productName = MLBankAccount;
+			productReference = C4A953882203882800697961 /* MLBankAccount.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C4A9539F2203882900697961 /* MLBankAccountTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4A953B72203882900697961 /* Build configuration list for PBXNativeTarget "MLBankAccountTests" */;
+			buildPhases = (
+				2480C971B5DA7575EE49E99A /* [CP] Check Pods Manifest.lock */,
+				C4A9539C2203882900697961 /* Sources */,
+				C4A9539D2203882900697961 /* Frameworks */,
+				C4A9539E2203882900697961 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4A953A22203882900697961 /* PBXTargetDependency */,
+			);
+			name = MLBankAccountTests;
+			productName = MLBankAccountTests;
+			productReference = C4A953A02203882900697961 /* MLBankAccountTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C4A953AA2203882900697961 /* MLBankAccountUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4A953BA2203882900697961 /* Build configuration list for PBXNativeTarget "MLBankAccountUITests" */;
+			buildPhases = (
+				7161C4FEF4B7B7711C715D1B /* [CP] Check Pods Manifest.lock */,
+				C4A953A72203882900697961 /* Sources */,
+				C4A953A82203882900697961 /* Frameworks */,
+				C4A953A92203882900697961 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4A953AD2203882900697961 /* PBXTargetDependency */,
+			);
+			name = MLBankAccountUITests;
+			productName = MLBankAccountUITests;
+			productReference = C4A953AB2203882900697961 /* MLBankAccountUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4A953802203882800697961 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Marcio Mortarino";
+				TargetAttributes = {
+					C4A953872203882800697961 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					C4A9539F2203882900697961 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = C4A953872203882800697961;
+					};
+					C4A953AA2203882900697961 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = C4A953872203882800697961;
+					};
+				};
+			};
+			buildConfigurationList = C4A953832203882800697961 /* Build configuration list for PBXProject "MLBankAccount" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C4A9537F2203882800697961;
+			productRefGroup = C4A953892203882800697961 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4A953872203882800697961 /* MLBankAccount */,
+				C4A9539F2203882900697961 /* MLBankAccountTests */,
+				C4A953AA2203882900697961 /* MLBankAccountUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4A953862203882800697961 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4A953C22203884E00697961 /* MLBankAccountViewController.xib in Resources */,
+				C433922E2208720700474BD9 /* MLBankAccountBalanceViewController.xib in Resources */,
+				C4A953952203882900697961 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4A9539E2203882900697961 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4A953A92203882900697961 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2480C971B5DA7575EE49E99A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MLBankAccountTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50CE3817B33992EF9542260E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MLBankAccount-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		624C33F37F998DA88335CD27 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MLBankAccount/Pods-MLBankAccount-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MLBankMovementsLib/MLBankMovementsLib.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MLBankMovementsLib.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MLBankAccount/Pods-MLBankAccount-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7161C4FEF4B7B7711C715D1B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MLBankAccountUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4A953842203882800697961 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4A953C12203884E00697961 /* MLBankAccountViewController.m in Sources */,
+				C4A9539B2203882900697961 /* main.m in Sources */,
+				C433922D2208720700474BD9 /* MLBankAccountBalanceViewController.m in Sources */,
+				C4A9538D2203882800697961 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4A9539C2203882900697961 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4A953A52203882900697961 /* MLBankAccountTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4A953A72203882900697961 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4A953B02203882900697961 /* MLBankAccountUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C4A953A22203882900697961 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4A953872203882800697961 /* MLBankAccount */;
+			targetProxy = C4A953A12203882900697961 /* PBXContainerItemProxy */;
+		};
+		C4A953AD2203882900697961 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4A953872203882800697961 /* MLBankAccount */;
+			targetProxy = C4A953AC2203882900697961 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C4A953B22203882900697961 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C4A953B32203882900697961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4A953B52203882900697961 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35D887C4611881C33DA10D33 /* Pods-MLBankAccount.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				INFOPLIST_FILE = MLBankAccount/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MLBankMovementsLib\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mercadolibre.MLBankAccount;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MLBankAccount/HomeController/MLBankAccount-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C4A953B62203882900697961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6196163ED92E42B5412C1FF3 /* Pods-MLBankAccount.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				INFOPLIST_FILE = MLBankAccount/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mercadolibre.MLBankAccount;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MLBankAccount/HomeController/MLBankAccount-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C4A953B82203882900697961 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8A07BF88C75281E6D59706A /* Pods-MLBankAccountTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MLBankAccountTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mercadolibre.MLBankAccountTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MLBankAccount.app/MLBankAccount";
+			};
+			name = Debug;
+		};
+		C4A953B92203882900697961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01ECEF83CE126D9A9FEE24F8 /* Pods-MLBankAccountTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MLBankAccountTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mercadolibre.MLBankAccountTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MLBankAccount.app/MLBankAccount";
+			};
+			name = Release;
+		};
+		C4A953BB2203882900697961 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 872CD6D726A94919EA74C8F0 /* Pods-MLBankAccountUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MLBankAccountUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mercadolibre.MLBankAccountUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MLBankAccount;
+			};
+			name = Debug;
+		};
+		C4A953BC2203882900697961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22125ABA4C6D9F33D43419CB /* Pods-MLBankAccountUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MLBankAccountUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mercadolibre.MLBankAccountUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MLBankAccount;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4A953832203882800697961 /* Build configuration list for PBXProject "MLBankAccount" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4A953B22203882900697961 /* Debug */,
+				C4A953B32203882900697961 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4A953B42203882900697961 /* Build configuration list for PBXNativeTarget "MLBankAccount" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4A953B52203882900697961 /* Debug */,
+				C4A953B62203882900697961 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4A953B72203882900697961 /* Build configuration list for PBXNativeTarget "MLBankAccountTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4A953B82203882900697961 /* Debug */,
+				C4A953B92203882900697961 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4A953BA2203882900697961 /* Build configuration list for PBXNativeTarget "MLBankAccountUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4A953BB2203882900697961 /* Debug */,
+				C4A953BC2203882900697961 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C4A953802203882800697961 /* Project object */;
+}

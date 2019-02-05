@@ -1,0 +1,566 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C4A953D022038AAD00697961 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A953CF22038AAD00697961 /* AppDelegate.swift */; };
+		C4A953D722038AAD00697961 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4A953D622038AAD00697961 /* Assets.xcassets */; };
+		C4A953E522038AAD00697961 /* MLBankMovementsLibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A953E422038AAD00697961 /* MLBankMovementsLibTests.swift */; };
+		C4A953F022038AAD00697961 /* MLBankMovementsLibUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A953EF22038AAD00697961 /* MLBankMovementsLibUITests.swift */; };
+		C4A954012203923600697961 /* MLBankMovements.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A954002203923600697961 /* MLBankMovements.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C4A953E122038AAD00697961 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4A953C422038AAD00697961 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4A953CB22038AAD00697961;
+			remoteInfo = MLBankMovementsLib;
+		};
+		C4A953EC22038AAD00697961 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4A953C422038AAD00697961 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4A953CB22038AAD00697961;
+			remoteInfo = MLBankMovementsLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C4A953CC22038AAD00697961 /* MLBankMovementsLib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MLBankMovementsLib.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4A953CF22038AAD00697961 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C4A953D622038AAD00697961 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4A953DB22038AAD00697961 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4A953E022038AAD00697961 /* MLBankMovementsLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MLBankMovementsLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4A953E422038AAD00697961 /* MLBankMovementsLibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLBankMovementsLibTests.swift; sourceTree = "<group>"; };
+		C4A953E622038AAD00697961 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4A953EB22038AAD00697961 /* MLBankMovementsLibUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MLBankMovementsLibUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4A953EF22038AAD00697961 /* MLBankMovementsLibUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLBankMovementsLibUITests.swift; sourceTree = "<group>"; };
+		C4A953F122038AAD00697961 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4A954002203923600697961 /* MLBankMovements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLBankMovements.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4A953C922038AAD00697961 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4A953DD22038AAD00697961 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4A953E822038AAD00697961 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C4A953C322038AAD00697961 = {
+			isa = PBXGroup;
+			children = (
+				C4A953CE22038AAD00697961 /* MLBankMovementsLib */,
+				C4A953E322038AAD00697961 /* MLBankMovementsLibTests */,
+				C4A953EE22038AAD00697961 /* MLBankMovementsLibUITests */,
+				C4A953CD22038AAD00697961 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C4A953CD22038AAD00697961 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4A953CC22038AAD00697961 /* MLBankMovementsLib.app */,
+				C4A953E022038AAD00697961 /* MLBankMovementsLibTests.xctest */,
+				C4A953EB22038AAD00697961 /* MLBankMovementsLibUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4A953CE22038AAD00697961 /* MLBankMovementsLib */ = {
+			isa = PBXGroup;
+			children = (
+				C4A953FD22038C8700697961 /* App */,
+				C4A954002203923600697961 /* MLBankMovements.swift */,
+			);
+			path = MLBankMovementsLib;
+			sourceTree = "<group>";
+		};
+		C4A953E322038AAD00697961 /* MLBankMovementsLibTests */ = {
+			isa = PBXGroup;
+			children = (
+				C4A953E422038AAD00697961 /* MLBankMovementsLibTests.swift */,
+				C4A953E622038AAD00697961 /* Info.plist */,
+			);
+			path = MLBankMovementsLibTests;
+			sourceTree = "<group>";
+		};
+		C4A953EE22038AAD00697961 /* MLBankMovementsLibUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C4A953EF22038AAD00697961 /* MLBankMovementsLibUITests.swift */,
+				C4A953F122038AAD00697961 /* Info.plist */,
+			);
+			path = MLBankMovementsLibUITests;
+			sourceTree = "<group>";
+		};
+		C4A953FD22038C8700697961 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C4A953CF22038AAD00697961 /* AppDelegate.swift */,
+				C4A953D622038AAD00697961 /* Assets.xcassets */,
+				C4A953DB22038AAD00697961 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4A953CB22038AAD00697961 /* MLBankMovementsLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4A953F422038AAD00697961 /* Build configuration list for PBXNativeTarget "MLBankMovementsLib" */;
+			buildPhases = (
+				C4A953C822038AAD00697961 /* Sources */,
+				C4A953C922038AAD00697961 /* Frameworks */,
+				C4A953CA22038AAD00697961 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MLBankMovementsLib;
+			productName = MLBankMovementsLib;
+			productReference = C4A953CC22038AAD00697961 /* MLBankMovementsLib.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C4A953DF22038AAD00697961 /* MLBankMovementsLibTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4A953F722038AAD00697961 /* Build configuration list for PBXNativeTarget "MLBankMovementsLibTests" */;
+			buildPhases = (
+				C4A953DC22038AAD00697961 /* Sources */,
+				C4A953DD22038AAD00697961 /* Frameworks */,
+				C4A953DE22038AAD00697961 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4A953E222038AAD00697961 /* PBXTargetDependency */,
+			);
+			name = MLBankMovementsLibTests;
+			productName = MLBankMovementsLibTests;
+			productReference = C4A953E022038AAD00697961 /* MLBankMovementsLibTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C4A953EA22038AAD00697961 /* MLBankMovementsLibUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4A953FA22038AAD00697961 /* Build configuration list for PBXNativeTarget "MLBankMovementsLibUITests" */;
+			buildPhases = (
+				C4A953E722038AAD00697961 /* Sources */,
+				C4A953E822038AAD00697961 /* Frameworks */,
+				C4A953E922038AAD00697961 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4A953ED22038AAD00697961 /* PBXTargetDependency */,
+			);
+			name = MLBankMovementsLibUITests;
+			productName = MLBankMovementsLibUITests;
+			productReference = C4A953EB22038AAD00697961 /* MLBankMovementsLibUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4A953C422038AAD00697961 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Marcio Mortarino";
+				TargetAttributes = {
+					C4A953CB22038AAD00697961 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					C4A953DF22038AAD00697961 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = C4A953CB22038AAD00697961;
+					};
+					C4A953EA22038AAD00697961 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = C4A953CB22038AAD00697961;
+					};
+				};
+			};
+			buildConfigurationList = C4A953C722038AAD00697961 /* Build configuration list for PBXProject "MLBankMovementsLib" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C4A953C322038AAD00697961;
+			productRefGroup = C4A953CD22038AAD00697961 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4A953CB22038AAD00697961 /* MLBankMovementsLib */,
+				C4A953DF22038AAD00697961 /* MLBankMovementsLibTests */,
+				C4A953EA22038AAD00697961 /* MLBankMovementsLibUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4A953CA22038AAD00697961 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4A953D722038AAD00697961 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4A953DE22038AAD00697961 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4A953E922038AAD00697961 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4A953C822038AAD00697961 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4A953D022038AAD00697961 /* AppDelegate.swift in Sources */,
+				C4A954012203923600697961 /* MLBankMovements.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4A953DC22038AAD00697961 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4A953E522038AAD00697961 /* MLBankMovementsLibTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4A953E722038AAD00697961 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4A953F022038AAD00697961 /* MLBankMovementsLibUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C4A953E222038AAD00697961 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4A953CB22038AAD00697961 /* MLBankMovementsLib */;
+			targetProxy = C4A953E122038AAD00697961 /* PBXContainerItemProxy */;
+		};
+		C4A953ED22038AAD00697961 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4A953CB22038AAD00697961 /* MLBankMovementsLib */;
+			targetProxy = C4A953EC22038AAD00697961 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C4A953F222038AAD00697961 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C4A953F322038AAD00697961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4A953F522038AAD00697961 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/MLBankMovementsLib/App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mercadolibre.MLBankMovementsLib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C4A953F622038AAD00697961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/MLBankMovementsLib/App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mercadolibre.MLBankMovementsLib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C4A953F822038AAD00697961 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MLBankMovementsLibTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mercadolibre.MLBankMovementsLibTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MLBankMovementsLib.app/MLBankMovementsLib";
+			};
+			name = Debug;
+		};
+		C4A953F922038AAD00697961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MLBankMovementsLibTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mercadolibre.MLBankMovementsLibTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MLBankMovementsLib.app/MLBankMovementsLib";
+			};
+			name = Release;
+		};
+		C4A953FB22038AAD00697961 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MLBankMovementsLibUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mercadolibre.MLBankMovementsLibUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MLBankMovementsLib;
+			};
+			name = Debug;
+		};
+		C4A953FC22038AAD00697961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MLBankMovementsLibUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mercadolibre.MLBankMovementsLibUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MLBankMovementsLib;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4A953C722038AAD00697961 /* Build configuration list for PBXProject "MLBankMovementsLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4A953F222038AAD00697961 /* Debug */,
+				C4A953F322038AAD00697961 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4A953F422038AAD00697961 /* Build configuration list for PBXNativeTarget "MLBankMovementsLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4A953F522038AAD00697961 /* Debug */,
+				C4A953F622038AAD00697961 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4A953F722038AAD00697961 /* Build configuration list for PBXNativeTarget "MLBankMovementsLibTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4A953F822038AAD00697961 /* Debug */,
+				C4A953F922038AAD00697961 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4A953FA22038AAD00697961 /* Build configuration list for PBXNativeTarget "MLBankMovementsLibUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4A953FB22038AAD00697961 /* Debug */,
+				C4A953FC22038AAD00697961 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C4A953C422038AAD00697961 /* Project object */;
+}
