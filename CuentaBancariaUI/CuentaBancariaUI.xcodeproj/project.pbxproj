@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		082747B25DE94C0B8F1D74DA /* Pods_CuentaBancariaUIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F79667E8A12080E005DE060 /* Pods_CuentaBancariaUIUITests.framework */; };
 		5EC08D93C3286C94E4F1D576 /* Pods_CuentaBancariaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCA08AD6862D18A00138A5F7 /* Pods_CuentaBancariaUITests.framework */; };
+		971ED365220873E0004FBD0A /* CBMovementTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 971ED363220873E0004FBD0A /* CBMovementTableController.m */; };
+		971ED366220873E0004FBD0A /* CBMovementTableController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 971ED364220873E0004FBD0A /* CBMovementTableController.xib */; };
+		971ED36B22087D98004FBD0A /* CBMovementCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 971ED36922087D98004FBD0A /* CBMovementCell.m */; };
+		971ED36C22087D98004FBD0A /* CBMovementCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 971ED36A22087D98004FBD0A /* CBMovementCell.xib */; };
 		973348CC2204BF6000CF59B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 973348CB2204BF6000CF59B5 /* AppDelegate.m */; };
 		973348D42204BF6100CF59B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 973348D32204BF6100CF59B5 /* Assets.xcassets */; };
 		973348DA2204BF6100CF59B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 973348D92204BF6100CF59B5 /* main.m */; };
@@ -42,6 +46,12 @@
 		6E2CE5D214438978740651D1 /* Pods-CuentaBancariaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuentaBancariaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CuentaBancariaUITests/Pods-CuentaBancariaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		730A1EED92FDCAEE4AAE33B8 /* Pods_CuentaBancariaUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CuentaBancariaUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80ED42FEA76556C76EE98620 /* Pods-CuentaBancariaUIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuentaBancariaUIUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CuentaBancariaUIUITests/Pods-CuentaBancariaUIUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		971ED362220873E0004FBD0A /* CBMovementTableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBMovementTableController.h; sourceTree = "<group>"; };
+		971ED363220873E0004FBD0A /* CBMovementTableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBMovementTableController.m; sourceTree = "<group>"; };
+		971ED364220873E0004FBD0A /* CBMovementTableController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CBMovementTableController.xib; sourceTree = "<group>"; };
+		971ED36822087D98004FBD0A /* CBMovementCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBMovementCell.h; sourceTree = "<group>"; };
+		971ED36922087D98004FBD0A /* CBMovementCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBMovementCell.m; sourceTree = "<group>"; };
+		971ED36A22087D98004FBD0A /* CBMovementCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CBMovementCell.xib; sourceTree = "<group>"; };
 		973348C72204BF6000CF59B5 /* CuentaBancariaUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CuentaBancariaUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		973348CA2204BF6000CF59B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		973348CB2204BF6000CF59B5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -114,6 +124,37 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		971ED360220872FC004FBD0A /* Init */ = {
+			isa = PBXGroup;
+			children = (
+				973349052204EBBF00CF59B5 /* CBInitViewController.xib */,
+				973348FD2204C02300CF59B5 /* CBInitViewController.h */,
+				973348FE2204C02300CF59B5 /* CBInitViewController.m */,
+			);
+			path = Init;
+			sourceTree = "<group>";
+		};
+		971ED36122087304004FBD0A /* Movement */ = {
+			isa = PBXGroup;
+			children = (
+				971ED36722087D6D004FBD0A /* Cell */,
+				971ED362220873E0004FBD0A /* CBMovementTableController.h */,
+				971ED363220873E0004FBD0A /* CBMovementTableController.m */,
+				971ED364220873E0004FBD0A /* CBMovementTableController.xib */,
+			);
+			path = Movement;
+			sourceTree = "<group>";
+		};
+		971ED36722087D6D004FBD0A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				971ED36822087D98004FBD0A /* CBMovementCell.h */,
+				971ED36922087D98004FBD0A /* CBMovementCell.m */,
+				971ED36A22087D98004FBD0A /* CBMovementCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		973348BE2204BF6000CF59B5 = {
 			isa = PBXGroup;
 			children = (
@@ -170,9 +211,8 @@
 		973348FC2204C00800CF59B5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				973349052204EBBF00CF59B5 /* CBInitViewController.xib */,
-				973348FD2204C02300CF59B5 /* CBInitViewController.h */,
-				973348FE2204C02300CF59B5 /* CBInitViewController.m */,
+				971ED36122087304004FBD0A /* Movement */,
+				971ED360220872FC004FBD0A /* Init */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -285,7 +325,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				973348D42204BF6100CF59B5 /* Assets.xcassets in Resources */,
+				971ED366220873E0004FBD0A /* CBMovementTableController.xib in Resources */,
 				973349062204EBBF00CF59B5 /* CBInitViewController.xib in Resources */,
+				971ED36C22087D98004FBD0A /* CBMovementCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,8 +443,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				971ED36B22087D98004FBD0A /* CBMovementCell.m in Sources */,
 				973348FF2204C02300CF59B5 /* CBInitViewController.m in Sources */,
 				973348DA2204BF6100CF59B5 /* main.m in Sources */,
+				971ED365220873E0004FBD0A /* CBMovementTableController.m in Sources */,
 				973348CC2204BF6000CF59B5 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		19B0749E19F639B479D9A5A0 /* Pods_CuentaBancariaLIBUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EF4624A19C358C7A914EC26 /* Pods_CuentaBancariaLIBUITests.framework */; };
-		729003C15360C542FE522875 /* Pods_CuentaBancariaLIBTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE75FD2CF531EE6AB5201F2B /* Pods_CuentaBancariaLIBTests.framework */; };
+		971C2ACD2209B4B2006F24DA /* CBAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971C2ACA2209B4B2006F24DA /* CBAccount.swift */; };
+		971C2ACE2209B4B2006F24DA /* CBTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971C2ACB2209B4B2006F24DA /* CBTransaction.swift */; };
+		971C2ACF2209B4B2006F24DA /* CBErrorColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971C2ACC2209B4B2006F24DA /* CBErrorColor.swift */; };
 		9733480D2204835A00CF59B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9733480C2204835A00CF59B5 /* AppDelegate.swift */; };
 		973348142204835B00CF59B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 973348132204835B00CF59B5 /* Assets.xcassets */; };
 		973348222204835B00CF59B5 /* CuentaBancariaLIBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973348212204835B00CF59B5 /* CuentaBancariaLIBTests.swift */; };
 		9733482D2204835B00CF59B5 /* CuentaBancariaLIBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9733482C2204835B00CF59B5 /* CuentaBancariaLIBUITests.swift */; };
-		CC2921407B257BFC2D65E6E8 /* Pods_CuentaBancariaLIB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5475D1711654F5C4201BCD0D /* Pods_CuentaBancariaLIB.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1EF4624A19C358C7A914EC26 /* Pods_CuentaBancariaLIBUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CuentaBancariaLIBUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		377AB8614E4C8ED26CBE544F /* Pods-CuentaBancariaLIBTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuentaBancariaLIBTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CuentaBancariaLIBTests/Pods-CuentaBancariaLIBTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5475D1711654F5C4201BCD0D /* Pods_CuentaBancariaLIB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CuentaBancariaLIB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		672CC606D3460363EBFA227C /* Pods-CuentaBancariaLIB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuentaBancariaLIB.release.xcconfig"; path = "Pods/Target Support Files/Pods-CuentaBancariaLIB/Pods-CuentaBancariaLIB.release.xcconfig"; sourceTree = "<group>"; };
+		971C2ACA2209B4B2006F24DA /* CBAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBAccount.swift; sourceTree = "<group>"; };
+		971C2ACB2209B4B2006F24DA /* CBTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBTransaction.swift; sourceTree = "<group>"; };
+		971C2ACC2209B4B2006F24DA /* CBErrorColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBErrorColor.swift; sourceTree = "<group>"; };
 		973348092204835A00CF59B5 /* CuentaBancariaLIB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CuentaBancariaLIB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9733480C2204835A00CF59B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		973348132204835B00CF59B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,11 +47,6 @@
 		973348282204835B00CF59B5 /* CuentaBancariaLIBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CuentaBancariaLIBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9733482C2204835B00CF59B5 /* CuentaBancariaLIBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuentaBancariaLIBUITests.swift; sourceTree = "<group>"; };
 		9733482E2204835B00CF59B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AE75FD2CF531EE6AB5201F2B /* Pods_CuentaBancariaLIBTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CuentaBancariaLIBTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AFB16EBE1140E6C4E3861023 /* Pods-CuentaBancariaLIB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuentaBancariaLIB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CuentaBancariaLIB/Pods-CuentaBancariaLIB.debug.xcconfig"; sourceTree = "<group>"; };
-		B060977E753747FDF7B3F59D /* Pods-CuentaBancariaLIBUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuentaBancariaLIBUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CuentaBancariaLIBUITests/Pods-CuentaBancariaLIBUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		D9906ED2FD937326A646DD4F /* Pods-CuentaBancariaLIBTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuentaBancariaLIBTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CuentaBancariaLIBTests/Pods-CuentaBancariaLIBTests.release.xcconfig"; sourceTree = "<group>"; };
-		FDDD45007EDB60E0FE848718 /* Pods-CuentaBancariaLIBUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuentaBancariaLIBUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CuentaBancariaLIBUITests/Pods-CuentaBancariaLIBUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +54,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC2921407B257BFC2D65E6E8 /* Pods_CuentaBancariaLIB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +61,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				729003C15360C542FE522875 /* Pods_CuentaBancariaLIBTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,13 +68,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19B0749E19F639B479D9A5A0 /* Pods_CuentaBancariaLIBUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		971C2AC92209B4B2006F24DA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				971C2ACA2209B4B2006F24DA /* CBAccount.swift */,
+				971C2ACB2209B4B2006F24DA /* CBTransaction.swift */,
+				971C2ACC2209B4B2006F24DA /* CBErrorColor.swift */,
+			);
+			name = Classes;
+			path = LibraryComponents/Classes;
+			sourceTree = SOURCE_ROOT;
+		};
 		973348002204835A00CF59B5 = {
 			isa = PBXGroup;
 			children = (
@@ -90,8 +92,6 @@
 				973348202204835B00CF59B5 /* CuentaBancariaLIBTests */,
 				9733482B2204835B00CF59B5 /* CuentaBancariaLIBUITests */,
 				9733480A2204835A00CF59B5 /* Products */,
-				F66237FF38ED47500F065900 /* Pods */,
-				D69D56AFB2A5930DA24F67D1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +108,7 @@
 		9733480B2204835A00CF59B5 /* CuentaBancariaLIB */ = {
 			isa = PBXGroup;
 			children = (
+				971C2AC92209B4B2006F24DA /* Classes */,
 				9733480C2204835A00CF59B5 /* AppDelegate.swift */,
 				973348132204835B00CF59B5 /* Assets.xcassets */,
 				973348182204835B00CF59B5 /* Info.plist */,
@@ -133,29 +134,6 @@
 			path = CuentaBancariaLIBUITests;
 			sourceTree = "<group>";
 		};
-		D69D56AFB2A5930DA24F67D1 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5475D1711654F5C4201BCD0D /* Pods_CuentaBancariaLIB.framework */,
-				AE75FD2CF531EE6AB5201F2B /* Pods_CuentaBancariaLIBTests.framework */,
-				1EF4624A19C358C7A914EC26 /* Pods_CuentaBancariaLIBUITests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F66237FF38ED47500F065900 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				AFB16EBE1140E6C4E3861023 /* Pods-CuentaBancariaLIB.debug.xcconfig */,
-				672CC606D3460363EBFA227C /* Pods-CuentaBancariaLIB.release.xcconfig */,
-				377AB8614E4C8ED26CBE544F /* Pods-CuentaBancariaLIBTests.debug.xcconfig */,
-				D9906ED2FD937326A646DD4F /* Pods-CuentaBancariaLIBTests.release.xcconfig */,
-				B060977E753747FDF7B3F59D /* Pods-CuentaBancariaLIBUITests.debug.xcconfig */,
-				FDDD45007EDB60E0FE848718 /* Pods-CuentaBancariaLIBUITests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -163,11 +141,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 973348312204835B00CF59B5 /* Build configuration list for PBXNativeTarget "CuentaBancariaLIB" */;
 			buildPhases = (
-				8FA0DFF6B5A2917287F5380C /* [CP] Check Pods Manifest.lock */,
 				973348052204835A00CF59B5 /* Sources */,
 				973348062204835A00CF59B5 /* Frameworks */,
 				973348072204835A00CF59B5 /* Resources */,
-				ED7D692CD5F0BC9D0B99A709 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -182,7 +158,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 973348342204835B00CF59B5 /* Build configuration list for PBXNativeTarget "CuentaBancariaLIBTests" */;
 			buildPhases = (
-				0EE02CBA497552266CB355D8 /* [CP] Check Pods Manifest.lock */,
 				973348192204835B00CF59B5 /* Sources */,
 				9733481A2204835B00CF59B5 /* Frameworks */,
 				9733481B2204835B00CF59B5 /* Resources */,
@@ -201,7 +176,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 973348372204835B00CF59B5 /* Build configuration list for PBXNativeTarget "CuentaBancariaLIBUITests" */;
 			buildPhases = (
-				D5263066E02EAF008CBFD5E7 /* [CP] Check Pods Manifest.lock */,
 				973348242204835B00CF59B5 /* Sources */,
 				973348252204835B00CF59B5 /* Frameworks */,
 				973348262204835B00CF59B5 /* Resources */,
@@ -284,103 +258,15 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		0EE02CBA497552266CB355D8 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CuentaBancariaLIBTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8FA0DFF6B5A2917287F5380C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CuentaBancariaLIB-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D5263066E02EAF008CBFD5E7 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CuentaBancariaLIBUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		ED7D692CD5F0BC9D0B99A709 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-CuentaBancariaLIB/Pods-CuentaBancariaLIB-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/CuentaBancariaLIB/CuentaBancariaLIB.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CuentaBancariaLIB.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CuentaBancariaLIB/Pods-CuentaBancariaLIB-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		973348052204835A00CF59B5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				971C2ACD2209B4B2006F24DA /* CBAccount.swift in Sources */,
 				9733480D2204835A00CF59B5 /* AppDelegate.swift in Sources */,
+				971C2ACE2209B4B2006F24DA /* CBTransaction.swift in Sources */,
+				971C2ACF2209B4B2006F24DA /* CBErrorColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,7 +420,6 @@
 		};
 		973348322204835B00CF59B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AFB16EBE1140E6C4E3861023 /* Pods-CuentaBancariaLIB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -552,7 +437,6 @@
 		};
 		973348332204835B00CF59B5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 672CC606D3460363EBFA227C /* Pods-CuentaBancariaLIB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -570,7 +454,6 @@
 		};
 		973348352204835B00CF59B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 377AB8614E4C8ED26CBE544F /* Pods-CuentaBancariaLIBTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -591,7 +474,6 @@
 		};
 		973348362204835B00CF59B5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D9906ED2FD937326A646DD4F /* Pods-CuentaBancariaLIBTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -612,7 +494,6 @@
 		};
 		973348382204835B00CF59B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B060977E753747FDF7B3F59D /* Pods-CuentaBancariaLIBUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -632,7 +513,6 @@
 		};
 		973348392204835B00CF59B5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FDDD45007EDB60E0FE848718 /* Pods-CuentaBancariaLIBUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,6 +1,0 @@
-framework module Pods_CuentaBancariaUITests {
-  umbrella header "Pods-CuentaBancariaUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
