@@ -1,0 +1,19 @@
+{
+  "name": "NetworkPod",
+  "version": "0.0.1",
+  "homepage": "https://mercadolibre.com.ar",
+  "license": "ATR",
+  "authors": {
+    "Atr Code": "info@atr.com"
+  },
+  "summary": "NetworkPod is a lightweight and easy-to-use network for iOS.",
+  "source": {
+    "git": "https://github.com/tonymillion/Reachability.git",
+    "tag": "v3.1.0"
+  },
+  "platforms": {
+    "ios": "9.3"
+  },
+  "source_files": "NetworkPod/NetworkPod.{h,m}",
+  "requires_arc": true
+}

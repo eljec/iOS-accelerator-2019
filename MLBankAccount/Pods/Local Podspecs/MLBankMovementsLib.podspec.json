@@ -1,0 +1,25 @@
+{
+  "name": "MLBankMovementsLib",
+  "version": "0.0.1",
+  "homepage": "https://mercadolibre.com.ar",
+  "license": "ATR",
+  "authors": {
+    "Atr Code": "info@atr.com"
+  },
+  "summary": "NetworkPod is a lightweight and easy-to-use network for iOS.",
+  "source": {
+    "git": "https://github.com/tonymillion/Reachability.git",
+    "tag": "v3.1.0"
+  },
+  "platforms": {
+    "ios": "9.3"
+  },
+  "source_files": "MLBankMovementsLib/MLBankMovements.{swift, h, m}",
+  "ios": {
+    "source_files": "MLBankMovementsLib/*.h"
+  },
+  "osx": {
+    "source_files": "MLBankMovementsLib/*.h"
+  },
+  "requires_arc": true
+}

@@ -1,0 +1,16 @@
+PODS:
+  - MLBankMovementsLib (0.0.1)
+
+DEPENDENCIES:
+  - MLBankMovementsLib (from `../MLBankMovementsLib/`)
+
+EXTERNAL SOURCES:
+  MLBankMovementsLib:
+    :path: "../MLBankMovementsLib/"
+
+SPEC CHECKSUMS:
+  MLBankMovementsLib: 54ba3005ff67b86771f51484e8b5f982b6ff76c7
+
+PODFILE CHECKSUM: 74c6918343e4dec1edbf72861424e49070c64988
+
+COCOAPODS: 1.5.3

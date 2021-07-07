@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 +(MAOInitialViewService *) sharedInstance;
 
--(void) fetchItunesDataWithCompletionBlock:(void(^)(NSArray *array, NSError *error)) completionBlock;
+-(void) fetchItunesDataWithCompletionBlock:(void(^)(NSArray *array, NSError *error)) completionBlock partOfUrl:(NSString *)url;
 
 @end
 

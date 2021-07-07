@@ -1,0 +1,6 @@
+framework module MLBankMovementsLib {
+  umbrella header "MLBankMovementsLib-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,26 @@
+PODS:
+  - NetworkPod (0.0.1)
+  - ProgressHUD (2.60)
+
+DEPENDENCIES:
+  - NetworkPod (from `../../MyAppOneNetworkPod/NetworkPod/`)
+  - ProgressHUD (from `https://github.com/relatedcode/ProgressHUD.git`)
+
+EXTERNAL SOURCES:
+  NetworkPod:
+    :path: "../../MyAppOneNetworkPod/NetworkPod/"
+  ProgressHUD:
+    :git: https://github.com/relatedcode/ProgressHUD.git
+
+CHECKOUT OPTIONS:
+  ProgressHUD:
+    :commit: 6fff548ce8f1d86dea26ace6628b79fce38efa16
+    :git: https://github.com/relatedcode/ProgressHUD.git
+
+SPEC CHECKSUMS:
+  NetworkPod: 5ce957ed8bc06b0aafbc47a80dedba97b7db73d2
+  ProgressHUD: 4e4efbaf4f5de8bd32e0c4c3b6644a90ea1a8c3e
+
+PODFILE CHECKSUM: 00fe33b79cf032e1ba98468770ac832bd8bc5d01
+
+COCOAPODS: 1.5.3

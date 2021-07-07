@@ -1,0 +1,987 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		002968569CF7617CF204B95C051DF3A5 /* MLBankMovementsLib-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1A301979AB3B4BC3958E03412FE33C /* MLBankMovementsLib-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0472DE9BE968ABC2F70714FA9D76A975 /* Pods-MLBankAccount-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E2C4527C02BDAF495575F83A2AC7F44A /* Pods-MLBankAccount-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		166137282CA73A81751039DBB2517C0E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		21CBEC052F7C953EC49EBD3BB15A60AF /* Pods-MLBankAccountTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD11C054BC874BA3BD007DE6858D6F18 /* Pods-MLBankAccountTests-dummy.m */; };
+		29ABA5F93CF0104B3C396D99BD04139E /* Pods-MLBankAccountUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A82193B7D76E0B674BA4E1A57BF48415 /* Pods-MLBankAccountUITests-dummy.m */; };
+		324966BC7ED575DE7B5BA332CF7683BC /* Pods-MLBankAccountTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F1B7DAE193C945376822C8E9CB6179F5 /* Pods-MLBankAccountTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58EB14E4F72C7A82F76A7751355A96D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		61D4C2F2C785A2C81F1133D251A54B7B /* Pods-MLBankAccountUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A0ABCED88E146968F8677DE679BBE42 /* Pods-MLBankAccountUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		722B7AE779F849D8CAB62805D196E39C /* MLBankMovements.swift in Sources */ = {isa = PBXBuildFile; fileRef = F102A93B621A9F33ADA130751E170C0D /* MLBankMovements.swift */; };
+		B10242AAEA9E9B98D33B95951D61C984 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		B897ECA1695639903631525AC4384AC1 /* Pods-MLBankAccount-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 42523389AB206B06AF25D493C1FAB824 /* Pods-MLBankAccount-dummy.m */; };
+		E87A16484C06BA0DB763D6CB5B650490 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		F6A38213E1432BC8BBF8CD186C97495C /* MLBankMovementsLib-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 441B831BDDC6CF741C78FDD20AE683D3 /* MLBankMovementsLib-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2AFBF3BC7D78C189ED3AE556104AA35A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A6D6370ECDAFE203C5C9F9628C745C4;
+			remoteInfo = "Pods-MLBankAccount";
+		};
+		7CF7B44666F835E93EF8B175A5014873 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A6D6370ECDAFE203C5C9F9628C745C4;
+			remoteInfo = "Pods-MLBankAccount";
+		};
+		9776F1BA36C731580F3403744A4065EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B52DBA3B8DB6117FDA5F49ED5B9ED609;
+			remoteInfo = MLBankMovementsLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		035524636561545A9D3090205B653371 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09F8127E795CAB3A18D18FAE3C4E98EC /* Pods-MLBankAccountTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MLBankAccountTests-resources.sh"; sourceTree = "<group>"; };
+		0A0ABCED88E146968F8677DE679BBE42 /* Pods-MLBankAccountUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MLBankAccountUITests-umbrella.h"; sourceTree = "<group>"; };
+		0C4E673E1CE8268099E3E2ED4550D1C9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14BF2AA873E34A42F29992EA6037FF51 /* MLBankMovementsLib.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = MLBankMovementsLib.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		17C733CFA36E1FB83DFCC768706C7F77 /* Pods-MLBankAccountUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MLBankAccountUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		17E9B04A7F3A7E861F121812EA0B4A34 /* Pods-MLBankAccountUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MLBankAccountUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		20FD6FBBF797E4C1DD6FC8961590B496 /* MLBankMovementsLib.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MLBankMovementsLib.modulemap; sourceTree = "<group>"; };
+		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		27AA2CA53A70E6073E2FB764EB85DB3B /* Pods-MLBankAccountUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MLBankAccountUITests.modulemap"; sourceTree = "<group>"; };
+		299E1536CDC3D58B7A9B08F62FBD3814 /* Pods-MLBankAccount.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MLBankAccount.release.xcconfig"; sourceTree = "<group>"; };
+		314778E60B588C863010C84DDDC1739E /* Pods_MLBankAccountUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MLBankAccountUITests.framework; path = "Pods-MLBankAccountUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BAB70ACE1CB9BBD2C7FADD7817A2F0B /* Pods_MLBankAccount.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MLBankAccount.framework; path = "Pods-MLBankAccount.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42523389AB206B06AF25D493C1FAB824 /* Pods-MLBankAccount-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MLBankAccount-dummy.m"; sourceTree = "<group>"; };
+		441B831BDDC6CF741C78FDD20AE683D3 /* MLBankMovementsLib-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MLBankMovementsLib-dummy.m"; sourceTree = "<group>"; };
+		454BF59CB05961D9DF059503276CB475 /* Pods-MLBankAccountUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MLBankAccountUITests.release.xcconfig"; sourceTree = "<group>"; };
+		458BD3374C20B44ADBA613AAA7593C5B /* Pods-MLBankAccount-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MLBankAccount-acknowledgements.markdown"; sourceTree = "<group>"; };
+		45F08C9D465C8E32D691EE3B55A7D98F /* Pods-MLBankAccountTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MLBankAccountTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4B2960873A47152326A5EE5E60EE4A61 /* Pods-MLBankAccountTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MLBankAccountTests.release.xcconfig"; sourceTree = "<group>"; };
+		5171AD8173E2712F7105B7A4765B830E /* Pods-MLBankAccountTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MLBankAccountTests.debug.xcconfig"; sourceTree = "<group>"; };
+		52D1448B5C7E9063BB0C43B69D40F47E /* Pods-MLBankAccount.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MLBankAccount.debug.xcconfig"; sourceTree = "<group>"; };
+		5700FA18F82144C0344E782D13625698 /* Pods-MLBankAccountTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MLBankAccountTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7B32266007795A0D0F189A5130643841 /* MLBankMovementsLib.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MLBankMovementsLib.xcconfig; sourceTree = "<group>"; };
+		7E5E6DF304C6C94810FE245BD7E8BC89 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86443F15C10B42D772F8B3509913B044 /* Pods-MLBankAccount-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MLBankAccount-resources.sh"; sourceTree = "<group>"; };
+		864B2934F5548B474511AF530CBAB0DA /* Pods-MLBankAccount.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MLBankAccount.modulemap"; sourceTree = "<group>"; };
+		869EE51CD70CDACB39E8B15885A5E0D7 /* Pods-MLBankAccountUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MLBankAccountUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8B7197F52C25FF97D956653C40972FA4 /* Pods-MLBankAccountTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MLBankAccountTests.modulemap"; sourceTree = "<group>"; };
+		8E1A301979AB3B4BC3958E03412FE33C /* MLBankMovementsLib-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MLBankMovementsLib-umbrella.h"; sourceTree = "<group>"; };
+		95003CA5F2C9E292854F6DF09EF8CE48 /* Pods-MLBankAccountTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MLBankAccountTests-frameworks.sh"; sourceTree = "<group>"; };
+		978152F5EAC083A18E915E6D65AA90EC /* Pods_MLBankAccountTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MLBankAccountTests.framework; path = "Pods-MLBankAccountTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A82193B7D76E0B674BA4E1A57BF48415 /* Pods-MLBankAccountUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MLBankAccountUITests-dummy.m"; sourceTree = "<group>"; };
+		C7B758F9A21794634DCEB23ECE1F9469 /* MLBankMovementsLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MLBankMovementsLib.framework; path = MLBankMovementsLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D5C57843D3A212DCCC05F8F5E9B648D3 /* Pods-MLBankAccountUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MLBankAccountUITests-frameworks.sh"; sourceTree = "<group>"; };
+		D6F9C7CBAFC6CAD421CA5C1900F57205 /* MLBankMovementsLib-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MLBankMovementsLib-prefix.pch"; sourceTree = "<group>"; };
+		DD92FBAB71A33769F6434BD643F8C485 /* Pods-MLBankAccount-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MLBankAccount-acknowledgements.plist"; sourceTree = "<group>"; };
+		E2C4527C02BDAF495575F83A2AC7F44A /* Pods-MLBankAccount-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MLBankAccount-umbrella.h"; sourceTree = "<group>"; };
+		E8D8F063CE043A000E877D1CA67029C2 /* Pods-MLBankAccountUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MLBankAccountUITests-resources.sh"; sourceTree = "<group>"; };
+		F102A93B621A9F33ADA130751E170C0D /* MLBankMovements.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MLBankMovements.swift; path = MLBankMovementsLib/MLBankMovements.swift; sourceTree = "<group>"; };
+		F1B7DAE193C945376822C8E9CB6179F5 /* Pods-MLBankAccountTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MLBankAccountTests-umbrella.h"; sourceTree = "<group>"; };
+		F434CFE6415F1D4BDA001C1B1DEAE0A3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7B85FEE57859D2DF4FBA3D31B4B40DD /* Pods-MLBankAccount-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MLBankAccount-frameworks.sh"; sourceTree = "<group>"; };
+		FD11C054BC874BA3BD007DE6858D6F18 /* Pods-MLBankAccountTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MLBankAccountTests-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79D15866768BE4C4878DD74E7B259E0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58EB14E4F72C7A82F76A7751355A96D3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6050B37743D1467FA460AE01C00DB5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10242AAEA9E9B98D33B95951D61C984 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC9AAF8FD0177C632D305B6AA2DAD773 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E87A16484C06BA0DB763D6CB5B650490 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C680B20020F2F93448AC03A9BB363646 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				166137282CA73A81751039DBB2517C0E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CFFCA05AD0DC8AB137FCDD21C9D95FA /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F4989E8D472D572BB3A359BAA01420F8 /* MLBankMovementsLib */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		4BD8C6C331F745CC6F60592B6CBCFEEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C7B758F9A21794634DCEB23ECE1F9469 /* MLBankMovementsLib.framework */,
+				3BAB70ACE1CB9BBD2C7FADD7817A2F0B /* Pods_MLBankAccount.framework */,
+				978152F5EAC083A18E915E6D65AA90EC /* Pods_MLBankAccountTests.framework */,
+				314778E60B588C863010C84DDDC1739E /* Pods_MLBankAccountUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6A5DA36AD17944DA94317176F8026A12 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F434CFE6415F1D4BDA001C1B1DEAE0A3 /* Info.plist */,
+				20FD6FBBF797E4C1DD6FC8961590B496 /* MLBankMovementsLib.modulemap */,
+				7B32266007795A0D0F189A5130643841 /* MLBankMovementsLib.xcconfig */,
+				441B831BDDC6CF741C78FDD20AE683D3 /* MLBankMovementsLib-dummy.m */,
+				D6F9C7CBAFC6CAD421CA5C1900F57205 /* MLBankMovementsLib-prefix.pch */,
+				8E1A301979AB3B4BC3958E03412FE33C /* MLBankMovementsLib-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../MLBankAccount/Pods/Target Support Files/MLBankMovementsLib";
+			sourceTree = "<group>";
+		};
+		91C79A991131FE7AC03D61DAB8C4B122 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C180859BD47702AE168180E9A71B1F56 /* Pods-MLBankAccount */,
+				CF78B9C01F81C5E25032BDB0BF357EE0 /* Pods-MLBankAccountTests */,
+				C32BDA55FEA689F9DCA8395FCF9092AA /* Pods-MLBankAccountUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C180859BD47702AE168180E9A71B1F56 /* Pods-MLBankAccount */ = {
+			isa = PBXGroup;
+			children = (
+				035524636561545A9D3090205B653371 /* Info.plist */,
+				864B2934F5548B474511AF530CBAB0DA /* Pods-MLBankAccount.modulemap */,
+				458BD3374C20B44ADBA613AAA7593C5B /* Pods-MLBankAccount-acknowledgements.markdown */,
+				DD92FBAB71A33769F6434BD643F8C485 /* Pods-MLBankAccount-acknowledgements.plist */,
+				42523389AB206B06AF25D493C1FAB824 /* Pods-MLBankAccount-dummy.m */,
+				F7B85FEE57859D2DF4FBA3D31B4B40DD /* Pods-MLBankAccount-frameworks.sh */,
+				86443F15C10B42D772F8B3509913B044 /* Pods-MLBankAccount-resources.sh */,
+				E2C4527C02BDAF495575F83A2AC7F44A /* Pods-MLBankAccount-umbrella.h */,
+				52D1448B5C7E9063BB0C43B69D40F47E /* Pods-MLBankAccount.debug.xcconfig */,
+				299E1536CDC3D58B7A9B08F62FBD3814 /* Pods-MLBankAccount.release.xcconfig */,
+			);
+			name = "Pods-MLBankAccount";
+			path = "Target Support Files/Pods-MLBankAccount";
+			sourceTree = "<group>";
+		};
+		C32BDA55FEA689F9DCA8395FCF9092AA /* Pods-MLBankAccountUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0C4E673E1CE8268099E3E2ED4550D1C9 /* Info.plist */,
+				27AA2CA53A70E6073E2FB764EB85DB3B /* Pods-MLBankAccountUITests.modulemap */,
+				869EE51CD70CDACB39E8B15885A5E0D7 /* Pods-MLBankAccountUITests-acknowledgements.markdown */,
+				17C733CFA36E1FB83DFCC768706C7F77 /* Pods-MLBankAccountUITests-acknowledgements.plist */,
+				A82193B7D76E0B674BA4E1A57BF48415 /* Pods-MLBankAccountUITests-dummy.m */,
+				D5C57843D3A212DCCC05F8F5E9B648D3 /* Pods-MLBankAccountUITests-frameworks.sh */,
+				E8D8F063CE043A000E877D1CA67029C2 /* Pods-MLBankAccountUITests-resources.sh */,
+				0A0ABCED88E146968F8677DE679BBE42 /* Pods-MLBankAccountUITests-umbrella.h */,
+				17E9B04A7F3A7E861F121812EA0B4A34 /* Pods-MLBankAccountUITests.debug.xcconfig */,
+				454BF59CB05961D9DF059503276CB475 /* Pods-MLBankAccountUITests.release.xcconfig */,
+			);
+			name = "Pods-MLBankAccountUITests";
+			path = "Target Support Files/Pods-MLBankAccountUITests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				24390EFD555DD124430DFF9724065945 /* Podfile */,
+				2CFFCA05AD0DC8AB137FCDD21C9D95FA /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				4BD8C6C331F745CC6F60592B6CBCFEEF /* Products */,
+				91C79A991131FE7AC03D61DAB8C4B122 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		CF78B9C01F81C5E25032BDB0BF357EE0 /* Pods-MLBankAccountTests */ = {
+			isa = PBXGroup;
+			children = (
+				7E5E6DF304C6C94810FE245BD7E8BC89 /* Info.plist */,
+				8B7197F52C25FF97D956653C40972FA4 /* Pods-MLBankAccountTests.modulemap */,
+				45F08C9D465C8E32D691EE3B55A7D98F /* Pods-MLBankAccountTests-acknowledgements.markdown */,
+				5700FA18F82144C0344E782D13625698 /* Pods-MLBankAccountTests-acknowledgements.plist */,
+				FD11C054BC874BA3BD007DE6858D6F18 /* Pods-MLBankAccountTests-dummy.m */,
+				95003CA5F2C9E292854F6DF09EF8CE48 /* Pods-MLBankAccountTests-frameworks.sh */,
+				09F8127E795CAB3A18D18FAE3C4E98EC /* Pods-MLBankAccountTests-resources.sh */,
+				F1B7DAE193C945376822C8E9CB6179F5 /* Pods-MLBankAccountTests-umbrella.h */,
+				5171AD8173E2712F7105B7A4765B830E /* Pods-MLBankAccountTests.debug.xcconfig */,
+				4B2960873A47152326A5EE5E60EE4A61 /* Pods-MLBankAccountTests.release.xcconfig */,
+			);
+			name = "Pods-MLBankAccountTests";
+			path = "Target Support Files/Pods-MLBankAccountTests";
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E291925B185B7A27E978C736E3097F5D /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				14BF2AA873E34A42F29992EA6037FF51 /* MLBankMovementsLib.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		F4989E8D472D572BB3A359BAA01420F8 /* MLBankMovementsLib */ = {
+			isa = PBXGroup;
+			children = (
+				F102A93B621A9F33ADA130751E170C0D /* MLBankMovements.swift */,
+				E291925B185B7A27E978C736E3097F5D /* Pod */,
+				6A5DA36AD17944DA94317176F8026A12 /* Support Files */,
+			);
+			name = MLBankMovementsLib;
+			path = ../../MLBankMovementsLib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		16E061ABB2ACB306090757677C6F3B44 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61D4C2F2C785A2C81F1133D251A54B7B /* Pods-MLBankAccountUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		513E38D88FF58852CB19D0745CB6967F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0472DE9BE968ABC2F70714FA9D76A975 /* Pods-MLBankAccount-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66F49145F0316D9B3E2C270D292B17AF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				002968569CF7617CF204B95C051DF3A5 /* MLBankMovementsLib-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4CC5B8A8D97D325E321485AA62A7453 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				324966BC7ED575DE7B5BA332CF7683BC /* Pods-MLBankAccountTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4A6D6370ECDAFE203C5C9F9628C745C4 /* Pods-MLBankAccount */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50BE7BEFFBB883843529384D3C6ECE19 /* Build configuration list for PBXNativeTarget "Pods-MLBankAccount" */;
+			buildPhases = (
+				513E38D88FF58852CB19D0745CB6967F /* Headers */,
+				10E7FC906D7A30458CE112DB6DB017E6 /* Sources */,
+				C680B20020F2F93448AC03A9BB363646 /* Frameworks */,
+				AABE5AEB1526C0934FF688510E57F2E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFC8579342F2F5ACC197DB47E5A278E1 /* PBXTargetDependency */,
+			);
+			name = "Pods-MLBankAccount";
+			productName = "Pods-MLBankAccount";
+			productReference = 3BAB70ACE1CB9BBD2C7FADD7817A2F0B /* Pods_MLBankAccount.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8032E358F8F4B20F3A183A6D03CAFFFF /* Pods-MLBankAccountTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07366B2B434521559042BEC5AF243C79 /* Build configuration list for PBXNativeTarget "Pods-MLBankAccountTests" */;
+			buildPhases = (
+				D4CC5B8A8D97D325E321485AA62A7453 /* Headers */,
+				31E416E19CDF51C84176805125223045 /* Sources */,
+				B6050B37743D1467FA460AE01C00DB5F /* Frameworks */,
+				872C6CFB75860F7889058D3F470FEA1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63C3548F0CBE571AADB697BA274F12CC /* PBXTargetDependency */,
+			);
+			name = "Pods-MLBankAccountTests";
+			productName = "Pods-MLBankAccountTests";
+			productReference = 978152F5EAC083A18E915E6D65AA90EC /* Pods_MLBankAccountTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B52DBA3B8DB6117FDA5F49ED5B9ED609 /* MLBankMovementsLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF79C9BA5F15506FBD71144E41E37021 /* Build configuration list for PBXNativeTarget "MLBankMovementsLib" */;
+			buildPhases = (
+				66F49145F0316D9B3E2C270D292B17AF /* Headers */,
+				91EDCAA97C65F14E7E3FC8CD8167FD48 /* Sources */,
+				79D15866768BE4C4878DD74E7B259E0B /* Frameworks */,
+				AC3B9EE1FD963359D83A27AD88EF57C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MLBankMovementsLib;
+			productName = MLBankMovementsLib;
+			productReference = C7B758F9A21794634DCEB23ECE1F9469 /* MLBankMovementsLib.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C8A7320675AD5168D476D082C3B68299 /* Pods-MLBankAccountUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BDB3A2F1E0D237463C8F6B0FD71E618 /* Build configuration list for PBXNativeTarget "Pods-MLBankAccountUITests" */;
+			buildPhases = (
+				16E061ABB2ACB306090757677C6F3B44 /* Headers */,
+				9F32B505D8073DC8241CB183DA86F757 /* Sources */,
+				BC9AAF8FD0177C632D305B6AA2DAD773 /* Frameworks */,
+				DC348BDBD2DB83F8A9B8B3918CABE8C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6659EFC0A66EBE561AA214976FC7D2D /* PBXTargetDependency */,
+			);
+			name = "Pods-MLBankAccountUITests";
+			productName = "Pods-MLBankAccountUITests";
+			productReference = 314778E60B588C863010C84DDDC1739E /* Pods_MLBankAccountUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 4BD8C6C331F745CC6F60592B6CBCFEEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B52DBA3B8DB6117FDA5F49ED5B9ED609 /* MLBankMovementsLib */,
+				4A6D6370ECDAFE203C5C9F9628C745C4 /* Pods-MLBankAccount */,
+				8032E358F8F4B20F3A183A6D03CAFFFF /* Pods-MLBankAccountTests */,
+				C8A7320675AD5168D476D082C3B68299 /* Pods-MLBankAccountUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		872C6CFB75860F7889058D3F470FEA1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AABE5AEB1526C0934FF688510E57F2E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC3B9EE1FD963359D83A27AD88EF57C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC348BDBD2DB83F8A9B8B3918CABE8C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		10E7FC906D7A30458CE112DB6DB017E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B897ECA1695639903631525AC4384AC1 /* Pods-MLBankAccount-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31E416E19CDF51C84176805125223045 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21CBEC052F7C953EC49EBD3BB15A60AF /* Pods-MLBankAccountTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91EDCAA97C65F14E7E3FC8CD8167FD48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				722B7AE779F849D8CAB62805D196E39C /* MLBankMovements.swift in Sources */,
+				F6A38213E1432BC8BBF8CD186C97495C /* MLBankMovementsLib-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F32B505D8073DC8241CB183DA86F757 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29ABA5F93CF0104B3C396D99BD04139E /* Pods-MLBankAccountUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		63C3548F0CBE571AADB697BA274F12CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-MLBankAccount";
+			target = 4A6D6370ECDAFE203C5C9F9628C745C4 /* Pods-MLBankAccount */;
+			targetProxy = 2AFBF3BC7D78C189ED3AE556104AA35A /* PBXContainerItemProxy */;
+		};
+		C6659EFC0A66EBE561AA214976FC7D2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-MLBankAccount";
+			target = 4A6D6370ECDAFE203C5C9F9628C745C4 /* Pods-MLBankAccount */;
+			targetProxy = 7CF7B44666F835E93EF8B175A5014873 /* PBXContainerItemProxy */;
+		};
+		FFC8579342F2F5ACC197DB47E5A278E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MLBankMovementsLib;
+			target = B52DBA3B8DB6117FDA5F49ED5B9ED609 /* MLBankMovementsLib */;
+			targetProxy = 9776F1BA36C731580F3403744A4065EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		068A219F9C384FD572D523EEE317D0C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		34F9DCC73863B46B788C49E7BE1C46A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 299E1536CDC3D58B7A9B08F62FBD3814 /* Pods-MLBankAccount.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MLBankAccount/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MLBankAccount/Pods-MLBankAccount.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7B1FFC61DCCAD44D399C65A937DA31BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52D1448B5C7E9063BB0C43B69D40F47E /* Pods-MLBankAccount.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MLBankAccount/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MLBankAccount/Pods-MLBankAccount.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7F9E12B6D16175520C9E98504F34D75A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B2960873A47152326A5EE5E60EE4A61 /* Pods-MLBankAccountTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MLBankAccountTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MLBankAccountTests/Pods-MLBankAccountTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		84DF0B30E45CDDE81A6D225D8AEFC6A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 454BF59CB05961D9DF059503276CB475 /* Pods-MLBankAccountUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MLBankAccountUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MLBankAccountUITests/Pods-MLBankAccountUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8E1C7A88F52ECF59A0843F5868FFB954 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B32266007795A0D0F189A5130643841 /* MLBankMovementsLib.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MLBankMovementsLib/MLBankMovementsLib-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MLBankMovementsLib/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MLBankMovementsLib/MLBankMovementsLib.modulemap";
+				PRODUCT_MODULE_NAME = MLBankMovementsLib;
+				PRODUCT_NAME = MLBankMovementsLib;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CC44AF7CF20036980BAD695FC3B481F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B32266007795A0D0F189A5130643841 /* MLBankMovementsLib.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MLBankMovementsLib/MLBankMovementsLib-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MLBankMovementsLib/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MLBankMovementsLib/MLBankMovementsLib.modulemap";
+				PRODUCT_MODULE_NAME = MLBankMovementsLib;
+				PRODUCT_NAME = MLBankMovementsLib;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E29B0B57C53FF8C9953CE2983686A7F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E417629B548168CA548CBFFA0378BF2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17E9B04A7F3A7E861F121812EA0B4A34 /* Pods-MLBankAccountUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MLBankAccountUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MLBankAccountUITests/Pods-MLBankAccountUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F755FC70DF6F20F25EEBE5280F9431F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5171AD8173E2712F7105B7A4765B830E /* Pods-MLBankAccountTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MLBankAccountTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MLBankAccountTests/Pods-MLBankAccountTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07366B2B434521559042BEC5AF243C79 /* Build configuration list for PBXNativeTarget "Pods-MLBankAccountTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F755FC70DF6F20F25EEBE5280F9431F7 /* Debug */,
+				7F9E12B6D16175520C9E98504F34D75A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E29B0B57C53FF8C9953CE2983686A7F9 /* Debug */,
+				068A219F9C384FD572D523EEE317D0C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BDB3A2F1E0D237463C8F6B0FD71E618 /* Build configuration list for PBXNativeTarget "Pods-MLBankAccountUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E417629B548168CA548CBFFA0378BF2F /* Debug */,
+				84DF0B30E45CDDE81A6D225D8AEFC6A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50BE7BEFFBB883843529384D3C6ECE19 /* Build configuration list for PBXNativeTarget "Pods-MLBankAccount" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B1FFC61DCCAD44D399C65A937DA31BD /* Debug */,
+				34F9DCC73863B46B788C49E7BE1C46A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF79C9BA5F15506FBD71144E41E37021 /* Build configuration list for PBXNativeTarget "MLBankMovementsLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC44AF7CF20036980BAD695FC3B481F9 /* Debug */,
+				8E1C7A88F52ECF59A0843F5868FFB954 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
